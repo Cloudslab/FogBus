@@ -1,0 +1,22 @@
+# Install Java 
+- sudo apt-get update
+- sudo apt-get upgrade
+- sudo apt-get install default-jdk -y
+- sudo apt-get install ant git vim -y
+
+# Install tomcat7
+- sudo apt-get install tomcat7 -y
+- sudo apt-get install tomcat7-admin tomcat7-examples tomcat7-docs -y
+
+# Conigure tomcat
+- sudo vim /etc/tomcat7/tomcat-users.xml
+
+# In this file where there is tomcat users:
+<tomcat-users>
+    <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+</tomcat-users>
+- sudo service tomcat7 restart
+# Check through browser goto : http://localhost:8080/manager
+
+# Go to Tomcat webapps directory 
+- cd /var/lib/tomcat7/webapps/
