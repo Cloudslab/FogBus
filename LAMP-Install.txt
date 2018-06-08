@@ -40,5 +40,6 @@
 # Login with root, pass
 
 # Make a PHP page here
-- sudo vim /var/www/html/HealthKeeper/worker.php
+- sudo vim /var/www/html/
+- sudo mkdir HealthKeeper/
 
