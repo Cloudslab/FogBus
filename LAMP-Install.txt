@@ -1,7 +1,7 @@
 # Install Java 
 - sudo apt-get update
-- sudo apt-get upgrade
-- sudo apt-get install default-jdk -y
+- sudo apt-get upgrade -y
+- sudo apt-get install oracle-java8-jdk -y
 - sudo apt-get install ant git vim -y
 
 # Install LAMP
@@ -12,23 +12,23 @@
 - sudo apache2ctl configtest
 # There should be : Syntax OK
 - sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
-- sudo /etc/init.d/apache2 restart
+- sudo service apache2 restart
 - sudo apt-get install mysql-server
 - sudo mysql_secure_installation
-# Select y, 0, enter password "pass", n, n, n, y
+# Select y, 0, enter password "raspbery", n, n, n, y
 - sudo mysql -u root -p
 - CREATE DATABASE data;
 - show databases;
-- GRANT ALL PRIVILEGES ON data.* TO 'root'@'localhost' IDENTIFIED BY 'pass';
+- GRANT ALL PRIVILEGES ON data.* TO 'root'@'localhost' IDENTIFIED BY 'raspberry';
 - FLUSH PRIVILEGES;
 - exit;
 - sudo apt-get install phpmyadmin
 # Choose apache2
 # Configure phpmyadmin : Yes
-# Enter MySQL password - "pass"
+# Enter MySQL password - "raspberry"
 # Enter user password
-- sudo vim /etc/php5/apache2/php.ini
-# Uncomment the line - extension=mysql.so
+- sudo vim /etc/php/7.0/apache2/php.ini
+# Uncomment the line - extension=mysql.so (OPTIONAL)
 - sudo vim /etc/apache2/apache2.conf
 # In the end write - Include /etc/phpmyadmin/apache.conf
 # Restart apache service
@@ -37,9 +37,10 @@
 # Test php and apache
 # On browser go to : localhost
 # On browser go to : localhost/phpmyadmin
-# Login with root, pass
+# Login with root, raspberry
 
 # Make a PHP page here
-- sudo vim /var/www/html/
+- cd /var/www/html/
 - sudo mkdir HealthKeeper/
+- sudo chmod -R 777 HealthKeeper/
 
