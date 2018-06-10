@@ -1,17 +1,17 @@
 # Install Java 
 - sudo apt-get update
-- sudo apt-get upgrade -y
-- sudo apt-get install oracle-java8-jdk -y
-- sudo apt-get install ant git vim -y
+- sudo apt-get upgrade
+- sudo apt-get install oracle-java8-jdk
+- sudo apt-get install ant git vim
 
 # Install LAMP
-- sudo apt-get install apache2 -y
+- sudo apt-get install apache2
 - sudo vim /etc/apache2/apache2.conf
 # Bottom of the file append - ServerName 127.0.0.1
 # Test apache
 - sudo apache2ctl configtest
 # There should be : Syntax OK
-- sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
+- sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
 - sudo service apache2 restart
 - sudo apt-get install mysql-server
 - sudo mysql_secure_installation
