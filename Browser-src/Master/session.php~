@@ -78,7 +78,7 @@ if(isset($_POST['analyze'])){
 		$dataFromExternalServer=file_get_contents("http://".$ip."/HealthKeeper/load.php"); 
 		$dataFromExternalServer = preg_replace('/\s+/', '', $dataFromExternalServer);		
 		$my_var = 0.0 + $dataFromExternalServer;
-		echo "<br/>Woker load with IP ".$ip.": ".$my_var;
+		echo "<br/>Woker load with IP ".$ip.": ".$my_var."<br/>";
 		array_push($loads, $my_var);	
 	  	if($my_var <= 0.8){
 	  		$toMaster = false;
