@@ -5,11 +5,13 @@
 
 <?php
 
+// Remove all worker nodes
 if(isset($_POST['remove'])){
 	file_put_contents("config.txt", "EnableMaster".PHP_EOL);
 	echo "All Workers removed<br/>";
 }
 {
+	// Read IPs from config.txt
 	$file = fopen("config.txt", "r");
 	$content = "";
 	$line = fgets($file);
@@ -17,12 +19,16 @@ if(isset($_POST['remove'])){
 		$content=$content.$line;	
 	}
 	fclose($file);
+	
+	// Alter first line of config.txt as per Enable master set or not
 	if(isset($_POST['enable'])){
 		file_put_contents("config.txt", "EnableMaster".PHP_EOL.$content);
 	}
 	else{
 		file_put_contents("config.txt", "DisableMaster".PHP_EOL.$content);
 	}
+	
+	// If new IP added, add to config.txt
 	if(isset($_POST['ip']) && $_POST['ip']!=""){
 	$file = fopen("config.txt", "a");
 	$k = $_POST['ip']."\n";
@@ -32,6 +38,7 @@ if(isset($_POST['remove'])){
 	
 	}
 	{
+	// Display IPs already set
 	echo "Set Worker IPs here <br/>";
 	$file = fopen("config.txt", "r");
 	$line = fgets($file);

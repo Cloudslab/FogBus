@@ -8,6 +8,7 @@
 
 session_start();
 
+// Welcome user
 if(isset($_GET['username'])){
 	$username = $_GET['username'];
 	echo "<h2>Hello ".htmlspecialchars($username)."</h2> ";
@@ -18,6 +19,7 @@ else{
 
 ?>
 
+<!-- Connect to bluetooth device -->
 Connect to Bluetooth Device:
 
 <form>
@@ -31,6 +33,8 @@ echo "Connected Device : ".$device;
 
 ?>
 
+
+<!-- Submit for analysis -->
 <form id='data' method='post'>
 <input type='text' name='data' id='data'  maxlength="500" />
 <input type='submit' name='analyze' value='analyze' />
@@ -38,6 +42,7 @@ echo "Connected Device : ".$device;
 
 <?php
 
+// If data entered, show the data values stored in data.txt
 if(isset($_POST['data'])){
 
 	$file = fopen("data.txt", "a");
@@ -58,12 +63,17 @@ if(isset($_POST['data'])){
 
 <?php
 
+// If Analyze is clicked
 if(isset($_POST['analyze'])){
 
 	$content = $_POST['data'];
 	
+	// Parse config.txt for IPs 
 	$file = fopen("config.txt", "r");
 	$line = fgets($file);
+	
+	// Initialize toMaster
+	// true if work given to master, else false
 	$toMaster = true;	
 	if($line == "DisableMaster"){
 		$toMaster = false;	
@@ -72,7 +82,10 @@ if(isset($_POST['analyze'])){
 	while(($line = fgets($file)) !== false){
 	  array_push($ips, $line);
 	}
+	
+	// Initialize loads array to store loads of workers
 	$loads = array();
+	// For each IP, get load from load.php
 	foreach($ips as $ip){
 		$ip = preg_replace('/\s+/', '', $ip);
 		$dataFromExternalServer=file_get_contents("http://".$ip."/HealthKeeper/load.php"); 
@@ -80,13 +93,17 @@ if(isset($_POST['analyze'])){
 		$my_var = 0.0 + $dataFromExternalServer;
 		echo "<br/>Woker load with IP ".$ip.": ".$my_var;
 		array_push($loads, $my_var);	
+		// If any load < 80% then toMaser = false
 	  	if($my_var <= 0.8){
 	  		$toMaster = false;
 	  	}
 	}
 	
+	
 	$result = "";
+	
 	if(!$toMaster){
+		// Work given to worker with least load
 		$min = 100;
 		$minindex = 0;
 		foreach($loads as $load){
@@ -102,10 +119,13 @@ if(isset($_POST['analyze'])){
 		}
 		$ipworker = $ips[$minindex];
 		$ipworker = preg_replace('/\s+/', '', $ipworker);
+		// Send data
 		echo "<br/><br/>Work sent to Worker ".($minindex+1)." with IP address : ".$ipworker."<br/><br/>";	
+		// Get result and store in $result variable
 		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/worker.php/?data='.$_POST['data']);
 	}
 	else {
+		// Work done by master
 		$minindex = 0;
 		$ipworker = "localhost";	
 		echo "<br/><br/>Work Done by Master<br/><br/>";
@@ -163,6 +183,7 @@ chart.render();
 </form>
 <?php
 
+// Reset all data
 if(isset($_POST['reset'])){
 	file_put_contents("data.txt", "");
 	echo "All Data removed<br/>";
