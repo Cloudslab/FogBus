@@ -66,7 +66,7 @@ if(isset($_POST['username']) && isset($_POST['password']) && $dbSuccess){
 	if(mysqli_num_rows($result)==1){
 		// Go to session page if login successful 
 		echo "Login Successful!";
-		header('Location: session.php/?username='.$_POST['username']);  
+		header('Location: home.php/?username='.$_POST['username']);  
 	}
 	else{
 		// Show incorrect credentials otherwise

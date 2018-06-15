@@ -53,13 +53,29 @@ if(isset($_POST['remove'])){
 	<input type='text' name='ip' id='ip'  maxlength=\"500\" /> <br/>
 	<input type='submit' name='add' value='Add Worker' /> <br/><br/>
 	<input type='submit' name='remove' value='Remove all workers' />
-	</form>
-	";
+	</form>";
 	}
 }
 
+$localIP = getHostByName(getHostName());
+echo "Master IP address : ".$localIP;
+
 ?>
 
+<form id='login' action='home.php' method='post' accept-charset='UTF-8'>
+<br><br>
+<input type='submit' name='back' value='Go Back' />
+</fieldset>
+</form>
 
+<?php
+
+$user = $_GET['username'];
+
+if(isset($_POST['back'])) {
+	header('Location: ../home.php/?username='.$user); 
+}
+
+?>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<html>
+<head><title>HealthKeeper - Home</title></head>
+<body>
+
+<!-- Title -->
+<h1>HealthKeeper - Home Page</h1>
+
+<?php
+session_start();
+
+if(isset($_GET['username'])){
+	$username = $_GET['username'];
+	echo "<h2>Hello ".htmlspecialchars($username)."</h2> ";
+}
+else{
+	echo "<h2>Hello</h2> ";
+}
+?>
+
+<!-- Navigation Form -->
+<form id='login' action='home.php' method='post' accept-charset='UTF-8'>
+<input type='submit' name='manager' value='Go To Manager Page' />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type='submit' name='session' value='Go To Session Page' />
+<br><br>
+<input type='submit' name='back' value='Go Back' />
+</fieldset>
+</form>
+
+<?php
+
+$user = $_GET['username'];
+
+if(isset($_POST['manager'])){
+	header("Location: ../manager.php/?username=".$user);	
+}
+elseif(isset($_POST['session'])) {
+	header('Location: ../session.php/?username='.$user); 
+}
+elseif(isset($_POST['back'])) {
+	header('Location: ../index.php/'); 
+}
+
+?>
+
+</body>
+</html>
