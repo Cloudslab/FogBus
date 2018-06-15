@@ -1,0 +1,690 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{inconsolata}
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\lstdefinestyle{php}{
+  language        = php,
+  basicstyle      = \small\ttfamily,
+  keywordstyle    = \color{dkblue},
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  stringstyle     = \color{red},
+  identifierstyle = \color{dkgreen},
+  commentstyle    = \color{gray},
+  emph            =[1]{php},
+  backgroundcolor=\color{yellow!15},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else},
+  emphstyle       =[2]\color{dkyellow}}
+\lstset{showstringspaces=false}
+\lstnewenvironment{php}
+{\lstset{style=php}}
+{}
+\lstdefinestyle{java}{language=Java,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  backgroundcolor=\color{yellow!15},
+  stringstyle=\color{pred},
+  basicstyle=\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+\lstnewenvironment{java}
+{\lstset{style=java}}
+{}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{capt-of}
+\usepackage{fontspec,fontawesome}
+\graphicspath{ {images/} }
+
+\title{RasPi-Fog : Developer Tutorial}
+
+\author{Shreshth Tuli$^{1}$}
+\date{June 2018}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This document includes the documentation of the code and insight on how different sections of the software can be tweaked or extended. All explanations and suggestions are based on the assumption that the reader has basic understanding of PHP and Java, and is well versed with programming concepts. \\
+The document is divided into five major sections that deal with : 
+\begin{itemize}
+\item Master and Worker web interface (PHP)
+\item Data Analyzer (Java)
+\item Android Interface (MIT AI)
+\item Functionalities of the Software
+\item Further scope of development
+\end{itemize}
+
+\section{Web Interface}
+All communication between the Fog nodes works using HTTP REST APIs, specifically GET and POST. 
+\subsection{Master}
+The Master performs the major tasks which include but are not limited to:
+\begin{enumerate}
+\item Take user login information and check with the Database
+\item Maintain Database of registered users
+\item Maintain configurations including Worker nodes' IP addresses
+\item Take data for analysis
+\item Distribute data with other parameters among worker nodes (or itself)
+\end{enumerate}
+
+\subsubsection{index.php}
+The code snippet below of "index.php" shows the HTML form for taking the login information from the user and sending it using the POST method.
+\begin{php}
+<html>
+<head><title>HealthKeeper - Login</title></head>
+<body>
+
+<!-- Title -->
+<h1>HealthKeeper - Login Page</h1>
+
+<!-- Login Form -->
+<form id='login' action='index.php' method='post' 
+accept-charset='UTF-8'>
+<fieldset >
+<legend>Login</legend>
+<label for='username' >Username:</label>
+<br>
+<input type='text' name='username' id='username'  
+maxlength="50" />
+<br>
+<label for='password' >Password:</label>
+<br>
+<input type='password' name='password' id='password' 
+maxlength="50" />
+<br><br>
+<input type='submit' name='Submit' value='Submit' />
+</fieldset>
+</form>
+\end{php}
+
+The next snippet shows the database settings to connect with the MySQL database. As described in the "End User Tutorial", the settings include parameters like name of database (users), name of table (registrations). Using the $mysqli_connect$ command, the web-server is able to connect to the required database. The database connection is indicated whether successful or not using 2 echo commands.\\ \\
+Next the login information is checked using the SQL query to find entry with the entered credentials. If the number of rows is 1 then login is successful and the page navigates to "session.php" with GET tag of username. If login is not successful, then "Username or password incorrect" is displayed on the page.
+\begin{php}
+<?php
+session_start();
+
+// Database settings
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "users";
+
+// Connection to database
+$dbConnected = mysqli_connect($host, $user, $pass, $db);
+$dbSelected = mysqli_select_db($dbConnected, "users");
+$dbSuccess = true;
+
+// Show Database connection on screen
+if($dbConnected){
+	echo "MySQL Connection OK<br />";
+	if($dbSelected){
+		echo "DB Connection OK<br />";
+	}
+	else{
+		echo "DB Connection FAIL<br />";
+		$dbSuccess = false;
+	}
+}
+else{
+	echo "MySQL Connection FAIL<br />"; 
+	$dbSuccess = false;
+}
+
+// Check login credentials
+if(isset($_POST['username']) && isset($_POST['password']) 
+&& $dbSuccess){
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$sql = "select * from registrations where 
+    username='".$username."' AND
+	password='".$password."' limit 1";
+	$result = mysqli_query($dbConnected,$sql);
+	if(mysqli_num_rows($result)==1){
+		// Go to session page if login successful 
+		echo "Login Successful!";
+		header('Location: session.php/?username='.
+        $_POST['username']);  
+	}
+	else{
+		// Show incorrect credentials otherwise
+		echo "Username or password incorrect!";
+		exit();
+	}
+}
+?>
+
+</body>
+</html>
+\end{php}
+
+\subsubsection{manager.php}
+The "manager.php", handles all the worker IPs for the "session.php". It maintains the "config.txt", in which every line contains one IP address of a worker. "config.txt" also holds whether Master could be given the task of analysis or not. The following code snipper in the "manager.php", shows that if "Remove all Workers" is clicked, then "config.txt" is overwritten to a default state with no worker IP and Master enable to do the task.
+
+\begin{php}
+<?php
+
+// Remove all worker nodes
+if(isset($_POST['remove'])){
+	file_put_contents("config.txt", "EnableMaster".PHP_EOL);
+	echo "All Workers removed<br/>";
+}
+\end{php}
+The next snippet shows how the config.txt is parsed. The method $fgets$, return a next line each time it is called. The while loop stores each line in the $\$content$ variable skipping the first line which contains the checkbox value. As per the "Enable Master" checkbox, the string "EnableMaster" or "DesableMaser" is added to $\$content$. 
+\begin{php}
+{
+	// Read IPs from config.txt
+	$file = fopen("config.txt", "r");
+	$content = "";
+	$line = fgets($file);
+	while(($line = fgets($file)) !== false){
+		$content=$content.$line;	
+	}
+	fclose($file);
+	
+	// Alter first line of config.txt as per 
+    	// Enable master set or not
+	if(isset($_POST['enable'])){
+		file_put_contents("config.txt", 
+        "EnableMaster".PHP_EOL.$content);
+	}
+	else{
+		file_put_contents("config.txt", 
+        "DisableMaster".PHP_EOL.$content);
+	}
+\end{php}
+Whenever a new IP address is added, the POST tag \textit{\$\_POST['ip']} is set and the IP is appended to the configuration file as shown in the snippet below.
+\begin{php}
+	// If new IP added, add to config.txt
+	if(isset($_POST['ip']) && $_POST['ip']!=""){
+	$file = fopen("config.txt", "a");
+	$k = $_POST['ip']."\n";
+	echo "Worker IP added : ".$_POST['ip']."<br/>";
+	fwrite($file, $k);
+	fclose($file);	
+	
+	}
+\end{php}
+The rest of the code displays the IPs set in the configuration file and lays down the form for adding new worker IP and the IP address of the local system (master).
+\begin{php}
+	// Display IPs already set
+	echo "Set Worker IPs here <br/>";
+	$file = fopen("config.txt", "r");
+	$line = fgets($file);
+	while(($line = fgets($file)) !== false){
+		echo "Worker IP : ".$line."<br/>";	
+	}
+	fclose($file);
+	echo "<br/>"."Add Worker IP<br/>";
+	echo "
+	<form id='ipinfo' method='post'>
+	<input type='checkbox' name='enable' value='Yes' 
+    	checked />
+    	Enable Master as Worker <br/>
+	<input type='text' name='ip' id='ip'  maxlength=\"500\" /> <br/>
+	<input type='submit' name='add' value='Add Worker' /> <br/><br/>
+	<input type='submit' name='remove' value='Remove all workers' />
+	</form>";
+	}
+}
+$localIP = getHostByName(getHostName());
+echo "Master IP address : ".$localIP;
+?>
+
+</body>
+</html>
+\end{php}
+
+\subsubsection{session.php}
+The "session.php" script performs most of the software functionalities. The initial part of the code welcomes user by using the username tag of the GET request.
+
+\begin{php}
+<html>
+<head><title>HealthKeeper - Login</title></head>
+<body>
+<h1>HealthKeeper - Session Page</h1>
+
+<?php
+session_start();
+
+// Welcome user
+if(isset($_GET['username'])){
+	$username = $_GET['username'];
+	echo "<h2>Hello ".htmlspecialchars($username)."</h2> ";
+}
+else{
+	echo "<h2>Hello</h2> ";
+}
+?>
+\end{php}
+Then, there is an HTML form for input of data from the user.
+\begin{php}
+<!-- Submit for analysis -->
+<form id='data' method='post'>
+<input type='text' name='data' id='data'  maxlength="500" />
+<input type='submit' name='analyze' value='analyze' />
+</form>
+\end{php}
+The next few lines, as shown in the code snippet below display the input data from the HTML form.
+\begin{php}
+<?php
+
+// If data entered, show the data values stored in data.txt
+if(isset($_POST['data'])){
+	$file = fopen("data.txt", "a");
+	$content = $_POST['data'];
+	echo "Data Values Stored : ";
+	echo $content;
+	if(0==filesize("data.txt")){
+		fwrite($file,$content);
+	}else{
+		fwrite($file,",".$content);
+	}
+	fclose($file);
+}
+?>
+\end{php}
+Next, if the "Analyze" button is clicked, then the content of "config.txt" is parsed to obtain list of worker IP addresses. The variable $\$toMaaster$ stores if the task is to be given to the Master or not. It is initialized to false if first line in "consif.txt" is "DisableMaster" and true otherwise.\\ \\
+The next few lines form the code for the "Load Balancing scheme" of the software. The variable $\$ips$ is an array of the IP addresses and $\$loads$ is their corresponding loads. The PHP method $file\_get\_contents()$ allows us to get a string form of the webpage passed as the argument. Using a for loop, the $\$loads$ array is populated by accessing the "load.php" of the corresponding IP address. If the load of any worker is < 80\%, then the variable $\$toMaster$ is set to false. In effect, when master is enabled as worker, this sets $\$toMaster$ to true only when all worker nodes have more that 80\% load.\\ \\
+If the task is not given to the master, i.e. $\$toMaster$ is false, then the IP of the worker with minimum load gets the task. The task is sent using the GET method to the "worker.php" script of the worker with that IP address.  
+
+\begin{php}
+<?php
+
+// If Analyze is clicked
+if(isset($_POST['analyze'])){
+	$content = $_POST['data'];
+	
+	// Parse config.txt for IPs 
+	$file = fopen("config.txt", "r");
+	$line = fgets($file);
+	
+	// Initialize toMaster
+	// true if work given to master, else false
+	$toMaster = true;	
+	if($line == "DisableMaster"){
+		$toMaster = false;	
+	}
+	$ips = array();
+	while(($line = fgets($file)) !== false){
+	  array_push($ips, $line);
+	}
+	
+	// Initialize loads array to store loads of workers
+	$loads = array();
+	
+    // For each IP, get load from load.php
+	foreach($ips as $ip){
+		$ip = preg_replace('/\s+/', '', $ip);
+		$dataFromExternalServer=
+        file_get_contents("http://".$ip."/HealthKeeper/load.php"); 
+		$dataFromExternalServer = 
+        preg_replace('/\s+/', '', $dataFromExternalServer);		
+		$my_var = 0.0 + $dataFromExternalServer;
+		echo "<br/>Woker load with IP ".$ip.": ".$my_var;
+		array_push($loads, $my_var);	
+		// If any load < 80% then toMaser = false
+	  	if($my_var <= 0.8){
+	  		$toMaster = false;
+	  	}
+	}
+	$result = "";
+	if(!$toMaster){
+		// Work given to worker with least load
+		$min = 100;
+		$minindex = 0;
+		foreach($loads as $load){
+			if ($min > $load){
+				$min = $load;			
+			}		
+		}
+		foreach($loads as $load ){
+			if($min == $load){
+				break;			
+			}		
+			$minindex = $minindex+1;
+		}
+		$ipworker = $ips[$minindex];
+		$ipworker = preg_replace('/\s+/', '', $ipworker);
+		// Send data
+		echo "<br/><br/>Work sent to Worker ".($minindex+1)."
+        with IP address : ".$ipworker."<br/><br/>";	
+		// Get result and store in $result variable
+		$result = file_get_contents
+        	('http://'.$ipworker.'/HealthKeeper/worker.php/?data='.
+        	$_POST['data']);
+	}
+	else {
+		// Work done by master
+		$minindex = 0;
+		$ipworker = "localhost";	
+		echo "<br/><br/>Work Done by Master<br/><br/>";
+		$result = file_get_contents('http://'.$ipworker.
+        	'/HealthKeeper/RPi/Worker/worker.php/?data='.
+        	$_POST['data']);
+	}
+	echo $result;
+\end{php}
+
+The remaining part of the code parser the data file with all data from the beginning and displays graph using JavaScript. It also removes all data by overwriting the data file with empty string.
+
+\begin{php}
+	// Graph 
+	$file1 = fopen("data.txt", "r");
+	$result = fgets($file1);
+	$allArray = explode(",", $result);
+	$dataPoints = array();
+	$criticalPoints = array();
+	foreach ($allArray as $value) {
+    array_push($dataPoints, array("y" => (int)$value, "label" => "-"));
+    array_push($criticalPoints, array("y" => 88, "label" => "-"));
+	}
+	fclose($file1);
+
+}
+
+?>
+<script>
+window.onload = function () {
+ 
+var chart = new CanvasJS.Chart("chartContainer", {
+	title: {
+		text: "Sleep Apnea Graph"
+	},
+	axisY: {
+		title: "Oxygen Level"
+	},
+	data: [{
+		markerType: "none",
+		type: "line",
+		dataPoints: 
+        <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>},
+		{
+	   markerType: "none", 
+		type: "line",
+		dataPoints: 
+        <?php echo json_encode($criticalPoints, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+chart.render();
+
+}
+</script>
+<div id="chartContainer" style="height: 370px; width: 50%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<form id='data' method='post'>
+<input type='submit' name='reset' value='Reset All Data' />
+</form>
+<?php
+
+// Reset all data
+if(isset($_POST['reset'])){
+	file_put_contents("data.txt", "");
+	echo "All Data removed<br/>";
+}
+?>
+
+</body>
+</html>
+\end{php}
+
+\newpage
+
+\subsection{Worker}
+The Worker node, displays CPU load, analyzes data and displays results. 
+
+\subsubsection{load.php}
+The "load.php" uses the PHP method : $sys_getloadavg()$ to get the system CPU load and displays it.
+\begin{php}
+<?php
+// Display CPU load
+$load = sys_getloadavg();
+echo $load[0];
+?>
+\end{php}
+
+\subsubsection{manager.php}
+The "manager.php" sets the Master IP address for data verification. It also displays the current set IP address of the Master which is saved in the configuration file (config.txt).
+\begin{php}
+<html>
+<head><title>HealthKeeper - Manager</title>
+</head>
+<body>
+<?php
+if(isset($_POST['ip'])){
+	// Set Master IP
+	$file = fopen("config.txt", "w+");
+	$k = "Master IP : ".$_POST['ip'];
+	echo "Master IP Set to : ".$_POST['ip'].PHP_EOL;
+	fwrite($file, $k);
+	fclose($file);	
+	
+}
+else{
+	echo "Set Master IP here".PHP_EOL;
+	$file = fopen("config.txt", "r");
+	$k = fgets($file);
+	echo $k.PHP_EOL;
+	// Form to input Master IP
+	echo "
+	<form id='ip' method='post'>
+	<input type='text' name='ip' id='ip'  maxlength=\"500\" />
+	</form>";
+	echo 	"<form id='Change IP' method='post'>
+	<input type='submit' name='Change IP' value='Change IP' />
+	</form>";
+	fclose($file);
+
+}
+?>
+</body>
+</html>
+\end{php}
+
+\subsubsection{worker.php}
+The "worker.php" script receives data to be analyzed using the GET method. It saves the data in "data.txt" and sets the first line to "Analysis Done = false". The Java based analysis application parses this data, saves results in "result.txt" and changes the first line of "data.txt" to "Analysis Done = true". This script once data has been written waits for the first line to change to "Analysis Done = true", and when so parses the result file. The result file's first line contains two parameters for analysis:
+\begin{enumerate}
+\item Number of times the oxygen level went below 88
+\item Least oxygen level
+\end{enumerate}
+The current analysis scheme determines the disease severity on the basis of the following thresholds of the first parameter:
+\begin{itemize}
+\item < 5 : None
+\item between 5 and 15 : Mild
+\item between 15 and 30 : Moderate
+\item > 30 : Highly severe
+\end{itemize}
+
+\begin{php}
+<html>
+<head><title>HealthKeeper - Worker</title></head>
+<body>
+
+<?php
+if(isset($_GET['data'])){
+	
+	// Write Data to file
+	$content = $_GET['data'];
+	$file = fopen("data.txt", "w+");
+	fwrite($file, "Analysis Done = false".PHP_EOL);
+	fwrite($file,$content.PHP_EOL);
+	fclose($file);
+
+	// Wait for analysis done
+	$file = fopen("data.txt", "r");
+	$k = fgets($file);
+	while(!preg_match("/Analysis Done = true/", $k)){
+		fclose($file);
+		$file = fopen("data.txt", "r");
+		$k = fgets($file);
+		usleep(500000);
+	}
+	fclose($file);	
+	
+	// Read results and display
+	$file1 = fopen("result.txt", "r");
+	$result = fgets($file1);
+	$array = explode(",", $result);
+	$count = (int)$array[0];
+	$min = (int)$array[1];
+	echo "For 1 hour of sleep data<br />";
+	echo "AHI (Apnea-hypopnea index) = ".$count."<br />";
+	echo "Minimum Oxygen Level reached : ".$min."<br />";
+	$sev = "";
+	if($count < 5){
+		$sev = "None";
+	}
+	elseif($count < 15){
+		$sev = "mild";
+	}
+	elseif($count < 30){
+		$sev = "moderate";	
+	}
+	else{
+		$sev = "Highly severe!";	
+	}
+	echo "Disease severity : ".$sev;			
+}
+?>
+</body>
+</html>
+\end{php}
+
+\section{Data Analyzer}
+The "Sleep Apnea Analyzer" code is developed in Java. The code shown below is the complete code for the data analysis. There is one fileReader for "data.txt" and two fileWriters, one for "result.txt" and other for "data.txt". The whole working code is inside a while(true) loop so that it works indefinitely. The data fileReader waits for the first line of data to turn to "Analysis Done = false" at time gaps of 500 milliseconds, which means that the worker php script has written new data for analysis. It checks this using the bufferedReader.readLine() method. \\ \\
+Next, when the new data is found in the data file, it parses it and splits the string with "," as a delimiter, and converts all strings to integers. The analysis is done using in the following way:
+\begin{itemize}
+\item There is a $dip$ boolean variable, which stores whether there is a dip in oxygen level, a $count$ which stores the number of times $dip$ changes to true and a $min$ which stores minimum oxygen level
+\item Whenever the oxygen level goes below 88, $dip$ turns to true and stays true till oxygen level comes above 88.
+\item This count becomes the AHI (Apnea - Hypopnea Index), used to determine the disease severity
+\end{itemize}
+Once done, the result is written to the result file, and the first line of data fie is changed to "Analysis Done = true" indicating the worker script to take results from the result file.\\
+\begin{java}
+import java.io.*;
+import java.util.*;
+import static java.lang.Integer.parseInt;
+
+public class analyzer{
+
+	public static void main(String[] args) throws Exception {
+		int i;
+		FileReader fileReader = new FileReader("data.txt");
+		FileWriter resultfile = new FileWriter("result.txt");
+		FileWriter datafile;
+		BufferedWriter resultwriter;
+		BufferedWriter datawriter;
+		BufferedReader bufferedReader;
+		String line = "empty";
+		String line2 = "empty";
+		int count;
+		int min;
+		boolean dip;
+		BufferedWriter writer;
+		String[] datastring;
+		Integer[] data;
+
+		while(true){
+
+			// Wait for analysis false
+			bufferedReader = new BufferedReader(fileReader);
+			while(true){
+				fileReader = new FileReader("data.txt");
+				bufferedReader = new BufferedReader(fileReader);
+				line = bufferedReader.readLine();
+				System.out.println(line);
+				if(line.equals("Analysis Done = false")){
+					break;
+				}
+				Thread.sleep(500);
+			}
+
+			line2 = bufferedReader.readLine();
+			System.out.println(line);
+			System.out.println(line2);
+			bufferedReader.close();
+	
+			// parse data
+			datastring = line2.split(",");
+			data = new Integer[datastring.length];
+			i=0;
+    		for(String str:datastring){
+        		data[i]=Integer.parseInt(str);
+        		i++;
+    		}
+
+    		// Analyze data
+    		count = 0;
+    		min = 100;
+    		dip = false;
+    		for(int j = 0; j < data.length; j++){
+    			if(data[j] <= 88 && !dip){
+    				count++;
+    				dip = true;
+    			}
+    			else if(data[j] > 88 && dip){
+    				dip = false;
+    			}
+    			if(min > data[j]){
+    				min = data[j];
+    			}
+    		}
+
+    	// Write results to file
+		resultfile = new FileWriter("result.txt");
+		resultwriter = new BufferedWriter(resultfile);
+		datafile = new FileWriter("data.txt");
+		datawriter = new BufferedWriter(datafile);
+		resultwriter.write(count+","+min);
+		resultwriter.newLine();
+        	resultwriter.write(line2.substring(1,line2.length())+"\n");
+        	datawriter.write("Analysis Done = true");
+		datawriter.newLine();    		
+		datawriter.write(line2.substring(1,line2.length())+"\n");
+		resultwriter.close();
+		datawriter.close();
+		System.out.println("Data Analysis Done!");
+		}
+	}
+}
+\end{java}
+
+\section{Android Interface}
+
+\section{Functionalities of the Software}
+
+\section{Further Scope of developments}
+\end{document}
