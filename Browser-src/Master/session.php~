@@ -35,7 +35,7 @@ echo "Connected Device : ".$device;
 
 
 <!-- Submit for analysis -->
-<form id='data' method='post'>
+<form id='data' method='get'>
 <input type='text' name='data' id='data'  maxlength="500" />
 <input type='submit' name='analyze' value='analyze' />
 </form>
@@ -43,10 +43,10 @@ echo "Connected Device : ".$device;
 <?php
 
 // If data entered, show the data values stored in data.txt
-if(isset($_POST['data'])){
+if(isset($_GET['data'])){
 
 	$file = fopen("data.txt", "a");
-	$content = $_POST['data'];
+	$content = $_GET['data'];
 	echo "Data Values Stored : ";
 	echo $content;
 	if(0==filesize("data.txt")){
@@ -64,9 +64,9 @@ if(isset($_POST['data'])){
 <?php
 
 // If Analyze is clicked
-if(isset($_POST['analyze'])){
+if(isset($_GET['analyze'])){
 
-	$content = $_POST['data'];
+	$content = $_GET['data'];
 	
 	// Parse config.txt for IPs 
 	$file = fopen("config.txt", "r");
@@ -122,14 +122,14 @@ if(isset($_POST['analyze'])){
 		// Send data
 		echo "<br/><br/>Work sent to Worker ".($minindex+1)." with IP address : ".$ipworker."<br/><br/>";	
 		// Get result and store in $result variable
-		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/worker.php/?data='.$_POST['data']);
+		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/worker.php/?data='.$_GET['data']);
 	}
 	else {
 		// Work done by master
 		$minindex = 0;
 		$ipworker = "localhost";	
 		echo "<br/><br/>Work Done by Master<br/><br/>";
-		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/RPi/Worker/worker.php/?data='.$_POST['data']);
+		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/RPi/Worker/worker.php/?data='.$_GET['data']);
 	}
 	
 	echo $result;
@@ -175,7 +175,7 @@ chart.render();
  
 }
 </script>
-<div id="chartContainer" style="height: 370px; width: 50%;"></div>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 <form id='data' method='post'>
