@@ -1,3 +1,9 @@
+<!-- 
+	Coded By:
+	Shreshth Tuli
+-->
+
+
 <html>
 <head><title>HealthKeeper - Manager</title>
 </head>
@@ -19,6 +25,7 @@ else{
 	$file = fopen("config.txt", "r");
 	$k = fgets($file);
 	echo $k.PHP_EOL;
+	// Form to input Master IP
 	echo "
 	<form id='ip' method='post'>
 	<input type='text' name='ip' id='ip'  maxlength=\"500\" />

@@ -1,3 +1,8 @@
+<!-- 
+	Coded By:
+	Shreshth Tuli
+-->
+
 <?php
 
 // Display CPU load

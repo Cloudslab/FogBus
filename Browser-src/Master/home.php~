@@ -38,7 +38,7 @@ elseif(isset($_POST['session'])) {
 	header('Location: ../session.php/?username='.$user); 
 }
 elseif(isset($_POST['back'])) {
-	header('Location: ../index.php/'); 
+	header('Location: ../'); 
 }
 
 ?>
