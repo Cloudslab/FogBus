@@ -36,9 +36,13 @@ public class analyzer{
 				bufferedReader = new BufferedReader(fileReader);
 				line = bufferedReader.readLine();
 				System.out.println(line);
-				if(line.equals("Analysis Done = false")){
-					break;
+				try{
+					if(line.equals("Analysis Done = false")){
+						break;
+					}
 				}
+				catch(Exception e){}
+
 				Thread.sleep(500);
 			}
 
@@ -51,45 +55,57 @@ public class analyzer{
 			datastring = line2.split(",");
 			data = new Integer[datastring.length];
 			i=0;
-    		for(String str:datastring){
-        		data[i]=Integer.parseInt(str);
-        		i++;
-    		}
+			try{
+				for(String str:datastring){
+        			data[i]=Integer.parseInt(str);
+        			i++;
+    			}
+			}
+			catch(Exception e){}
 
     		// Analyze data
     		count = 0;
     		min = 100;
     		dip = false;
-    		for(int j = 0; j < data.length; j++){
-    			if(data[j] <= 88 && !dip){
-    				count++;
-    				dip = true;
+    		System.out.println("Number of data values :"+data.length);
+    		if(data.length != 1){
+    			for(int j = 0; j < data.length; j++){
+    				if(data[j] <= 88 && !dip){
+    					count++;
+    					dip = true;
+    				}
+    				else if(data[j] > 88 && dip){
+    					dip = false;
+    				}
+    				if(min > data[j]){
+    					min = data[j];
+    				}
     			}
-    			else if(data[j] > 88 && dip){
-    				dip = false;
-    			}
-    			if(min > data[j]){
-    				min = data[j];
-    			}
+
+    			// Write results to file
+				resultfile = new FileWriter("result.txt");
+				resultwriter = new BufferedWriter(resultfile);
+				datafile = new FileWriter("data.txt");
+				datawriter = new BufferedWriter(datafile);
+			
+		    	resultwriter.write(count+","+min);
+				resultwriter.newLine();
+		    	resultwriter.write(line2.substring(1,line2.length())+"\n");
+
+		    	datawriter.write("Analysis Done = true");
+				datawriter.newLine();    		
+				datawriter.write(line2.substring(1,line2.length())+"\n");
+				resultwriter.close();
+				datawriter.close();
+
+				System.out.println("Data Analysis Done!");
+    		}
+    		else{
+    			System.out.println("Empty Data");
     		}
 
-    		// Write results to file
-		resultfile = new FileWriter("result.txt");
-		resultwriter = new BufferedWriter(resultfile);
-		datafile = new FileWriter("data.txt");
-		datawriter = new BufferedWriter(datafile);
-	
-    		resultwriter.write(count+","+min);
-		resultwriter.newLine();
-    		resultwriter.write(line2.substring(1,line2.length())+"\n");
 
-    		datawriter.write("Analysis Done = true");
-		datawriter.newLine();    		
-		datawriter.write(line2.substring(1,line2.length())+"\n");
-		resultwriter.close();
-		datawriter.close();
 
-		System.out.println("Data Analysis Done!");
 		}
 
 		
