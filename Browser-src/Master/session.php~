@@ -24,21 +24,7 @@ else{
 
 ?>
 
-<!-- Connect to bluetooth device -->
-Connect to Bluetooth Device:
-
-<form>
-<input type='submit' name='Pair Device' value='Pair Device' />
-</form>
-
-<?php
-
-$device = "Pulse Oximeter";
-echo "Connected Device : ".$device;
-
-?>
-
-
+Enter data for analysis:
 <!-- Submit for analysis -->
 <form id='data' method='get'>
 <input type='text' name='data' id='data'  maxlength="500" />
