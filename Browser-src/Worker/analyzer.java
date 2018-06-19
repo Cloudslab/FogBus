@@ -102,6 +102,7 @@ public class analyzer{
     		}
     		else{
     			System.out.println("Empty Data");
+    			Thread.sleep(500);
     		}
 
 

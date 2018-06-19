@@ -24,7 +24,7 @@ else{
 
 ?>
 
-Enter data for analysis:
+Enter Data for analysis:
 <!-- Submit for analysis -->
 <form id='data' method='get'>
 <input type='text' name='data' id='data'  maxlength="500" />
