@@ -18,6 +18,7 @@ sudo cp ../Browser-src/Worker/* /var/www/html/HealthKeeper/
 sudo chmod 777 /var/www/html/HeathKeeper/*
 cd /var/www/html/HealthKeeper/
 javac ./analyzer.java
+echo ".................................."
 echo "Successfully Installed Raspi-Fog"
 echo "Note the worker IP address :"
 hostname -I
