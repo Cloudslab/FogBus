@@ -75,7 +75,13 @@ echo "Master IP address : ".$localIP;
 
 <?php
 
+if(isset($_GET['username']))
+{
 $user = $_GET['username'];
+}
+else{
+$user = '';
+}
 
 if(isset($_POST['back'])) {
 	header('Location: ../home.php/?username='.$user); 

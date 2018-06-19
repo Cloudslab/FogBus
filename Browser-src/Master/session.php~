@@ -1,3 +1,8 @@
+<!-- 
+	Coded By:
+	Shreshth Tuli
+-->
+
 <html>
 <head><title>HealthKeeper - Login</title></head>
 <body>
@@ -88,10 +93,15 @@ if(isset($_GET['analyze'])){
 	// For each IP, get load from load.php
 	foreach($ips as $ip){
 		$ip = preg_replace('/\s+/', '', $ip);
-		$dataFromExternalServer=file_get_contents("http://".$ip."/HealthKeeper/load.php"); 
-		$dataFromExternalServer = preg_replace('/\s+/', '', $dataFromExternalServer);		
-		$my_var = 0.0 + $dataFromExternalServer;
-		echo "<br/>Woker load with IP ".$ip.": ".$my_var;
+		$dataFromExternalServer = @file_get_contents("http://".$ip."/HealthKeeper/load.php");
+		if($dataFromExternalServer != FALSE){
+			$dataFromExternalServer = preg_replace('/\s+/', '', $dataFromExternalServer);	
+			$my_var = 0.0 + $dataFromExternalServer;
+			echo "<br/>Woker load with IP ".$ip.": ".$my_var;
+		} else{
+			$my_var = 100;
+			echo "<br/>Woker with IP ".$ip.": compromised - Error \"Could not connect to fog node\"";
+		}
 		array_push($loads, $my_var);	
 		// If any load < 80% then toMaser = false
 	  	if($my_var <= 0.8){
