@@ -3,8 +3,8 @@ apt-get update
 apt-get upgrade -y
 apt-get install oracle-java8-jdk -y
 apt-get install ant git vim -y
-echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
 apt-get install apache2 -y
+echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
 apache2ctl configtest
 apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
 service apache2 restart
