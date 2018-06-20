@@ -23,6 +23,6 @@ echo "Note the worker IP address :"
 hostname -I
 echo "Press Enter to run"
 read
-chromium-browser localhost/HealthKeeper/manager.php &
+chromium-browser localhost/HealthKeeper/manager.php --no-sandbox &
 java analyzer
 

@@ -26,6 +26,6 @@ echo "Note the Master IP address :"
 hostname -I
 echo "Configure Database as described in End-User Tutorial then press Enter to run"
 read
-chromium-browser localhost/HealthKeeper/RPi/Master/ &
+chromium-browser localhost/HealthKeeper/RPi/Master/ --no-sandbox &
 java analyzer
 
