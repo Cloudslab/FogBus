@@ -14,7 +14,7 @@ echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
 service apache2 restart
 sudo mkdir /var/www/html/HealthKeeper/
 sudo chmod -R 777 /var/www/html/HealthKeeper/
-sudo cp ../Browser-src/Worker/* /var/www/html/HealthKeeper/
+sudo cp ./Raspi-Fog/Browser-src/Worker/* /var/www/html/HealthKeeper/
 sudo chmod 777 /var/www/html/HeathKeeper/*
 cd /var/www/html/HealthKeeper/
 javac ./analyzer.java
