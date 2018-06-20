@@ -10,7 +10,6 @@ apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
 service apache2 restart
 apt-get install mysql-server -y
 mysql -u root -praspberry -e "CREATE DATABASE data;GRANT ALL PRIVILEGES ON data.* TO 'root'@'localhost' IDENTIFIED BY 'raspberry';FLUSH PRIVILEGES;"
-echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
 service apache2 restart
 sudo mkdir /var/www/html/HealthKeeper/
 sudo chmod -R 777 /var/www/html/HealthKeeper/
