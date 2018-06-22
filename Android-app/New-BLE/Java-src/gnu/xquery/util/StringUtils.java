@@ -90,12 +90,12 @@ public class StringUtils {
         if (d2 <= d1) {
             return "";
         }
-        char ch;
         int i1 = (int) d1;
         int i2 = ((int) d2) - i1;
         int offset = 0;
         while (true) {
             int offset2;
+            char ch;
             i1--;
             if (i1 < 0) {
                 break;

@@ -51,10 +51,10 @@ public class TracedProcedure extends ProcedureN {
     }
 
     public Object applyN(Object[] args) throws Throwable {
+        int curIndent;
         if (!this.enabled) {
             return this.proc.applyN(args);
         }
-        int curIndent;
         Location curIndentLoc = Environment.getCurrent().getLocation(curIndentSym);
         Object oldIndent = curIndentLoc.get(null);
         if (oldIndent instanceof IntNum) {

@@ -52,209 +52,223 @@ import kawa.standard.Scheme;
 public class Login extends Form implements Runnable {
     static final SimpleSymbol Lit0 = ((SimpleSymbol) new SimpleSymbol("Login").readResolve());
     static final SimpleSymbol Lit1 = ((SimpleSymbol) new SimpleSymbol("getMessage").readResolve());
-    static final SimpleSymbol Lit10 = ((SimpleSymbol) new SimpleSymbol("g$numbers").readResolve());
-    static final PairWithPosition Lit100 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410038), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410032);
-    static final PairWithPosition Lit101 = PairWithPosition.make(Lit203, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410296);
-    static final PairWithPosition Lit102 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410343), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410338), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410332);
-    static final PairWithPosition Lit103 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410373), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410367);
-    static final PairWithPosition Lit104 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410397), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410391);
-    static final PairWithPosition Lit105 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410414);
-    static final SimpleSymbol Lit106 = ((SimpleSymbol) new SimpleSymbol("stop$Click").readResolve());
-    static final FString Lit107 = new FString("com.google.appinventor.components.runtime.Label");
-    static final SimpleSymbol Lit108 = ((SimpleSymbol) new SimpleSymbol("spo2").readResolve());
-    static final SimpleSymbol Lit109 = ((SimpleSymbol) new SimpleSymbol("TextAlignment").readResolve());
-    static final PairWithPosition Lit11 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 53641);
-    static final SimpleSymbol Lit110 = ((SimpleSymbol) new SimpleSymbol("TextColor").readResolve());
-    static final IntNum Lit111;
-    static final FString Lit112 = new FString("com.google.appinventor.components.runtime.Label");
-    static final FString Lit113 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final SimpleSymbol Lit114 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement3").readResolve());
-    static final FString Lit115 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final FString Lit116 = new FString("com.google.appinventor.components.runtime.Label");
-    static final SimpleSymbol Lit117 = ((SimpleSymbol) new SimpleSymbol("device").readResolve());
-    static final IntNum Lit118 = IntNum.make(-1050);
-    static final IntNum Lit119;
-    static final PairWithPosition Lit12 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 53641);
-    static final FString Lit120 = new FString("com.google.appinventor.components.runtime.Label");
+    static final SimpleSymbol Lit10 = ((SimpleSymbol) new SimpleSymbol("g$utf").readResolve());
+    static final FString Lit100 = new FString("com.google.appinventor.components.runtime.Button");
+    static final PairWithPosition Lit101 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418193), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418187);
+    static final PairWithPosition Lit102 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418230), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418224);
+    static final PairWithPosition Lit103 = PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418545);
+    static final PairWithPosition Lit104 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418592), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418587), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418581);
+    static final PairWithPosition Lit105 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418622), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418616);
+    static final PairWithPosition Lit106 = PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418845);
+    static final PairWithPosition Lit107 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418892), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418887), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418881);
+    static final PairWithPosition Lit108 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418922), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418916);
+    static final PairWithPosition Lit109 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418946), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418940);
+    static final PairWithPosition Lit11 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 49422);
+    static final PairWithPosition Lit110 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418970), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418964);
+    static final PairWithPosition Lit111 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 418987);
+    static final SimpleSymbol Lit112 = ((SimpleSymbol) new SimpleSymbol("stop$Click").readResolve());
+    static final FString Lit113 = new FString("com.google.appinventor.components.runtime.Label");
+    static final SimpleSymbol Lit114 = ((SimpleSymbol) new SimpleSymbol("data").readResolve());
+    static final SimpleSymbol Lit115 = ((SimpleSymbol) new SimpleSymbol("TextAlignment").readResolve());
+    static final SimpleSymbol Lit116 = ((SimpleSymbol) new SimpleSymbol("TextColor").readResolve());
+    static final IntNum Lit117;
+    static final FString Lit118 = new FString("com.google.appinventor.components.runtime.Label");
+    static final FString Lit119 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
+    static final PairWithPosition Lit12 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 49422);
+    static final SimpleSymbol Lit120 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement3").readResolve());
     static final FString Lit121 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final SimpleSymbol Lit122 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement4").readResolve());
-    static final IntNum Lit123 = IntNum.make(-1050);
-    static final FString Lit124 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final FString Lit125 = new FString("com.google.appinventor.components.runtime.Label");
-    static final IntNum Lit126;
-    static final FString Lit127 = new FString("com.google.appinventor.components.runtime.Label");
-    static final FString Lit128 = new FString("com.google.appinventor.components.runtime.Label");
-    static final SimpleSymbol Lit129 = ((SimpleSymbol) new SimpleSymbol("Label4").readResolve());
-    static final SimpleSymbol Lit13 = ((SimpleSymbol) new SimpleSymbol("g$value").readResolve());
-    static final IntNum Lit130;
+    static final FString Lit122 = new FString("com.google.appinventor.components.runtime.Label");
+    static final SimpleSymbol Lit123 = ((SimpleSymbol) new SimpleSymbol("device").readResolve());
+    static final IntNum Lit124 = IntNum.make(-1050);
+    static final IntNum Lit125;
+    static final FString Lit126 = new FString("com.google.appinventor.components.runtime.Label");
+    static final FString Lit127 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
+    static final SimpleSymbol Lit128 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement4").readResolve());
+    static final IntNum Lit129 = IntNum.make(-1050);
+    static final SimpleSymbol Lit13 = ((SimpleSymbol) new SimpleSymbol("g$numbers").readResolve());
+    static final FString Lit130 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
     static final FString Lit131 = new FString("com.google.appinventor.components.runtime.Label");
-    static final FString Lit132 = new FString("com.google.appinventor.components.runtime.Label");
-    static final IntNum Lit133;
+    static final IntNum Lit132;
+    static final FString Lit133 = new FString("com.google.appinventor.components.runtime.Label");
     static final FString Lit134 = new FString("com.google.appinventor.components.runtime.Label");
-    static final FString Lit135 = new FString("com.google.appinventor.components.runtime.Label");
-    static final SimpleSymbol Lit136 = ((SimpleSymbol) new SimpleSymbol("Label6").readResolve());
-    static final IntNum Lit137;
+    static final SimpleSymbol Lit135 = ((SimpleSymbol) new SimpleSymbol("Label4").readResolve());
+    static final IntNum Lit136;
+    static final FString Lit137 = new FString("com.google.appinventor.components.runtime.Label");
     static final FString Lit138 = new FString("com.google.appinventor.components.runtime.Label");
-    static final FString Lit139 = new FString("com.google.appinventor.components.runtime.Label");
-    static final IntNum Lit14 = IntNum.make(0);
-    static final IntNum Lit140;
+    static final IntNum Lit139;
+    static final PairWithPosition Lit14 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 53641);
+    static final FString Lit140 = new FString("com.google.appinventor.components.runtime.Label");
     static final FString Lit141 = new FString("com.google.appinventor.components.runtime.Label");
-    static final FString Lit142 = new FString("com.google.appinventor.components.runtime.Button");
-    static final SimpleSymbol Lit143 = ((SimpleSymbol) new SimpleSymbol("analyze").readResolve());
-    static final FString Lit144 = new FString("com.google.appinventor.components.runtime.Button");
-    static final PairWithPosition Lit145 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811349), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811343);
-    static final PairWithPosition Lit146 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811386), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811380);
-    static final PairWithPosition Lit147 = PairWithPosition.make(Lit203, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811699);
-    static final PairWithPosition Lit148 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811746), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811741), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811735);
-    static final PairWithPosition Lit149 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811776), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811770);
-    static final SimpleSymbol Lit15 = ((SimpleSymbol) new SimpleSymbol("g$data").readResolve());
-    static final PairWithPosition Lit150 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811819), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811813);
-    static final PairWithPosition Lit151 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811843), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811837);
-    static final PairWithPosition Lit152 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 811860);
-    static final SimpleSymbol Lit153 = ((SimpleSymbol) new SimpleSymbol("analyze$Click").readResolve());
-    static final FString Lit154 = new FString("edu.mit.appinventor.ble.BluetoothLE");
-    static final FString Lit155 = new FString("edu.mit.appinventor.ble.BluetoothLE");
-    static final SimpleSymbol Lit156 = ((SimpleSymbol) new SimpleSymbol("ConnectWithAddress").readResolve());
-    static final PairWithPosition Lit157 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 839785);
-    static final SimpleSymbol Lit158 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$DeviceFound").readResolve());
-    static final SimpleSymbol Lit159 = ((SimpleSymbol) new SimpleSymbol("DeviceFound").readResolve());
-    static final SimpleSymbol Lit16 = ((SimpleSymbol) new SimpleSymbol("g$url").readResolve());
-    static final SimpleSymbol Lit160 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$Connected").readResolve());
-    static final SimpleSymbol Lit161 = ((SimpleSymbol) new SimpleSymbol("Connected").readResolve());
-    static final SimpleSymbol Lit162 = ((SimpleSymbol) new SimpleSymbol("$stringValues").readResolve());
-    static final PairWithPosition Lit163 = PairWithPosition.make(Lit203, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856214);
-    static final PairWithPosition Lit164 = PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856241);
-    static final PairWithPosition Lit165 = PairWithPosition.make(Lit203, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856536);
-    static final PairWithPosition Lit166 = PairWithPosition.make(Lit40, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856573), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856565);
-    static final PairWithPosition Lit167 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856594), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856588);
-    static final PairWithPosition Lit168 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856800);
-    static final PairWithPosition Lit169 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit40, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856834), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856827), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 856821);
-    static final IntNum Lit17 = IntNum.make(1);
-    static final PairWithPosition Lit170 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 857067), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 857061);
-    static final PairWithPosition Lit171 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 857096), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 857090);
-    static final SimpleSymbol Lit172 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$StringsReceived").readResolve());
-    static final SimpleSymbol Lit173 = ((SimpleSymbol) new SimpleSymbol("StringsReceived").readResolve());
-    static final FString Lit174 = new FString("com.google.appinventor.components.runtime.Clock");
-    static final FString Lit175 = new FString("com.google.appinventor.components.runtime.Clock");
-    static final PairWithPosition Lit176 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit204, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 884883), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 884877);
-    static final PairWithPosition Lit177;
-    static final PairWithPosition Lit178 = PairWithPosition.make(Lit40, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885239), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885231);
-    static final IntNum Lit179 = IntNum.make(60);
-    static final PairWithPosition Lit18 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65820), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65814);
-    static final PairWithPosition Lit180 = PairWithPosition.make(Lit40, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885266), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885258);
-    static final IntNum Lit181 = IntNum.make(59);
-    static final PairWithPosition Lit182 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885381), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885375);
-    static final PairWithPosition Lit183 = PairWithPosition.make(Lit40, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885572), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885564);
-    static final PairWithPosition Lit184 = PairWithPosition.make(Lit40, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885599), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885591);
-    static final PairWithPosition Lit185;
-    static final PairWithPosition Lit186 = PairWithPosition.make(Lit40, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885904), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885896);
-    static final IntNum Lit187 = IntNum.make(24);
-    static final PairWithPosition Lit188;
-    static final SimpleSymbol Lit189 = ((SimpleSymbol) new SimpleSymbol("Clock1$Timer").readResolve());
-    static final PairWithPosition Lit19 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65857), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65851);
-    static final SimpleSymbol Lit190 = ((SimpleSymbol) new SimpleSymbol("Timer").readResolve());
-    static final SimpleSymbol Lit191 = ((SimpleSymbol) new SimpleSymbol("android-log-form").readResolve());
-    static final SimpleSymbol Lit192 = ((SimpleSymbol) new SimpleSymbol("add-to-form-environment").readResolve());
-    static final SimpleSymbol Lit193 = ((SimpleSymbol) new SimpleSymbol("lookup-in-form-environment").readResolve());
-    static final SimpleSymbol Lit194 = ((SimpleSymbol) new SimpleSymbol("is-bound-in-form-environment").readResolve());
-    static final SimpleSymbol Lit195 = ((SimpleSymbol) new SimpleSymbol("add-to-global-var-environment").readResolve());
-    static final SimpleSymbol Lit196 = ((SimpleSymbol) new SimpleSymbol("add-to-events").readResolve());
-    static final SimpleSymbol Lit197 = ((SimpleSymbol) new SimpleSymbol("add-to-components").readResolve());
-    static final SimpleSymbol Lit198 = ((SimpleSymbol) new SimpleSymbol("add-to-global-vars").readResolve());
-    static final SimpleSymbol Lit199 = ((SimpleSymbol) new SimpleSymbol("add-to-form-do-after-creation").readResolve());
+    static final SimpleSymbol Lit142 = ((SimpleSymbol) new SimpleSymbol("Label6").readResolve());
+    static final IntNum Lit143;
+    static final FString Lit144 = new FString("com.google.appinventor.components.runtime.Label");
+    static final FString Lit145 = new FString("com.google.appinventor.components.runtime.Label");
+    static final IntNum Lit146;
+    static final FString Lit147 = new FString("com.google.appinventor.components.runtime.Label");
+    static final FString Lit148 = new FString("com.google.appinventor.components.runtime.Button");
+    static final SimpleSymbol Lit149 = ((SimpleSymbol) new SimpleSymbol("analyze").readResolve());
+    static final PairWithPosition Lit15 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 53641);
+    static final FString Lit150 = new FString("com.google.appinventor.components.runtime.Button");
+    static final PairWithPosition Lit151 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819541), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819535);
+    static final PairWithPosition Lit152 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819578), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819572);
+    static final PairWithPosition Lit153 = PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819948);
+    static final PairWithPosition Lit154 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819995), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819990), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 819984);
+    static final PairWithPosition Lit155 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820025), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820019);
+    static final PairWithPosition Lit156 = PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820248);
+    static final PairWithPosition Lit157 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820295), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820290), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820284);
+    static final PairWithPosition Lit158 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820325), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820319);
+    static final PairWithPosition Lit159 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820349), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820343);
+    static final SimpleSymbol Lit16 = ((SimpleSymbol) new SimpleSymbol("g$value1").readResolve());
+    static final PairWithPosition Lit160 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820392), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820386);
+    static final PairWithPosition Lit161 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820416), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820410);
+    static final PairWithPosition Lit162 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 820433);
+    static final SimpleSymbol Lit163 = ((SimpleSymbol) new SimpleSymbol("analyze$Click").readResolve());
+    static final FString Lit164 = new FString("edu.mit.appinventor.ble.BluetoothLE");
+    static final FString Lit165 = new FString("edu.mit.appinventor.ble.BluetoothLE");
+    static final SimpleSymbol Lit166 = ((SimpleSymbol) new SimpleSymbol("ConnectWithAddress").readResolve());
+    static final PairWithPosition Lit167 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 847977);
+    static final SimpleSymbol Lit168 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$DeviceFound").readResolve());
+    static final SimpleSymbol Lit169 = ((SimpleSymbol) new SimpleSymbol("DeviceFound").readResolve());
+    static final IntNum Lit17 = IntNum.make(0);
+    static final SimpleSymbol Lit170 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$Connected").readResolve());
+    static final SimpleSymbol Lit171 = ((SimpleSymbol) new SimpleSymbol("Connected").readResolve());
+    static final SimpleSymbol Lit172 = ((SimpleSymbol) new SimpleSymbol("$stringValues").readResolve());
+    static final PairWithPosition Lit173 = PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864406);
+    static final PairWithPosition Lit174 = PairWithPosition.make(Lit44, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864433);
+    static final PairWithPosition Lit175 = PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864728);
+    static final PairWithPosition Lit176 = PairWithPosition.make(Lit42, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864765), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864757);
+    static final PairWithPosition Lit177 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864786), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864780);
+    static final PairWithPosition Lit178 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 864992);
+    static final PairWithPosition Lit179 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit42, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865026), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865019), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865013);
+    static final SimpleSymbol Lit18 = ((SimpleSymbol) new SimpleSymbol("g$value2").readResolve());
+    static final PairWithPosition Lit180 = PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865313);
+    static final PairWithPosition Lit181 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865346), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865340);
+    static final PairWithPosition Lit182 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865626), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865620);
+    static final PairWithPosition Lit183 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865737), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865731);
+    static final PairWithPosition Lit184 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865761), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 865755);
+    static final SimpleSymbol Lit185 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$StringsReceived").readResolve());
+    static final SimpleSymbol Lit186 = ((SimpleSymbol) new SimpleSymbol("StringsReceived").readResolve());
+    static final FString Lit187 = new FString("com.google.appinventor.components.runtime.Clock");
+    static final FString Lit188 = new FString("com.google.appinventor.components.runtime.Clock");
+    static final PairWithPosition Lit189 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit218, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893077), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893071);
+    static final SimpleSymbol Lit19 = ((SimpleSymbol) new SimpleSymbol("g$data1").readResolve());
+    static final PairWithPosition Lit190 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit218, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893213), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893207);
+    static final PairWithPosition Lit191;
+    static final PairWithPosition Lit192 = PairWithPosition.make(Lit42, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893569), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893561);
+    static final IntNum Lit193 = IntNum.make(60);
+    static final PairWithPosition Lit194 = PairWithPosition.make(Lit42, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893596), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893588);
+    static final IntNum Lit195 = IntNum.make(59);
+    static final PairWithPosition Lit196 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893711), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893705);
+    static final PairWithPosition Lit197 = PairWithPosition.make(Lit42, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893902), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893894);
+    static final PairWithPosition Lit198 = PairWithPosition.make(Lit42, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893929), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893921);
+    static final PairWithPosition Lit199;
     static final SimpleSymbol Lit2 = ((SimpleSymbol) new SimpleSymbol("*the-null-value*").readResolve());
-    static final PairWithPosition Lit20 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65918), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65912);
-    static final SimpleSymbol Lit200 = ((SimpleSymbol) new SimpleSymbol("send-error").readResolve());
-    static final SimpleSymbol Lit201 = ((SimpleSymbol) new SimpleSymbol("dispatchEvent").readResolve());
-    static final SimpleSymbol Lit202 = ((SimpleSymbol) new SimpleSymbol("lookup-handler").readResolve());
-    static final SimpleSymbol Lit203 = ((SimpleSymbol) new SimpleSymbol("list").readResolve());
-    static final SimpleSymbol Lit204 = ((SimpleSymbol) new SimpleSymbol("any").readResolve());
-    static final PairWithPosition Lit21 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65820), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65814);
-    static final PairWithPosition Lit22 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65857), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65851);
-    static final PairWithPosition Lit23 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65918), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 65912);
-    static final SimpleSymbol Lit24 = ((SimpleSymbol) new SimpleSymbol("g$deviceID").readResolve());
-    static final IntNum Lit25 = IntNum.make(2);
-    static final PairWithPosition Lit26 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 69801), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 69795);
-    static final PairWithPosition Lit27 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 69801), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 69795);
-    static final SimpleSymbol Lit28 = ((SimpleSymbol) new SimpleSymbol("g$deviceName").readResolve());
-    static final IntNum Lit29 = IntNum.make(3);
-    static final SimpleSymbol Lit3 = ((SimpleSymbol) new SimpleSymbol("g$utfinput").readResolve());
-    static final PairWithPosition Lit30 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 73899), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 73893);
-    static final PairWithPosition Lit31 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 73899), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 73893);
-    static final SimpleSymbol Lit32 = ((SimpleSymbol) new SimpleSymbol("g$firstval").readResolve());
-    static final SimpleSymbol Lit33 = ((SimpleSymbol) new SimpleSymbol("p$convert").readResolve());
-    static final PairWithPosition Lit34 = PairWithPosition.make(Lit204, PairWithPosition.make(Lit203, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82146), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82141);
-    static final PairWithPosition Lit35 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82177), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82171);
-    static final PairWithPosition Lit36 = PairWithPosition.make(Lit204, PairWithPosition.make(Lit203, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82146), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82141);
-    static final PairWithPosition Lit37 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82177), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 82171);
-    static final SimpleSymbol Lit38 = ((SimpleSymbol) new SimpleSymbol("AccentColor").readResolve());
-    static final IntNum Lit39;
-    static final SimpleSymbol Lit4 = ((SimpleSymbol) new SimpleSymbol("g$numberoutput").readResolve());
-    static final SimpleSymbol Lit40;
-    static final SimpleSymbol Lit41 = ((SimpleSymbol) new SimpleSymbol("ActionBar").readResolve());
+    static final SimpleSymbol Lit20 = ((SimpleSymbol) new SimpleSymbol("g$data2").readResolve());
+    static final PairWithPosition Lit200 = PairWithPosition.make(Lit42, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 894234), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 894226);
+    static final IntNum Lit201 = IntNum.make(24);
+    static final PairWithPosition Lit202;
+    static final SimpleSymbol Lit203 = ((SimpleSymbol) new SimpleSymbol("Clock1$Timer").readResolve());
+    static final SimpleSymbol Lit204 = ((SimpleSymbol) new SimpleSymbol("Timer").readResolve());
+    static final SimpleSymbol Lit205 = ((SimpleSymbol) new SimpleSymbol("android-log-form").readResolve());
+    static final SimpleSymbol Lit206 = ((SimpleSymbol) new SimpleSymbol("add-to-form-environment").readResolve());
+    static final SimpleSymbol Lit207 = ((SimpleSymbol) new SimpleSymbol("lookup-in-form-environment").readResolve());
+    static final SimpleSymbol Lit208 = ((SimpleSymbol) new SimpleSymbol("is-bound-in-form-environment").readResolve());
+    static final SimpleSymbol Lit209 = ((SimpleSymbol) new SimpleSymbol("add-to-global-var-environment").readResolve());
+    static final SimpleSymbol Lit21 = ((SimpleSymbol) new SimpleSymbol("g$url").readResolve());
+    static final SimpleSymbol Lit210 = ((SimpleSymbol) new SimpleSymbol("add-to-events").readResolve());
+    static final SimpleSymbol Lit211 = ((SimpleSymbol) new SimpleSymbol("add-to-components").readResolve());
+    static final SimpleSymbol Lit212 = ((SimpleSymbol) new SimpleSymbol("add-to-global-vars").readResolve());
+    static final SimpleSymbol Lit213 = ((SimpleSymbol) new SimpleSymbol("add-to-form-do-after-creation").readResolve());
+    static final SimpleSymbol Lit214 = ((SimpleSymbol) new SimpleSymbol("send-error").readResolve());
+    static final SimpleSymbol Lit215 = ((SimpleSymbol) new SimpleSymbol("dispatchEvent").readResolve());
+    static final SimpleSymbol Lit216 = ((SimpleSymbol) new SimpleSymbol("lookup-handler").readResolve());
+    static final SimpleSymbol Lit217 = ((SimpleSymbol) new SimpleSymbol("list").readResolve());
+    static final SimpleSymbol Lit218 = ((SimpleSymbol) new SimpleSymbol("any").readResolve());
+    static final IntNum Lit22 = IntNum.make(1);
+    static final PairWithPosition Lit23 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74012), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74006);
+    static final PairWithPosition Lit24 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74049), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74043);
+    static final PairWithPosition Lit25 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74110), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74104);
+    static final PairWithPosition Lit26 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74012), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74006);
+    static final PairWithPosition Lit27 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74049), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74043);
+    static final PairWithPosition Lit28 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74110), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 74104);
+    static final SimpleSymbol Lit29 = ((SimpleSymbol) new SimpleSymbol("g$deviceID").readResolve());
+    static final SimpleSymbol Lit3 = ((SimpleSymbol) new SimpleSymbol("g$deviceName").readResolve());
+    static final IntNum Lit30 = IntNum.make(2);
+    static final PairWithPosition Lit31 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 77993), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 77987);
+    static final PairWithPosition Lit32 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 77993), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 77987);
+    static final SimpleSymbol Lit33 = ((SimpleSymbol) new SimpleSymbol("g$numberoutput").readResolve());
+    static final SimpleSymbol Lit34 = ((SimpleSymbol) new SimpleSymbol("g$firstval").readResolve());
+    static final SimpleSymbol Lit35 = ((SimpleSymbol) new SimpleSymbol("p$convert").readResolve());
+    static final PairWithPosition Lit36 = PairWithPosition.make(Lit218, PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90338), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90333);
+    static final PairWithPosition Lit37 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90369), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90363);
+    static final PairWithPosition Lit38 = PairWithPosition.make(Lit218, PairWithPosition.make(Lit217, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90338), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90333);
+    static final PairWithPosition Lit39 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90369), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 90363);
+    static final IntNum Lit4 = IntNum.make(3);
+    static final SimpleSymbol Lit40 = ((SimpleSymbol) new SimpleSymbol("AccentColor").readResolve());
+    static final IntNum Lit41;
     static final SimpleSymbol Lit42;
-    static final SimpleSymbol Lit43 = ((SimpleSymbol) new SimpleSymbol("AlignHorizontal").readResolve());
-    static final SimpleSymbol Lit44 = ((SimpleSymbol) new SimpleSymbol("AppName").readResolve());
-    static final SimpleSymbol Lit45;
-    static final SimpleSymbol Lit46 = ((SimpleSymbol) new SimpleSymbol("BackgroundColor").readResolve());
-    static final IntNum Lit47;
-    static final SimpleSymbol Lit48 = ((SimpleSymbol) new SimpleSymbol("ShowStatusBar").readResolve());
-    static final SimpleSymbol Lit49 = ((SimpleSymbol) new SimpleSymbol("Sizing").readResolve());
-    static final SimpleSymbol Lit5 = ((SimpleSymbol) new SimpleSymbol("g$service_UUID").readResolve());
-    static final SimpleSymbol Lit50 = ((SimpleSymbol) new SimpleSymbol("Theme").readResolve());
-    static final SimpleSymbol Lit51 = ((SimpleSymbol) new SimpleSymbol("Title").readResolve());
-    static final SimpleSymbol Lit52 = ((SimpleSymbol) new SimpleSymbol("WebViewer1").readResolve());
-    static final SimpleSymbol Lit53 = ((SimpleSymbol) new SimpleSymbol("GoToUrl").readResolve());
-    static final PairWithPosition Lit54 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 143447);
-    static final SimpleSymbol Lit55 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1").readResolve());
-    static final SimpleSymbol Lit56 = ((SimpleSymbol) new SimpleSymbol("StartScanning").readResolve());
-    static final SimpleSymbol Lit57 = ((SimpleSymbol) new SimpleSymbol("Clock1").readResolve());
-    static final SimpleSymbol Lit58 = ((SimpleSymbol) new SimpleSymbol("TimerEnabled").readResolve());
-    static final SimpleSymbol Lit59 = ((SimpleSymbol) new SimpleSymbol("Login$Initialize").readResolve());
-    static final SimpleSymbol Lit6 = ((SimpleSymbol) new SimpleSymbol("g$characteristic_UUID").readResolve());
-    static final SimpleSymbol Lit60 = ((SimpleSymbol) new SimpleSymbol("Initialize").readResolve());
-    static final FString Lit61 = new FString("com.google.appinventor.components.runtime.WebViewer");
-    static final FString Lit62 = new FString("com.google.appinventor.components.runtime.WebViewer");
-    static final FString Lit63 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final SimpleSymbol Lit64 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement1").readResolve());
-    static final SimpleSymbol Lit65 = ((SimpleSymbol) new SimpleSymbol("Width").readResolve());
-    static final IntNum Lit66 = IntNum.make(-2);
-    static final FString Lit67 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final FString Lit68 = new FString("com.google.appinventor.components.runtime.Button");
-    static final SimpleSymbol Lit69 = ((SimpleSymbol) new SimpleSymbol("back").readResolve());
-    static final SimpleSymbol Lit7 = ((SimpleSymbol) new SimpleSymbol("g$utf").readResolve());
-    static final IntNum Lit70 = IntNum.make(-1050);
-    static final SimpleSymbol Lit71 = ((SimpleSymbol) new SimpleSymbol("Text").readResolve());
-    static final FString Lit72 = new FString("com.google.appinventor.components.runtime.Button");
-    static final PairWithPosition Lit73 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 245838);
-    static final SimpleSymbol Lit74 = ((SimpleSymbol) new SimpleSymbol("back$Click").readResolve());
-    static final SimpleSymbol Lit75 = ((SimpleSymbol) new SimpleSymbol("Click").readResolve());
-    static final FString Lit76 = new FString("com.google.appinventor.components.runtime.Button");
-    static final SimpleSymbol Lit77 = ((SimpleSymbol) new SimpleSymbol("logout").readResolve());
-    static final IntNum Lit78 = IntNum.make(-1050);
-    static final FString Lit79 = new FString("com.google.appinventor.components.runtime.Button");
-    static final PairWithPosition Lit8 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 49422);
-    static final PairWithPosition Lit80 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 290903);
-    static final SimpleSymbol Lit81 = ((SimpleSymbol) new SimpleSymbol("logout$Click").readResolve());
-    static final FString Lit82 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final SimpleSymbol Lit83 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement2").readResolve());
+    static final SimpleSymbol Lit43 = ((SimpleSymbol) new SimpleSymbol("ActionBar").readResolve());
+    static final SimpleSymbol Lit44;
+    static final SimpleSymbol Lit45 = ((SimpleSymbol) new SimpleSymbol("AlignHorizontal").readResolve());
+    static final SimpleSymbol Lit46 = ((SimpleSymbol) new SimpleSymbol("AppName").readResolve());
+    static final SimpleSymbol Lit47;
+    static final SimpleSymbol Lit48 = ((SimpleSymbol) new SimpleSymbol("BackgroundColor").readResolve());
+    static final IntNum Lit49;
+    static final PairWithPosition Lit5 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 32939), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 32933);
+    static final SimpleSymbol Lit50 = ((SimpleSymbol) new SimpleSymbol("ShowStatusBar").readResolve());
+    static final SimpleSymbol Lit51 = ((SimpleSymbol) new SimpleSymbol("Sizing").readResolve());
+    static final SimpleSymbol Lit52 = ((SimpleSymbol) new SimpleSymbol("Theme").readResolve());
+    static final SimpleSymbol Lit53 = ((SimpleSymbol) new SimpleSymbol("Title").readResolve());
+    static final SimpleSymbol Lit54 = ((SimpleSymbol) new SimpleSymbol("WebViewer1").readResolve());
+    static final SimpleSymbol Lit55 = ((SimpleSymbol) new SimpleSymbol("GoToUrl").readResolve());
+    static final PairWithPosition Lit56 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 151639);
+    static final SimpleSymbol Lit57 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1").readResolve());
+    static final SimpleSymbol Lit58 = ((SimpleSymbol) new SimpleSymbol("StartScanning").readResolve());
+    static final SimpleSymbol Lit59 = ((SimpleSymbol) new SimpleSymbol("Clock1").readResolve());
+    static final PairWithPosition Lit6 = PairWithPosition.make(Lit217, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 32939), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 32933);
+    static final SimpleSymbol Lit60 = ((SimpleSymbol) new SimpleSymbol("TimerEnabled").readResolve());
+    static final SimpleSymbol Lit61 = ((SimpleSymbol) new SimpleSymbol("Login$Initialize").readResolve());
+    static final SimpleSymbol Lit62 = ((SimpleSymbol) new SimpleSymbol("Initialize").readResolve());
+    static final FString Lit63 = new FString("com.google.appinventor.components.runtime.WebViewer");
+    static final FString Lit64 = new FString("com.google.appinventor.components.runtime.WebViewer");
+    static final FString Lit65 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
+    static final SimpleSymbol Lit66 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement1").readResolve());
+    static final SimpleSymbol Lit67 = ((SimpleSymbol) new SimpleSymbol("Width").readResolve());
+    static final IntNum Lit68 = IntNum.make(-2);
+    static final FString Lit69 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
+    static final SimpleSymbol Lit7 = ((SimpleSymbol) new SimpleSymbol("g$utfinput").readResolve());
+    static final FString Lit70 = new FString("com.google.appinventor.components.runtime.Button");
+    static final SimpleSymbol Lit71 = ((SimpleSymbol) new SimpleSymbol("back").readResolve());
+    static final IntNum Lit72 = IntNum.make(-1050);
+    static final SimpleSymbol Lit73 = ((SimpleSymbol) new SimpleSymbol("Text").readResolve());
+    static final FString Lit74 = new FString("com.google.appinventor.components.runtime.Button");
+    static final PairWithPosition Lit75 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 254030);
+    static final SimpleSymbol Lit76 = ((SimpleSymbol) new SimpleSymbol("back$Click").readResolve());
+    static final SimpleSymbol Lit77 = ((SimpleSymbol) new SimpleSymbol("Click").readResolve());
+    static final FString Lit78 = new FString("com.google.appinventor.components.runtime.Button");
+    static final SimpleSymbol Lit79 = ((SimpleSymbol) new SimpleSymbol("logout").readResolve());
+    static final SimpleSymbol Lit8 = ((SimpleSymbol) new SimpleSymbol("g$service_UUID").readResolve());
+    static final IntNum Lit80 = IntNum.make(-1050);
+    static final FString Lit81 = new FString("com.google.appinventor.components.runtime.Button");
+    static final PairWithPosition Lit82 = PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 299095);
+    static final SimpleSymbol Lit83 = ((SimpleSymbol) new SimpleSymbol("logout$Click").readResolve());
     static final FString Lit84 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
-    static final FString Lit85 = new FString("com.google.appinventor.components.runtime.Button");
-    static final SimpleSymbol Lit86 = ((SimpleSymbol) new SimpleSymbol("start").readResolve());
-    static final IntNum Lit87 = IntNum.make(-1050);
-    static final FString Lit88 = new FString("com.google.appinventor.components.runtime.Button");
-    static final SimpleSymbol Lit89 = ((SimpleSymbol) new SimpleSymbol("hr").readResolve());
-    static final PairWithPosition Lit9 = PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 49422);
-    static final SimpleSymbol Lit90 = ((SimpleSymbol) new SimpleSymbol("min").readResolve());
-    static final SimpleSymbol Lit91 = ((SimpleSymbol) new SimpleSymbol("sec").readResolve());
-    static final SimpleSymbol Lit92 = ((SimpleSymbol) new SimpleSymbol("RegisterForStrings").readResolve());
-    static final PairWithPosition Lit93 = PairWithPosition.make(Lit45, PairWithPosition.make(Lit45, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 365013), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 365008), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 365002);
-    static final SimpleSymbol Lit94 = ((SimpleSymbol) new SimpleSymbol("start$Click").readResolve());
-    static final FString Lit95 = new FString("com.google.appinventor.components.runtime.Button");
-    static final SimpleSymbol Lit96 = ((SimpleSymbol) new SimpleSymbol("stop").readResolve());
-    static final IntNum Lit97 = IntNum.make(-1050);
-    static final FString Lit98 = new FString("com.google.appinventor.components.runtime.Button");
-    static final PairWithPosition Lit99 = PairWithPosition.make(Lit203, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 410001), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 409995);
+    static final SimpleSymbol Lit85 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement2").readResolve());
+    static final FString Lit86 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
+    static final FString Lit87 = new FString("com.google.appinventor.components.runtime.Button");
+    static final SimpleSymbol Lit88 = ((SimpleSymbol) new SimpleSymbol("start").readResolve());
+    static final IntNum Lit89 = IntNum.make(-1050);
+    static final SimpleSymbol Lit9 = ((SimpleSymbol) new SimpleSymbol("g$characteristic_UUID").readResolve());
+    static final FString Lit90 = new FString("com.google.appinventor.components.runtime.Button");
+    static final SimpleSymbol Lit91 = ((SimpleSymbol) new SimpleSymbol("hr").readResolve());
+    static final SimpleSymbol Lit92 = ((SimpleSymbol) new SimpleSymbol("min").readResolve());
+    static final SimpleSymbol Lit93 = ((SimpleSymbol) new SimpleSymbol("sec").readResolve());
+    static final SimpleSymbol Lit94 = ((SimpleSymbol) new SimpleSymbol("RegisterForStrings").readResolve());
+    static final PairWithPosition Lit95 = PairWithPosition.make(Lit47, PairWithPosition.make(Lit47, PairWithPosition.make(Lit44, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 373301), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 373296), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 373290);
+    static final SimpleSymbol Lit96 = ((SimpleSymbol) new SimpleSymbol("start$Click").readResolve());
+    static final FString Lit97 = new FString("com.google.appinventor.components.runtime.Button");
+    static final SimpleSymbol Lit98 = ((SimpleSymbol) new SimpleSymbol("stop").readResolve());
+    static final IntNum Lit99 = IntNum.make(-1050);
     public static Login Login;
     static final ModuleMethod lambda$Fn1 = null;
     static final ModuleMethod lambda$Fn10 = null;
@@ -301,6 +315,8 @@ public class Login extends Form implements Runnable {
     static final ModuleMethod lambda$Fn48 = null;
     static final ModuleMethod lambda$Fn49 = null;
     static final ModuleMethod lambda$Fn5 = null;
+    static final ModuleMethod lambda$Fn50 = null;
+    static final ModuleMethod lambda$Fn51 = null;
     static final ModuleMethod lambda$Fn6 = null;
     static final ModuleMethod lambda$Fn7 = null;
     static final ModuleMethod lambda$Fn8 = null;
@@ -333,6 +349,7 @@ public class Login extends Form implements Runnable {
     public Button back;
     public final ModuleMethod back$Click;
     public LList components$Mnto$Mncreate;
+    public Label data;
     public Label device;
     public final ModuleMethod dispatchEvent;
     public LList events$Mnto$Mnregister;
@@ -351,7 +368,6 @@ public class Login extends Form implements Runnable {
     public final ModuleMethod process$Mnexception;
     public Label sec;
     public final ModuleMethod send$Mnerror;
-    public Label spo2;
     public Button start;
     public final ModuleMethod start$Click;
     public Button stop;
@@ -362,11 +378,11 @@ public class Login extends Form implements Runnable {
         Login $main = this;
 
         public Object apply3(ModuleMethod moduleMethod, Object obj, Object obj2, Object obj3) {
-            return moduleMethod.selector == 73 ? this.$main.BluetoothLE1$StringsReceived(obj, obj2, obj3) : super.apply3(moduleMethod, obj, obj2, obj3);
+            return moduleMethod.selector == 75 ? this.$main.BluetoothLE1$StringsReceived(obj, obj2, obj3) : super.apply3(moduleMethod, obj, obj2, obj3);
         }
 
         public int match3(ModuleMethod moduleMethod, Object obj, Object obj2, Object obj3, CallContext callContext) {
-            if (moduleMethod.selector != 73) {
+            if (moduleMethod.selector != 75) {
                 return super.match3(moduleMethod, obj, obj2, obj3, callContext);
             }
             callContext.value1 = obj;
@@ -411,49 +427,49 @@ public class Login extends Form implements Runnable {
                 case 29:
                     return Login.lambda15();
                 case 30:
-                    return Login.lambda17();
-                case 31:
                     return Login.lambda16();
+                case 31:
+                    return Login.lambda17();
                 case 32:
-                    return Login.lambda18();
-                case 33:
-                    return this.$main.Login$Initialize();
-                case 34:
                     return Login.lambda19();
-                case 35:
+                case 33:
+                    return Login.lambda18();
+                case 34:
                     return Login.lambda20();
+                case 35:
+                    return this.$main.Login$Initialize();
                 case 36:
                     return Login.lambda21();
                 case 37:
                     return Login.lambda22();
                 case 38:
-                    return this.$main.back$Click();
-                case 39:
                     return Login.lambda23();
-                case 40:
+                case 39:
                     return Login.lambda24();
+                case 40:
+                    return this.$main.back$Click();
                 case 41:
-                    return this.$main.logout$Click();
-                case 42:
                     return Login.lambda25();
-                case 43:
+                case 42:
                     return Login.lambda26();
+                case 43:
+                    return this.$main.logout$Click();
                 case 44:
                     return Login.lambda27();
                 case 45:
                     return Login.lambda28();
                 case 46:
-                    return this.$main.start$Click();
-                case 47:
                     return Login.lambda29();
-                case 48:
+                case 47:
                     return Login.lambda30();
+                case 48:
+                    return this.$main.start$Click();
                 case 49:
-                    return this.$main.stop$Click();
-                case 50:
                     return Login.lambda31();
-                case 51:
+                case 50:
                     return Login.lambda32();
+                case 51:
+                    return this.$main.stop$Click();
                 case 52:
                     return Login.lambda33();
                 case 53:
@@ -491,12 +507,16 @@ public class Login extends Form implements Runnable {
                 case 69:
                     return Login.lambda50();
                 case 70:
-                    return this.$main.analyze$Click();
+                    return Login.lambda51();
                 case 71:
-                    return this.$main.BluetoothLE1$DeviceFound();
+                    return Login.lambda52();
                 case 72:
-                    return this.$main.BluetoothLE1$Connected();
+                    return this.$main.analyze$Click();
+                case 73:
+                    return this.$main.BluetoothLE1$DeviceFound();
                 case 74:
+                    return this.$main.BluetoothLE1$Connected();
+                case 76:
                     return this.$main.Clock1$Timer();
                 default:
                     return super.apply0(moduleMethod);
@@ -737,7 +757,15 @@ public class Login extends Form implements Runnable {
                     callContext.proc = moduleMethod;
                     callContext.pc = 0;
                     return 0;
+                case 73:
+                    callContext.proc = moduleMethod;
+                    callContext.pc = 0;
+                    return 0;
                 case 74:
+                    callContext.proc = moduleMethod;
+                    callContext.pc = 0;
+                    return 0;
+                case 76:
                     callContext.proc = moduleMethod;
                     callContext.pc = 0;
                     return 0;
@@ -976,63 +1004,63 @@ public class Login extends Form implements Runnable {
 
     static {
         SimpleSymbol simpleSymbol = (SimpleSymbol) new SimpleSymbol("number").readResolve();
-        Lit40 = simpleSymbol;
-        Lit188 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(Lit40, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885931), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885923);
-        simpleSymbol = (SimpleSymbol) new SimpleSymbol(PropertyTypeConstants.PROPERTY_TYPE_TEXT).readResolve();
-        Lit45 = simpleSymbol;
-        Lit185 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(Lit45, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885714), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885708);
-        SimpleSymbol simpleSymbol2 = Lit45;
-        SimpleSymbol simpleSymbol3 = Lit45;
-        simpleSymbol = (SimpleSymbol) new SimpleSymbol(PropertyTypeConstants.PROPERTY_TYPE_BOOLEAN).readResolve();
         Lit42 = simpleSymbol;
-        Lit177 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol3, PairWithPosition.make(simpleSymbol, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885061), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885056), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 885050);
+        Lit202 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(Lit42, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 894261), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 894253);
+        simpleSymbol = (SimpleSymbol) new SimpleSymbol(PropertyTypeConstants.PROPERTY_TYPE_TEXT).readResolve();
+        Lit47 = simpleSymbol;
+        Lit199 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(Lit47, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 894044), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 894038);
+        SimpleSymbol simpleSymbol2 = Lit47;
+        SimpleSymbol simpleSymbol3 = Lit47;
+        simpleSymbol = (SimpleSymbol) new SimpleSymbol(PropertyTypeConstants.PROPERTY_TYPE_BOOLEAN).readResolve();
+        Lit44 = simpleSymbol;
+        Lit191 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol3, PairWithPosition.make(simpleSymbol, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893391), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893386), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Login.yail", 893380);
         int[] iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
-        Lit140 = IntNum.make(iArr);
+        Lit146 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
-        Lit137 = IntNum.make(iArr);
+        Lit143 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
-        Lit133 = IntNum.make(iArr);
+        Lit139 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
-        Lit130 = IntNum.make(iArr);
+        Lit136 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
-        Lit126 = IntNum.make(iArr);
+        Lit132 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
-        Lit119 = IntNum.make(iArr);
+        Lit125 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
-        Lit111 = IntNum.make(iArr);
+        Lit117 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_DKGRAY;
-        Lit47 = IntNum.make(iArr);
+        Lit49 = IntNum.make(iArr);
         iArr = new int[2];
         iArr[0] = Component.COLOR_CYAN;
-        Lit39 = IntNum.make(iArr);
+        Lit41 = IntNum.make(iArr);
     }
 
     public Login() {
         ModuleInfo.register(this);
         ModuleBody appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame = new frame();
-        this.android$Mnlog$Mnform = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 1, Lit191, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        this.add$Mnto$Mnform$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 2, Lit192, 8194);
-        this.lookup$Mnin$Mnform$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 3, Lit193, 8193);
-        this.is$Mnbound$Mnin$Mnform$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 5, Lit194, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        this.add$Mnto$Mnglobal$Mnvar$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 6, Lit195, 8194);
-        this.add$Mnto$Mnevents = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 7, Lit196, 8194);
-        this.add$Mnto$Mncomponents = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 8, Lit197, 16388);
-        this.add$Mnto$Mnglobal$Mnvars = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 9, Lit198, 8194);
-        this.add$Mnto$Mnform$Mndo$Mnafter$Mncreation = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 10, Lit199, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        this.send$Mnerror = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 11, Lit200, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        this.android$Mnlog$Mnform = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 1, Lit205, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        this.add$Mnto$Mnform$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 2, Lit206, 8194);
+        this.lookup$Mnin$Mnform$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 3, Lit207, 8193);
+        this.is$Mnbound$Mnin$Mnform$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 5, Lit208, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        this.add$Mnto$Mnglobal$Mnvar$Mnenvironment = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 6, Lit209, 8194);
+        this.add$Mnto$Mnevents = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 7, Lit210, 8194);
+        this.add$Mnto$Mncomponents = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 8, Lit211, 16388);
+        this.add$Mnto$Mnglobal$Mnvars = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 9, Lit212, 8194);
+        this.add$Mnto$Mnform$Mndo$Mnafter$Mncreation = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 10, Lit213, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        this.send$Mnerror = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 11, Lit214, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         this.process$Mnexception = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 12, "process-exception", FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        this.dispatchEvent = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 13, Lit201, 16388);
-        this.lookup$Mnhandler = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 14, Lit202, 8194);
+        this.dispatchEvent = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 13, Lit215, 16388);
+        this.lookup$Mnhandler = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 14, Lit216, 8194);
         PropertySet moduleMethod = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 15, null, 0);
-        moduleMethod.setProperty("source-location", "/tmp/runtime7570432500165643465.scm:553");
+        moduleMethod.setProperty("source-location", "/tmp/runtime744766471814722776.scm:553");
         lambda$Fn1 = moduleMethod;
         this.$define = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 16, "$define", 0);
         lambda$Fn2 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 17, null, 0);
@@ -1048,28 +1076,28 @@ public class Login extends Form implements Runnable {
         lambda$Fn12 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 27, null, 0);
         lambda$Fn13 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 28, null, 0);
         lambda$Fn14 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 29, null, 0);
-        lambda$Fn16 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 30, null, 0);
-        lambda$Fn15 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 31, null, 0);
-        lambda$Fn17 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 32, null, 0);
-        this.Login$Initialize = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 33, Lit59, 0);
-        lambda$Fn18 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 34, null, 0);
-        lambda$Fn19 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 35, null, 0);
+        lambda$Fn15 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 30, null, 0);
+        lambda$Fn16 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 31, null, 0);
+        lambda$Fn18 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 32, null, 0);
+        lambda$Fn17 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 33, null, 0);
+        lambda$Fn19 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 34, null, 0);
+        this.Login$Initialize = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 35, Lit61, 0);
         lambda$Fn20 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 36, null, 0);
         lambda$Fn21 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 37, null, 0);
-        this.back$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 38, Lit74, 0);
-        lambda$Fn22 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 39, null, 0);
-        lambda$Fn23 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 40, null, 0);
-        this.logout$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 41, Lit81, 0);
-        lambda$Fn24 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 42, null, 0);
-        lambda$Fn25 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 43, null, 0);
+        lambda$Fn22 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 38, null, 0);
+        lambda$Fn23 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 39, null, 0);
+        this.back$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 40, Lit76, 0);
+        lambda$Fn24 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 41, null, 0);
+        lambda$Fn25 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 42, null, 0);
+        this.logout$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 43, Lit83, 0);
         lambda$Fn26 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 44, null, 0);
         lambda$Fn27 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 45, null, 0);
-        this.start$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 46, Lit94, 0);
-        lambda$Fn28 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 47, null, 0);
-        lambda$Fn29 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 48, null, 0);
-        this.stop$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 49, Lit106, 0);
-        lambda$Fn30 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 50, null, 0);
-        lambda$Fn31 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 51, null, 0);
+        lambda$Fn28 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 46, null, 0);
+        lambda$Fn29 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 47, null, 0);
+        this.start$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 48, Lit96, 0);
+        lambda$Fn30 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 49, null, 0);
+        lambda$Fn31 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 50, null, 0);
+        this.stop$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 51, Lit112, 0);
         lambda$Fn32 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 52, null, 0);
         lambda$Fn33 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 53, null, 0);
         lambda$Fn34 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 54, null, 0);
@@ -1088,14 +1116,16 @@ public class Login extends Form implements Runnable {
         lambda$Fn47 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 67, null, 0);
         lambda$Fn48 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 68, null, 0);
         lambda$Fn49 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 69, null, 0);
-        this.analyze$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 70, Lit153, 0);
-        this.BluetoothLE1$DeviceFound = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 71, Lit158, 0);
-        this.BluetoothLE1$Connected = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 72, Lit160, 0);
-        this.BluetoothLE1$StringsReceived = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 73, Lit172, 12291);
-        this.Clock1$Timer = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 74, Lit189, 0);
+        lambda$Fn50 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 70, null, 0);
+        lambda$Fn51 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 71, null, 0);
+        this.analyze$Click = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 72, Lit163, 0);
+        this.BluetoothLE1$DeviceFound = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 73, Lit168, 0);
+        this.BluetoothLE1$Connected = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 74, Lit170, 0);
+        this.BluetoothLE1$StringsReceived = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 75, Lit185, 12291);
+        this.Clock1$Timer = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Login_frame, 76, Lit203, 0);
     }
 
-    static Boolean lambda14() {
+    static Boolean lambda16() {
         return Boolean.FALSE;
     }
 
@@ -1138,302 +1168,312 @@ public class Login extends Form implements Runnable {
         this.form$Mndo$Mnafter$Mncreation = LList.Empty;
         runtime.$instance.run();
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit3, ""), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit3, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit4), Lit5, "select list item")), $result);
         } else {
             addToGlobalVars(Lit3, lambda$Fn2);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit4, ""), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit7, ""), $result);
         } else {
-            addToGlobalVars(Lit4, lambda$Fn3);
+            addToGlobalVars(Lit7, lambda$Fn3);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit5, "46a970e0-0d5f-11e2-8b5e-0002a5d5c51b"), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit8, "46a970e0-0d5f-11e2-8b5e-0002a5d5c51b"), $result);
         } else {
-            addToGlobalVars(Lit5, lambda$Fn4);
+            addToGlobalVars(Lit8, lambda$Fn4);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit6, "0aad7ea0-0d60-11e2-8e3c-0002a5d5c51b"), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit9, "0aad7ea0-0d60-11e2-8e3c-0002a5d5c51b"), $result);
         } else {
-            addToGlobalVars(Lit6, lambda$Fn5);
+            addToGlobalVars(Lit9, lambda$Fn5);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit7, runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("! \" # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \\ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~"), Lit8, "split at spaces")), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit10, runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("! \" # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \\ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~"), Lit11, "split at spaces")), $result);
         } else {
-            addToGlobalVars(Lit7, lambda$Fn6);
+            addToGlobalVars(Lit10, lambda$Fn6);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit10, runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126"), Lit11, "split at spaces")), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit13, runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126"), Lit14, "split at spaces")), $result);
         } else {
-            addToGlobalVars(Lit10, lambda$Fn7);
+            addToGlobalVars(Lit13, lambda$Fn7);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit13, Lit14), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit16, Lit17), $result);
         } else {
-            addToGlobalVars(Lit13, lambda$Fn8);
+            addToGlobalVars(Lit16, lambda$Fn8);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit15, runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list")), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit18, Lit17), $result);
         } else {
-            addToGlobalVars(Lit15, lambda$Fn9);
+            addToGlobalVars(Lit18, lambda$Fn9);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit16, runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit17), Lit18, "select list item")), Lit19, "join"), "/HealthKeeper/RPi/Master/index.php"), Lit20, "join")), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit19, runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list")), $result);
         } else {
-            addToGlobalVars(Lit16, lambda$Fn10);
+            addToGlobalVars(Lit19, lambda$Fn10);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit24, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit25), Lit26, "select list item")), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit20, runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list")), $result);
         } else {
-            addToGlobalVars(Lit24, lambda$Fn11);
+            addToGlobalVars(Lit20, lambda$Fn11);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit28, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit29), Lit30, "select list item")), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit21, runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit22), Lit23, "select list item")), Lit24, "join"), "/HealthKeeper/RPi/Master/index.php"), Lit25, "join")), $result);
         } else {
-            addToGlobalVars(Lit28, lambda$Fn12);
+            addToGlobalVars(Lit21, lambda$Fn12);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit32, Boolean.FALSE), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit29, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit30), Lit31, "select list item")), $result);
         } else {
-            addToGlobalVars(Lit32, lambda$Fn13);
+            addToGlobalVars(Lit29, lambda$Fn13);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit33, lambda$Fn14), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit33, ""), $result);
         } else {
-            addToGlobalVars(Lit33, lambda$Fn15);
+            addToGlobalVars(Lit33, lambda$Fn14);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit38, Lit39, Lit40);
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit41, Boolean.TRUE, Lit42);
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit43, Lit29, Lit40);
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit44, "HealthKeeper_v3", Lit45);
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit46, Lit47, Lit40);
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit48, Boolean.FALSE, Lit42);
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit49, "Responsive", Lit45);
-            runtime.setAndCoerceProperty$Ex(Lit0, Lit50, "AppTheme.Light.DarkActionBar", Lit45);
-            Values.writeValues(runtime.setAndCoerceProperty$Ex(Lit0, Lit51, "Session", Lit45), $result);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit34, Boolean.FALSE), $result);
         } else {
-            addToFormDoAfterCreation(new Promise(lambda$Fn17));
+            addToGlobalVars(Lit34, lambda$Fn15);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit59, this.Login$Initialize);
+            Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit35, lambda$Fn16), $result);
         } else {
-            addToFormEnvironment(Lit59, this.Login$Initialize);
+            addToGlobalVars(Lit35, lambda$Fn17);
+        }
+        if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit40, Lit41, Lit42);
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit43, Boolean.TRUE, Lit44);
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit45, Lit4, Lit42);
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit46, "HealthKeeper_v3", Lit47);
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit48, Lit49, Lit42);
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit50, Boolean.FALSE, Lit44);
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit51, "Responsive", Lit47);
+            runtime.setAndCoerceProperty$Ex(Lit0, Lit52, "AppTheme.Light.DarkActionBar", Lit47);
+            Values.writeValues(runtime.setAndCoerceProperty$Ex(Lit0, Lit53, "Session", Lit47), $result);
+        } else {
+            addToFormDoAfterCreation(new Promise(lambda$Fn19));
+        }
+        if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
+            runtime.addToCurrentFormEnvironment(Lit61, this.Login$Initialize);
+        } else {
+            addToFormEnvironment(Lit61, this.Login$Initialize);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "Login", "Initialize");
         } else {
-            addToEvents(Lit0, Lit60);
+            addToEvents(Lit0, Lit62);
         }
         this.WebViewer1 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit61, Lit52, Boolean.FALSE), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit63, Lit54, Boolean.FALSE), $result);
         } else {
-            addToComponents(Lit0, Lit62, Lit52, Boolean.FALSE);
+            addToComponents(Lit0, Lit64, Lit54, Boolean.FALSE);
         }
         this.HorizontalArrangement1 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit63, Lit64, lambda$Fn18), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit65, Lit66, lambda$Fn20), $result);
         } else {
-            addToComponents(Lit0, Lit67, Lit64, lambda$Fn19);
+            addToComponents(Lit0, Lit69, Lit66, lambda$Fn21);
         }
         this.back = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit64, Lit68, Lit69, lambda$Fn20), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit66, Lit70, Lit71, lambda$Fn22), $result);
         } else {
-            addToComponents(Lit64, Lit72, Lit69, lambda$Fn21);
+            addToComponents(Lit66, Lit74, Lit71, lambda$Fn23);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit74, this.back$Click);
+            runtime.addToCurrentFormEnvironment(Lit76, this.back$Click);
         } else {
-            addToFormEnvironment(Lit74, this.back$Click);
+            addToFormEnvironment(Lit76, this.back$Click);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "back", "Click");
         } else {
-            addToEvents(Lit69, Lit75);
+            addToEvents(Lit71, Lit77);
         }
         this.logout = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit64, Lit76, Lit77, lambda$Fn22), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit66, Lit78, Lit79, lambda$Fn24), $result);
         } else {
-            addToComponents(Lit64, Lit79, Lit77, lambda$Fn23);
+            addToComponents(Lit66, Lit81, Lit79, lambda$Fn25);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit81, this.logout$Click);
+            runtime.addToCurrentFormEnvironment(Lit83, this.logout$Click);
         } else {
-            addToFormEnvironment(Lit81, this.logout$Click);
+            addToFormEnvironment(Lit83, this.logout$Click);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "logout", "Click");
         } else {
-            addToEvents(Lit77, Lit75);
+            addToEvents(Lit79, Lit77);
         }
         this.HorizontalArrangement2 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit82, Lit83, lambda$Fn24), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit84, Lit85, lambda$Fn26), $result);
         } else {
-            addToComponents(Lit0, Lit84, Lit83, lambda$Fn25);
+            addToComponents(Lit0, Lit86, Lit85, lambda$Fn27);
         }
         this.start = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit83, Lit85, Lit86, lambda$Fn26), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit85, Lit87, Lit88, lambda$Fn28), $result);
         } else {
-            addToComponents(Lit83, Lit88, Lit86, lambda$Fn27);
+            addToComponents(Lit85, Lit90, Lit88, lambda$Fn29);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit94, this.start$Click);
+            runtime.addToCurrentFormEnvironment(Lit96, this.start$Click);
         } else {
-            addToFormEnvironment(Lit94, this.start$Click);
+            addToFormEnvironment(Lit96, this.start$Click);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "start", "Click");
         } else {
-            addToEvents(Lit86, Lit75);
+            addToEvents(Lit88, Lit77);
         }
         this.stop = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit83, Lit95, Lit96, lambda$Fn28), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit85, Lit97, Lit98, lambda$Fn30), $result);
         } else {
-            addToComponents(Lit83, Lit98, Lit96, lambda$Fn29);
+            addToComponents(Lit85, Lit100, Lit98, lambda$Fn31);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit106, this.stop$Click);
+            runtime.addToCurrentFormEnvironment(Lit112, this.stop$Click);
         } else {
-            addToFormEnvironment(Lit106, this.stop$Click);
+            addToFormEnvironment(Lit112, this.stop$Click);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "stop", "Click");
         } else {
-            addToEvents(Lit96, Lit75);
+            addToEvents(Lit98, Lit77);
         }
-        this.spo2 = null;
-        if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit107, Lit108, lambda$Fn30), $result);
-        } else {
-            addToComponents(Lit0, Lit112, Lit108, lambda$Fn31);
-        }
-        this.HorizontalArrangement3 = null;
+        this.data = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit113, Lit114, lambda$Fn32), $result);
         } else {
-            addToComponents(Lit0, Lit115, Lit114, lambda$Fn33);
+            addToComponents(Lit0, Lit118, Lit114, lambda$Fn33);
+        }
+        this.HorizontalArrangement3 = null;
+        if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
+            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit119, Lit120, lambda$Fn34), $result);
+        } else {
+            addToComponents(Lit0, Lit121, Lit120, lambda$Fn35);
         }
         this.device = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit114, Lit116, Lit117, lambda$Fn34), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit120, Lit122, Lit123, lambda$Fn36), $result);
         } else {
-            addToComponents(Lit114, Lit120, Lit117, lambda$Fn35);
+            addToComponents(Lit120, Lit126, Lit123, lambda$Fn37);
         }
         this.HorizontalArrangement4 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit114, Lit121, Lit122, lambda$Fn36), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit120, Lit127, Lit128, lambda$Fn38), $result);
         } else {
-            addToComponents(Lit114, Lit124, Lit122, lambda$Fn37);
+            addToComponents(Lit120, Lit130, Lit128, lambda$Fn39);
         }
         this.hr = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit122, Lit125, Lit89, lambda$Fn38), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit128, Lit131, Lit91, lambda$Fn40), $result);
         } else {
-            addToComponents(Lit122, Lit127, Lit89, lambda$Fn39);
+            addToComponents(Lit128, Lit133, Lit91, lambda$Fn41);
         }
         this.Label4 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit122, Lit128, Lit129, lambda$Fn40), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit128, Lit134, Lit135, lambda$Fn42), $result);
         } else {
-            addToComponents(Lit122, Lit131, Lit129, lambda$Fn41);
+            addToComponents(Lit128, Lit137, Lit135, lambda$Fn43);
         }
         this.min = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit122, Lit132, Lit90, lambda$Fn42), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit128, Lit138, Lit92, lambda$Fn44), $result);
         } else {
-            addToComponents(Lit122, Lit134, Lit90, lambda$Fn43);
+            addToComponents(Lit128, Lit140, Lit92, lambda$Fn45);
         }
         this.Label6 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit122, Lit135, Lit136, lambda$Fn44), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit128, Lit141, Lit142, lambda$Fn46), $result);
         } else {
-            addToComponents(Lit122, Lit138, Lit136, lambda$Fn45);
+            addToComponents(Lit128, Lit144, Lit142, lambda$Fn47);
         }
         this.sec = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit122, Lit139, Lit91, lambda$Fn46), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit128, Lit145, Lit93, lambda$Fn48), $result);
         } else {
-            addToComponents(Lit122, Lit141, Lit91, lambda$Fn47);
+            addToComponents(Lit128, Lit147, Lit93, lambda$Fn49);
         }
         this.analyze = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit142, Lit143, lambda$Fn48), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit148, Lit149, lambda$Fn50), $result);
         } else {
-            addToComponents(Lit0, Lit144, Lit143, lambda$Fn49);
+            addToComponents(Lit0, Lit150, Lit149, lambda$Fn51);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit153, this.analyze$Click);
+            runtime.addToCurrentFormEnvironment(Lit163, this.analyze$Click);
         } else {
-            addToFormEnvironment(Lit153, this.analyze$Click);
+            addToFormEnvironment(Lit163, this.analyze$Click);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "analyze", "Click");
         } else {
-            addToEvents(Lit143, Lit75);
+            addToEvents(Lit149, Lit77);
         }
         this.BluetoothLE1 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit154, Lit55, Boolean.FALSE), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit164, Lit57, Boolean.FALSE), $result);
         } else {
-            addToComponents(Lit0, Lit155, Lit55, Boolean.FALSE);
+            addToComponents(Lit0, Lit165, Lit57, Boolean.FALSE);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit158, this.BluetoothLE1$DeviceFound);
+            runtime.addToCurrentFormEnvironment(Lit168, this.BluetoothLE1$DeviceFound);
         } else {
-            addToFormEnvironment(Lit158, this.BluetoothLE1$DeviceFound);
+            addToFormEnvironment(Lit168, this.BluetoothLE1$DeviceFound);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "BluetoothLE1", "DeviceFound");
         } else {
-            addToEvents(Lit55, Lit159);
+            addToEvents(Lit57, Lit169);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit160, this.BluetoothLE1$Connected);
+            runtime.addToCurrentFormEnvironment(Lit170, this.BluetoothLE1$Connected);
         } else {
-            addToFormEnvironment(Lit160, this.BluetoothLE1$Connected);
+            addToFormEnvironment(Lit170, this.BluetoothLE1$Connected);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "BluetoothLE1", "Connected");
         } else {
-            addToEvents(Lit55, Lit161);
+            addToEvents(Lit57, Lit171);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit172, this.BluetoothLE1$StringsReceived);
+            runtime.addToCurrentFormEnvironment(Lit185, this.BluetoothLE1$StringsReceived);
         } else {
-            addToFormEnvironment(Lit172, this.BluetoothLE1$StringsReceived);
+            addToFormEnvironment(Lit185, this.BluetoothLE1$StringsReceived);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "BluetoothLE1", "StringsReceived");
         } else {
-            addToEvents(Lit55, Lit173);
+            addToEvents(Lit57, Lit186);
         }
         this.Clock1 = null;
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit174, Lit57, Boolean.FALSE), $result);
+            Values.writeValues(runtime.addComponentWithinRepl(Lit0, Lit187, Lit59, Boolean.FALSE), $result);
         } else {
-            addToComponents(Lit0, Lit175, Lit57, Boolean.FALSE);
+            addToComponents(Lit0, Lit188, Lit59, Boolean.FALSE);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-            runtime.addToCurrentFormEnvironment(Lit189, this.Clock1$Timer);
+            runtime.addToCurrentFormEnvironment(Lit203, this.Clock1$Timer);
         } else {
-            addToFormEnvironment(Lit189, this.Clock1$Timer);
+            addToFormEnvironment(Lit203, this.Clock1$Timer);
         }
         if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
             EventDispatcher.registerEventForDelegation((HandlesEventDispatching) runtime.$Stthis$Mnform$St, "Clock1", "Timer");
         } else {
-            addToEvents(Lit57, Lit190);
+            addToEvents(Lit59, Lit204);
         }
         runtime.initRuntime();
     }
 
-    static String lambda3() {
-        return "";
+    static Object lambda3() {
+        return runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit4), Lit6, "select list item");
     }
 
     static String lambda4() {
@@ -1449,268 +1489,277 @@ public class Login extends Form implements Runnable {
     }
 
     static Object lambda7() {
-        return runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("! \" # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \\ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~"), Lit9, "split at spaces");
+        return runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("! \" # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \\ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~"), Lit12, "split at spaces");
     }
 
     static Object lambda8() {
-        return runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126"), Lit12, "split at spaces");
+        return runtime.callYailPrimitive(runtime.string$Mnsplit$Mnat$Mnspaces, LList.list1("33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126"), Lit15, "split at spaces");
     }
 
     static IntNum lambda9() {
-        return Lit14;
+        return Lit17;
     }
 
-    static Object lambda10() {
-        return runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list");
+    static IntNum lambda10() {
+        return Lit17;
     }
 
     static Object lambda11() {
-        return runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit17), Lit21, "select list item")), Lit22, "join"), "/HealthKeeper/RPi/Master/index.php"), Lit23, "join");
+        return runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list");
     }
 
     static Object lambda12() {
-        return runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit25), Lit27, "select list item");
+        return runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list");
     }
 
     static Object lambda13() {
-        return runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit29), Lit31, "select list item");
+        return runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit22), Lit26, "select list item")), Lit27, "join"), "/HealthKeeper/RPi/Master/index.php"), Lit28, "join");
     }
 
-    static Object lambda15() {
-        return runtime.addGlobalVarToCurrentFormEnvironment(Lit4, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit10, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.callYailPrimitive(runtime.yail$Mnlist$Mnindex, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit3, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit7, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit34, "index in list")), Lit35, "select list item"));
+    static Object lambda14() {
+        return runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit30), Lit32, "select list item");
     }
 
-    static Procedure lambda16() {
-        return lambda$Fn16;
+    static String lambda15() {
+        return "";
     }
 
     static Object lambda17() {
-        return runtime.addGlobalVarToCurrentFormEnvironment(Lit4, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit10, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.callYailPrimitive(runtime.yail$Mnlist$Mnindex, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit3, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit7, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit36, "index in list")), Lit37, "select list item"));
+        return runtime.addGlobalVarToCurrentFormEnvironment(Lit33, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit13, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.callYailPrimitive(runtime.yail$Mnlist$Mnindex, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit7, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit10, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit36, "index in list")), Lit37, "select list item"));
     }
 
-    static Object lambda18() {
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit38, Lit39, Lit40);
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit41, Boolean.TRUE, Lit42);
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit43, Lit29, Lit40);
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit44, "HealthKeeper_v3", Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit46, Lit47, Lit40);
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit48, Boolean.FALSE, Lit42);
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit49, "Responsive", Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit0, Lit50, "AppTheme.Light.DarkActionBar", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit0, Lit51, "Session", Lit45);
+    static Procedure lambda18() {
+        return lambda$Fn18;
+    }
+
+    static Object lambda19() {
+        return runtime.addGlobalVarToCurrentFormEnvironment(Lit33, runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit13, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.callYailPrimitive(runtime.yail$Mnlist$Mnindex, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit7, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit10, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit38, "index in list")), Lit39, "select list item"));
+    }
+
+    static Object lambda20() {
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit40, Lit41, Lit42);
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit43, Boolean.TRUE, Lit44);
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit45, Lit4, Lit42);
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit46, "HealthKeeper_v3", Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit48, Lit49, Lit42);
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit50, Boolean.FALSE, Lit44);
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit51, "Responsive", Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit0, Lit52, "AppTheme.Light.DarkActionBar", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit0, Lit53, "Session", Lit47);
     }
 
     public Object Login$Initialize() {
         runtime.setThisForm();
-        runtime.callComponentMethod(Lit52, Lit53, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit16, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit54);
-        runtime.callComponentMethod(Lit55, Lit56, LList.Empty, LList.Empty);
-        return runtime.setAndCoerceProperty$Ex(Lit57, Lit58, Boolean.FALSE, Lit42);
-    }
-
-    static Object lambda19() {
-        runtime.setAndCoerceProperty$Ex(Lit64, Lit43, Lit29, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit64, Lit65, Lit66, Lit40);
-    }
-
-    static Object lambda20() {
-        runtime.setAndCoerceProperty$Ex(Lit64, Lit43, Lit29, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit64, Lit65, Lit66, Lit40);
+        runtime.callComponentMethod(Lit54, Lit55, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit21, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit56);
+        runtime.callComponentMethod(Lit57, Lit58, LList.Empty, LList.Empty);
+        return runtime.setAndCoerceProperty$Ex(Lit59, Lit60, Boolean.FALSE, Lit44);
     }
 
     static Object lambda21() {
-        runtime.setAndCoerceProperty$Ex(Lit69, Lit65, Lit70, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit69, Lit71, "Go Back", Lit45);
+        runtime.setAndCoerceProperty$Ex(Lit66, Lit45, Lit4, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit66, Lit67, Lit68, Lit42);
     }
 
     static Object lambda22() {
-        runtime.setAndCoerceProperty$Ex(Lit69, Lit65, Lit70, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit69, Lit71, "Go Back", Lit45);
+        runtime.setAndCoerceProperty$Ex(Lit66, Lit45, Lit4, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit66, Lit67, Lit68, Lit42);
+    }
+
+    static Object lambda23() {
+        runtime.setAndCoerceProperty$Ex(Lit71, Lit67, Lit72, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit71, Lit73, "Go Back", Lit47);
+    }
+
+    static Object lambda24() {
+        runtime.setAndCoerceProperty$Ex(Lit71, Lit67, Lit72, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit71, Lit73, "Go Back", Lit47);
     }
 
     public Object back$Click() {
         runtime.setThisForm();
-        return runtime.callYailPrimitive(runtime.open$Mnanother$Mnscreen, LList.list1("Screen1"), Lit73, "open another screen");
+        return runtime.callYailPrimitive(runtime.open$Mnanother$Mnscreen, LList.list1("Screen1"), Lit75, "open another screen");
     }
 
-    static Object lambda23() {
-        runtime.setAndCoerceProperty$Ex(Lit77, Lit65, Lit78, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit77, Lit71, "Logout", Lit45);
+    static Object lambda25() {
+        runtime.setAndCoerceProperty$Ex(Lit79, Lit67, Lit80, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit79, Lit73, "Logout", Lit47);
     }
 
-    static Object lambda24() {
-        runtime.setAndCoerceProperty$Ex(Lit77, Lit65, Lit78, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit77, Lit71, "Logout", Lit45);
+    static Object lambda26() {
+        runtime.setAndCoerceProperty$Ex(Lit79, Lit67, Lit80, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit79, Lit73, "Logout", Lit47);
     }
 
     public Object logout$Click() {
         runtime.setThisForm();
-        return runtime.callComponentMethod(Lit52, Lit53, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit16, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit80);
-    }
-
-    static Object lambda25() {
-        return runtime.setAndCoerceProperty$Ex(Lit83, Lit65, Lit66, Lit40);
-    }
-
-    static Object lambda26() {
-        return runtime.setAndCoerceProperty$Ex(Lit83, Lit65, Lit66, Lit40);
+        return runtime.callComponentMethod(Lit54, Lit55, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit21, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit82);
     }
 
     static Object lambda27() {
-        runtime.setAndCoerceProperty$Ex(Lit86, Lit65, Lit87, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit86, Lit71, "Start Recording", Lit45);
+        return runtime.setAndCoerceProperty$Ex(Lit85, Lit67, Lit68, Lit42);
     }
 
     static Object lambda28() {
-        runtime.setAndCoerceProperty$Ex(Lit86, Lit65, Lit87, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit86, Lit71, "Start Recording", Lit45);
+        return runtime.setAndCoerceProperty$Ex(Lit85, Lit67, Lit68, Lit42);
+    }
+
+    static Object lambda29() {
+        runtime.setAndCoerceProperty$Ex(Lit88, Lit67, Lit89, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit88, Lit73, "Start Recording", Lit47);
+    }
+
+    static Object lambda30() {
+        runtime.setAndCoerceProperty$Ex(Lit88, Lit67, Lit89, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit88, Lit73, "Start Recording", Lit47);
     }
 
     public Object start$Click() {
         runtime.setThisForm();
-        runtime.setAndCoerceProperty$Ex(Lit89, Lit71, Lit14, Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit90, Lit71, Lit14, Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit91, Lit71, Lit14, Lit45);
-        runtime.addGlobalVarToCurrentFormEnvironment(Lit15, runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list"));
-        runtime.addGlobalVarToCurrentFormEnvironment(Lit32, Boolean.FALSE);
-        runtime.setAndCoerceProperty$Ex(Lit57, Lit58, Boolean.TRUE, Lit42);
-        return runtime.callComponentMethod(Lit55, Lit92, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit5, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit6, runtime.$Stthe$Mnnull$Mnvalue$St), Boolean.FALSE), Lit93);
+        runtime.setAndCoerceProperty$Ex(Lit91, Lit73, Lit17, Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit92, Lit73, Lit17, Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit93, Lit73, Lit17, Lit47);
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit19, runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list"));
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit20, runtime.callYailPrimitive(runtime.make$Mnyail$Mnlist, LList.Empty, LList.Empty, "make a list"));
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit34, Boolean.FALSE);
+        runtime.setAndCoerceProperty$Ex(Lit59, Lit60, Boolean.TRUE, Lit44);
+        return runtime.callComponentMethod(Lit57, Lit94, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit8, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit9, runtime.$Stthe$Mnnull$Mnvalue$St), Boolean.FALSE), Lit95);
     }
 
-    static Object lambda29() {
-        runtime.setAndCoerceProperty$Ex(Lit96, Lit65, Lit97, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit96, Lit71, "Stop Recording", Lit45);
+    static Object lambda31() {
+        runtime.setAndCoerceProperty$Ex(Lit98, Lit67, Lit99, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit98, Lit73, "Stop Recording", Lit47);
     }
 
-    static Object lambda30() {
-        runtime.setAndCoerceProperty$Ex(Lit96, Lit65, Lit97, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit96, Lit71, "Stop Recording", Lit45);
+    static Object lambda32() {
+        runtime.setAndCoerceProperty$Ex(Lit98, Lit67, Lit99, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit98, Lit73, "Stop Recording", Lit47);
     }
 
     public Object stop$Click() {
         runtime.setThisForm();
-        runtime.setAndCoerceProperty$Ex(Lit57, Lit58, Boolean.FALSE, Lit42);
-        return runtime.callComponentMethod(Lit52, Lit53, LList.list1(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit17), Lit99, "select list item")), Lit100, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("/HealthKeeper/RPi/Master/session.php/?data=", runtime.callYailPrimitive(runtime.string$Mnreplace$Mnall, LList.list3(runtime.callYailPrimitive(runtime.yail$Mnlist$Mnto$Mncsv$Mnrow, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit15, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit101, "list to csv row"), "\"", ""), Lit102, "replace all")), Lit103, "join")), Lit104, "join")), Lit105);
-    }
-
-    static Object lambda31() {
-        runtime.setAndCoerceProperty$Ex(Lit108, Lit65, Lit66, Lit40);
-        runtime.setAndCoerceProperty$Ex(Lit108, Lit71, "SpO2 value", Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit108, Lit109, Lit17, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit108, Lit110, Lit111, Lit40);
-    }
-
-    static Object lambda32() {
-        runtime.setAndCoerceProperty$Ex(Lit108, Lit65, Lit66, Lit40);
-        runtime.setAndCoerceProperty$Ex(Lit108, Lit71, "SpO2 value", Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit108, Lit109, Lit17, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit108, Lit110, Lit111, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit59, Lit60, Boolean.FALSE, Lit44);
+        return runtime.callComponentMethod(Lit54, Lit55, LList.list1(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit22), Lit101, "select list item")), Lit102, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("/HealthKeeper/RPi/Master/session.php/?data1=", runtime.callYailPrimitive(runtime.string$Mnreplace$Mnall, LList.list3(runtime.callYailPrimitive(runtime.yail$Mnlist$Mnto$Mncsv$Mnrow, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit19, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit103, "list to csv row"), "\"", ""), Lit104, "replace all")), Lit105, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("&data2=", runtime.callYailPrimitive(runtime.string$Mnreplace$Mnall, LList.list3(runtime.callYailPrimitive(runtime.yail$Mnlist$Mnto$Mncsv$Mnrow, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit20, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit106, "list to csv row"), "\"", ""), Lit107, "replace all")), Lit108, "join")), Lit109, "join")), Lit110, "join")), Lit111);
     }
 
     static Object lambda33() {
-        return runtime.setAndCoerceProperty$Ex(Lit114, Lit65, Lit66, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit114, Lit67, Lit68, Lit42);
+        runtime.setAndCoerceProperty$Ex(Lit114, Lit73, "SpO2 :  %, BPM : ", Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit114, Lit115, Lit22, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit114, Lit116, Lit117, Lit42);
     }
 
     static Object lambda34() {
-        return runtime.setAndCoerceProperty$Ex(Lit114, Lit65, Lit66, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit114, Lit67, Lit68, Lit42);
+        runtime.setAndCoerceProperty$Ex(Lit114, Lit73, "SpO2 :  %, BPM : ", Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit114, Lit115, Lit22, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit114, Lit116, Lit117, Lit42);
     }
 
     static Object lambda35() {
-        runtime.setAndCoerceProperty$Ex(Lit117, Lit65, Lit118, Lit40);
-        runtime.setAndCoerceProperty$Ex(Lit117, Lit71, "Wait for device refresh", Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit117, Lit109, Lit17, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit117, Lit110, Lit119, Lit40);
+        return runtime.setAndCoerceProperty$Ex(Lit120, Lit67, Lit68, Lit42);
     }
 
     static Object lambda36() {
-        runtime.setAndCoerceProperty$Ex(Lit117, Lit65, Lit118, Lit40);
-        runtime.setAndCoerceProperty$Ex(Lit117, Lit71, "Wait for device refresh", Lit45);
-        runtime.setAndCoerceProperty$Ex(Lit117, Lit109, Lit17, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit117, Lit110, Lit119, Lit40);
+        return runtime.setAndCoerceProperty$Ex(Lit120, Lit67, Lit68, Lit42);
     }
 
     static Object lambda37() {
-        runtime.setAndCoerceProperty$Ex(Lit122, Lit43, Lit29, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit122, Lit65, Lit123, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit123, Lit67, Lit124, Lit42);
+        runtime.setAndCoerceProperty$Ex(Lit123, Lit73, "Wait for device refresh", Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit123, Lit115, Lit22, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit123, Lit116, Lit125, Lit42);
     }
 
     static Object lambda38() {
-        runtime.setAndCoerceProperty$Ex(Lit122, Lit43, Lit29, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit122, Lit65, Lit123, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit123, Lit67, Lit124, Lit42);
+        runtime.setAndCoerceProperty$Ex(Lit123, Lit73, "Wait for device refresh", Lit47);
+        runtime.setAndCoerceProperty$Ex(Lit123, Lit115, Lit22, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit123, Lit116, Lit125, Lit42);
     }
 
     static Object lambda39() {
-        runtime.setAndCoerceProperty$Ex(Lit89, Lit71, "0", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit89, Lit110, Lit126, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit128, Lit45, Lit4, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit128, Lit67, Lit129, Lit42);
     }
 
     static Object lambda40() {
-        runtime.setAndCoerceProperty$Ex(Lit89, Lit71, "0", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit89, Lit110, Lit126, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit128, Lit45, Lit4, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit128, Lit67, Lit129, Lit42);
     }
 
     static Object lambda41() {
-        runtime.setAndCoerceProperty$Ex(Lit129, Lit71, ":", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit129, Lit110, Lit130, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit91, Lit73, "0", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit91, Lit116, Lit132, Lit42);
     }
 
     static Object lambda42() {
-        runtime.setAndCoerceProperty$Ex(Lit129, Lit71, ":", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit129, Lit110, Lit130, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit91, Lit73, "0", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit91, Lit116, Lit132, Lit42);
     }
 
     static Object lambda43() {
-        runtime.setAndCoerceProperty$Ex(Lit90, Lit71, "0", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit90, Lit110, Lit133, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit135, Lit73, ":", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit135, Lit116, Lit136, Lit42);
     }
 
     static Object lambda44() {
-        runtime.setAndCoerceProperty$Ex(Lit90, Lit71, "0", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit90, Lit110, Lit133, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit135, Lit73, ":", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit135, Lit116, Lit136, Lit42);
     }
 
     static Object lambda45() {
-        runtime.setAndCoerceProperty$Ex(Lit136, Lit71, ":", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit136, Lit110, Lit137, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit92, Lit73, "0", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit92, Lit116, Lit139, Lit42);
     }
 
     static Object lambda46() {
-        runtime.setAndCoerceProperty$Ex(Lit136, Lit71, ":", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit136, Lit110, Lit137, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit92, Lit73, "0", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit92, Lit116, Lit139, Lit42);
     }
 
     static Object lambda47() {
-        runtime.setAndCoerceProperty$Ex(Lit91, Lit71, "0", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit91, Lit110, Lit140, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit142, Lit73, ":", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit142, Lit116, Lit143, Lit42);
     }
 
     static Object lambda48() {
-        runtime.setAndCoerceProperty$Ex(Lit91, Lit71, "0", Lit45);
-        return runtime.setAndCoerceProperty$Ex(Lit91, Lit110, Lit140, Lit40);
+        runtime.setAndCoerceProperty$Ex(Lit142, Lit73, ":", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit142, Lit116, Lit143, Lit42);
     }
 
     static Object lambda49() {
-        runtime.setAndCoerceProperty$Ex(Lit143, Lit65, Lit66, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit143, Lit71, "Analyze", Lit45);
+        runtime.setAndCoerceProperty$Ex(Lit93, Lit73, "0", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit93, Lit116, Lit146, Lit42);
     }
 
     static Object lambda50() {
-        runtime.setAndCoerceProperty$Ex(Lit143, Lit65, Lit66, Lit40);
-        return runtime.setAndCoerceProperty$Ex(Lit143, Lit71, "Analyze", Lit45);
+        runtime.setAndCoerceProperty$Ex(Lit93, Lit73, "0", Lit47);
+        return runtime.setAndCoerceProperty$Ex(Lit93, Lit116, Lit146, Lit42);
+    }
+
+    static Object lambda51() {
+        runtime.setAndCoerceProperty$Ex(Lit149, Lit67, Lit68, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit149, Lit73, "Analyze", Lit47);
+    }
+
+    static Object lambda52() {
+        runtime.setAndCoerceProperty$Ex(Lit149, Lit67, Lit68, Lit42);
+        return runtime.setAndCoerceProperty$Ex(Lit149, Lit73, "Analyze", Lit47);
     }
 
     public Object analyze$Click() {
         runtime.setThisForm();
-        return runtime.callComponentMethod(Lit52, Lit53, LList.list1(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit17), Lit145, "select list item")), Lit146, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("/HealthKeeper/RPi/Master/session.php/?data=", runtime.callYailPrimitive(runtime.string$Mnreplace$Mnall, LList.list3(runtime.callYailPrimitive(runtime.yail$Mnlist$Mnto$Mncsv$Mnrow, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit15, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit147, "list to csv row"), "\"", ""), Lit148, "replace all")), Lit149, "join"), "&analyze=analyze"), Lit150, "join")), Lit151, "join")), Lit152);
+        return runtime.callComponentMethod(Lit54, Lit55, LList.list1(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("http://", runtime.callYailPrimitive(runtime.yail$Mnlist$Mnget$Mnitem, LList.list2(runtime.callYailPrimitive(runtime.get$Mnstart$Mnvalue, LList.Empty, LList.Empty, "get start value"), Lit22), Lit151, "select list item")), Lit152, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("/HealthKeeper/RPi/Master/session.php/?data1=", runtime.callYailPrimitive(runtime.string$Mnreplace$Mnall, LList.list3(runtime.callYailPrimitive(runtime.yail$Mnlist$Mnto$Mncsv$Mnrow, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit19, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit153, "list to csv row"), "\"", ""), Lit154, "replace all")), Lit155, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("&data2=", runtime.callYailPrimitive(runtime.string$Mnreplace$Mnall, LList.list3(runtime.callYailPrimitive(runtime.yail$Mnlist$Mnto$Mncsv$Mnrow, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit20, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit156, "list to csv row"), "\"", ""), Lit157, "replace all")), Lit158, "join")), Lit159, "join"), "&analyze=analyze"), Lit160, "join")), Lit161, "join")), Lit162);
     }
 
     public Object BluetoothLE1$DeviceFound() {
         runtime.setThisForm();
-        return runtime.callComponentMethod(Lit55, Lit156, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit24, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit157);
+        return runtime.callComponentMethod(Lit57, Lit166, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit29, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit167);
     }
 
     public Object BluetoothLE1$Connected() {
         runtime.setThisForm();
-        return runtime.setAndCoerceProperty$Ex(Lit117, Lit71, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit28, runtime.$Stthe$Mnnull$Mnvalue$St), Lit45);
+        return runtime.setAndCoerceProperty$Ex(Lit123, Lit73, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit3, runtime.$Stthe$Mnnull$Mnvalue$St), Lit47);
     }
 
     public Object BluetoothLE1$StringsReceived(Object $serviceUuid, Object $characteristicUuid, Object $stringValues) {
@@ -1722,45 +1771,63 @@ public class Login extends Form implements Runnable {
         ModuleMethod moduleMethod = runtime.yail$Mnnot;
         ModuleMethod moduleMethod2 = runtime.yail$Mnlist$Mnempty$Qu;
         if ($stringValues instanceof Package) {
-            signalRuntimeError = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit162), " is not bound in the current context"), "Unbound Variable");
+            signalRuntimeError = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit172), " is not bound in the current context"), "Unbound Variable");
         } else {
             signalRuntimeError = $stringValues;
         }
-        if (runtime.callYailPrimitive(moduleMethod, LList.list1(runtime.callYailPrimitive(moduleMethod2, LList.list1(signalRuntimeError), Lit163, "is list empty?")), Lit164, "not") == Boolean.FALSE) {
+        if (runtime.callYailPrimitive(moduleMethod, LList.list1(runtime.callYailPrimitive(moduleMethod2, LList.list1(signalRuntimeError), Lit173, "is list empty?")), Lit174, "not") == Boolean.FALSE) {
             return Values.empty;
         }
-        runtime.addGlobalVarToCurrentFormEnvironment(Lit32, Boolean.TRUE);
-        Symbol symbol = Lit3;
-        moduleMethod2 = runtime.yail$Mnlist$Mnget$Mnitem;
+        Object signalRuntimeError2;
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit34, Boolean.TRUE);
+        Symbol symbol = Lit7;
+        ModuleMethod moduleMethod3 = runtime.yail$Mnlist$Mnget$Mnitem;
         if ($stringValues instanceof Package) {
-            signalRuntimeError = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit162), " is not bound in the current context"), "Unbound Variable");
+            signalRuntimeError = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit172), " is not bound in the current context"), "Unbound Variable");
         } else {
             signalRuntimeError = $stringValues;
         }
         AddOp addOp = AddOp.$Mn;
-        ModuleMethod moduleMethod3 = runtime.yail$Mnlist$Mnlength;
+        ModuleMethod moduleMethod4 = runtime.yail$Mnlist$Mnlength;
         if ($stringValues instanceof Package) {
-            $stringValues = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit162), " is not bound in the current context"), "Unbound Variable");
+            signalRuntimeError2 = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit172), " is not bound in the current context"), "Unbound Variable");
+        } else {
+            signalRuntimeError2 = $stringValues;
         }
-        runtime.addGlobalVarToCurrentFormEnvironment(symbol, runtime.callYailPrimitive(moduleMethod2, LList.list2(signalRuntimeError, runtime.callYailPrimitive(addOp, LList.list2(runtime.callYailPrimitive(moduleMethod3, LList.list1($stringValues), Lit165, "length of list"), Lit17), Lit166, "-")), Lit167, "select list item"));
-        runtime.addGlobalVarToCurrentFormEnvironment(Lit3, runtime.callYailPrimitive(runtime.string$Mnsubstring, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit3, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.callYailPrimitive(strings.string$Mnlength, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit3, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit168, "length"), Lit17), Lit169, "segment"));
-        Scheme.applyToArgs.apply1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit33, runtime.$Stthe$Mnnull$Mnvalue$St));
-        runtime.setAndCoerceProperty$Ex(Lit108, Lit71, runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("SpO2 : ", runtime.lookupGlobalVarInCurrentFormEnvironment(Lit4, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit170, "join"), " %"), Lit171, "join"), Lit45);
-        return runtime.addGlobalVarToCurrentFormEnvironment(Lit13, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit4, runtime.$Stthe$Mnnull$Mnvalue$St));
+        runtime.addGlobalVarToCurrentFormEnvironment(symbol, runtime.callYailPrimitive(moduleMethod3, LList.list2(signalRuntimeError, runtime.callYailPrimitive(addOp, LList.list2(runtime.callYailPrimitive(moduleMethod4, LList.list1(signalRuntimeError2), Lit175, "length of list"), Lit22), Lit176, "-")), Lit177, "select list item"));
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit7, runtime.callYailPrimitive(runtime.string$Mnsubstring, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit7, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.callYailPrimitive(strings.string$Mnlength, LList.list1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit7, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit178, "length"), Lit22), Lit179, "segment"));
+        Scheme.applyToArgs.apply1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit35, runtime.$Stthe$Mnnull$Mnvalue$St));
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit16, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit33, runtime.$Stthe$Mnnull$Mnvalue$St));
+        Symbol symbol2 = Lit7;
+        moduleMethod2 = runtime.yail$Mnlist$Mnget$Mnitem;
+        if ($stringValues instanceof Package) {
+            signalRuntimeError = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit172), " is not bound in the current context"), "Unbound Variable");
+        } else {
+            signalRuntimeError = $stringValues;
+        }
+        moduleMethod3 = runtime.yail$Mnlist$Mnlength;
+        if ($stringValues instanceof Package) {
+            $stringValues = runtime.signalRuntimeError(strings.stringAppend("The variable ", runtime.getDisplayRepresentation(Lit172), " is not bound in the current context"), "Unbound Variable");
+        }
+        runtime.addGlobalVarToCurrentFormEnvironment(symbol2, runtime.callYailPrimitive(moduleMethod2, LList.list2(signalRuntimeError, runtime.callYailPrimitive(moduleMethod3, LList.list1($stringValues), Lit180, "length of list")), Lit181, "select list item"));
+        Scheme.applyToArgs.apply1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit35, runtime.$Stthe$Mnnull$Mnvalue$St));
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit18, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit33, runtime.$Stthe$Mnnull$Mnvalue$St));
+        return runtime.setAndCoerceProperty$Ex(Lit114, Lit73, runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("SpO2 : ", runtime.lookupGlobalVarInCurrentFormEnvironment(Lit16, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit182, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(" %, BPM : ", runtime.lookupGlobalVarInCurrentFormEnvironment(Lit18, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit183, "join")), Lit184, "join"), Lit47);
     }
 
     public Object Clock1$Timer() {
         runtime.setThisForm();
-        if (runtime.lookupGlobalVarInCurrentFormEnvironment(Lit32, runtime.$Stthe$Mnnull$Mnvalue$St) != Boolean.FALSE) {
-            runtime.callYailPrimitive(runtime.yail$Mnlist$Mnadd$Mnto$Mnlist$Ex, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit15, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit13, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit176, "add items to list");
-            runtime.callComponentMethod(Lit55, Lit92, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit5, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit6, runtime.$Stthe$Mnnull$Mnvalue$St), Boolean.FALSE), Lit177);
+        if (runtime.lookupGlobalVarInCurrentFormEnvironment(Lit34, runtime.$Stthe$Mnnull$Mnvalue$St) != Boolean.FALSE) {
+            runtime.callYailPrimitive(runtime.yail$Mnlist$Mnadd$Mnto$Mnlist$Ex, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit19, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit16, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit189, "add items to list");
+            runtime.callYailPrimitive(runtime.yail$Mnlist$Mnadd$Mnto$Mnlist$Ex, LList.list2(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit20, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit18, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit190, "add items to list");
+            runtime.callComponentMethod(Lit57, Lit94, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit8, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit9, runtime.$Stthe$Mnnull$Mnvalue$St), Boolean.FALSE), Lit191);
         }
-        runtime.setAndCoerceProperty$Ex(Lit91, Lit71, runtime.callYailPrimitive(DivideOp.modulo, LList.list2(runtime.callYailPrimitive(AddOp.$Pl, LList.list2(runtime.get$Mnproperty.apply2(Lit91, Lit71), Lit17), Lit178, "+"), Lit179), Lit180, "modulo"), Lit45);
-        if (runtime.callYailPrimitive(strings.string$Eq$Qu, LList.list2(runtime.get$Mnproperty.apply2(Lit91, Lit71), Lit181), Lit182, "text=") == Boolean.FALSE) {
+        runtime.setAndCoerceProperty$Ex(Lit93, Lit73, runtime.callYailPrimitive(DivideOp.modulo, LList.list2(runtime.callYailPrimitive(AddOp.$Pl, LList.list2(runtime.get$Mnproperty.apply2(Lit93, Lit73), Lit22), Lit192, "+"), Lit193), Lit194, "modulo"), Lit47);
+        if (runtime.callYailPrimitive(strings.string$Eq$Qu, LList.list2(runtime.get$Mnproperty.apply2(Lit93, Lit73), Lit195), Lit196, "text=") == Boolean.FALSE) {
             return Values.empty;
         }
-        runtime.setAndCoerceProperty$Ex(Lit90, Lit71, runtime.callYailPrimitive(DivideOp.modulo, LList.list2(runtime.callYailPrimitive(AddOp.$Pl, LList.list2(runtime.get$Mnproperty.apply2(Lit90, Lit71), Lit17), Lit183, "+"), Lit179), Lit184, "modulo"), Lit45);
-        return runtime.callYailPrimitive(strings.string$Eq$Qu, LList.list2(runtime.get$Mnproperty.apply2(Lit90, Lit71), Lit181), Lit185, "text=") != Boolean.FALSE ? runtime.setAndCoerceProperty$Ex(Lit89, Lit71, runtime.callYailPrimitive(DivideOp.modulo, LList.list2(runtime.callYailPrimitive(AddOp.$Pl, LList.list2(runtime.get$Mnproperty.apply2(Lit90, Lit71), Lit17), Lit186, "+"), Lit187), Lit188, "modulo"), Lit45) : Values.empty;
+        runtime.setAndCoerceProperty$Ex(Lit92, Lit73, runtime.callYailPrimitive(DivideOp.modulo, LList.list2(runtime.callYailPrimitive(AddOp.$Pl, LList.list2(runtime.get$Mnproperty.apply2(Lit92, Lit73), Lit22), Lit197, "+"), Lit193), Lit198, "modulo"), Lit47);
+        return runtime.callYailPrimitive(strings.string$Eq$Qu, LList.list2(runtime.get$Mnproperty.apply2(Lit92, Lit73), Lit195), Lit199, "text=") != Boolean.FALSE ? runtime.setAndCoerceProperty$Ex(Lit91, Lit73, runtime.callYailPrimitive(DivideOp.modulo, LList.list2(runtime.callYailPrimitive(AddOp.$Pl, LList.list2(runtime.get$Mnproperty.apply2(Lit92, Lit73), Lit22), Lit200, "+"), Lit201), Lit202, "modulo"), Lit47) : Values.empty;
     }
 
     public void androidLogForm(Object message) {

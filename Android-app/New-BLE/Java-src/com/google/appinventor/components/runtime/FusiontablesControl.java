@@ -485,7 +485,6 @@ public class FusiontablesControl extends AndroidNonvisibleComponent implements C
     }
 
     private String doPostRequest(String query, String authToken) {
-        StringEntity stringEntity;
         String jsonContent = query.trim().substring("create table".length());
         Log.i(LOG_TAG, "Http Post content = " + jsonContent);
         HttpPost request = new HttpPost("https://www.googleapis.com/fusiontables/v2/tables?key=" + ApiKey());
@@ -494,6 +493,7 @@ public class FusiontablesControl extends AndroidNonvisibleComponent implements C
             entity.setContentType("application/json");
             request.addHeader("Authorization", AUTHORIZATION_HEADER_PREFIX + authToken);
             request.setEntity(entity);
+            StringEntity stringEntity;
             try {
                 HttpResponse response = new DefaultHttpClient().execute(request);
                 int statusCode = response.getStatusLine().getStatusCode();

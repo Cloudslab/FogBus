@@ -92,7 +92,6 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
     }
 
     private void sendNotification(Context context, String phone, String msg) {
-        Intent intent;
         ClassNotFoundException e;
         Log.i(TAG, "sendingNotification " + phone + ":" + msg);
         String packageName = context.getPackageName();
@@ -100,6 +99,7 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
         try {
             String classname = packageName + ".Screen1";
             Intent newIntent = new Intent(context, Class.forName(classname));
+            Intent intent;
             try {
                 newIntent.setAction("android.intent.action.MAIN");
                 newIntent.addCategory("android.intent.category.LAUNCHER");

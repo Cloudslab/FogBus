@@ -15,7 +15,6 @@ public class read_line {
         StringBuffer sbuf;
         char mode;
         int length;
-        char last;
         Object dataStr;
         int start = in.pos - 1;
         int pos = start;
@@ -26,6 +25,7 @@ public class read_line {
         while (pos2 < limit) {
             pos = pos2 + 1;
             int ch = buffer[pos2];
+            char last;
             FString delimStr;
             if (ch == 13 || ch == 10) {
                 pos--;

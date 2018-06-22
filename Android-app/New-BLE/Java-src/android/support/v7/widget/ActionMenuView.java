@@ -209,7 +209,6 @@ public class ActionMenuView extends LinearLayoutCompat implements ItemInvoker, M
             return;
         }
         int i;
-        LayoutParams lp;
         int cellSize = this.mMinCellSize + (cellSizeRemaining / cellCount);
         int cellsRemaining = cellCount;
         int maxChildHeight = 0;
@@ -222,6 +221,7 @@ public class ActionMenuView extends LinearLayoutCompat implements ItemInvoker, M
         for (i = 0; i < childCount; i++) {
             View child = getChildAt(i);
             if (child.getVisibility() != 8) {
+                LayoutParams lp;
                 int cellsAvailable;
                 boolean isGeneratedItem = child instanceof ActionMenuItemView;
                 visibleItemCount++;

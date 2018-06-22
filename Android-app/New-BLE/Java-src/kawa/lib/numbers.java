@@ -923,9 +923,9 @@ public class numbers extends ModuleBody {
     }
 
     public Object applyN(ModuleMethod moduleMethod, Object[] objArr) {
-        Object obj;
         int length;
         IntNum[] intNumArr;
+        Object obj;
         switch (moduleMethod.selector) {
             case 12:
                 return max(objArr);

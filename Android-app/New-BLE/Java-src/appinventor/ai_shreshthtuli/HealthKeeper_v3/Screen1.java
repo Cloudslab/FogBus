@@ -57,18 +57,18 @@ public class Screen1 extends Form implements Runnable {
     static final SimpleSymbol Lit0 = ((SimpleSymbol) new SimpleSymbol("Screen1").readResolve());
     static final SimpleSymbol Lit1 = ((SimpleSymbol) new SimpleSymbol("getMessage").readResolve());
     static final SimpleSymbol Lit10 = ((SimpleSymbol) new SimpleSymbol("g$utf").readResolve());
-    static final PairWithPosition Lit100 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467688);
-    static final PairWithPosition Lit101 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467724), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467718);
-    static final PairWithPosition Lit102 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467939);
+    static final PairWithPosition Lit100 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467688);
+    static final PairWithPosition Lit101 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467724), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467718);
+    static final PairWithPosition Lit102 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467939);
     static final IntNum Lit103 = IntNum.make(2);
-    static final PairWithPosition Lit104 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467975), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467969);
+    static final PairWithPosition Lit104 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467975), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467969);
     static final SimpleSymbol Lit105 = ((SimpleSymbol) new SimpleSymbol("Notifier1").readResolve());
     static final SimpleSymbol Lit106 = ((SimpleSymbol) new SimpleSymbol("ShowTextDialog").readResolve());
-    static final PairWithPosition Lit107 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468129), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468124), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468118);
+    static final PairWithPosition Lit107 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468129), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468124), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468118);
     static final SimpleSymbol Lit108 = ((SimpleSymbol) new SimpleSymbol("ConnectWithAddress").readResolve());
-    static final PairWithPosition Lit109 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468240);
-    static final PairWithPosition Lit11 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 57614);
-    static final PairWithPosition Lit110 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468448), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468442);
+    static final PairWithPosition Lit109 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468240);
+    static final PairWithPosition Lit11 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 57614);
+    static final PairWithPosition Lit110 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468448), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 468442);
     static final SimpleSymbol Lit111 = ((SimpleSymbol) new SimpleSymbol("pairsensor$AfterPicking").readResolve());
     static final SimpleSymbol Lit112 = ((SimpleSymbol) new SimpleSymbol("AfterPicking").readResolve());
     static final FString Lit113 = new FString("com.google.appinventor.components.runtime.VerticalArrangement");
@@ -78,7 +78,7 @@ public class Screen1 extends Form implements Runnable {
     static final FString Lit117 = new FString("com.google.appinventor.components.runtime.Label");
     static final IntNum Lit118 = IntNum.make(16);
     static final IntNum Lit119;
-    static final PairWithPosition Lit12 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 57614);
+    static final PairWithPosition Lit12 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 57614);
     static final FString Lit120 = new FString("com.google.appinventor.components.runtime.Label");
     static final FString Lit121 = new FString("com.google.appinventor.components.runtime.Label");
     static final IntNum Lit122;
@@ -100,18 +100,18 @@ public class Screen1 extends Form implements Runnable {
     static final FString Lit137 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
     static final SimpleSymbol Lit138 = ((SimpleSymbol) new SimpleSymbol("HorizontalArrangement4").readResolve());
     static final IntNum Lit139 = IntNum.make(-1019);
-    static final PairWithPosition Lit14 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 61833);
+    static final PairWithPosition Lit14 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 61833);
     static final FString Lit140 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
     static final FString Lit141 = new FString("com.google.appinventor.components.runtime.Button");
     static final SimpleSymbol Lit142 = ((SimpleSymbol) new SimpleSymbol("connect").readResolve());
     static final IntNum Lit143 = IntNum.make(-1050);
     static final FString Lit144 = new FString("com.google.appinventor.components.runtime.Button");
-    static final PairWithPosition Lit145 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852130), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852124);
-    static final PairWithPosition Lit146 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852267), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852261);
-    static final PairWithPosition Lit147 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852406), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852400);
+    static final PairWithPosition Lit145 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852130), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852124);
+    static final PairWithPosition Lit146 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852267), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852261);
+    static final PairWithPosition Lit147 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852406), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852400);
     static final SimpleSymbol Lit148 = ((SimpleSymbol) new SimpleSymbol("Disconnect").readResolve());
-    static final PairWithPosition Lit149 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852617), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852611);
-    static final PairWithPosition Lit15 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 61833);
+    static final PairWithPosition Lit149 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852617), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 852611);
+    static final PairWithPosition Lit15 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 61833);
     static final SimpleSymbol Lit150 = ((SimpleSymbol) new SimpleSymbol("connect$Click").readResolve());
     static final SimpleSymbol Lit151 = ((SimpleSymbol) new SimpleSymbol("Click").readResolve());
     static final FString Lit152 = new FString("com.google.appinventor.components.runtime.HorizontalArrangement");
@@ -137,44 +137,44 @@ public class Screen1 extends Form implements Runnable {
     static final FString Lit170 = new FString("edu.mit.appinventor.ble.BluetoothLE");
     static final FString Lit171 = new FString("edu.mit.appinventor.ble.BluetoothLE");
     static final SimpleSymbol Lit172 = ((SimpleSymbol) new SimpleSymbol("DeviceList").readResolve());
-    static final PairWithPosition Lit173 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1048709);
-    static final PairWithPosition Lit174 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049075);
-    static final PairWithPosition Lit175 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049111), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049105);
-    static final PairWithPosition Lit176 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049159), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049153);
-    static final PairWithPosition Lit177 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049184), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049178);
-    static final PairWithPosition Lit178 = PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049201);
-    static final PairWithPosition Lit179 = PairWithPosition.make(Lit240, PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049414), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049409);
+    static final PairWithPosition Lit173 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1048709);
+    static final PairWithPosition Lit174 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049075);
+    static final PairWithPosition Lit175 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049111), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049105);
+    static final PairWithPosition Lit176 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049159), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049153);
+    static final PairWithPosition Lit177 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049184), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049178);
+    static final PairWithPosition Lit178 = PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049201);
+    static final PairWithPosition Lit179 = PairWithPosition.make(Lit240, PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049414), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049409);
     static final SimpleSymbol Lit18 = ((SimpleSymbol) new SimpleSymbol("g$exist").readResolve());
-    static final PairWithPosition Lit180 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049647);
-    static final PairWithPosition Lit181 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049683), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049677);
-    static final PairWithPosition Lit182 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049723), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049717);
-    static final PairWithPosition Lit183 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049744), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049737), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049731);
+    static final PairWithPosition Lit180 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049647);
+    static final PairWithPosition Lit181 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049683), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049677);
+    static final PairWithPosition Lit182 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049723), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049717);
+    static final PairWithPosition Lit183 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049744), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049737), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1049731);
     static final SimpleSymbol Lit184 = ((SimpleSymbol) new SimpleSymbol("Elements").readResolve());
     static final SimpleSymbol Lit185;
     static final SimpleSymbol Lit186 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$DeviceFound").readResolve());
     static final SimpleSymbol Lit187 = ((SimpleSymbol) new SimpleSymbol("DeviceFound").readResolve());
-    static final PairWithPosition Lit188 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1056918), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1056912);
+    static final PairWithPosition Lit188 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1056918), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1056912);
     static final SimpleSymbol Lit189 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$Connected").readResolve());
     static final SimpleSymbol Lit19 = ((SimpleSymbol) new SimpleSymbol("g$service_UUID").readResolve());
     static final SimpleSymbol Lit190 = ((SimpleSymbol) new SimpleSymbol("Connected").readResolve());
     static final SimpleSymbol Lit191 = ((SimpleSymbol) new SimpleSymbol("$stringValues").readResolve());
-    static final PairWithPosition Lit192 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065110);
-    static final PairWithPosition Lit193 = PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065137);
-    static final PairWithPosition Lit194 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065466);
-    static final PairWithPosition Lit195 = PairWithPosition.make(Lit31, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065503), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065495);
-    static final PairWithPosition Lit196 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065524), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065518);
-    static final PairWithPosition Lit197 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065831);
-    static final PairWithPosition Lit198 = PairWithPosition.make(Lit31, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065868), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065860);
-    static final PairWithPosition Lit199 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065889), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065883);
+    static final PairWithPosition Lit192 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065110);
+    static final PairWithPosition Lit193 = PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065137);
+    static final PairWithPosition Lit194 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065466);
+    static final PairWithPosition Lit195 = PairWithPosition.make(Lit31, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065503), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065495);
+    static final PairWithPosition Lit196 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065524), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065518);
+    static final PairWithPosition Lit197 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065831);
+    static final PairWithPosition Lit198 = PairWithPosition.make(Lit31, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065868), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065860);
+    static final PairWithPosition Lit199 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065889), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065883);
     static final SimpleSymbol Lit2 = ((SimpleSymbol) new SimpleSymbol("*the-null-value*").readResolve());
-    static final SimpleSymbol Lit20 = ((SimpleSymbol) new SimpleSymbol("g$characteristic_UUID").readResolve());
-    static final PairWithPosition Lit200 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065919);
-    static final PairWithPosition Lit201 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit31, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065953), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065946), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065940);
-    static final PairWithPosition Lit202 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066236);
-    static final PairWithPosition Lit203 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066269), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066263);
-    static final PairWithPosition Lit204 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066542), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066536);
-    static final PairWithPosition Lit205 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066651), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066645);
-    static final PairWithPosition Lit206 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066675), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066669);
+    static final SimpleSymbol Lit20 = ((SimpleSymbol) new SimpleSymbol("g$o2").readResolve());
+    static final PairWithPosition Lit200 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065919);
+    static final PairWithPosition Lit201 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit31, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065953), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065946), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1065940);
+    static final PairWithPosition Lit202 = PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066236);
+    static final PairWithPosition Lit203 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066269), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066263);
+    static final PairWithPosition Lit204 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066542), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066536);
+    static final PairWithPosition Lit205 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066651), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066645);
+    static final PairWithPosition Lit206 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066675), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1066669);
     static final SimpleSymbol Lit207 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1$StringsReceived").readResolve());
     static final SimpleSymbol Lit208 = ((SimpleSymbol) new SimpleSymbol("StringsReceived").readResolve());
     static final FString Lit209 = new FString("com.google.appinventor.components.runtime.Clock");
@@ -188,11 +188,11 @@ public class Screen1 extends Form implements Runnable {
     static final FString Lit216 = new FString("com.google.appinventor.components.runtime.Notifier");
     static final FString Lit217 = new FString("com.google.appinventor.components.runtime.Notifier");
     static final SimpleSymbol Lit218 = ((SimpleSymbol) new SimpleSymbol("StoreValue").readResolve());
-    static final PairWithPosition Lit219 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122537);
+    static final PairWithPosition Lit219 = PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122537);
     static final SimpleSymbol Lit22 = ((SimpleSymbol) new SimpleSymbol("p$convert").readResolve());
     static final PairWithPosition Lit220;
     static final SimpleSymbol Lit221 = ((SimpleSymbol) new SimpleSymbol("$response").readResolve());
-    static final PairWithPosition Lit222 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122636), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122630);
+    static final PairWithPosition Lit222 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122636), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122630);
     static final PairWithPosition Lit223;
     static final SimpleSymbol Lit224 = ((SimpleSymbol) new SimpleSymbol("Notifier1$AfterTextInput").readResolve());
     static final SimpleSymbol Lit225 = ((SimpleSymbol) new SimpleSymbol("AfterTextInput").readResolve());
@@ -200,7 +200,7 @@ public class Screen1 extends Form implements Runnable {
     static final FString Lit227 = new FString("com.google.appinventor.components.runtime.TinyDB");
     static final SimpleSymbol Lit228 = ((SimpleSymbol) new SimpleSymbol("android-log-form").readResolve());
     static final SimpleSymbol Lit229 = ((SimpleSymbol) new SimpleSymbol("add-to-form-environment").readResolve());
-    static final PairWithPosition Lit23 = PairWithPosition.make(Lit240, PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90338), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90333);
+    static final PairWithPosition Lit23 = PairWithPosition.make(Lit240, PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90338), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90333);
     static final SimpleSymbol Lit230 = ((SimpleSymbol) new SimpleSymbol("lookup-in-form-environment").readResolve());
     static final SimpleSymbol Lit231 = ((SimpleSymbol) new SimpleSymbol("is-bound-in-form-environment").readResolve());
     static final SimpleSymbol Lit232 = ((SimpleSymbol) new SimpleSymbol("add-to-global-var-environment").readResolve());
@@ -211,14 +211,14 @@ public class Screen1 extends Form implements Runnable {
     static final SimpleSymbol Lit237 = ((SimpleSymbol) new SimpleSymbol("send-error").readResolve());
     static final SimpleSymbol Lit238 = ((SimpleSymbol) new SimpleSymbol("dispatchEvent").readResolve());
     static final SimpleSymbol Lit239 = ((SimpleSymbol) new SimpleSymbol("lookup-handler").readResolve());
-    static final PairWithPosition Lit24 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90369), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90363);
+    static final PairWithPosition Lit24 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90369), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90363);
     static final SimpleSymbol Lit240 = ((SimpleSymbol) new SimpleSymbol("any").readResolve());
-    static final PairWithPosition Lit25 = PairWithPosition.make(Lit240, PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90338), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90333);
-    static final PairWithPosition Lit26 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90369), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90363);
+    static final PairWithPosition Lit25 = PairWithPosition.make(Lit240, PairWithPosition.make(Lit185, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90338), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90333);
+    static final PairWithPosition Lit26 = PairWithPosition.make(Lit185, PairWithPosition.make(Lit31, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90369), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 90363);
     static final SimpleSymbol Lit27 = ((SimpleSymbol) new SimpleSymbol("AboutScreen").readResolve());
     static final SimpleSymbol Lit28;
     static final SimpleSymbol Lit29 = ((SimpleSymbol) new SimpleSymbol("AccentColor").readResolve());
-    static final SimpleSymbol Lit3 = ((SimpleSymbol) new SimpleSymbol("g$bpm").readResolve());
+    static final SimpleSymbol Lit3 = ((SimpleSymbol) new SimpleSymbol("g$characteristic_UUID").readResolve());
     static final IntNum Lit30;
     static final SimpleSymbol Lit31;
     static final SimpleSymbol Lit32 = ((SimpleSymbol) new SimpleSymbol("ActionBar").readResolve());
@@ -229,7 +229,7 @@ public class Screen1 extends Form implements Runnable {
     static final SimpleSymbol Lit37 = ((SimpleSymbol) new SimpleSymbol("BackgroundColor").readResolve());
     static final IntNum Lit38;
     static final SimpleSymbol Lit39 = ((SimpleSymbol) new SimpleSymbol("Icon").readResolve());
-    static final IntNum Lit4 = IntNum.make(0);
+    static final SimpleSymbol Lit4 = ((SimpleSymbol) new SimpleSymbol("g$bpm").readResolve());
     static final SimpleSymbol Lit40 = ((SimpleSymbol) new SimpleSymbol("OpenScreenAnimation").readResolve());
     static final SimpleSymbol Lit41 = ((SimpleSymbol) new SimpleSymbol("ScreenOrientation").readResolve());
     static final SimpleSymbol Lit42 = ((SimpleSymbol) new SimpleSymbol("Scrollable").readResolve());
@@ -240,7 +240,7 @@ public class Screen1 extends Form implements Runnable {
     static final SimpleSymbol Lit47 = ((SimpleSymbol) new SimpleSymbol("device").readResolve());
     static final SimpleSymbol Lit48 = ((SimpleSymbol) new SimpleSymbol("Visible").readResolve());
     static final SimpleSymbol Lit49 = ((SimpleSymbol) new SimpleSymbol("data").readResolve());
-    static final SimpleSymbol Lit5 = ((SimpleSymbol) new SimpleSymbol("g$o2").readResolve());
+    static final IntNum Lit5 = IntNum.make(0);
     static final SimpleSymbol Lit50 = ((SimpleSymbol) new SimpleSymbol("BluetoothLE1").readResolve());
     static final SimpleSymbol Lit51 = ((SimpleSymbol) new SimpleSymbol("StartScanning").readResolve());
     static final SimpleSymbol Lit52 = ((SimpleSymbol) new SimpleSymbol("Clock1").readResolve());
@@ -290,11 +290,11 @@ public class Screen1 extends Form implements Runnable {
     static final SimpleSymbol Lit92 = ((SimpleSymbol) new SimpleSymbol("TinyDB1").readResolve());
     static final SimpleSymbol Lit93 = ((SimpleSymbol) new SimpleSymbol("GetValue").readResolve());
     static final SimpleSymbol Lit94 = ((SimpleSymbol) new SimpleSymbol("$item").readResolve());
-    static final PairWithPosition Lit95 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467131), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467125);
+    static final PairWithPosition Lit95 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit240, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467131), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467125);
     static final SimpleSymbol Lit96 = ((SimpleSymbol) new SimpleSymbol("Selection").readResolve());
-    static final PairWithPosition Lit97 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467183), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467177);
+    static final PairWithPosition Lit97 = PairWithPosition.make(Lit28, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467183), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467177);
     static final SimpleSymbol Lit98 = ((SimpleSymbol) new SimpleSymbol("GetTags").readResolve());
-    static final PairWithPosition Lit99 = PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467477);
+    static final PairWithPosition Lit99 = PairWithPosition.make(Lit33, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 467477);
     public static Screen1 Screen1;
     static final ModuleMethod lambda$Fn1 = null;
     static final ModuleMethod lambda$Fn10 = null;
@@ -1057,17 +1057,17 @@ public class Screen1 extends Form implements Runnable {
     static {
         SimpleSymbol simpleSymbol = (SimpleSymbol) new SimpleSymbol(PropertyTypeConstants.PROPERTY_TYPE_TEXT).readResolve();
         Lit28 = simpleSymbol;
-        Lit223 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122835), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122829);
+        Lit223 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(Lit28, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122835), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122829);
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("list").readResolve();
         Lit185 = simpleSymbol;
         SimpleSymbol simpleSymbol2 = (SimpleSymbol) new SimpleSymbol("number").readResolve();
         Lit31 = simpleSymbol2;
-        Lit220 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol2, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122573), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122567);
+        Lit220 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol2, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122573), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1122567);
         simpleSymbol2 = Lit28;
         SimpleSymbol simpleSymbol3 = Lit28;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol(PropertyTypeConstants.PROPERTY_TYPE_BOOLEAN).readResolve();
         Lit33 = simpleSymbol;
-        Lit213 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol3, PairWithPosition.make(simpleSymbol, LList.Empty, "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1093850), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1093845), "/tmp/1529647859753_0.053566111853461496-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1093839);
+        Lit213 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol3, PairWithPosition.make(simpleSymbol, LList.Empty, "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1093850), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1093845), "/tmp/1529670161599_0.4350797441431-0/youngandroidproject/../src/appinventor/ai_shreshthtuli/HealthKeeper_v3/Screen1.yail", 1093839);
         int[] iArr = new int[2];
         iArr[0] = Component.COLOR_LTGRAY;
         Lit166 = IntNum.make(iArr);
@@ -1120,7 +1120,7 @@ public class Screen1 extends Form implements Runnable {
         this.dispatchEvent = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Screen1_frame, 13, Lit238, 16388);
         this.lookup$Mnhandler = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Screen1_frame, 14, Lit239, 8194);
         PropertySet moduleMethod = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Screen1_frame, 15, null, 0);
-        moduleMethod.setProperty("source-location", "/tmp/runtime7570432500165643465.scm:553");
+        moduleMethod.setProperty("source-location", "/tmp/runtime744766471814722776.scm:553");
         lambda$Fn1 = moduleMethod;
         this.$define = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Screen1_frame, 16, "$define", 0);
         lambda$Fn2 = new ModuleMethod(appinventor_ai_shreshthtuli_HealthKeeper_v3_Screen1_frame, 17, null, 0);
@@ -1235,14 +1235,14 @@ public class Screen1 extends Form implements Runnable {
             try {
                 ((Runnable) find).run();
                 if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-                    Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit3, Lit4), $result);
+                    Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit3, "0aad7ea0-0d60-11e2-8e3c-0002a5d5c51b"), $result);
                 } else {
                     addToGlobalVars(Lit3, lambda$Fn2);
                 }
                 if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-                    Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit5, Lit4), $result);
+                    Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit4, Lit5), $result);
                 } else {
-                    addToGlobalVars(Lit5, lambda$Fn3);
+                    addToGlobalVars(Lit4, lambda$Fn3);
                 }
                 if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
                     Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit6, ""), $result);
@@ -1295,7 +1295,7 @@ public class Screen1 extends Form implements Runnable {
                     addToGlobalVars(Lit19, lambda$Fn13);
                 }
                 if (runtime.$Stthis$Mnis$Mnthe$Mnrepl$St != Boolean.FALSE) {
-                    Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit20, "0aad7ea0-0d60-11e2-8e3c-0002a5d5c51b"), $result);
+                    Values.writeValues(runtime.addGlobalVarToCurrentFormEnvironment(Lit20, Lit5), $result);
                 } else {
                     addToGlobalVars(Lit20, lambda$Fn14);
                 }
@@ -1552,12 +1552,12 @@ public class Screen1 extends Form implements Runnable {
         }
     }
 
-    static IntNum lambda3() {
-        return Lit4;
+    static String lambda3() {
+        return "0aad7ea0-0d60-11e2-8e3c-0002a5d5c51b";
     }
 
     static IntNum lambda4() {
-        return Lit4;
+        return Lit5;
     }
 
     static String lambda5() {
@@ -1596,8 +1596,8 @@ public class Screen1 extends Form implements Runnable {
         return "46a970e0-0d5f-11e2-8b5e-0002a5d5c51b";
     }
 
-    static String lambda15() {
-        return "0aad7ea0-0d60-11e2-8e3c-0002a5d5c51b";
+    static IntNum lambda15() {
+        return Lit5;
     }
 
     static Object lambda16() {
@@ -2008,7 +2008,7 @@ public class Screen1 extends Form implements Runnable {
         }
         runtime.addGlobalVarToCurrentFormEnvironment(symbol, runtime.callYailPrimitive(moduleMethod3, LList.list3(callYailPrimitive, runtime.callYailPrimitive(moduleMethod6, LList.list1(runtime.callYailPrimitive(moduleMethod5, LList.list2(signalRuntimeError, runtime.callYailPrimitive(addOp2, LList.list2(runtime.callYailPrimitive(moduleMethod7, LList.list1(signalRuntimeError2), Lit197, "length of list"), Lit70), Lit198, "-")), Lit199, "select list item")), Lit200, "length"), Lit70), Lit201, "segment"));
         Scheme.applyToArgs.apply1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit22, runtime.$Stthe$Mnnull$Mnvalue$St));
-        runtime.addGlobalVarToCurrentFormEnvironment(Lit5, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit9, runtime.$Stthe$Mnnull$Mnvalue$St));
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit20, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit9, runtime.$Stthe$Mnnull$Mnvalue$St));
         Symbol symbol2 = Lit8;
         moduleMethod2 = runtime.yail$Mnlist$Mnget$Mnitem;
         if ($stringValues instanceof Package) {
@@ -2022,13 +2022,13 @@ public class Screen1 extends Form implements Runnable {
         }
         runtime.addGlobalVarToCurrentFormEnvironment(symbol2, runtime.callYailPrimitive(moduleMethod2, LList.list2(signalRuntimeError, runtime.callYailPrimitive(moduleMethod3, LList.list1($stringValues), Lit202, "length of list")), Lit203, "select list item"));
         Scheme.applyToArgs.apply1(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit22, runtime.$Stthe$Mnnull$Mnvalue$St));
-        runtime.addGlobalVarToCurrentFormEnvironment(Lit3, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit9, runtime.$Stthe$Mnnull$Mnvalue$St));
-        return runtime.setAndCoerceProperty$Ex(Lit49, Lit68, runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("SpO2 : ", runtime.lookupGlobalVarInCurrentFormEnvironment(Lit5, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit204, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(" % , BPM : ", runtime.lookupGlobalVarInCurrentFormEnvironment(Lit3, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit205, "join")), Lit206, "join"), Lit28);
+        runtime.addGlobalVarToCurrentFormEnvironment(Lit4, runtime.lookupGlobalVarInCurrentFormEnvironment(Lit9, runtime.$Stthe$Mnnull$Mnvalue$St));
+        return runtime.setAndCoerceProperty$Ex(Lit49, Lit68, runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(runtime.callYailPrimitive(strings.string$Mnappend, LList.list2("SpO2 : ", runtime.lookupGlobalVarInCurrentFormEnvironment(Lit20, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit204, "join"), runtime.callYailPrimitive(strings.string$Mnappend, LList.list2(" % , BPM : ", runtime.lookupGlobalVarInCurrentFormEnvironment(Lit4, runtime.$Stthe$Mnnull$Mnvalue$St)), Lit205, "join")), Lit206, "join"), Lit28);
     }
 
     public Object Clock1$Timer() {
         runtime.setThisForm();
-        return runtime.getProperty$1(Lit50, Lit211) != Boolean.FALSE ? runtime.callComponentMethod(Lit50, Lit212, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit19, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit20, runtime.$Stthe$Mnnull$Mnvalue$St), Boolean.FALSE), Lit213) : Values.empty;
+        return runtime.getProperty$1(Lit50, Lit211) != Boolean.FALSE ? runtime.callComponentMethod(Lit50, Lit212, LList.list3(runtime.lookupGlobalVarInCurrentFormEnvironment(Lit19, runtime.$Stthe$Mnnull$Mnvalue$St), runtime.lookupGlobalVarInCurrentFormEnvironment(Lit3, runtime.$Stthe$Mnnull$Mnvalue$St), Boolean.FALSE), Lit213) : Values.empty;
     }
 
     public Object Notifier1$AfterTextInput(Object $response) {

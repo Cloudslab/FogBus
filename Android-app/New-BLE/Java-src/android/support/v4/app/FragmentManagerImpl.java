@@ -276,7 +276,6 @@ final class FragmentManagerImpl extends FragmentManager implements LayoutInflate
     public void dump(String prefix, FileDescriptor fd, PrintWriter writer, String[] args) {
         int N;
         int i;
-        Fragment f;
         String innerPrefix = prefix + "    ";
         if (this.mActive != null) {
             N = this.mActive.size();
@@ -286,6 +285,7 @@ final class FragmentManagerImpl extends FragmentManager implements LayoutInflate
                 writer.print(Integer.toHexString(System.identityHashCode(this)));
                 writer.println(":");
                 for (i = 0; i < N; i++) {
+                    Fragment f;
                     f = (Fragment) this.mActive.get(i);
                     writer.print(prefix);
                     writer.print("  #");

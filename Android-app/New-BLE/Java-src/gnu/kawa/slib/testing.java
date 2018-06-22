@@ -2020,9 +2020,9 @@ public class testing extends ModuleBody {
     }
 
     public static Boolean testOnGroupBeginSimple(Object runner, Object suite$Mnname, Object count) {
-        Object log$Mnfile$Mnname;
         try {
             if (lists.isNull(testRunnerGroupStack((test$Mnrunner) runner))) {
+                Object log$Mnfile$Mnname;
                 ports.display("%%%% Starting test ");
                 ports.display(suite$Mnname);
                 if (strings.isString(Boolean.TRUE)) {

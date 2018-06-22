@@ -170,11 +170,11 @@ public class repl extends Procedure0or1 {
     }
 
     public static int processArgs(String[] args, int iArg, int maxArg) {
-        SourceMessages messages;
-        Throwable ex;
         boolean something_done = false;
         while (iArg < maxArg) {
             String arg = args[iArg];
+            SourceMessages messages;
+            Throwable ex;
             if (arg.equals("-c") || arg.equals("-e")) {
                 iArg++;
                 if (iArg == maxArg) {
@@ -537,12 +537,12 @@ public class repl extends Procedure0or1 {
 
     public static void compileFiles(String[] args, int iArg, int maxArg) {
         int i;
-        Compilation comp;
         ModuleManager manager = ModuleManager.getInstance();
         Compilation[] comps = new Compilation[(maxArg - iArg)];
         ModuleInfo[] infos = new ModuleInfo[(maxArg - iArg)];
         SourceMessages messages = new SourceMessages();
         for (i = iArg; i < maxArg; i++) {
+            Compilation comp;
             String arg = args[i];
             getLanguageFromFilenameExtension(arg);
             try {
