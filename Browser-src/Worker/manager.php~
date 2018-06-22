@@ -36,6 +36,14 @@ else{
 	fclose($file);
 
 }
+if(isset($_GET['sync'])){
+	$file = fopen("config.txt", "r");
+	$masterIP = fgets($file);
+	$masterIP = preg_replace('/\s+/', '', $masterIP);
+	fclose($file);
+	shell_exec("sudo rm -rf *.jar");
+	shell_exec("wget http://".$masterIP."/HealthKeeper/RPi/Worker/analyzer.jar");
+}
 ?>
 
 

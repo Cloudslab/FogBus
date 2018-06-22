@@ -27,7 +27,7 @@ if(isset($_GET['data'])){
 	fclose($file);	
 	
 	// Read results and display
-	$result = fopen("result.txt", "r");
+	$result = fopen("result.txt");
 	while (!feof($result)) {
    	$content = fgets($result); 
    	echo $content."<br/>";

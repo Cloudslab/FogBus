@@ -49,6 +49,10 @@ if(isset($_POST['remove'])){
 	$line = fgets($file);
 	while(($line = fgets($file)) !== false){
 		echo "Worker IP : ".$line."<br/>";	
+		if(isset($_POST['sync']){
+			$ip = preg_replace('/\s+/', '', $line);
+			$tmp = file_get_contents("http://".$ip."/HealthKeeper/manager.php/?sync=sync");
+		}	
 	}
 	fclose($file);
 	echo "<br/>"."Add Worker IP<br/>";
@@ -58,6 +62,7 @@ if(isset($_POST['remove'])){
 	<input type='text' name='ip' id='ip'  maxlength=\"500\" /> <br/>
 	<input type='submit' name='add' value='Add Worker' /> <br/><br/>
 	<input type='submit' name='remove' value='Remove all workers' />
+	<input type='submit' name='sync' value='Sync Jar file' />
 	</form>";
 	}
 }
