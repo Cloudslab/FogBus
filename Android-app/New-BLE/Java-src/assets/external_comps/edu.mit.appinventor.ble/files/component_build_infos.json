@@ -1,0 +1,1 @@
+[{"assets":[],"native":[],"permissions":["android.permission.ACCESS_COARSE_LOCATION","android.permission.BLUETOOTH_ADMIN","android.permission.BLUETOOTH"],"activities":[],"broadcastReceivers":[],"broadcastReceiver":[],"libraries":[],"type":"edu.mit.appinventor.ble.BluetoothLE"}]

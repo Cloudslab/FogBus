@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <anim name="abc_fade_in">res/anim/abc_fade_in.xml</anim>
+    <anim name="abc_fade_out">res/anim/abc_fade_out.xml</anim>
+    <anim name="abc_grow_fade_in_from_bottom">res/anim/abc_grow_fade_in_from_bottom.xml</anim>
+    <anim name="abc_popup_enter">res/anim/abc_popup_enter.xml</anim>
+    <anim name="abc_popup_exit">res/anim/abc_popup_exit.xml</anim>
+    <anim name="abc_shrink_fade_out_from_bottom">res/anim/abc_shrink_fade_out_from_bottom.xml</anim>
+    <anim name="abc_slide_in_bottom">res/anim/abc_slide_in_bottom.xml</anim>
+    <anim name="abc_slide_in_top">res/anim/abc_slide_in_top.xml</anim>
+    <anim name="abc_slide_out_bottom">res/anim/abc_slide_out_bottom.xml</anim>
+    <anim name="abc_slide_out_top">res/anim/abc_slide_out_top.xml</anim>
+    <anim name="fadein">res/anim/fadein.xml</anim>
+    <anim name="fadeout">res/anim/fadeout.xml</anim>
+    <anim name="hold">res/anim/hold.xml</anim>
+    <anim name="slide_enter">res/anim/slide_enter.xml</anim>
+    <anim name="slide_enter_reverse">res/anim/slide_enter_reverse.xml</anim>
+    <anim name="slide_exit">res/anim/slide_exit.xml</anim>
+    <anim name="slide_exit_reverse">res/anim/slide_exit_reverse.xml</anim>
+    <anim name="slide_v_enter">res/anim/slide_v_enter.xml</anim>
+    <anim name="slide_v_enter_reverse">res/anim/slide_v_enter_reverse.xml</anim>
+    <anim name="slide_v_exit">res/anim/slide_v_exit.xml</anim>
+    <anim name="slide_v_exit_reverse">res/anim/slide_v_exit_reverse.xml</anim>
+    <anim name="zoom_enter">res/anim/zoom_enter.xml</anim>
+    <anim name="zoom_enter_reverse">res/anim/zoom_enter_reverse.xml</anim>
+    <anim name="zoom_exit">res/anim/zoom_exit.xml</anim>
+    <anim name="zoom_exit_reverse">res/anim/zoom_exit_reverse.xml</anim>
+</resources>

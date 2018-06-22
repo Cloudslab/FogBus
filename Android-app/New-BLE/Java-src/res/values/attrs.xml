@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="drawerArrowStyle">
+        <item>1</item>
+    </attr>
+    <attr name="height">
+        <item>64</item>
+    </attr>
+    <attr name="isLightTheme">
+        <item>8</item>
+    </attr>
+    <attr name="title">
+        <item>2</item>
+    </attr>
+    <attr name="navigationMode">
+        <item>65536</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+    </attr>
+    <attr name="displayOptions">
+        <item>131072</item>
+        <item>20</item>
+        <item>4</item>
+        <item>0</item>
+        <item>10</item>
+        <item>2</item>
+        <item>8</item>
+        <item>1</item>
+    </attr>
+    <attr name="subtitle">
+        <item>2</item>
+    </attr>
+    <attr name="titleTextStyle">
+        <item>1</item>
+    </attr>
+    <attr name="subtitleTextStyle">
+        <item>1</item>
+    </attr>
+    <attr name="icon">
+        <item>1</item>
+    </attr>
+    <attr name="logo">
+        <item>1</item>
+    </attr>
+    <attr name="divider">
+        <item>1</item>
+    </attr>
+    <attr name="background">
+        <item>1</item>
+    </attr>
+    <attr name="backgroundStacked">
+        <item>17</item>
+    </attr>
+    <attr name="backgroundSplit">
+        <item>17</item>
+    </attr>
+    <attr name="customNavigationLayout">
+        <item>1</item>
+    </attr>
+    <attr name="homeLayout">
+        <item>1</item>
+    </attr>
+    <attr name="progressBarStyle">
+        <item>1</item>
+    </attr>
+    <attr name="indeterminateProgressStyle">
+        <item>1</item>
+    </attr>
+    <attr name="progressBarPadding">
+        <item>64</item>
+    </attr>
+    <attr name="itemPadding">
+        <item>64</item>
+    </attr>
+    <attr name="hideOnContentScroll">
+        <item>8</item>
+    </attr>
+    <attr name="contentInsetStart">
+        <item>64</item>
+    </attr>
+    <attr name="contentInsetEnd">
+        <item>64</item>
+    </attr>
+    <attr name="contentInsetLeft">
+        <item>64</item>
+    </attr>
+    <attr name="contentInsetRight">
+        <item>64</item>
+    </attr>
+    <attr name="elevation">
+        <item>64</item>
+    </attr>
+    <attr name="popupTheme">
+        <item>1</item>
+    </attr>
+    <attr name="closeItemLayout">
+        <item>1</item>
+    </attr>
+    <attr name="initialActivityCount">
+        <item>2</item>
+    </attr>
+    <attr name="expandActivityOverflowButtonDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="buttonPanelSideLayout">
+        <item>1</item>
+    </attr>
+    <attr name="listLayout">
+        <item>1</item>
+    </attr>
+    <attr name="multiChoiceItemLayout">
+        <item>1</item>
+    </attr>
+    <attr name="singleChoiceItemLayout">
+        <item>1</item>
+    </attr>
+    <attr name="listItemLayout">
+        <item>1</item>
+    </attr>
+    <attr name="textAllCaps">
+        <item>9</item>
+    </attr>
+    <attr name="color">
+        <item>16</item>
+    </attr>
+    <attr name="spinBars">
+        <item>8</item>
+    </attr>
+    <attr name="drawableSize">
+        <item>64</item>
+    </attr>
+    <attr name="gapBetweenBars">
+        <item>64</item>
+    </attr>
+    <attr name="topBottomBarArrowSize">
+        <item>64</item>
+    </attr>
+    <attr name="middleBarArrowSize">
+        <item>64</item>
+    </attr>
+    <attr name="barSize">
+        <item>64</item>
+    </attr>
+    <attr name="thickness">
+        <item>64</item>
+    </attr>
+    <attr name="measureWithLargestChild">
+        <item>8</item>
+    </attr>
+    <attr name="showDividers">
+        <item>131072</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+    </attr>
+    <attr name="dividerPadding">
+        <item>64</item>
+    </attr>
+    <attr name="showAsAction">
+        <item>131072</item>
+        <item>2</item>
+        <item>8</item>
+        <item>1</item>
+        <item>0</item>
+        <item>4</item>
+    </attr>
+    <attr name="actionLayout">
+        <item>1</item>
+    </attr>
+    <attr name="actionViewClass">
+        <item>2</item>
+    </attr>
+    <attr name="actionProviderClass">
+        <item>2</item>
+    </attr>
+    <attr name="preserveIconSpacing">
+        <item>8</item>
+    </attr>
+    <attr name="overlapAnchor">
+        <item>8</item>
+    </attr>
+    <attr name="state_above_anchor">
+        <item>8</item>
+    </attr>
+    <attr name="layout">
+        <item>1</item>
+    </attr>
+    <attr name="iconifiedByDefault">
+        <item>8</item>
+    </attr>
+    <attr name="queryHint">
+        <item>2</item>
+    </attr>
+    <attr name="defaultQueryHint">
+        <item>2</item>
+    </attr>
+    <attr name="closeIcon">
+        <item>1</item>
+    </attr>
+    <attr name="goIcon">
+        <item>1</item>
+    </attr>
+    <attr name="searchIcon">
+        <item>1</item>
+    </attr>
+    <attr name="searchHintIcon">
+        <item>1</item>
+    </attr>
+    <attr name="voiceIcon">
+        <item>1</item>
+    </attr>
+    <attr name="commitIcon">
+        <item>1</item>
+    </attr>
+    <attr name="suggestionRowLayout">
+        <item>1</item>
+    </attr>
+    <attr name="queryBackground">
+        <item>1</item>
+    </attr>
+    <attr name="submitBackground">
+        <item>1</item>
+    </attr>
+    <attr name="prompt">
+        <item>1</item>
+    </attr>
+    <attr name="spinnerMode">
+        <item>65536</item>
+        <item>0</item>
+        <item>1</item>
+    </attr>
+    <attr name="popupPromptView">
+        <item>1</item>
+    </attr>
+    <attr name="disableChildrenWhenDisabled">
+        <item>8</item>
+    </attr>
+    <attr name="track">
+        <item>1</item>
+    </attr>
+    <attr name="thumbTextPadding">
+        <item>64</item>
+    </attr>
+    <attr name="switchTextAppearance">
+        <item>1</item>
+    </attr>
+    <attr name="switchMinWidth">
+        <item>64</item>
+    </attr>
+    <attr name="switchPadding">
+        <item>64</item>
+    </attr>
+    <attr name="splitTrack">
+        <item>8</item>
+    </attr>
+    <attr name="showText">
+        <item>8</item>
+    </attr>
+    <attr name="windowActionBar">
+        <item>8</item>
+    </attr>
+    <attr name="windowNoTitle">
+        <item>8</item>
+    </attr>
+    <attr name="windowActionBarOverlay">
+        <item>8</item>
+    </attr>
+    <attr name="windowActionModeOverlay">
+        <item>8</item>
+    </attr>
+    <attr name="windowFixedWidthMajor">
+        <item>192</item>
+    </attr>
+    <attr name="windowFixedHeightMinor">
+        <item>192</item>
+    </attr>
+    <attr name="windowFixedWidthMinor">
+        <item>192</item>
+    </attr>
+    <attr name="windowFixedHeightMajor">
+        <item>192</item>
+    </attr>
+    <attr name="windowMinWidthMajor">
+        <item>192</item>
+    </attr>
+    <attr name="windowMinWidthMinor">
+        <item>192</item>
+    </attr>
+    <attr name="actionBarTabStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarTabBarStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarTabTextStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionOverflowButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionOverflowMenuStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarPopupTheme">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarSplitStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarTheme">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarWidgetTheme">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarSize">
+        <item>65600</item>
+        <item>0</item>
+    </attr>
+    <attr name="actionBarDivider">
+        <item>1</item>
+    </attr>
+    <attr name="actionBarItemBackground">
+        <item>1</item>
+    </attr>
+    <attr name="actionMenuTextAppearance">
+        <item>1</item>
+    </attr>
+    <attr name="actionMenuTextColor">
+        <item>17</item>
+    </attr>
+    <attr name="actionModeStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeCloseButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeBackground">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeSplitBackground">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeCloseDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeCutDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeCopyDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModePasteDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeSelectAllDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeShareDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeFindDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModeWebSearchDrawable">
+        <item>1</item>
+    </attr>
+    <attr name="actionModePopupWindowStyle">
+        <item>1</item>
+    </attr>
+    <attr name="textAppearanceLargePopupMenu">
+        <item>1</item>
+    </attr>
+    <attr name="textAppearanceSmallPopupMenu">
+        <item>1</item>
+    </attr>
+    <attr name="dialogTheme">
+        <item>1</item>
+    </attr>
+    <attr name="dialogPreferredPadding">
+        <item>64</item>
+    </attr>
+    <attr name="listDividerAlertDialog">
+        <item>1</item>
+    </attr>
+    <attr name="actionDropDownStyle">
+        <item>1</item>
+    </attr>
+    <attr name="dropdownListPreferredItemHeight">
+        <item>64</item>
+    </attr>
+    <attr name="spinnerDropDownItemStyle">
+        <item>1</item>
+    </attr>
+    <attr name="homeAsUpIndicator">
+        <item>1</item>
+    </attr>
+    <attr name="actionButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="buttonBarStyle">
+        <item>1</item>
+    </attr>
+    <attr name="buttonBarButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="selectableItemBackground">
+        <item>1</item>
+    </attr>
+    <attr name="selectableItemBackgroundBorderless">
+        <item>1</item>
+    </attr>
+    <attr name="borderlessButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="dividerVertical">
+        <item>1</item>
+    </attr>
+    <attr name="dividerHorizontal">
+        <item>1</item>
+    </attr>
+    <attr name="activityChooserViewStyle">
+        <item>1</item>
+    </attr>
+    <attr name="toolbarStyle">
+        <item>1</item>
+    </attr>
+    <attr name="toolbarNavigationButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="popupMenuStyle">
+        <item>1</item>
+    </attr>
+    <attr name="popupWindowStyle">
+        <item>1</item>
+    </attr>
+    <attr name="editTextColor">
+        <item>17</item>
+    </attr>
+    <attr name="editTextBackground">
+        <item>1</item>
+    </attr>
+    <attr name="textAppearanceSearchResultTitle">
+        <item>1</item>
+    </attr>
+    <attr name="textAppearanceSearchResultSubtitle">
+        <item>1</item>
+    </attr>
+    <attr name="textColorSearchUrl">
+        <item>17</item>
+    </attr>
+    <attr name="searchViewStyle">
+        <item>1</item>
+    </attr>
+    <attr name="listPreferredItemHeight">
+        <item>64</item>
+    </attr>
+    <attr name="listPreferredItemHeightSmall">
+        <item>64</item>
+    </attr>
+    <attr name="listPreferredItemHeightLarge">
+        <item>64</item>
+    </attr>
+    <attr name="listPreferredItemPaddingLeft">
+        <item>64</item>
+    </attr>
+    <attr name="listPreferredItemPaddingRight">
+        <item>64</item>
+    </attr>
+    <attr name="dropDownListViewStyle">
+        <item>1</item>
+    </attr>
+    <attr name="listPopupWindowStyle">
+        <item>1</item>
+    </attr>
+    <attr name="textAppearanceListItem">
+        <item>1</item>
+    </attr>
+    <attr name="textAppearanceListItemSmall">
+        <item>1</item>
+    </attr>
+    <attr name="panelBackground">
+        <item>1</item>
+    </attr>
+    <attr name="panelMenuListWidth">
+        <item>64</item>
+    </attr>
+    <attr name="panelMenuListTheme">
+        <item>1</item>
+    </attr>
+    <attr name="listChoiceBackgroundIndicator">
+        <item>1</item>
+    </attr>
+    <attr name="colorPrimary">
+        <item>16</item>
+    </attr>
+    <attr name="colorPrimaryDark">
+        <item>16</item>
+    </attr>
+    <attr name="colorAccent">
+        <item>16</item>
+    </attr>
+    <attr name="colorControlNormal">
+        <item>16</item>
+    </attr>
+    <attr name="colorControlActivated">
+        <item>16</item>
+    </attr>
+    <attr name="colorControlHighlight">
+        <item>16</item>
+    </attr>
+    <attr name="colorButtonNormal">
+        <item>16</item>
+    </attr>
+    <attr name="colorSwitchThumbNormal">
+        <item>16</item>
+    </attr>
+    <attr name="alertDialogStyle">
+        <item>1</item>
+    </attr>
+    <attr name="alertDialogButtonGroupStyle">
+        <item>1</item>
+    </attr>
+    <attr name="alertDialogCenterButtons">
+        <item>8</item>
+    </attr>
+    <attr name="alertDialogTheme">
+        <item>1</item>
+    </attr>
+    <attr name="textColorAlertDialogListItem">
+        <item>17</item>
+    </attr>
+    <attr name="buttonBarPositiveButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="buttonBarNegativeButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="buttonBarNeutralButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="autoCompleteTextViewStyle">
+        <item>1</item>
+    </attr>
+    <attr name="buttonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="buttonStyleSmall">
+        <item>1</item>
+    </attr>
+    <attr name="checkboxStyle">
+        <item>1</item>
+    </attr>
+    <attr name="checkedTextViewStyle">
+        <item>1</item>
+    </attr>
+    <attr name="editTextStyle">
+        <item>1</item>
+    </attr>
+    <attr name="radioButtonStyle">
+        <item>1</item>
+    </attr>
+    <attr name="ratingBarStyle">
+        <item>1</item>
+    </attr>
+    <attr name="spinnerStyle">
+        <item>1</item>
+    </attr>
+    <attr name="switchStyle">
+        <item>1</item>
+    </attr>
+    <attr name="titleTextAppearance">
+        <item>1</item>
+    </attr>
+    <attr name="subtitleTextAppearance">
+        <item>1</item>
+    </attr>
+    <attr name="titleMargins">
+        <item>64</item>
+    </attr>
+    <attr name="titleMarginStart">
+        <item>64</item>
+    </attr>
+    <attr name="titleMarginEnd">
+        <item>64</item>
+    </attr>
+    <attr name="titleMarginTop">
+        <item>64</item>
+    </attr>
+    <attr name="titleMarginBottom">
+        <item>64</item>
+    </attr>
+    <attr name="maxButtonHeight">
+        <item>64</item>
+    </attr>
+    <attr name="collapseIcon">
+        <item>1</item>
+    </attr>
+    <attr name="collapseContentDescription">
+        <item>2</item>
+    </attr>
+    <attr name="navigationIcon">
+        <item>1</item>
+    </attr>
+    <attr name="navigationContentDescription">
+        <item>2</item>
+    </attr>
+    <attr name="paddingStart">
+        <item>64</item>
+    </attr>
+    <attr name="paddingEnd">
+        <item>64</item>
+    </attr>
+    <attr name="theme">
+        <item>1</item>
+    </attr>
+    <attr name="backgroundTint">
+        <item>16</item>
+    </attr>
+    <attr name="backgroundTintMode">
+        <item>65536</item>
+        <item>14</item>
+        <item>15</item>
+        <item>9</item>
+        <item>5</item>
+        <item>3</item>
+    </attr>
+</resources>

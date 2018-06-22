@@ -1,0 +1,987 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "images/bluetooth.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "AdvertisementData",
+   "description": "Returns the advertisement data associated with the specified device address.\n\n __Parameters__:\n\n     * <code>deviceAddress<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The Media Access Control (MAC) address of the target Bluetooth low energy device.\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the advertised service.",
+   "params": [
+    {
+     "name": "deviceAddress",
+     "type": "text"
+    },
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "AdvertiserAddress",
+   "description": "Returns the address of the device with the name specified.\n\n __Parameters__:\n\n     * <code>deviceName<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The advertised name of the target Bluetooth low energy device.",
+   "params": [{
+    "name": "deviceName",
+    "type": "text"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "AdvertiserServiceUuids",
+   "description": "Returns the list of services available on the advertising device.\n\n __Parameters__:\n\n     * <code>deviceAddress<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The Media Access Control (MAC) address of the target Bluetooth low energy device.",
+   "params": [{
+    "name": "deviceAddress",
+    "type": "text"
+   }],
+   "returnType": "list"
+  },
+  {
+   "deprecated": "false",
+   "name": "CharacteristicByIndex",
+   "description": "Returns Unique ID of selected characteristic with index. Index specified by list\n of supported characteristics for a connected device, starting from 1.\n\n __Parameters__:\n\n     * <code>index<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/math.html#number\">_number_<\/a>) &mdash;\n       The index of the desired characteristic, which must be between 1 and the length of the characteristic list.",
+   "params": [{
+    "name": "index",
+    "type": "number"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "Connect",
+   "description": "Use the <code>Connect<\/code> method to connect to a Bluetooth low energy device at the given\n index in the device list.\n\n __Parameters__:\n\n     * <code>index<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/math.html#number\">_number_<\/a>) &mdash;\n       The index of the target device, which must be between 1 and the length of the list.",
+   "params": [{
+    "name": "index",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ConnectWithAddress",
+   "description": "Use the <code>ConnectWithAddress<\/code> method to connect to a specific Bluetooth low energy\n device if its Media Access Control (MAC) address is known. If none of the devices in the device\n list matches the given address, the <a href=\"#ConnectionFailed\"><code>ConnectionFailed<\/code><\/a>\n event will be run. Otherwise, if a connection is successful the\n <a href=\"#Connected\"><code>Connected<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>address<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\" target=\"_blank\">_text_<\/a>) &mdash;\n       The MAC address of the target device, of the form \"12:34:56:78:90:ab\"",
+   "params": [{
+    "name": "address",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Disconnect",
+   "description": "Disconnects from the currently connected BluetoothLE device if a device is connected.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "DisconnectWithAddress",
+   "description": "Disconnects from a connected BluetoothLE device with the given address.\n\n __Parameters__:\n\n     * <code>address<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\" target=\"_blank\">_text_<\/a>) &mdash;\n       The Media Access Control (MAC) address of the device to disconnect, of the form \"12:34:56:78:90:ab\"",
+   "params": [{
+    "name": "address",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "FoundDeviceAddress",
+   "description": "Gets the Media Access Control (MAC) address of the found device at the given index in the\n device list. Index specifies the position in the BluetoothLE device list, starting from 1.\n\n __Parameter__:\n\n     * <code>index<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/math.html#number\">_number_<\/a>) &mdash;\n       The index of the desired device, which must be between 1 and the length of the device list.",
+   "params": [{
+    "name": "index",
+    "type": "number"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "FoundDeviceName",
+   "description": "Gets the name of the found device at the given index in the device list.\n\n __Parameter__:\n\n     * <code>index<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/math.html#number\">_number_<\/a>) &mdash;\n       The index of the desired device, which must be between 1 and the length of the device list.",
+   "params": [{
+    "name": "index",
+    "type": "number"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "FoundDeviceRssi",
+   "description": "Gets the Received Signal Strength Indicator (RSSI) of the found device at the given index.\n The returned value will be between -100 and 0 indicating the strength of the connection.\n\n __Parameter__:\n\n     * <code>index<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/math.html#number\">_number_<\/a>) &mdash;\n       The index of the desired device, which must be between 1 and the length of the device list.",
+   "params": [{
+    "name": "index",
+    "type": "number"
+   }],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetCharacteristicsForService",
+   "description": "Returns the list of supported characteristics for the given service. The list will contain\n (UUID, name) pairs for each characteristic provided by the service UUID.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.",
+   "params": [{
+    "name": "serviceUuid",
+    "type": "text"
+   }],
+   "returnType": "list"
+  },
+  {
+   "deprecated": "false",
+   "name": "ReadBytes",
+   "description": "Reads one or more 8-bit integer values from a connected BluetoothLE device. Service Unique ID\n and Characteristic UniqueID are required. The <code>signed<\/code> parameter indicates whether\n the bytes should be interpreted as signed values or not when being converted into App Inventor\n numbers. After the bytes are read, the <a href=\"#BytesReceived\"><code>BytesReceived<\/code><\/a>\n event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the bytes as signed (true) or unsigned (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ReadFloats",
+   "description": "Reads one or more IEEE 754 floating point numbers from a connected BluetoothLE device. Service Unique ID\n and Characteristic UniqueID are required. The <code>shortFloat<\/code> parameter indicates whether\n the floats are either 16-bit half-precision floating point or 32-bit single precision floating point\n numbers. After the floats are read, the <a href=\"#FloatsReceived\"><code>FloatsReceived<\/code><\/a>\n event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>shortFloat<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the floats as 16-bit half-precision (true) or 32-bit single-precision (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "shortFloat",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ReadIntegers",
+   "description": "Reads one or more 32-bit integer values from a connected BluetoothLE device. Service Unique ID\n and Characteristic UniqueID are required. The <code>signed<\/code> parameter indicates whether\n the integers should be interpreted as signed values or not when being converted into App Inventor\n numbers. After the integers are read, the\n <a href=\"#IntegersReceived\"><code>IntegersReceived<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the integers as signed (true) or unsigned (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ReadShorts",
+   "description": "Reads one or more 16-bit integer values from a connected BluetoothLE device. Service Unique ID\n and Characteristic UniqueID are required. The <code>signed<\/code> parameter indicates whether\n the shorts should be interpreted as signed values or not when being converted into App Inventor\n numbers. After the shorts are read, the <a href=\"#ShortsReceived\"><code>ShortsReceived<\/code><\/a>\n event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the shorts as signed (true) or unsigned (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ReadStrings",
+   "description": "Reads one or more null-terminated strings from a connected BluetoothLE device. Service Unique ID\n and Characteristic Unique ID are required. The <code>utf16<\/code> parameter indicates whether\n the content should be decoded as UTF-16 (true) or UTF-8 (false) code points when converting to\n App Inventor strings. After the strings are read, the\n <a href=\"#StringsReceived\"><code>StringsReceived<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>utf16<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the string content as UTF-16 (true) or UTF-8 (false) code points.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "utf16",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterForBytes",
+   "description": "Registers to receive updates when one or more 8-bit integer values from a connected BluetoothLE\n device are changed. Service Unique ID and Characteristic Unique ID are required. The\n <code>signed<\/code> parameter indicates whether the bytes should be interpreted as signed\n values or not when being converted into App Inventor numbers. Whenever a change is received,\n the <a href=\"#BytesReceived\"><code>BytesReceived<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the bytes as signed (true) or unsigned (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterForFloats",
+   "description": "Registers to receive updates when one or more IEEE 754 floating point numbers from a connected\n BluetoothLE device are changed. Service Unique ID and Characteristic Unique ID are required. The\n <code>shortFloat<\/code> parameter indicates whether the floats are either 16-bit half-precision\n floating point or 32-bit single precision floating point numbers. Whenever a change is received,\n the <a href=\"#FloatsReceived\"><code>FloatsReceived<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>shortFloat<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the floats as 16-bit half-precision (true) or 32-bit single-precision (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "shortFloat",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterForIntegers",
+   "description": "Registers to receive updates when one or more 32-bit integer values from a connected BluetoothLE\n device are changed. Service Unique ID and Characteristic Unique ID are required. The\n <code>signed<\/code> parameter indicates whether the integers should be interpreted as signed\n values or not when being converted into App Inventor numbers. Whenever a change is received,\n the <a href=\"#IntegersReceived\"><code>IntegersReceived<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the integers as signed (true) or unsigned (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterForShorts",
+   "description": "Registers to receive updates when one or more 16-bit integer values from a connected BluetoothLE\n device are changed. Service Unique ID and Characteristic Unique ID are required. The\n <code>signed<\/code> parameter indicates whether the shorts should be interpreted as signed\n values or not when being converted into App Inventor numbers. Whenever a change is received,\n the <a href=\"#ShortsReceived\"><code>ShortsReceived<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the shorts as signed (true) or unsigned (false).",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "RegisterForStrings",
+   "description": "Registers to receive updates when one or more null-terminated strings from a connected\n BluetoothLE device are changed. Service Unique ID and Characteristic Unique ID are required. The\n <code>utf16<\/code> parameter indicates whether the content should be decoded as UTF-16 (true)\n or UTF-8 (false) code points when converting to App Inventor strings. Whenever a change is\n received, the <a href=\"#StringsReceived\"><code>StringsReceived<\/code><\/a> event will be run.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>utf16<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the string content as UTF-16 (true) or UTF-8 (false) code points.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "utf16",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ScanAdvertisements",
+   "description": "Scans for advertising Bluetooth low energy devices.\n\n __Parameter__:\n\n     * <code>scanPeriod<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/math.html#number\">_number_<\/a>) &mdash;\n       The amount of time to spend scanning, in milliseconds.",
+   "params": [{
+    "name": "scanPeriod",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ServiceByIndex",
+   "description": "Returns the Unique ID of the service at the given index in the service list.\n\n __Parameters__:\n\n     * <code>index<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/math.html#number\">_number_<\/a>) &mdash;\n       The index of the desired service, which must be between 1 and the length of the service list.",
+   "params": [{
+    "name": "index",
+    "type": "number"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "StartAdvertising",
+   "description": "Creates and publishes a Bluetooth low energy advertisement.\n\n __Parameters__:\n\n     * <code>inData<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The data to be included in the service advertisement.\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.",
+   "params": [
+    {
+     "name": "inData",
+     "type": "text"
+    },
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "StartScanning",
+   "description": "Starts scanning for Bluetooth low energy devices.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "StopAdvertising",
+   "description": "Stops Bluetooth low energy advertisement from a previous call to\n <a href=\"#StartAdvertising\"><code>StartAdvertising<\/code><\/a>.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "StopScanning",
+   "description": "Stops scanning for Bluetooth low energy devices.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "StopScanningAdvertisements",
+   "description": "Stops scanning for Bluetooth low energy advertisements.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "SupportedCharacteristics",
+   "description": "Returns a list of supported characteristic for the connected device as a string.",
+   "params": [],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "SupportedServices",
+   "description": "Returns the list of supported service for the connected device as a string.",
+   "params": [],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "UnregisterForValues",
+   "description": "Unregisters for updates from the given service and characteristic.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.",
+   "params": [
+    {
+     "name": "service_uuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristic_uuid",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteBytes",
+   "description": "Writes one or more 8-bit integer values to a connected BluetoothLE device. Service Unique ID\n and Characteristic Unique ID are required. The values parameter can either be a single numeric\n value or a list of values. If <code>signed<\/code> is true, the acceptable values are\n between -128 and 127. If <code>signed<\/code> is false, the acceptable values are\n between 0 and 255.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the bytes as signed (true) or unsigned (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteBytesWithResponse",
+   "description": "Writes one or more 8-bit integer values to a connected BluetoothLE device and waits for an\n acknowledgement via the <a href=\"#BytesWritten\"><code>BytesWritten<\/code><\/a> event.\n Service Unique ID and Characteristic Unique ID are required. The values parameter can either\n be a single numeric value or a list of values. If <code>signed<\/code> is true, the acceptable\n values are between -128 and 127. If <code>signed<\/code> is false, the acceptable values are\n between 0 and 255.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the bytes as signed (true) or unsigned (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteFloats",
+   "description": "Writes one or more IEEE 754 floating point numbers to a connected BluetoothLE device. Service Unique ID\n and Characteristic Unique ID are required. The values parameter can either be a single numeric\n value or a list of values. If <code>shortFloat<\/code> is true, then each numeric value will be\n compressed to fit into a 16-bit half-precision floating point value. If <code>shortFloat<\/code>\n is false, then each numeric value will be sent as a 32-bit single precision floating point value.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>shortFloat<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the floats as 16-bit half-precision (true) or 32-bit single-precision (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "shortFloat",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteFloatsWithResponse",
+   "description": "Writes one or more IEEE 754 floating point values to a connected BluetoothLE device and waits for an\n acknowledgement via the <a href=\"#FloatsWritten\"><code>FloatsWritten<\/code><\/a> event.\n Service Unique ID and Characteristic Unique ID are required. The values parameter can either\n be a single numeric value or a list of values. If <code>shortFloat<\/code> is false,\n then each numeric value will be sent as a 32-bit single precision floating point value.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>shortFloat<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the floats as 16-bit half-precision (true) or 32-bit single-precision (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "shortFloat",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteIntegers",
+   "description": "Writes one or more 32-bit integer values to a connected BluetoothLE device. Service Unique ID\n and Characteristic Unique ID are required. The values parameter can either be a single numeric\n value or a list of values. If <code>signed<\/code> is true, the acceptable values are\n between -2147483648 and 2147483647. If <code>signed<\/code> is false, the acceptable values are\n between 0 and 4294967295.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the integers as signed (true) or unsigned (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteIntegersWithResponse",
+   "description": "Writes one or more 32-bit integer values to a connected BluetoothLE device and waits for an\n acknowledgement via the <a href=\"#IntegersWritten\"><code>IntegersWritten<\/code><\/a> event.\n Service Unique ID and Characteristic Unique ID are required. The values parameter can either\n be a single numeric value or a list of values. If <code>signed<\/code> is true, the acceptable\n values are between -2147483648 and 2147483647. If <code>signed<\/code> is false, the acceptable\n values are between 0 and 4294967295.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the integers as signed (true) or unsigned (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteShorts",
+   "description": "Writes one or more 16-bit integer values to a connected BluetoothLE device. Service Unique ID\n and Characteristic Unique ID are required. The values parameter can either be a single numeric\n value or a list of values. If <code>signed<\/code> is true, the acceptable values are\n between -32768 and 32767. If <code>signed<\/code> is false, the acceptable values are\n between 0 and 65535.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the shorts as signed (true) or unsigned (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteShortsWithResponse",
+   "description": "Writes one or more 16-bit integer values to a connected BluetoothLE device and waits for an\n acknowledgement via the <a href=\"#ShortsWritten\"><code>ShortsWritten<\/code><\/a> event.\n Service Unique ID and Characteristic Unique ID are required. The values parameter can either\n be a single numeric value or a list of values. If <code>signed<\/code> is true, the acceptable\n values are between -32768 and 32767. If <code>signed<\/code> is false, the acceptable values\n are between 0 and 65535.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>signed<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Interpret the shorts as signed (true) or unsigned (false).\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "signed",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteStrings",
+   "description": "Writes one or more strings to a connected BluetoothLE device. Service Unique ID and\n Characteristic Unique ID are required. The values parameter can either be a single string or a\n list of strings. If <code>utf16<\/code> is true, the string(s) will be sent using UTF-16 little\n endian encoding. If <code>utf16<\/code> is false, the string(s) will be sent using UTF-8\n encoding.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>utf16<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Send the string encoded as UTF-16 little endian (true) or UTF-8 (false) code points.\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "utf16",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WriteStringsWithResponse",
+   "description": "Writes one or more strings to a connected BluetoothLE device and waits for an acknowledgement\n via the <a href=\"#StringsWritten\"><code>StringsWritten<\/code><\/a> event. Service Unique ID and\n Characteristic Unique ID are required. The values parameter can either be a single string or a\n list of values. If <code>utf16<\/code> is true, the string(s) will be sent using UTF-16 little\n endian encoding. If <code>utf16<\/code> is false, the string(s) will be sent using UTF-8\n encoding.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>utf16<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/logic.html#true\" target=\"_blank\">_boolean_<\/a>)\n       Send the string encoded as UTF-16 little endian (true) or UTF-8 (false) code points.\n     * <code>values<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values to write to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "utf16",
+     "type": "boolean"
+    },
+    {
+     "name": "values",
+     "type": "any"
+    }
+   ]
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "AdvertisementScanPeriod",
+   "description": "Returns the value of ScanPeriod.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "AdvertiserAddresses",
+   "description": "Returns a list of the addresses of devices found during Advertisement scanning.",
+   "type": "list"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "AdvertiserNames",
+   "description": "Returns a list of the names of the devices found during Advertisment scanning.",
+   "type": "list"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "AutoReconnect",
+   "description": "If true, the application will attempt to reestablish a lost connection to a device due to link loss (e.g., moving out of range). This will not apply to connections that are disconnected by a call to the <a href='#Disconnect'><code>Disconnect<\/code><\/a> method. Such disconnects will need to be reconnected via a call to <a href='#Connect'><code>Connect<\/code><\/a> or <a href='#ConnectWithAddress'><code>ConnectWithAddress<\/code><\/a>.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "BatteryValue",
+   "description": "Returns the battery level.",
+   "type": "text"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "ConnectedDeviceName",
+   "description": "The advertised name of the connected device. If no device is connected or Bluetooth low energy is not supported, this will return the empty string.",
+   "type": "text"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "ConnectedDeviceRssi",
+   "description": "Returns the RSSI (Received Signal Strength Indicator) of connected device.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ConnectionTimeout",
+   "description": "The amount of time, in seconds, that the BluetoothLE component will wait for a connection to be established with a device after a call to <a href='#Connect'><code>Connect<\/code><\/a> or <a href='#ConnectWithAddress'><code>ConnectWithAddress<\/code><\/a>. If a connection is not established in the given amount of time, the attempt will be aborted and the <a href='#ConnectionFailed'><code>ConnectionFailed<\/code><\/a> event will be run.",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "DeviceCharacteristics",
+   "description": "A list of triples, one for each characteristic advertised by the connected device, containing the service UUID, characteristic UUID, and the characteristic's name, if known. The format of the list will be ((service1 characteristic1 name1) (service2 characteristic2 name2) ...). If no device is connected or Bluetooth low energy is not supported, then an empty list will be returned.",
+   "type": "list"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "DeviceList",
+   "description": "Returns a sorted list of BluetoothLE devices as a String.",
+   "type": "text"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "DeviceServices",
+   "description": "A list of pairs, one for each advertised service, indicating the service's UUID and its name, if known. The format of the list will be ((uuid1 name1) (uuid2 name2) ...). If no device is connected or Bluetooth low energy is not supported, then an empty list will be returned.",
+   "type": "list"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "IsDeviceAdvertising",
+   "description": "Returns true if the device is currently advertising, false otherwise.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "IsDeviceConnected",
+   "description": "Returns true if a BluetoothLE device is connected; Otherwise, returns false.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Scanning",
+   "description": "The scanning state of the Bluetooth low energy component.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "TxPower",
+   "description": "Returns the transmission power.",
+   "type": "number"
+  }
+ ],
+ "helpUrl": "",
+ "type": "edu.mit.appinventor.ble.BluetoothLE",
+ "version": "2",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "BluetoothLE",
+ "helpString": "Bluetooth Low Energy, also referred to as Bluetooth LE or simply BLE, is a new communication protocol similar to classic Bluetooth except that it is designed to consume less power while maintaining comparable functionality. For this reason, Bluetooth LE is the preferred choice of communication with IoT devices that have limited power resources. Starting with Android 4.3, Google introduced built-in support for Bluetooth Low Energy. The BluetoothLE extension requires Android 5.0 or higher to avoid known issues with Google's Bluetooth LE support prior to Android 5.0.",
+ "properties": [
+  {
+   "defaultValue": "false",
+   "name": "AutoReconnect",
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "10",
+   "name": "ConnectionTimeout",
+   "editorType": "non_negative_integer"
+  }
+ ],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "BytesReceived",
+   "description": "The <code>BytesReceived<\/code> event is run when one or more byte values are received from a\n connected Bluetooth device. Depending on the <code>sign<\/code> parameter of the last call to\n <a href=\"#ReadBytes\"><code>ReadBytes<\/code><\/a> or\n <a href=\"#RegisterForBytes\"><code>RegisterForBytes<\/code><\/a> for the given\n <code>serviceUuid<\/code> and <code>characteristicUuid<\/code>, the <code>byteValues<\/code> list\n will contain numbers ranging from -128 to 127 (<code>signed = true<\/code>)\n or 0 to 255 (<code>signed = false<\/code>).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>byteValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/listsU.html#makealist\">_list_<\/a>) &mdash;\n       A list of values read from the device. The range of each value will depend on the <code>sign<\/code> flag previously specified in the call to read or register.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "byteValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "BytesWritten",
+   "description": "The <code>BytesWritten<\/code> event is run when one or more byte values are written to a\n connected Bluetooth device. <code>byteValues<\/code> will be a list of values actually written\n to the device. This may be different if the original input was too long to fit into a single\n transmission unit (typically 23 bytes).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>byteValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values written to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "byteValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Connected",
+   "description": "The <code>Connected<\/code> event is run after the application successfully connects to a\n Bluetooth low energy device. This can be the result of a call to\n <a href='#Connect'><code>Connect<\/code><\/a> or\n <a href='#ConnectWithAddress'><code>ConnectWithAddress<\/code><\/a>, or as a result of an\n automatic reconnect if the <a href='#AutoReconnect'><code>AutoReconnect<\/code><\/a> property\n was true at the time a connection was requested.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ConnectionFailed",
+   "description": "The <code>ConnectionFailed<\/code> event is run when an attempt to connect to a device does not\n succeed. If a reason is provided by the Bluetooth low energy stack it will be reported via the\n <code>reason<\/code> parameter.\n\n __Parameters__:\n\n     * <code>reason<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\" target=\"_blank\">_text_<\/a>) &mdash;\n       The reason the connection failed, if known.",
+   "params": [{
+    "name": "reason",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "DeviceFound",
+   "description": "The <code>DeviceFound<\/code> event is run when a new Bluetooth low energy device is found.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "Disconnected",
+   "description": "The <code>Disconnected<\/code> event is run when a Bluetooth low energy device is disconnected.\n This can be caused by a call to <a href=\"#Disconnect\"><code>Disconnect<\/code><\/a> or\n <a href=\"#DisconnectWithAddress\"><code>DisconnectWithAddress<\/code><\/a>, or after a device\n is moved away or reset such that a loss of connection occurs.",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "FloatsReceived",
+   "description": "The <code>FloatsReceived<\/code> event is run when one or more IEEE 754 floating point values are received from a\n connected Bluetooth device. Depending on the <code>shortFloat<\/code> parameter of the last call to\n <a href=\"#ReadFloats\"><code>ReadFloats<\/code><\/a> or\n <a href=\"#RegisterForFloats\"><code>RegisterForFloats<\/code><\/a> for the given\n <code>serviceUuid<\/code> and <code>characteristicUuid<\/code>, the <code>floatValues<\/code> list\n will contain numbers ranging from -65504.0 to 65504.0 (<code>shortFloat = true<\/code>)\n or -3.402823466E38 to 3.402823466E38 (<code>shortFloat = false<\/code>).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>floatValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values read from the device. The range of each value will depend on the <code>sign<\/code> flag previously specified in the call to read or register.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "floatValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "FloatsWritten",
+   "description": "The <code>FloatsWritten<\/code> event is run when one or more IEEE 754 floating point values are written to a\n connected Bluetooth device. <code>floatValues<\/code> will be a list of values actually written\n to the device. This may be different if the original input was too long to fit into a single\n transmission unit (typically 11 short floats or 5 regular floats).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>floatValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values written to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "floatValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IntegersReceived",
+   "description": "The <code>IntegersReceived<\/code> event is run when one or more 32-bit integer values are received from a\n connected Bluetooth device. Depending on the <code>sign<\/code> parameter of the last call to\n <a href=\"#ReadIntegers\"><code>ReadIntegers<\/code><\/a> or\n <a href=\"#RegisterForIntegers\"><code>RegisterForIntegers<\/code><\/a> for the given\n <code>serviceUuid<\/code> and <code>characteristicUuid<\/code>, the <code>intValues<\/code> list\n will contain numbers ranging from -2147483648 to 2147483647 (<code>signed = true<\/code>)\n or 0 to 4294967296 (<code>signed = false<\/code>).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>intValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values read from the device. The range of each value will depend on the <code>sign<\/code> flag previously specified in the call to read or register.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "intValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IntegersWritten",
+   "description": "The <code>IntegersWritten<\/code> event is run when one or more 32-bit integers values are written to a\n connected Bluetooth device. <code>intValues<\/code> will be a list of values actually written\n to the device. This may be different if the original input was too long to fit into a single\n transmission unit (typically 5 integers).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>intValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values written to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "intValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "RssiChanged",
+   "description": "Trigger event when RSSI (Received Signal Strength Indicator) of found BluetoothLE device changes",
+   "params": [{
+    "name": "rssi",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ShortsReceived",
+   "description": "The <code>ShortsReceived<\/code> event is run when one or more short integer values are received from a\n connected Bluetooth device. Depending on the <code>sign<\/code> parameter of the last call to\n <a href=\"#ReadShorts\"><code>ReadShorts<\/code><\/a> or\n <a href=\"#RegisterForShorts\"><code>RegisterForShorts<\/code><\/a> for the given\n <code>serviceUuid<\/code> and <code>characteristicUuid<\/code>, the <code>shortValues<\/code> list\n will contain numbers ranging from -32768 to 32767 (<code>signed = true<\/code>)\n or 0 to 65535 (<code>signed = false<\/code>).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>shortValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values read from the device. The range of each value will depend on the <code>sign<\/code> flag previously specified in the call to read or register.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "shortValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ShortsWritten",
+   "description": "The <code>ShortsWritten<\/code> event is run when one or more short integers values are written to a\n connected Bluetooth device. <code>shortValues<\/code> will be a list of values actually written\n to the device. This may be different if the original input was too long to fit into a single\n transmission unit (typically 11 shorts).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>shortValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values written to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "shortValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "StringsReceived",
+   "description": "The <code>StringsReceived<\/code> event is run when one or more strings are received from a\n connected Bluetooth device. Depending on the <code>utf16<\/code> parameter of the last call to\n <a href=\"#ReadStrings\"><code>ReadStrings<\/code><\/a> or\n <a href=\"#RegisterForStrings\"><code>RegisterForStrings<\/code><\/a> for the given\n <code>serviceUuid<\/code> and <code>characteristicUuid<\/code>, the <code>stringValues<\/code> list\n will contain either a UTF-16 little endian decoded (<code>utf16 = true<\/code>) or UTF-8\n decoded (<code>utf16 = false<\/code>) strings. The string length is limited by the maximum\n transmission unit (MTU) of the Bluetooth device, which is typically 23 bytes.\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>stringValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values read from the device. The strings will be decoded as UTF-16 or UTF-8 based on the <code>utf16<\/code> flag previously specified in the call to read or register.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "stringValues",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "StringsWritten",
+   "description": "The <code>StringsWritten<\/code> event is run when one or more strings are written to a\n connected Bluetooth device. <code>stringValues<\/code> will be a list of values actually written\n to the device. This may be different if the original input was too long to fit into a single\n transmission unit (typically 22 bytes).\n\n __Parameters__:\n\n     * <code>serviceUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the service passed in the read or register call.\n     * <code>characteristicUuid<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/text.html#string\">_text_<\/a>) &mdash;\n       The unique identifier of the characteristic in the read or register call.\n     * <code>stringValues<\/code> (<a href=\"http://appinventor.mit.edu/explore/ai2/support/blocks/lists.html#makealist\">_list_<\/a>) &mdash;\n       A list of values written to the device.",
+   "params": [
+    {
+     "name": "serviceUuid",
+     "type": "text"
+    },
+    {
+     "name": "characteristicUuid",
+     "type": "text"
+    },
+    {
+     "name": "stringValues",
+     "type": "list"
+    }
+   ]
+  }
+ ]
+}]

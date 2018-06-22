@@ -1,0 +1,23 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: HealthKeeper_v3.apk
+compressionType: false
+doNotCompress:
+- arsc
+- assets/external_comps/edu.mit.appinventor.ble/classes.jar
+- assets/external_comps/edu.mit.appinventor.ble/extension.properties
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '7'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '1'
+  versionName: '1.0'
