@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E261C25-DDC7-4EC6-8F90-BACBEBF79E7E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AnekaHealthKeeper</RootNamespace>
+    <AssemblyName>AnekaHealthKeeper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aneka">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Common\Aneka.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Data">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Common\Aneka.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Execution">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Runtime\Aneka.Execution.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Runtime.Common">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Runtime\Aneka.Runtime.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Runtime.Provisioning">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Runtime\Aneka.Runtime.Provisioning.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Scheduling">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Runtime\Aneka.Scheduling.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Tasks">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Task Model\Aneka.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Threading">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Thread Model\Aneka.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.UI.Common">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Common\Aneka.UI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Aneka.Util">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Manjrasoft\Aneka.3.1\Tools\SDK\Common\Aneka.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

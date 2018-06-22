@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Aneka>
+  <UseFileTransfer value="false" />
+  <Workspace value="." />
+  <SingleSubmission value="false" />
+  <ResubmitMode value="AUTO" />
+  <PollingTime value="1000" />
+  <LogMessages value="true" />
+  <SchedulerUri value="tcp://10.4.156.194:9090/Aneka" />
+  <UserCredential type="Aneka.Security.UserCredentials" assembly="Aneka">
+    <Instance username="Shreshth Tuli" password="20.4.1998"/>
+  </UserCredential>
+</Aneka>
