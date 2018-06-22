@@ -1,3 +1,8 @@
+<!-- 
+	Coded By:
+	Shreshth Tuli
+-->
+
 <html>
 <head><title>HealthKeeper - Login</title></head>
 <body>
@@ -74,6 +79,16 @@ if(isset($_POST['username']) && isset($_POST['password']) && $dbSuccess){
 		exit();
 	}
 }
+#error_reporting(1);
+$wmi = new COM("WinMgmts:{impersonationLevel=impersonate}") ;
+
+
+$cpus = $wmi->ExecQuery("SELECT LoadPercentage FROM Win32_Processor");
+
+foreach ($cpus as $cpu){
+echo $cpu->LoadPercentage . '%';
+}
+      
 
 
 

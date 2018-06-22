@@ -1,0 +1,4 @@
+For 1 hour of Sleep Apnea Data :
+AHI (Apnea-hypopnea index) = 0
+Minimum Oxygen Level = 98
+Disease Severity : None

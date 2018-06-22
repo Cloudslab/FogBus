@@ -25,12 +25,22 @@ if(isset($_POST['remove'])){
 	}
 	fclose($file);
 	
-	// Alter first line of config.txt as per Enable master set or not
-	if(isset($_POST['enable'])){
-		file_put_contents("config.txt", "EnableMaster".PHP_EOL.$content);
+	// Alter first line of config.txt as per Enable master or aneka set or not
+	if(isset($_POST['enableMaster'])){
+		if(isset($_POST['enableAneka'])){
+			file_put_contents("config.txt", "EnableMaster EnableAneka".PHP_EOL.$content);
+		}
+		else{
+			file_put_contents("config.txt", "EnableMaster DisableAneka".PHP_EOL.$content);
+		}
 	}
 	else{
-		file_put_contents("config.txt", "DisableMaster".PHP_EOL.$content);
+		if(isset($_POST['enableAneka'])){
+			file_put_contents("config.txt", "DisableMaster EnableAneka".PHP_EOL.$content);
+		}
+		else{
+			file_put_contents("config.txt", "DisableMaster DisableAneka".PHP_EOL.$content);
+		}
 	}
 	
 	// If new IP added, add to config.txt
@@ -49,7 +59,7 @@ if(isset($_POST['remove'])){
 	$line = fgets($file);
 	while(($line = fgets($file)) !== false){
 		echo "Worker IP : ".$line."<br/>";	
-		if(isset($_POST['sync']){
+		if(isset($_POST['sync'])){
 			$ip = preg_replace('/\s+/', '', $line);
 			$tmp = file_get_contents("http://".$ip."/HealthKeeper/manager.php/?sync=sync");
 		}	
@@ -58,7 +68,8 @@ if(isset($_POST['remove'])){
 	echo "<br/>"."Add Worker IP<br/>";
 	echo "
 	<form id='ipinfo' method='post'>
-	<input type='checkbox' name='enable' value='Yes' checked />Enable Master as Worker <br/>
+	<input type='checkbox' name='enableMaster' value='Yes' checked />Enable Master as Worker <br/>
+	<input type='checkbox' name='enableAneka' value='Yes' checked />Enable Aneka<br/>
 	<input type='text' name='ip' id='ip'  maxlength=\"500\" /> <br/>
 	<input type='submit' name='add' value='Add Worker' /> <br/><br/>
 	<input type='submit' name='remove' value='Remove all workers' />

@@ -3,13 +3,22 @@
 <body>
 
 <?php
-if(isset($_GET['data'])){
+if(isset($_GET['data1'])){
 	
 	// Write Data to file
-	$content = $_GET['data'];
 	$file = fopen("data.txt", "w+");
 	fwrite($file, "Analysis Done = false".PHP_EOL);
-	fwrite($file,$content.PHP_EOL);
+	$i = 1;
+	while(true) {
+		if(isset($_GET['data'.$i])){
+			$content = $_GET['data'.$i];
+			fwrite($file,$content.PHP_EOL);
+		}
+		else{
+			break;		
+		}		
+		$i += 1;
+	}
 	fclose($file);
 
 	// Execute Analysis code

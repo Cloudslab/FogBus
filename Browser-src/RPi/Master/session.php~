@@ -24,29 +24,36 @@ else{
 
 ?>
 
-Enter Data for analysis: <br>
+Enter Data for analysis:
 <!-- Submit for analysis -->
-<form id='data' method='get'>
-<input type='text' name='data' id='data'  maxlength="500" />
+<form id='data1' method='get'>
+<input type='text' name='data1' id='data1'  maxlength="500" />
 <input type='submit' name='analyze' value='analyze' />
 </form>
 
 <?php
 
-// If data entered, show the data values stored in data.txt
-if(isset($_GET['data'])){
-
-	$file = fopen("data.txt", "a");
-	$content = $_GET['data'];
-	echo "Data Values Stored : ";
-	echo $content;
-	if(0==filesize("data.txt")){
-		fwrite($file,$content);
-	}else{
-		fwrite($file,",".$content);
+// If data entered, show the data values stored in data files
+$i = 1;
+while(true){
+	if(isset($_GET['data'.$i])){
+		$file = fopen("data".$i.".txt", "a");
+		$content = $_GET['data'.$i];
+		echo "Data".$i." Values Stored : ";
+		echo $content.PHP_EOL;
+		if(0==filesize("data".$i.".txt")){
+			fwrite($file,$content);
+		}else{
+			fwrite($file,",".$content);
+		}
+		fclose($file);
 	}
-	fclose($file);
+	else{
+		break;	
+	}
+	$i = $i + 1;
 }
+
 
 ?>
 
@@ -57,17 +64,32 @@ if(isset($_GET['data'])){
 // If Analyze is clicked
 if(isset($_GET['analyze'])){
 
-	$content = $_GET['data'];
+	$content = array();
+	$i = 1;
+	while(true) {
+		if(isset($_GET['data'.$i])){
+			array_push($content, $_GET['data'.$i]);
+		}
+		else{
+			break;		
+		}		
+		$i = $i + 1;
+	}
 	
 	// Parse config.txt for IPs 
 	$file = fopen("config.txt", "r");
 	$line = fgets($file);
-	
-	// Initialize toMaster
-	// true if work given to master, else false
+	$choiceArray = explode(" ", $line);
+		
+	// Initialize choices
+	// true if work given to them, else false
 	$toMaster = true;	
-	if($line == "DisableMaster"){
+	if($choiceArray[0] == "DisableMaster"){
 		$toMaster = false;	
+	}
+	$toAneka = true;	
+	if($choiceArray[1] == "DisableAneka"){
+		$toAneka = false;	
 	}
 	$ips = array();
 	while(($line = fgets($file)) !== false){
@@ -89,16 +111,30 @@ if(isset($_GET['analyze'])){
 			echo "<br/>Woker with IP ".$ip.": compromised - Error \"Could not connect to fog node\"";
 		}
 		array_push($loads, $my_var);	
-		// If any load < 80% then toMaser = false
+		// If any load < 80% then toMaser and toAneka = false
 	  	if($my_var <= 0.8){
 	  		$toMaster = false;
+	  		$toAneka = false;
 	  	}
 	}
 	
-	
 	$result = "";
 	
-	if(!$toMaster){
+	if($toMaster){
+		if(rand(0, 1)==0){
+			$toMaster = false;		
+		}	
+	}
+	
+	$getRequest = '';
+	$i = 1;
+	foreach($content as $data){
+		$getRequest .= 'data'.$i.'='.$data.'&';
+		$i += 1;
+	}
+	$getRequest = substr($getRequest, 0, strlen($getRequest)-1);
+	
+	if(!$toMaster && !$toAneka){
 		// Work given to worker with least load
 		$min = 100;
 		$minindex = 0;
@@ -118,31 +154,43 @@ if(isset($_GET['analyze'])){
 		// Send data
 		echo "<br/><br/>Work sent to Worker ".($minindex+1)." with IP address : ".$ipworker."<br/><br/>";	
 		// Get result and store in $result variable
-		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/worker.php/?data='.$_GET['data']);
+		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/worker.php/?'.$getRequest);
 	}
-	else {
+	elseif($toMaster) {
 		// Work done by master
 		$minindex = 0;
 		$ipworker = "localhost";	
 		echo "<br/><br/>Work Done by Master<br/><br/>";
-		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/RPi/Worker/worker.php/?data='.$_GET['data']);
+		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/RPi/Worker/worker.php/?'.$getRequest);
+	}
+	else{
+		// Work done to Aneka
+		$ipworker = "localhost";
+		echo "<br/><br/>Work Done by Aneka<br/><br/>";
+		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/Aneka/workerAneka.php/?'.$getRequest);
 	}
 	
 	echo $result;
 
 	// Graph 
-	$file1 = fopen("data.txt", "r");
-	$result = fgets($file1);
-	$allArray = explode(",", $result);
-	$dataPoints = array();
-	$criticalPoints = array();
-	foreach ($allArray as $value) {
-    array_push($dataPoints, array("y" => (int)$value, "label" => "-"));
-    array_push($criticalPoints, array("y" => 88, "label" => "-"));
+	$i = 1;
+	$totalData = array();
+	while(true){
+		if(!isset($_GET['data'.$i])){
+			break;		
+		}
+		$file1 = fopen("data".$i.".txt", "r");
+		$result = fgets($file1);
+		$allArray = explode(",", $result);
+		$dataPoints = array();
+		foreach ($allArray as $value) {
+   		array_push($dataPoints, array("y" => (int)$value, "label" => "-"));
+		}
+		fclose($file1);
+		array_push($totalData, $dataPoints);	
+		$i+=1;
 	}
 
-
-	fclose($file1);
 
 }
 
@@ -160,11 +208,11 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{
 		markerType: "none",
 		type: "line",
-		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>},
+		dataPoints: <?php echo json_encode(array_pop($totalData), JSON_NUMERIC_CHECK); ?>},
 		{
 	   markerType: "none", 
 		type: "line",
-		dataPoints: <?php echo json_encode($criticalPoints, JSON_NUMERIC_CHECK); ?>
+		dataPoints: <?php echo json_encode(array_pop($totalData), JSON_NUMERIC_CHECK); ?>
 	}]
 });
 chart.render();
@@ -181,7 +229,14 @@ chart.render();
 
 // Reset all data
 if(isset($_POST['reset'])){
-	file_put_contents("data.txt", "");
+	$i = 1;
+	while(true){
+		if(!isset($_GET['data'.$i])){
+			break;		
+		}
+		file_put_contents("data".$i.".txt", "");
+	}
+	
 	echo "All Data removed<br/>";
 }
 ?>

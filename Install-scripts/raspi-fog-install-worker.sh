@@ -13,7 +13,7 @@ mysql -u root -praspberry -e "CREATE DATABASE data;GRANT ALL PRIVILEGES ON data.
 service apache2 restart
 sudo mkdir /var/www/html/HealthKeeper/
 sudo chmod -R 777 /var/www/html/HealthKeeper/
-sudo cp ./Raspi-Fog/Browser-src/Worker/* /var/www/html/HealthKeeper/
+sudo cp -a ./Raspi-Fog/Browser-src/RPi/Worker/* /var/www/html/HealthKeeper/
 sudo chmod 777 /var/www/html/HeathKeeper/*
 cd /var/www/html/HealthKeeper/
 javac ./analyzer.java
