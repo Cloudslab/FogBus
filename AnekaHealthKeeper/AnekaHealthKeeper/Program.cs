@@ -120,12 +120,16 @@ namespace AnekaHealthKeeper
         public bool checkhash = true;
         public bool success;
         public List<int> input = new List<int>();
+        public List<int> input2 = new List<int>();
         public int count = 0;
         public int min = 100;
-        public bool dip = false;
+        private bool dip = false;
         public int len;
+        public int minbpm = 200;
+        public int maxbpm = 0;
+        public int sumbpm = 0;
         public string check = "Function not executed";
-        public HelloWorld(List<int> input, string signature, RSAParameters publicKey, string oldhash, string newhash)
+        public HelloWorld(List<int> input, List<int> input2, string signature, RSAParameters publicKey, string oldhash, string newhash)
         {
             result = "HelloWorld";
             success = VerifyData(string.Join(";", input.Select(x => x.ToString()).ToArray()), signature, publicKey);
@@ -168,6 +172,21 @@ namespace AnekaHealthKeeper
                 }
             }
 
+            this.input2 = input2;
+            foreach(var val in this.input2)
+            {
+                Console.WriteLine("Value in input2 : " + val);
+                if(this.minbpm > val)
+                {
+                    this.min = val;
+                }
+                if(this.maxbpm < val)
+                {
+                    this.maxbpm = val;
+                }
+                this.sumbpm = this.sumbpm + val;
+            }
+            
         }
         public static bool VerifyData(string originalMessage, string signedMessage, RSAParameters publicKey)
         {
@@ -204,10 +223,17 @@ namespace AnekaHealthKeeper
         static string oldhash;
         static string newhash;
         static string path = @"C:\xampp\htdocs\HealthKeeper\Aneka\data.txt";
-        static List<string> list;
-        static List<int> intlist;
+        static List<string> list1;
+        static List<int> intlist1;
+        static List<string> list2;
+        static List<int> intlist2;
         static int totalcount;
         static int minima;
+        static int totalsum;
+        static int minbpm;
+        static int maxbpm;
+        static int avgbpm;
+        static string diag;
         static List<int> allData = new List<int>();
         static string sev;
         static void Main(string[] args)
@@ -242,17 +268,31 @@ namespace AnekaHealthKeeper
                     app = new AnekaApplication<AnekaThread, ThreadManager>(conf);
                     
                     // Parse data.txt
-                    List<int>[] partitions = new List<int>[2];
-                    int maxSize = (int)Math.Ceiling(list.Count / (double)2);
+                    List<int>[] partitions1 = new List<int>[2];
+                    int maxSize = (int)Math.Ceiling(list1.Count / (double)2);
                     int k = 0;
                     for (int i = 0; i < 2; i++)
                     {
-                        partitions[i] = new List<int>();
+                        partitions1[i] = new List<int>();
                         for (int j = k; j < k + maxSize; j++)
                         {
-                            if (j >= list.Count)
+                            if (j >= list1.Count)
                                 break;
-                            partitions[i].Add(intlist[j]);
+                            partitions1[i].Add(intlist1[j]);
+                        }
+                        k += maxSize;
+                    }
+                    List<int>[] partitions2 = new List<int>[2];
+                    maxSize = (int)Math.Ceiling(list2.Count / (double)2);
+                    k = 0;
+                    for (int i = 0; i < 2; i++)
+                    {
+                        partitions2[i] = new List<int>();
+                        for (int j = k; j < k + maxSize; j++)
+                        {
+                            if (j >= list2.Count)
+                                break;
+                            partitions2[i].Add(intlist2[j]);
                         }
                         k += maxSize;
                     }
@@ -260,19 +300,19 @@ namespace AnekaHealthKeeper
                     oldhash = myBlockChain.GetLatestBlock().hash;
 
                     // Add data partitions to blockchain (assuming no exception in signature validation below)
-                    myBlockChain.AddBlock(partitions[0]);
+                    myBlockChain.AddBlock(partitions1[0]);
                     Console.WriteLine("Hash value : " + myBlockChain.GetLatestBlock().hash);
-                    myBlockChain.AddBlock(partitions[1]);
+                    myBlockChain.AddBlock(partitions1[1]);
                     Console.WriteLine("Hash value : " + myBlockChain.GetLatestBlock().hash);
 
                     newhash = myBlockChain.GetLatestBlock().hash;
 
                     // Signature makes sure the transaction is legit (as private key in invisible)
                     // Initialize 2 HelloWorld objects for two data halves
-                    signature = SignData(string.Join(";", partitions[0].Select(x => x.ToString()).ToArray()), RSAPrivateKeyInfo);
-                    HelloWorld hw = new HelloWorld(partitions[0], signature, RSAPublicKeyInfo, oldhash, newhash);
-                    signature = SignData(string.Join(";", partitions[1].Select(x => x.ToString()).ToArray()), RSAPrivateKeyInfo);
-                    HelloWorld hw2 = new HelloWorld(partitions[1], signature, RSAPublicKeyInfo, oldhash, newhash);
+                    signature = SignData(string.Join(";", partitions1[0].Select(x => x.ToString()).ToArray()), RSAPrivateKeyInfo);
+                    HelloWorld hw = new HelloWorld(partitions1[0], partitions2[0], signature, RSAPublicKeyInfo, oldhash, newhash);
+                    signature = SignData(string.Join(";", partitions1[1].Select(x => x.ToString()).ToArray()), RSAPrivateKeyInfo);
+                    HelloWorld hw2 = new HelloWorld(partitions1[1], partitions2[1], signature, RSAPublicKeyInfo, oldhash, newhash);
 
                     // Declare Aneka thread array
                     AnekaThread[] th = new AnekaThread[2];
@@ -291,31 +331,45 @@ namespace AnekaHealthKeeper
                     // Wait for first thread to finish
                     th[0].Join();
                     hw = (HelloWorld)th[0].Target;
-                    foreach (var val in partitions[0])
+                    foreach (var val in partitions1[0])
                     {
-                        Console.WriteLine("Value in partitions[0] : " + val);
+                        Console.WriteLine("SpO2 Value in partitions[0] : " + val);
+                    }
+                    foreach (var val in partitions2[0])
+                    {
+                        Console.WriteLine("BPM Value in partitions[0] : " + val);
                     }
 
                     Console.WriteLine("Check : " + hw.check);
                     Console.WriteLine("Value : {0} , NodeId:{1},SubmissionTime:{2},Completion Time{3}", hw.result, th[0].NodeId, th[0].SubmissionTime, th[0].CompletionTime);
                     Console.WriteLine("Minimum : {0}", hw.min);
                     Console.WriteLine("Count : {0}", hw.count);
+                    Console.WriteLine("Minimum BPM : {0}", hw.minbpm);
+                    Console.WriteLine("Maximum BPM : {0}", hw.maxbpm);
+                    Console.WriteLine("Sum BPM : {0}", hw.sumbpm);
 
                     // Wait for second thread to finish
                     th[1].Join();
                     hw2 = (HelloWorld)th[1].Target;
-                    foreach (var val in partitions[1])
+                    foreach (var val in partitions1[1])
                     {
-                        Console.WriteLine("Value in partitions[1] : " + val);
+                        Console.WriteLine("SpO2 Value in partitions[1] : " + val);
+                    }
+                    foreach (var val in partitions2[1])
+                    {
+                        Console.WriteLine("BPM Value in partitions[1] : " + val);
                     }
 
                     Console.WriteLine("Check : " + hw2.check);
                     Console.WriteLine("Value : {0} , NodeId:{1},SubmissionTime:{2},Completion Time{3}", hw2.result, th[1].NodeId, th[1].SubmissionTime, th[1].CompletionTime);
                     Console.WriteLine("Minimum : {0}", hw2.min);
                     Console.WriteLine("Count : {0}", hw2.count);
+                    Console.WriteLine("Minimum BPM : {0}", hw2.minbpm);
+                    Console.WriteLine("Maximum BPM : {0}", hw2.maxbpm);
+                    Console.WriteLine("Sum BPM : {0}", hw2.sumbpm);
 
                     // Verify data not tampered
-                    if(hw.checkhash == false && hw2.checkhash == false)
+                    if (hw.checkhash == false && hw2.checkhash == false)
                     {
                         throw new Exception("Data tampered in Master!");
                     }
@@ -326,10 +380,11 @@ namespace AnekaHealthKeeper
                     Console.WriteLine("Blockchain Validation checked!");
 
                     // Compile all results
-                    allData = allData.Concat(partitions[0]).Concat(partitions[1]).ToList();
+                    allData = allData.Concat(partitions1[0]).Concat(partitions1[1]).ToList();
 
                     // Publish results in result.txt
                     totalcount = hw.count + hw2.count;
+                    totalsum = hw.sumbpm + hw2.sumbpm;
                     if (hw.min < hw2.min)
                         minima = hw.min;
                     else
@@ -342,8 +397,24 @@ namespace AnekaHealthKeeper
                         sev = "Moderate";
                     else
                         sev = "Highly severe";
+                    if (hw.minbpm < hw2.minbpm)
+                        minbpm = hw.minbpm;
+                    else
+                        minbpm = hw2.minbpm;
+                    if (hw.maxbpm > hw2.maxbpm)
+                        maxbpm = hw.maxbpm;
+                    else
+                        maxbpm = hw2.maxbpm;
+                    avgbpm = (hw.sumbpm + hw2.sumbpm) / list2.Count();
+                    if (avgbpm < 60)
+                        diag = "High Probability of Bradycardia";
+                    else if (avgbpm > 100)
+                        diag = "High Probability of Tachycardia";
+                    else
+                        diag = "Normal ECG";
 
-                    Console.WriteLine("Result : " + totalcount + ", " + minima);
+                    Console.WriteLine("Result SpO2 : " + totalcount + ", " + minima);
+                    Console.WriteLine("Result BPM : " + minbpm + ", " + maxbpm + ", " + avgbpm);
 
                     int line_to_edit = 1; // Warning: 1-based indexing!
                     string sourceFile = path;
@@ -361,13 +432,17 @@ namespace AnekaHealthKeeper
                         throw new InvalidDataException("Line does not exist in " + sourceFile);
 
                     // Read the old file.
-                    string[] lines = new string[4];
+                    string[] lines = new string[8];
                     string[] linestemp = File.ReadAllLines(sourceFile);
 
                     lines[0] = "For 1 hour of Sleep Apnea Data :";
                     lines[1] = "AHI (Apnea-hypopnea index) = " + totalcount;
                     lines[2] = "Minimum Oxygen Level = " + minima;
                     lines[3] = "Disease severity = " + sev;
+                    lines[4] = "Minimum Heart Rate = " + minbpm;
+                    lines[5] = "Maximum Heart Rate = " + maxbpm;
+                    lines[6] = "Average Heart Rate = " + avgbpm;
+                    lines[7] = "Diagnosis : " + diag;
                     System.IO.File.WriteAllLines(destinationFile, lines);
                     linestemp[0] = "Analysis Done = true";
                     System.IO.File.WriteAllLines(sourceFile, linestemp);
@@ -404,8 +479,10 @@ namespace AnekaHealthKeeper
                     Console.WriteLine("DEBUG: " + result[0]);
                     return false;
                 }
-                list = (result[1]).Split(',').ToList<string>();
-                intlist = list.ConvertAll(s => Int32.Parse(s));
+                list1 = (result[1]).Split(',').ToList<string>();
+                intlist1 = list1.ConvertAll(s => Int32.Parse(s));
+                list2 = (result[2]).Split(',').ToList<string>();
+                intlist2 = list2.ConvertAll(s => Int32.Parse(s));
                 return true;
             }
             catch
