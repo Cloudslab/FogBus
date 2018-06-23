@@ -120,9 +120,9 @@ if(isset($_GET['analyze'])){
 	
 	$result = "";
 	
-	if($toMaster){
+	if(!$toMaster){
 		if(rand(0, 1)==0){
-			$toMaster = false;		
+			$toMaster = true;		
 		}	
 	}
 	
