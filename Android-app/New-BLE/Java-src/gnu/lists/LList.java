@@ -274,8 +274,8 @@ public class LList extends ExtSequence implements Sequence, Externalizable, Comp
     public static Object listTail(Object list, int count) {
         while (true) {
             count--;
+            Pair list2;
             if (count < 0) {
-                Pair list2;
                 return list2;
             }
             if (list2 instanceof Pair) {

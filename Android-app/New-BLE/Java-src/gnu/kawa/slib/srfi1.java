@@ -4264,8 +4264,8 @@ public class srfi1 extends ModuleBody {
     }
 
     public static Object splitAt(Object x, IntNum k) {
-        Object prefix = LList.Empty;
         Object k2;
+        Object prefix = LList.Empty;
         while (!numbers.isZero((Number) k2)) {
             try {
                 prefix = lists.cons(lists.car.apply1(x), prefix);

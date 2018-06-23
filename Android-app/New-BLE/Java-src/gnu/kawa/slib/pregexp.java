@@ -772,6 +772,7 @@ public class pregexp extends ModuleBody {
         }
 
         public Object lambda3sub(Object re, Object i, Object sk, Object fk) {
+            Object obj;
             frame0 gnu_kawa_slib_pregexp_frame0 = new frame0();
             gnu_kawa_slib_pregexp_frame0.staticLink = this;
             gnu_kawa_slib_pregexp_frame0.re$1 = re;
@@ -796,40 +797,39 @@ public class pregexp extends ModuleBody {
                     return Scheme.applyToArgs.apply1(gnu_kawa_slib_pregexp_frame0.fk);
                 } else if (Scheme.isEqv.apply2(gnu_kawa_slib_pregexp_frame0.re$1, pregexp.Lit28) == Boolean.FALSE) {
                     boolean x = characters.isChar(gnu_kawa_slib_pregexp_frame0.re$1);
-                    Object obj;
-                    CharSequence charSequence;
                     Object obj2;
+                    CharSequence charSequence;
                     if (x ? Scheme.numLss.apply2(gnu_kawa_slib_pregexp_frame0.f18i, this.f26n) != Boolean.FALSE : x) {
                         Procedure procedure = this.case$Mnsensitive$Qu != Boolean.FALSE ? characters.char$Eq$Qu : unicode.char$Mnci$Eq$Qu;
-                        obj = this.f27s;
+                        obj2 = this.f27s;
                         try {
-                            charSequence = (CharSequence) obj;
-                            obj2 = gnu_kawa_slib_pregexp_frame0.f18i;
+                            charSequence = (CharSequence) obj2;
+                            obj = gnu_kawa_slib_pregexp_frame0.f18i;
                             try {
-                                return procedure.apply2(Char.make(strings.stringRef(charSequence, ((Number) obj2).intValue())), gnu_kawa_slib_pregexp_frame0.re$1) != Boolean.FALSE ? Scheme.applyToArgs.apply2(gnu_kawa_slib_pregexp_frame0.sk, AddOp.$Pl.apply2(gnu_kawa_slib_pregexp_frame0.f18i, pregexp.Lit8)) : Scheme.applyToArgs.apply1(gnu_kawa_slib_pregexp_frame0.fk);
+                                return procedure.apply2(Char.make(strings.stringRef(charSequence, ((Number) obj).intValue())), gnu_kawa_slib_pregexp_frame0.re$1) != Boolean.FALSE ? Scheme.applyToArgs.apply2(gnu_kawa_slib_pregexp_frame0.sk, AddOp.$Pl.apply2(gnu_kawa_slib_pregexp_frame0.f18i, pregexp.Lit8)) : Scheme.applyToArgs.apply1(gnu_kawa_slib_pregexp_frame0.fk);
                             } catch (ClassCastException e) {
-                                throw new WrongType(e, "string-ref", 2, obj2);
+                                throw new WrongType(e, "string-ref", 2, obj);
                             }
                         } catch (ClassCastException e2) {
-                            throw new WrongType(e2, "string-ref", 1, obj);
+                            throw new WrongType(e2, "string-ref", 1, obj2);
                         }
                     }
                     x = (lists.isPair(gnu_kawa_slib_pregexp_frame0.re$1) + 1) & 1;
                     if (x ? Scheme.numLss.apply2(gnu_kawa_slib_pregexp_frame0.f18i, this.f26n) != Boolean.FALSE : x) {
-                        obj = this.f27s;
+                        obj2 = this.f27s;
                         try {
-                            charSequence = (CharSequence) obj;
-                            obj2 = gnu_kawa_slib_pregexp_frame0.f18i;
+                            charSequence = (CharSequence) obj2;
+                            obj = gnu_kawa_slib_pregexp_frame0.f18i;
                             try {
-                                if (pregexp.isPregexpCheckIfInCharClass(Char.make(strings.stringRef(charSequence, ((Number) obj2).intValue())), gnu_kawa_slib_pregexp_frame0.re$1) != Boolean.FALSE) {
+                                if (pregexp.isPregexpCheckIfInCharClass(Char.make(strings.stringRef(charSequence, ((Number) obj).intValue())), gnu_kawa_slib_pregexp_frame0.re$1) != Boolean.FALSE) {
                                     return Scheme.applyToArgs.apply2(gnu_kawa_slib_pregexp_frame0.sk, AddOp.$Pl.apply2(gnu_kawa_slib_pregexp_frame0.f18i, pregexp.Lit8));
                                 }
                                 return Scheme.applyToArgs.apply1(gnu_kawa_slib_pregexp_frame0.fk);
                             } catch (ClassCastException e3) {
-                                throw new WrongType(e3, "string-ref", 2, obj2);
+                                throw new WrongType(e3, "string-ref", 2, obj);
                             }
                         } catch (ClassCastException e22) {
-                            throw new WrongType(e22, "string-ref", 1, obj);
+                            throw new WrongType(e22, "string-ref", 1, obj2);
                         }
                     }
                     Boolean x2;
@@ -876,23 +876,23 @@ public class pregexp extends ModuleBody {
                                     if (backref == Boolean.FALSE) {
                                         return Scheme.applyToArgs.apply2(gnu_kawa_slib_pregexp_frame0.sk, gnu_kawa_slib_pregexp_frame0.f18i);
                                     }
-                                    obj = this.f27s;
+                                    obj2 = this.f27s;
                                     try {
-                                        charSequence = (CharSequence) obj;
-                                        obj2 = lists.car.apply1(backref);
+                                        charSequence = (CharSequence) obj2;
+                                        obj = lists.car.apply1(backref);
                                         try {
-                                            int intValue = ((Number) obj2).intValue();
-                                            obj2 = lists.cdr.apply1(backref);
+                                            int intValue = ((Number) obj).intValue();
+                                            obj = lists.cdr.apply1(backref);
                                             try {
-                                                return pregexp.pregexpStringMatch(strings.substring(charSequence, intValue, ((Number) obj2).intValue()), this.f27s, gnu_kawa_slib_pregexp_frame0.f18i, this.f26n, gnu_kawa_slib_pregexp_frame0.lambda$Fn4, gnu_kawa_slib_pregexp_frame0.fk);
+                                                return pregexp.pregexpStringMatch(strings.substring(charSequence, intValue, ((Number) obj).intValue()), this.f27s, gnu_kawa_slib_pregexp_frame0.f18i, this.f26n, gnu_kawa_slib_pregexp_frame0.lambda$Fn4, gnu_kawa_slib_pregexp_frame0.fk);
                                             } catch (ClassCastException e32) {
-                                                throw new WrongType(e32, "substring", 3, obj2);
+                                                throw new WrongType(e32, "substring", 3, obj);
                                             }
                                         } catch (ClassCastException e322) {
-                                            throw new WrongType(e322, "substring", 2, obj2);
+                                            throw new WrongType(e322, "substring", 2, obj);
                                         }
                                     } catch (ClassCastException e222) {
-                                        throw new WrongType(e222, "substring", 1, obj);
+                                        throw new WrongType(e222, "substring", 1, obj2);
                                     }
                                 } else if (Scheme.isEqv.apply2(tmp, pregexp.Lit100) != Boolean.FALSE) {
                                     return lambda3sub(lists.cadr.apply1(gnu_kawa_slib_pregexp_frame0.re$1), gnu_kawa_slib_pregexp_frame0.f18i, gnu_kawa_slib_pregexp_frame0.lambda$Fn5, gnu_kawa_slib_pregexp_frame0.fk);
@@ -937,24 +937,24 @@ public class pregexp extends ModuleBody {
                                                     this.case$Mnsensitive$Qu = Scheme.isEqv.apply2(lists.car.apply1(gnu_kawa_slib_pregexp_frame0.re$1), pregexp.Lit60);
                                                     return lambda3sub(lists.cadr.apply1(gnu_kawa_slib_pregexp_frame0.re$1), gnu_kawa_slib_pregexp_frame0.f18i, gnu_kawa_slib_pregexp_frame0.lambda$Fn11, gnu_kawa_slib_pregexp_frame0.lambda$Fn12);
                                                 } else if (Scheme.isEqv.apply2(tmp, pregexp.Lit68) != Boolean.FALSE) {
-                                                    obj = lists.cadr.apply1(gnu_kawa_slib_pregexp_frame0.re$1);
+                                                    obj2 = lists.cadr.apply1(gnu_kawa_slib_pregexp_frame0.re$1);
                                                     try {
                                                         boolean z;
-                                                        gnu_kawa_slib_pregexp_frame0.maximal$Qu = ((obj != Boolean.FALSE ? 1 : 0) + 1) & 1;
+                                                        gnu_kawa_slib_pregexp_frame0.maximal$Qu = ((obj2 != Boolean.FALSE ? 1 : 0) + 1) & 1;
                                                         gnu_kawa_slib_pregexp_frame0.f19p = lists.caddr.apply1(gnu_kawa_slib_pregexp_frame0.re$1);
                                                         gnu_kawa_slib_pregexp_frame0.f20q = lists.cadddr.apply1(gnu_kawa_slib_pregexp_frame0.re$1);
                                                         if (gnu_kawa_slib_pregexp_frame0.maximal$Qu) {
-                                                            obj = gnu_kawa_slib_pregexp_frame0.f20q;
+                                                            obj2 = gnu_kawa_slib_pregexp_frame0.f20q;
                                                             try {
                                                                 int i2;
-                                                                if (obj != Boolean.FALSE) {
+                                                                if (obj2 != Boolean.FALSE) {
                                                                     i2 = 1;
                                                                 } else {
                                                                     i2 = 0;
                                                                 }
                                                                 z = (i2 + 1) & 1;
                                                             } catch (ClassCastException e2222) {
-                                                                throw new WrongType(e2222, "could-loop-infinitely?", -2, obj);
+                                                                throw new WrongType(e2222, "could-loop-infinitely?", -2, obj2);
                                                             }
                                                         }
                                                         z = gnu_kawa_slib_pregexp_frame0.maximal$Qu;
@@ -962,7 +962,7 @@ public class pregexp extends ModuleBody {
                                                         gnu_kawa_slib_pregexp_frame0.re = lists.car.apply1(lists.cddddr.apply1(gnu_kawa_slib_pregexp_frame0.re$1));
                                                         return gnu_kawa_slib_pregexp_frame0.lambda8loupP(pregexp.Lit73, gnu_kawa_slib_pregexp_frame0.f18i);
                                                     } catch (ClassCastException e22222) {
-                                                        throw new WrongType(e22222, "maximal?", -2, obj);
+                                                        throw new WrongType(e22222, "maximal?", -2, obj2);
                                                     }
                                                 } else {
                                                     return pregexp.pregexpError$V(new Object[]{pregexp.Lit101});
@@ -978,12 +978,12 @@ public class pregexp extends ModuleBody {
                             return pregexp.pregexpError$V(new Object[]{pregexp.Lit101});
                         }
                     }
-                    obj = this.f27s;
+                    obj2 = this.f27s;
                     try {
-                        charSequence = (CharSequence) obj;
-                        obj2 = gnu_kawa_slib_pregexp_frame0.f18i;
+                        charSequence = (CharSequence) obj2;
+                        obj = gnu_kawa_slib_pregexp_frame0.f18i;
                         try {
-                            char c2 = strings.stringRef(charSequence, ((Number) obj2).intValue());
+                            char c2 = strings.stringRef(charSequence, ((Number) obj).intValue());
                             ModuleMethod c$Ls = this.case$Mnsensitive$Qu != Boolean.FALSE ? characters.char$Ls$Eq$Qu : unicode.char$Mnci$Ls$Eq$Qu;
                             x2 = c$Ls.apply2(lists.cadr.apply1(gnu_kawa_slib_pregexp_frame0.re$1), Char.make(c2));
                             if (x2 == Boolean.FALSE ? x2 != Boolean.FALSE : c$Ls.apply2(Char.make(c2), lists.caddr.apply1(gnu_kawa_slib_pregexp_frame0.re$1)) != Boolean.FALSE) {
@@ -991,10 +991,10 @@ public class pregexp extends ModuleBody {
                             }
                             return Scheme.applyToArgs.apply1(gnu_kawa_slib_pregexp_frame0.fk);
                         } catch (ClassCastException e3222) {
-                            throw new WrongType(e3222, "string-ref", 2, obj2);
+                            throw new WrongType(e3222, "string-ref", 2, obj);
                         }
                     } catch (ClassCastException e222222) {
-                        throw new WrongType(e222222, "string-ref", 1, obj);
+                        throw new WrongType(e222222, "string-ref", 1, obj2);
                     }
                 } else if (pregexp.isPregexpAtWordBoundary(this.f27s, gnu_kawa_slib_pregexp_frame0.f18i, this.f26n) != Boolean.FALSE) {
                     return Scheme.applyToArgs.apply1(gnu_kawa_slib_pregexp_frame0.fk);
@@ -2496,13 +2496,13 @@ public class pregexp extends ModuleBody {
     }
 
     public static Object pregexpReadNums(Object s, Object i, Object n) {
-        boolean x;
+        char c;
         Object p = LList.Empty;
         Object q = LList.Empty;
         Object obj = Lit8;
         Object obj2 = i;
         while (true) {
-            char c;
+            boolean x;
             if (Scheme.numGEq.apply2(obj2, n) != Boolean.FALSE) {
                 pregexpError$V(new Object[]{Lit76});
             }

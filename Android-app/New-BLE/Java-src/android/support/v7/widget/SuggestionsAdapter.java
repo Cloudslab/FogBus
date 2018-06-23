@@ -299,10 +299,10 @@ class SuggestionsAdapter extends ResourceCursorAdapter implements OnClickListene
     }
 
     private Drawable getDrawableFromResourceValue(String drawableId) {
+        Drawable drawable;
         if (drawableId == null || drawableId.length() == 0 || "0".equals(drawableId)) {
             return null;
         }
-        Drawable drawable;
         try {
             int resourceId = Integer.parseInt(drawableId);
             String drawableUri = "android.resource://" + this.mProviderContext.getPackageName() + "/" + resourceId;

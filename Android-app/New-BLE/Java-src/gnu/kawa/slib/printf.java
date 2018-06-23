@@ -844,13 +844,13 @@ public class printf extends ModuleBody {
         }
 
         public Object lambda29f(Object digs, Object exp, Object strip$Mn0s) {
-            Object i0;
             try {
                 digs = printf.stdio$ClRoundString((CharSequence) digs, AddOp.$Pl.apply2(exp, this.staticLink.precision), strip$Mn0s != Boolean.FALSE ? exp : strip$Mn0s);
                 boolean x;
                 Object list2;
                 if (Scheme.numGEq.apply2(exp, printf.Lit1) != Boolean.FALSE) {
                     try {
+                        Object i0;
                         if (numbers.isZero((Number) exp)) {
                             i0 = printf.Lit1;
                         } else {

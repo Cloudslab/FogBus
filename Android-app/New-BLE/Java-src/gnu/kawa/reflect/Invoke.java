@@ -101,7 +101,6 @@ public class Invoke extends ProcedureN {
         }
         ObjectType dtype;
         Object obj;
-        int i;
         int nargs = args.length;
         Procedure.checkArgCount(this, nargs);
         Object arg0 = args[0];
@@ -110,6 +109,7 @@ public class Invoke extends ProcedureN {
         } else {
             dtype = typeFrom(arg0, this);
         }
+        int i;
         if (this.kind == 'N') {
             obj = null;
             if (dtype instanceof TypeValue) {

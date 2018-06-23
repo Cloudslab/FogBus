@@ -4269,9 +4269,9 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda162(Object start, Object end) {
+            Object obj;
             try {
                 Scheme.applyToArgs.apply4(srfi13.loc$check$Mnarg.get(), srfi13.lambda$Fn163, this.f74n, srfi13.string$Mnpad$Mnright);
-                Object obj;
                 if (Scheme.numLEq.apply2(this.f74n, AddOp.$Mn.apply2(end, start)) != Boolean.FALSE) {
                     obj = this.f75s;
                     try {
@@ -4887,10 +4887,10 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda178(Object start, Object end) {
+            Object obj;
             Object i;
             Object apply2;
             boolean x;
-            Object obj;
             if (characters.isChar(this.criterion)) {
                 i = start;
                 while (true) {
@@ -5201,10 +5201,10 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda182(Object start, Object end) {
-            Object i;
             Object apply2;
-            Object obj;
+            Object i;
             boolean x;
+            Object obj;
             if (characters.isChar(this.criterion)) {
                 i = start;
                 while (true) {
@@ -5421,10 +5421,10 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda184(Object start, Object end) {
+            Object obj;
             Object i;
             Object apply2;
             boolean x;
-            Object obj;
             if (characters.isChar(this.criterion)) {
                 i = AddOp.$Mn.apply2(end, srfi13.Lit1);
                 while (true) {
@@ -8628,7 +8628,6 @@ public class srfi13 extends ModuleBody {
     }
 
     public static Object stringUnfold$V(Object p, Object f, Object g, Object seed, Object[] argsArray) {
-        Object valueOf;
         LList base$Plmake$Mnfinal = LList.makeList(argsArray, 0);
         try {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, p, string$Mnunfold);
@@ -8643,6 +8642,7 @@ public class srfi13 extends ModuleBody {
                             try {
                                 try {
                                     try {
+                                        Object valueOf;
                                         Object min;
                                         Object apply2 = Scheme.applyToArgs.apply2(Scheme.applyToArgs.apply3(loc$base.get(), "", strings.isString(loc$base.get()) ? Boolean.TRUE : Boolean.FALSE), Scheme.applyToArgs.apply3(loc$make$Mnfinal.get(), lambda$Fn17, misc.isProcedure(loc$make$Mnfinal.get()) ? Boolean.TRUE : Boolean.FALSE));
                                         Object chunks = LList.Empty;
@@ -9757,7 +9757,6 @@ public class srfi13 extends ModuleBody {
     }
 
     public static Object stringHash$V(Object s, Object[] argsArray) {
-        Object apply2;
         frame56 gnu_kawa_slib_srfi13_frame56 = new frame56();
         gnu_kawa_slib_srfi13_frame56.f56s = s;
         LList maybe$Mnbound$Plstart$Plend = LList.makeList(argsArray, 0);
@@ -9770,6 +9769,7 @@ public class srfi13 extends ModuleBody {
                 Object obj2 = loc$bound.get();
                 IntNum intNum = Lit7;
                 try {
+                    Object apply2;
                     boolean x = numbers.isInteger(loc$bound.get());
                     if (x) {
                         try {
@@ -9831,7 +9831,6 @@ public class srfi13 extends ModuleBody {
     }
 
     public static Object stringHashCi$V(Object s, Object[] argsArray) {
-        Object apply2;
         frame57 gnu_kawa_slib_srfi13_frame57 = new frame57();
         gnu_kawa_slib_srfi13_frame57.f57s = s;
         LList maybe$Mnbound$Plstart$Plend = LList.makeList(argsArray, 0);
@@ -9844,6 +9843,7 @@ public class srfi13 extends ModuleBody {
                 Object obj2 = loc$bound.get();
                 IntNum intNum = Lit9;
                 try {
+                    Object apply2;
                     boolean x = numbers.isInteger(loc$bound.get());
                     if (x) {
                         try {
@@ -10483,6 +10483,7 @@ public class srfi13 extends ModuleBody {
     }
 
     public static Object makeKmpRestartVector$V(Object pattern, Object[] argsArray) {
+        Object i1;
         frame87 gnu_kawa_slib_srfi13_frame87 = new frame87();
         gnu_kawa_slib_srfi13_frame87.pattern = pattern;
         LList maybe$Mnc$Eq$Plstart$Plend = LList.makeList(argsArray, 0);
@@ -10515,7 +10516,6 @@ public class srfi13 extends ModuleBody {
                                                             while (Scheme.numLss.apply2(i, rvlen$Mn1) != Boolean.FALSE) {
                                                                 Procedure procedure2;
                                                                 Object obj5;
-                                                                Object i1;
                                                                 while (Scheme.numEqu.apply2(j, Lit13) == Boolean.FALSE) {
                                                                     procedure2 = Scheme.applyToArgs;
                                                                     try {
@@ -11006,7 +11006,6 @@ public class srfi13 extends ModuleBody {
     }
 
     public static Object stringConcatenateReverse$V(Object string$Mnlist, Object[] argsArray) {
-        Object apply3;
         LList maybe$Mnfinal$Plend = LList.makeList(argsArray, 0);
         Procedure procedure = Scheme.applyToArgs;
         try {
@@ -11014,11 +11013,12 @@ public class srfi13 extends ModuleBody {
             Procedure procedure2 = Scheme.applyToArgs;
             try {
                 try {
-                    Object apply32 = Scheme.applyToArgs.apply3(loc$final.get(), "", strings.isString(loc$final.get()) ? Boolean.TRUE : Boolean.FALSE);
+                    Object apply3 = Scheme.applyToArgs.apply3(loc$final.get(), "", strings.isString(loc$final.get()) ? Boolean.TRUE : Boolean.FALSE);
                     Procedure procedure3 = Scheme.applyToArgs;
                     try {
                         Object obj2 = loc$end.get();
                         try {
+                            Object apply32;
                             try {
                                 Integer valueOf = Integer.valueOf(strings.stringLength((CharSequence) loc$final.get()));
                                 try {
@@ -11030,9 +11030,9 @@ public class srfi13 extends ModuleBody {
                                                 try {
                                                     try {
                                                         try {
-                                                            apply3 = Scheme.numLEq.apply3(Lit0, loc$end.get(), Integer.valueOf(strings.stringLength((CharSequence) loc$final.get())));
+                                                            apply32 = Scheme.numLEq.apply3(Lit0, loc$end.get(), Integer.valueOf(strings.stringLength((CharSequence) loc$final.get())));
                                                         } catch (ClassCastException e) {
-                                                            throw new WrongType(e, "string-length", 1, apply3);
+                                                            throw new WrongType(e, "string-length", 1, apply32);
                                                         }
                                                     } catch (UnboundLocationException e2) {
                                                         e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1621, 36);
@@ -11043,25 +11043,25 @@ public class srfi13 extends ModuleBody {
                                                     throw e22;
                                                 }
                                             }
-                                            apply3 = x ? Boolean.TRUE : Boolean.FALSE;
+                                            apply32 = x ? Boolean.TRUE : Boolean.FALSE;
                                         } catch (UnboundLocationException e222) {
                                             e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1620, 19);
                                             throw e222;
                                         }
                                     }
-                                    apply3 = x ? Boolean.TRUE : Boolean.FALSE;
-                                    Object apply2 = procedure2.apply2(apply32, procedure3.apply3(obj2, valueOf, apply3));
+                                    apply32 = x ? Boolean.TRUE : Boolean.FALSE;
+                                    Object apply2 = procedure2.apply2(apply3, procedure3.apply3(obj2, valueOf, apply32));
                                     Object lis = string$Mnlist;
                                     Object len = Lit0;
                                     while (lists.isPair(lis)) {
                                         Procedure procedure4 = AddOp.$Pl;
-                                        apply3 = lists.car.apply1(lis);
+                                        apply32 = lists.car.apply1(lis);
                                         try {
-                                            Object sum = procedure4.apply2(len, Integer.valueOf(strings.stringLength((CharSequence) apply3)));
+                                            Object sum = procedure4.apply2(len, Integer.valueOf(strings.stringLength((CharSequence) apply32)));
                                             lis = lists.cdr.apply1(lis);
                                             len = sum;
                                         } catch (ClassCastException e3) {
-                                            throw new WrongType(e3, "string-length", 1, apply3);
+                                            throw new WrongType(e3, "string-length", 1, apply32);
                                         }
                                     }
                                     try {
@@ -11080,7 +11080,7 @@ public class srfi13 extends ModuleBody {
                                     throw e222222;
                                 }
                             } catch (ClassCastException e32) {
-                                throw new WrongType(e32, "string-length", 1, apply3);
+                                throw new WrongType(e32, "string-length", 1, apply32);
                             }
                         } catch (UnboundLocationException e2222222) {
                             e2222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1618, 28);
@@ -11802,14 +11802,14 @@ public class srfi13 extends ModuleBody {
     public Object applyN(ModuleMethod moduleMethod, Object[] objArr) {
         Object obj;
         Object obj2;
-        int length;
-        Object[] objArr2;
         Object obj3;
         Object obj4;
+        int length;
+        Object[] objArr2;
         Object obj5;
+        Object obj6;
         int intValue;
         int intValue2;
-        Object obj6;
         Object obj7;
         int length2;
         Object[] objArr3;
@@ -11817,151 +11817,151 @@ public class srfi13 extends ModuleBody {
         int i;
         switch (moduleMethod.selector) {
             case HttpRequestContext.HTTP_OK /*200*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return substring$SlShared$V(obj, obj2, objArr2);
+                        return substring$SlShared$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 202:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCopy$V(obj, objArr2);
+                        return stringCopy$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 203:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringMap$V(obj, obj2, objArr2);
+                        return stringMap$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 205:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringMap$Ex$V(obj, obj2, objArr2);
+                        return stringMap$Ex$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 207:
-                obj = objArr[0];
-                obj2 = objArr[1];
-                obj3 = objArr[2];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
+                obj5 = objArr[2];
                 length = objArr.length - 3;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringFold$V(obj, obj2, obj3, objArr2);
+                        return stringFold$V(obj3, obj4, obj5, objArr2);
                     }
                     objArr2[length] = objArr[length + 3];
                 }
             case 208:
-                obj = objArr[0];
-                obj2 = objArr[1];
-                obj3 = objArr[2];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
+                obj5 = objArr[2];
                 length = objArr.length - 3;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringFoldRight$V(obj, obj2, obj3, objArr2);
+                        return stringFoldRight$V(obj3, obj4, obj5, objArr2);
                     }
                     objArr2[length] = objArr[length + 3];
                 }
             case 210:
-                obj = objArr[0];
-                obj2 = objArr[1];
-                obj3 = objArr[2];
-                obj4 = objArr[3];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
+                obj5 = objArr[2];
+                obj = objArr[3];
                 length = objArr.length - 4;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringUnfold$V(obj, obj2, obj3, obj4, objArr2);
+                        return stringUnfold$V(obj3, obj4, obj5, obj, objArr2);
                     }
                     objArr2[length] = objArr[length + 4];
                 }
             case 212:
-                obj = objArr[0];
-                obj2 = objArr[1];
-                obj3 = objArr[2];
-                obj4 = objArr[3];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
+                obj5 = objArr[2];
+                obj = objArr[3];
                 length = objArr.length - 4;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringUnfoldRight$V(obj, obj2, obj3, obj4, objArr2);
+                        return stringUnfoldRight$V(obj3, obj4, obj5, obj, objArr2);
                     }
                     objArr2[length] = objArr[length + 4];
                 }
             case 213:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringForEach$V(obj, obj2, objArr2);
+                        return stringForEach$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 214:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringForEachIndex$V(obj, obj2, objArr2);
+                        return stringForEachIndex$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 215:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringEvery$V(obj, obj2, objArr2);
+                        return stringEvery$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 216:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringAny$V(obj, obj2, objArr2);
+                        return stringAny$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
@@ -11970,152 +11970,152 @@ public class srfi13 extends ModuleBody {
             case 220:
                 return $PcStringSuffixLength(objArr[0], objArr[1], objArr[2], objArr[3], objArr[4], objArr[5]);
             case 221:
-                obj5 = objArr[0];
-                obj = objArr[1];
+                obj6 = objArr[0];
+                obj3 = objArr[1];
                 try {
-                    length = ((Number) obj).intValue();
-                    obj2 = objArr[2];
+                    length = ((Number) obj3).intValue();
+                    obj4 = objArr[2];
                     try {
-                        intValue = ((Number) obj2).intValue();
-                        obj2 = objArr[3];
-                        obj4 = objArr[4];
+                        intValue = ((Number) obj4).intValue();
+                        obj4 = objArr[3];
+                        obj = objArr[4];
                         try {
-                            intValue2 = ((Number) obj4).intValue();
-                            obj6 = objArr[5];
+                            intValue2 = ((Number) obj).intValue();
+                            obj2 = objArr[5];
                             try {
-                                return Integer.valueOf($PcStringPrefixLengthCi(obj5, length, intValue, obj2, intValue2, ((Number) obj6).intValue()));
+                                return Integer.valueOf($PcStringPrefixLengthCi(obj6, length, intValue, obj4, intValue2, ((Number) obj2).intValue()));
                             } catch (ClassCastException e) {
-                                throw new WrongType(e, "%string-prefix-length-ci", 6, obj6);
+                                throw new WrongType(e, "%string-prefix-length-ci", 6, obj2);
                             }
                         } catch (ClassCastException e2) {
-                            throw new WrongType(e2, "%string-prefix-length-ci", 5, obj4);
+                            throw new WrongType(e2, "%string-prefix-length-ci", 5, obj);
                         }
                     } catch (ClassCastException e22) {
-                        throw new WrongType(e22, "%string-prefix-length-ci", 3, obj2);
+                        throw new WrongType(e22, "%string-prefix-length-ci", 3, obj4);
                     }
                 } catch (ClassCastException e222) {
-                    throw new WrongType(e222, "%string-prefix-length-ci", 2, obj);
+                    throw new WrongType(e222, "%string-prefix-length-ci", 2, obj3);
                 }
             case 222:
-                obj5 = objArr[0];
-                obj = objArr[1];
+                obj6 = objArr[0];
+                obj3 = objArr[1];
                 try {
-                    length = ((Number) obj).intValue();
-                    obj2 = objArr[2];
+                    length = ((Number) obj3).intValue();
+                    obj4 = objArr[2];
                     try {
-                        intValue = ((Number) obj2).intValue();
-                        obj2 = objArr[3];
-                        obj4 = objArr[4];
+                        intValue = ((Number) obj4).intValue();
+                        obj4 = objArr[3];
+                        obj = objArr[4];
                         try {
-                            intValue2 = ((Number) obj4).intValue();
-                            obj6 = objArr[5];
+                            intValue2 = ((Number) obj).intValue();
+                            obj2 = objArr[5];
                             try {
-                                return Integer.valueOf($PcStringSuffixLengthCi(obj5, length, intValue, obj2, intValue2, ((Number) obj6).intValue()));
+                                return Integer.valueOf($PcStringSuffixLengthCi(obj6, length, intValue, obj4, intValue2, ((Number) obj2).intValue()));
                             } catch (ClassCastException e2222) {
-                                throw new WrongType(e2222, "%string-suffix-length-ci", 6, obj6);
+                                throw new WrongType(e2222, "%string-suffix-length-ci", 6, obj2);
                             }
                         } catch (ClassCastException e22222) {
-                            throw new WrongType(e22222, "%string-suffix-length-ci", 5, obj4);
+                            throw new WrongType(e22222, "%string-suffix-length-ci", 5, obj);
                         }
                     } catch (ClassCastException e222222) {
-                        throw new WrongType(e222222, "%string-suffix-length-ci", 3, obj2);
+                        throw new WrongType(e222222, "%string-suffix-length-ci", 3, obj4);
                     }
                 } catch (ClassCastException e2222222) {
-                    throw new WrongType(e2222222, "%string-suffix-length-ci", 2, obj);
+                    throw new WrongType(e2222222, "%string-suffix-length-ci", 2, obj3);
                 }
             case 223:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringPrefixLength$V(obj, obj2, objArr2);
+                        return stringPrefixLength$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 224:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringSuffixLength$V(obj, obj2, objArr2);
+                        return stringSuffixLength$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 225:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringPrefixLengthCi$V(obj, obj2, objArr2);
+                        return stringPrefixLengthCi$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 226:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringSuffixLengthCi$V(obj, obj2, objArr2);
+                        return stringSuffixLengthCi$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 227:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return isStringPrefix$V(obj, obj2, objArr2);
+                        return isStringPrefix$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 228:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return isStringSuffix$V(obj, obj2, objArr2);
+                        return isStringSuffix$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 229:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return isStringPrefixCi$V(obj, obj2, objArr2);
+                        return isStringPrefixCi$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 230:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return isStringSuffixCi$V(obj, obj2, objArr2);
+                        return isStringSuffixCi$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
@@ -12132,659 +12132,659 @@ public class srfi13 extends ModuleBody {
             case 236:
                 return $PcStringCompareCi(objArr[0], objArr[1], objArr[2], objArr[3], objArr[4], objArr[5], objArr[6], objArr[7], objArr[8]);
             case 237:
-                obj5 = objArr[0];
+                obj6 = objArr[0];
                 obj7 = objArr[1];
-                obj = objArr[2];
-                obj2 = objArr[3];
-                obj3 = objArr[4];
+                obj3 = objArr[2];
+                obj4 = objArr[3];
+                obj5 = objArr[4];
                 length2 = objArr.length - 5;
                 objArr3 = new Object[length2];
                 while (true) {
                     length2--;
                     if (length2 < 0) {
-                        return stringCompare$V(obj5, obj7, obj, obj2, obj3, objArr3);
+                        return stringCompare$V(obj6, obj7, obj3, obj4, obj5, objArr3);
                     }
                     objArr3[length2] = objArr[length2 + 5];
                 }
             case 238:
-                obj5 = objArr[0];
+                obj6 = objArr[0];
                 obj7 = objArr[1];
-                obj = objArr[2];
-                obj2 = objArr[3];
-                obj3 = objArr[4];
+                obj3 = objArr[2];
+                obj4 = objArr[3];
+                obj5 = objArr[4];
                 length2 = objArr.length - 5;
                 objArr3 = new Object[length2];
                 while (true) {
                     length2--;
                     if (length2 < 0) {
-                        return stringCompareCi$V(obj5, obj7, obj, obj2, obj3, objArr3);
+                        return stringCompareCi$V(obj6, obj7, obj3, obj4, obj5, objArr3);
                     }
                     objArr3[length2] = objArr[length2 + 5];
                 }
             case LispEscapeFormat.ESCAPE_NORMAL /*241*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return string$Eq$V(obj, obj2, objArr2);
+                        return string$Eq$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 243:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return string$Ls$Gr$V(obj, obj2, objArr2);
+                        return string$Ls$Gr$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 246:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return string$Ls$V(obj, obj2, objArr2);
+                        return string$Ls$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 249:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return string$Gr$V(obj, obj2, objArr2);
+                        return string$Gr$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case Telnet.WILL /*251*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return string$Ls$Eq$V(obj, obj2, objArr2);
+                        return string$Ls$Eq$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case Telnet.DO /*253*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return string$Gr$Eq$V(obj, obj2, objArr2);
+                        return string$Gr$Eq$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 256:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCi$Eq$V(obj, obj2, objArr2);
+                        return stringCi$Eq$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 258:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCi$Ls$Gr$V(obj, obj2, objArr2);
+                        return stringCi$Ls$Gr$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 261:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCi$Ls$V(obj, obj2, objArr2);
+                        return stringCi$Ls$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 264:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCi$Gr$V(obj, obj2, objArr2);
+                        return stringCi$Gr$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 266:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCi$Ls$Eq$V(obj, obj2, objArr2);
+                        return stringCi$Ls$Eq$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 268:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCi$Gr$Eq$V(obj, obj2, objArr2);
+                        return stringCi$Gr$Eq$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 269:
                 return $PcStringHash(objArr[0], objArr[1], objArr[2], objArr[3], objArr[4]);
             case 270:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringHash$V(obj, objArr2);
+                        return stringHash$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 272:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringHashCi$V(obj, objArr2);
+                        return stringHashCi$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 273:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringUpcase$V(obj, objArr2);
+                        return stringUpcase$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 274:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringUpcase$Ex$V(obj, objArr2);
+                        return stringUpcase$Ex$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 275:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringDowncase$V(obj, objArr2);
+                        return stringDowncase$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 276:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringDowncase$Ex$V(obj, objArr2);
+                        return stringDowncase$Ex$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 278:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringTitlecase$Ex$V(obj, objArr2);
+                        return stringTitlecase$Ex$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 279:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringTitlecase$V(obj, objArr2);
+                        return stringTitlecase$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 284:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringTrim$V(obj, objArr2);
+                        return stringTrim$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 285:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringTrimRight$V(obj, objArr2);
+                        return stringTrimRight$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 286:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringTrimBoth$V(obj, objArr2);
+                        return stringTrimBoth$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 288:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringPadRight$V(obj, obj2, objArr2);
+                        return stringPadRight$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 290:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringPad$V(obj, obj2, objArr2);
+                        return stringPad$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 291:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringDelete$V(obj, obj2, objArr2);
+                        return stringDelete$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 292:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringFilter$V(obj, obj2, objArr2);
+                        return stringFilter$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 293:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringIndex$V(obj, obj2, objArr2);
+                        return stringIndex$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 294:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringIndexRight$V(obj, obj2, objArr2);
+                        return stringIndexRight$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 295:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringSkip$V(obj, obj2, objArr2);
+                        return stringSkip$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 296:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringSkipRight$V(obj, obj2, objArr2);
+                        return stringSkipRight$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 297:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringCount$V(obj, obj2, objArr2);
+                        return stringCount$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 298:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringFill$Ex$V(obj, obj2, objArr2);
+                        return stringFill$Ex$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 299:
                 intValue = objArr.length - 3;
-                obj2 = objArr[0];
+                obj4 = objArr[0];
                 obj7 = objArr[1];
                 try {
                     intValue2 = ((Number) obj7).intValue();
-                    obj5 = objArr[2];
+                    obj6 = objArr[2];
                     try {
-                        charSequence = (CharSequence) obj5;
+                        charSequence = (CharSequence) obj6;
                         if (intValue <= 0) {
-                            return stringCopy$Ex(obj2, intValue2, charSequence);
+                            return stringCopy$Ex(obj4, intValue2, charSequence);
                         }
                         i = intValue - 1;
-                        obj = objArr[3];
+                        obj3 = objArr[3];
                         try {
-                            length2 = ((Number) obj).intValue();
+                            length2 = ((Number) obj3).intValue();
                             if (i <= 0) {
-                                return stringCopy$Ex(obj2, intValue2, charSequence, length2);
+                                return stringCopy$Ex(obj4, intValue2, charSequence, length2);
                             }
                             length = i - 1;
-                            obj = objArr[4];
+                            obj3 = objArr[4];
                             try {
-                                return stringCopy$Ex(obj2, intValue2, charSequence, length2, ((Number) obj).intValue());
+                                return stringCopy$Ex(obj4, intValue2, charSequence, length2, ((Number) obj3).intValue());
                             } catch (ClassCastException e22222222) {
-                                throw new WrongType(e22222222, "string-copy!", 5, obj);
+                                throw new WrongType(e22222222, "string-copy!", 5, obj3);
                             }
                         } catch (ClassCastException e222222222) {
-                            throw new WrongType(e222222222, "string-copy!", 4, obj);
+                            throw new WrongType(e222222222, "string-copy!", 4, obj3);
                         }
                     } catch (ClassCastException e3) {
-                        throw new WrongType(e3, "string-copy!", 3, obj5);
+                        throw new WrongType(e3, "string-copy!", 3, obj6);
                     }
                 } catch (ClassCastException e2222222222) {
                     throw new WrongType(e2222222222, "string-copy!", 2, obj7);
                 }
             case ErrorMessages.ERROR_TWITTER_BLANK_CONSUMER_KEY_OR_SECRET /*302*/:
-                obj5 = objArr[0];
+                obj6 = objArr[0];
                 try {
-                    charSequence = (CharSequence) obj5;
-                    obj = objArr[1];
+                    charSequence = (CharSequence) obj6;
+                    obj3 = objArr[1];
                     try {
-                        intValue2 = ((Number) obj).intValue();
+                        intValue2 = ((Number) obj3).intValue();
                         obj7 = objArr[2];
                         try {
                             CharSequence charSequence2 = (CharSequence) obj7;
-                            obj2 = objArr[3];
+                            obj4 = objArr[3];
                             try {
-                                i = ((Number) obj2).intValue();
-                                obj2 = objArr[4];
+                                i = ((Number) obj4).intValue();
+                                obj4 = objArr[4];
                                 try {
-                                    return $PcStringCopy$Ex(charSequence, intValue2, charSequence2, i, ((Number) obj2).intValue());
+                                    return $PcStringCopy$Ex(charSequence, intValue2, charSequence2, i, ((Number) obj4).intValue());
                                 } catch (ClassCastException e22222222222) {
-                                    throw new WrongType(e22222222222, "%string-copy!", 5, obj2);
+                                    throw new WrongType(e22222222222, "%string-copy!", 5, obj4);
                                 }
                             } catch (ClassCastException e222222222222) {
-                                throw new WrongType(e222222222222, "%string-copy!", 4, obj2);
+                                throw new WrongType(e222222222222, "%string-copy!", 4, obj4);
                             }
                         } catch (ClassCastException e2222222222222) {
                             throw new WrongType(e2222222222222, "%string-copy!", 3, obj7);
                         }
                     } catch (ClassCastException e22222222222222) {
-                        throw new WrongType(e22222222222222, "%string-copy!", 2, obj);
+                        throw new WrongType(e22222222222222, "%string-copy!", 2, obj3);
                     }
                 } catch (ClassCastException e32) {
-                    throw new WrongType(e32, "%string-copy!", 1, obj5);
+                    throw new WrongType(e32, "%string-copy!", 1, obj6);
                 }
             case ErrorMessages.ERROR_TWITTER_EXCEPTION /*303*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringContains$V(obj, obj2, objArr2);
+                        return stringContains$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case ErrorMessages.ERROR_TWITTER_UNABLE_TO_GET_ACCESS_TOKEN /*304*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringContainsCi$V(obj, obj2, objArr2);
+                        return stringContainsCi$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case ErrorMessages.ERROR_TWITTER_AUTHORIZATION_FAILED /*305*/:
                 return $PcKmpSearch(objArr[0], objArr[1], objArr[2], objArr[3], objArr[4], objArr[5], objArr[6]);
             case ErrorMessages.ERROR_TWITTER_SET_STATUS_FAILED /*306*/:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return makeKmpRestartVector$V(obj, objArr2);
+                        return makeKmpRestartVector$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case ErrorMessages.ERROR_TWITTER_REQUEST_MENTIONS_FAILED /*307*/:
                 return kmpStep(objArr[0], objArr[1], objArr[2], objArr[3], objArr[4], objArr[5]);
             case ErrorMessages.ERROR_TWITTER_REQUEST_FOLLOWERS_FAILED /*308*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
-                obj3 = objArr[2];
-                obj4 = objArr[3];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
+                obj5 = objArr[2];
+                obj = objArr[3];
                 length = objArr.length - 4;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringKmpPartialSearch$V(obj, obj2, obj3, obj4, objArr2);
+                        return stringKmpPartialSearch$V(obj3, obj4, obj5, obj, objArr2);
                     }
                     objArr2[length] = objArr[length + 4];
                 }
             case ErrorMessages.ERROR_TWITTER_DIRECT_MESSAGE_FAILED /*310*/:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringReverse$V(obj, objArr2);
+                        return stringReverse$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case ErrorMessages.ERROR_TWITTER_FOLLOW_FAILED /*311*/:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringReverse$Ex$V(obj, objArr2);
+                        return stringReverse$Ex$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case ErrorMessages.ERROR_TWITTER_REQUEST_FRIEND_TIMELINE_FAILED /*313*/:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return string$To$List$V(obj, objArr2);
+                        return string$To$List$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case ErrorMessages.ERROR_TWITTER_SEARCH_FAILED /*314*/:
                 return stringAppend$SlShared$V(objArr);
             case 317:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringConcatenateReverse$V(obj, objArr2);
+                        return stringConcatenateReverse$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 318:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringConcatenateReverse$SlShared$V(obj, objArr2);
+                        return stringConcatenateReverse$SlShared$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case ScreenDensityUtil.DEFAULT_NORMAL_SHORT_DIMENSION /*320*/:
-                obj = objArr[0];
-                obj2 = objArr[1];
-                obj3 = objArr[2];
-                obj4 = objArr[3];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
+                obj5 = objArr[2];
+                obj = objArr[3];
                 length = objArr.length - 4;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringReplace$V(obj, obj2, obj3, obj4, objArr2);
+                        return stringReplace$V(obj3, obj4, obj5, obj, objArr2);
                     }
                     objArr2[length] = objArr[length + 4];
                 }
             case 321:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringTokenize$V(obj, objArr2);
+                        return stringTokenize$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
             case 323:
-                obj = objArr[0];
-                obj2 = objArr[1];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return xsubstring$V(obj, obj2, objArr2);
+                        return xsubstring$V(obj3, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 326:
-                obj = objArr[0];
-                obj2 = objArr[1];
-                obj3 = objArr[2];
-                obj4 = objArr[3];
+                obj3 = objArr[0];
+                obj4 = objArr[1];
+                obj5 = objArr[2];
+                obj = objArr[3];
                 length = objArr.length - 4;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringXcopy$Ex$V(obj, obj2, obj3, obj4, objArr2);
+                        return stringXcopy$Ex$V(obj3, obj4, obj5, obj, objArr2);
                     }
                     objArr2[length] = objArr[length + 4];
                 }
             case 327:
                 return $PcMultispanRepcopy$Ex(objArr[0], objArr[1], objArr[2], objArr[3], objArr[4], objArr[5], objArr[6]);
             case 328:
-                obj = objArr[0];
+                obj3 = objArr[0];
                 length = objArr.length - 1;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return stringJoin$V(obj, objArr2);
+                        return stringJoin$V(obj3, objArr2);
                     }
                     objArr2[length] = objArr[length + 1];
                 }
