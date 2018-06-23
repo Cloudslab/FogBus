@@ -192,7 +192,6 @@ public class CompileMisc implements Inlineable {
 
     public static Expression validateApplyMakeProcedure(ApplyExp exp, InlineCalls visitor, Type required, Procedure proc) {
         Object key;
-        String keyword;
         exp.visitArgs(visitor);
         Expression[] args = exp.getArgs();
         int alen = args.length;
@@ -201,6 +200,7 @@ public class CompileMisc implements Inlineable {
         String name = null;
         int i = 0;
         while (i < alen) {
+            String keyword;
             Expression next;
             Expression arg = args[i];
             if (arg instanceof QuoteExp) {

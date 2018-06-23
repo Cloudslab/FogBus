@@ -80,13 +80,13 @@ public class ConsumerTarget extends Target {
     }
 
     void compileFromStack(Compilation comp, Type stackType, int consumerPushed) {
+        char sig;
         CodeAttr code = comp.getCode();
         String methodName = null;
         Method method = null;
         Type methodArg = null;
         boolean islong = false;
         stackType = stackType.getImplementationType();
-        char sig;
         if (stackType instanceof PrimType) {
             sig = stackType.getSignature().charAt(0);
             switch (sig) {

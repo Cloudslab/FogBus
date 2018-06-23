@@ -83,13 +83,13 @@ public class ImagePicker extends Picker implements ActivityResultListener {
     }
 
     private void copyToExternalStorageAndDeleteSource(File source, String extension) {
+        OutputStream outStream;
         IOException e;
         InputStream inputStream;
         OutputStream outputStream;
         File dest = null;
         File destDirectory = new File(Environment.getExternalStorageDirectory() + imagePickerDirectoryName);
         try {
-            OutputStream outStream;
             destDirectory.mkdirs();
             dest = File.createTempFile(FILE_PREFIX, extension, destDirectory);
             this.selectionSavedImage = dest.getPath();

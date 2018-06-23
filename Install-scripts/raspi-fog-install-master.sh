@@ -18,8 +18,6 @@ sudo cp -a ./Raspi-Fog/Browser-src/* /var/www/html/HealthKeeper/
 sudo chmod 777 /var/www/html/HealthKeeper/RPi/
 sudo chmod 777 /var/www/html/HeathKeeper/RPi/Master/*
 sudo chmod 777 /var/www/html/HealthKeeper/RPi/Worker/*
-cd /var/www/html/HealthKeeper/RPi/Worker/
-javac ./analyzer.java
 echo ".................................."
 echo "Successfully Installed Raspi-Fog"
 echo "Note the Master IP address :"
@@ -27,5 +25,5 @@ hostname -I
 echo "Configure Database as described in End-User Tutorial then press Enter to run"
 read
 chromium-browser localhost/HealthKeeper/RPi/Master/ --no-sandbox &
-java analyzer
+
 

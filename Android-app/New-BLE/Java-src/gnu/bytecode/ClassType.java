@@ -816,6 +816,7 @@ Error: java.lang.IndexOutOfBoundsException: bitIndex < 0: -1
     }
 
     public synchronized void addMethods(Class clas) {
+        Constructor[] cmethods;
         this.flags |= 2;
         try {
             Method[] methods = clas.getDeclaredMethods();
@@ -827,7 +828,6 @@ Error: java.lang.IndexOutOfBoundsException: bitIndex < 0: -1
                 addMethod(method);
             }
         }
-        Constructor[] cmethods;
         try {
             cmethods = clas.getDeclaredConstructors();
         } catch (SecurityException e2) {

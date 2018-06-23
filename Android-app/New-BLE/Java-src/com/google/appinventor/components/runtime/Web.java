@@ -500,8 +500,8 @@ public class Web extends AndroidNonvisibleComponent implements Component {
     }
 
     private void writeRequestFile(HttpURLConnection connection, String path) throws IOException {
-        BufferedInputStream in = new BufferedInputStream(MediaUtil.openMedia(this.form, path));
         BufferedOutputStream out;
+        BufferedInputStream in = new BufferedInputStream(MediaUtil.openMedia(this.form, path));
         try {
             connection.setDoOutput(true);
             connection.setChunkedStreamingMode(0);

@@ -53,6 +53,7 @@ public class srfi95 extends ModuleBody {
         Object seq;
 
         public Object lambda2step(Object n) {
+            Object p;
             if (Scheme.numGrt.apply2(n, srfi95.Lit1) != Boolean.FALSE) {
                 Object j = DivideOp.quotient.apply2(n, srfi95.Lit1);
                 return srfi95.sort$ClMerge$Ex(lambda2step(j), lambda2step(AddOp.$Mn.apply2(n, j)), this.less$Qu, this.keyer);

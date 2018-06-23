@@ -52,7 +52,6 @@ class Closure extends MethodProc {
     }
 
     public int matchN(Object[] args, CallContext ctx) {
-        int i;
         int num = numArgs();
         int nargs = args.length;
         int min = num & 4095;
@@ -75,63 +74,64 @@ class Closure extends MethodProc {
         int min_args = this.lambda.min_args;
         Declaration decl = this.lambda.firstDecl();
         int key_i = 0;
-        int i2 = 0;
+        int i = 0;
         while (decl != null) {
+            int i2;
             Object value;
             int key_i2;
-            if (i2 < min_args) {
-                i = i2 + 1;
-                value = args[i2];
+            if (i < min_args) {
+                i2 = i + 1;
+                value = args[i];
                 key_i2 = key_i;
-            } else if (i2 < min_args + opt_args) {
-                if (i2 < nargs) {
-                    i = i2 + 1;
-                    value = args[i2];
+            } else if (i < min_args + opt_args) {
+                if (i < nargs) {
+                    i2 = i + 1;
+                    value = args[i];
                 } else {
                     value = this.lambda.evalDefaultArg(opt_i, ctx);
-                    i = i2;
+                    i2 = i;
                 }
                 opt_i++;
                 key_i2 = key_i;
-            } else if (this.lambda.max_args >= 0 || i2 != min_args + opt_args) {
+            } else if (this.lambda.max_args >= 0 || i != min_args + opt_args) {
                 key_i2 = key_i + 1;
                 value = Keyword.searchForKeyword(args, min_args + opt_args, this.lambda.keywords[key_i]);
                 if (value == Special.dfault) {
                     value = this.lambda.evalDefaultArg(opt_i, ctx);
                 }
                 opt_i++;
-                i = i2;
+                i2 = i;
             } else if (decl.type instanceof ArrayType) {
-                int rem = nargs - i2;
+                int rem = nargs - i;
                 Type elementType = ((ArrayType) decl.type).getComponentType();
                 if (elementType == Type.objectType) {
                     Object rest = new Object[rem];
-                    System.arraycopy(args, i2, rest, 0, rem);
+                    System.arraycopy(args, i, rest, 0, rem);
                     value = rest;
                 } else {
                     value = Array.newInstance(elementType.getReflectClass(), rem);
                     int j = 0;
                     while (j < rem) {
                         try {
-                            Array.set(value, j, elementType.coerceFromObject(args[i2 + j]));
+                            Array.set(value, j, elementType.coerceFromObject(args[i + j]));
                             j++;
                         } catch (ClassCastException e) {
-                            return MethodProc.NO_MATCH_BAD_TYPE | (i2 + j);
+                            return MethodProc.NO_MATCH_BAD_TYPE | (i + j);
                         }
                     }
                 }
                 key_i2 = key_i;
-                i = i2;
+                i2 = i;
             } else {
-                value = LList.makeList(args, i2);
+                value = LList.makeList(args, i);
                 key_i2 = key_i;
-                i = i2;
+                i2 = i;
             }
             if (decl.type != null) {
                 try {
                     value = decl.type.coerceFromObject(value);
                 } catch (ClassCastException e2) {
-                    return MethodProc.NO_MATCH_BAD_TYPE | i;
+                    return MethodProc.NO_MATCH_BAD_TYPE | i2;
                 }
             }
             if (decl.isIndirectBinding()) {
@@ -142,7 +142,7 @@ class Closure extends MethodProc {
             evalFrame[decl.evalIndex] = value;
             decl = decl.nextDecl();
             key_i = key_i2;
-            i2 = i;
+            i = i2;
         }
         ctx.values = evalFrame;
         ctx.where = 0;

@@ -129,7 +129,7 @@ public class IntegerFormat extends ReportFormat {
                 for (minWidth = 
 /*
 Method generation error in method: gnu.text.IntegerFormat.format(java.lang.Object, int, java.io.Writer, java.text.FieldPosition):int
-jadx.core.utils.exceptions.CodegenException: Error generate insn: PHI: (r9_6 'minWidth' int) = (r9_3 'minWidth' int), (r9_4 'minWidth' int) binds: {(r9_3 'minWidth' int)=B:90:0x01da, (r9_4 'minWidth' int)=B:126:0x0278} in method: gnu.text.IntegerFormat.format(java.lang.Object, int, java.io.Writer, java.text.FieldPosition):int
+jadx.core.utils.exceptions.CodegenException: Error generate insn: PHI: (r9_6 'minWidth' int) = (r9_3 'minWidth' int), (r9_4 'minWidth' int) binds: {(r9_4 'minWidth' int)=B:126:0x0278, (r9_3 'minWidth' int)=B:90:0x01da} in method: gnu.text.IntegerFormat.format(java.lang.Object, int, java.io.Writer, java.text.FieldPosition):int
 	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:226)
 	at jadx.core.codegen.RegionGen.makeLoop(RegionGen.java:184)
 	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:61)

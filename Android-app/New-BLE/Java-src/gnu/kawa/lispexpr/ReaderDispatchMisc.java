@@ -34,6 +34,7 @@ public class ReaderDispatchMisc extends ReadTableEntry {
     }
 
     public Object read(Lexer in, int ch, int count) throws IOException, SyntaxException {
+        String name;
         LineBufferedReader port;
         LispReader reader = (LispReader) in;
         char saveReadState = '\u0000';
@@ -41,7 +42,6 @@ public class ReaderDispatchMisc extends ReadTableEntry {
             ch = this.code;
         }
         GeneralHashTable<Integer, Object> map;
-        String name;
         switch (ch) {
             case 33:
                 return LispReader.readSpecial(reader);

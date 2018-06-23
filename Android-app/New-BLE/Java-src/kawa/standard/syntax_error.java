@@ -15,9 +15,9 @@ public class syntax_error extends Syntax {
     }
 
     public Expression rewrite(Object obj, Translator tr) {
+        LList obj2;
         StringBuffer buffer = new StringBuffer();
         int words = 0;
-        LList obj2;
         while (obj2 instanceof Pair) {
             Pair pair = (Pair) obj2;
             if (words > 0) {
