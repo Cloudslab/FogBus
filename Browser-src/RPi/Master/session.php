@@ -133,7 +133,7 @@ if(isset($_GET['analyze'])){
 		$i += 1;
 	}
 	$getRequest = substr($getRequest, 0, strlen($getRequest)-1);
-	
+		
 	if(!$toMaster && !$toAneka){
 		// Work given to worker with least load
 		$min = 100;

@@ -6,12 +6,14 @@
 import java.io.*;
 import java.util.*;
 import static java.lang.Integer.parseInt;
+import java.util.Arrays;
 
-public class analyzer{
+public class Analyzer{
 
 	public static void main(String[] args) throws Exception {
 
 		int i;
+		int j;
 		FileReader fileReader = new FileReader("data.txt");
 		FileWriter resultfile = new FileWriter("result.txt");
 		FileWriter datafile;
@@ -20,25 +22,30 @@ public class analyzer{
 		BufferedReader bufferedReader;
 		String line = "empty";
 		String line2 = "empty";
-		int count;
-		int min;
-		boolean dip;
+		String line3 = "empty";
 		BufferedWriter writer;
-		String[] datastring;
-		Integer[] data;
-		String severity;
+		String[] datastring1;
+		String[] datastring2;
+		AnalyzerO2 a1 = new AnalyzerO2();
+		AnalyzerBPM a2 = new AnalyzerBPM();
 
 		// Wait for analysis false
+
 		bufferedReader = new BufferedReader(fileReader);
+
 		while(true){
+
 			fileReader = new FileReader("data.txt");
 			bufferedReader = new BufferedReader(fileReader);
 			line = bufferedReader.readLine();
 			System.out.println(line);
+
 			try{
+
 				if(line.equals("Analysis Done = false")){
 					break;
 				}
+
 			}
 			catch(Exception e){}
 
@@ -46,55 +53,51 @@ public class analyzer{
 		}
 
 		line2 = bufferedReader.readLine();
+		line3 = bufferedReader.readLine();
+
 		System.out.println(line);
 		System.out.println(line2);
+		System.out.println(line3);
+
 		bufferedReader.close();
 
 		// parse data
-		datastring = line2.split(",");
-		data = new Integer[datastring.length];
+
+		datastring1 = line2.split(",");
+		datastring2 = line3.split(",");
+
+		a1.data = new Integer[datastring1.length];
+		a2.data = new Integer[datastring2.length];
+
 		i=0;
+		j=0;
+
 		try{
-			for(String str:datastring){
-    			data[i]=Integer.parseInt(str);
+
+			for(String str:datastring1){
+    			a1.data[i]=Integer.parseInt(str);
     			i++;
 			}
+
+			for(String str:datastring2){
+    			a2.data[j]=Integer.parseInt(str);
+    			j++;
+			}
+
 		}
+
 		catch(Exception e){}
 
 		// Analyze data
-		count = 0;
-		min = 100;
-		dip = false;
-		System.out.println("Number of data values :"+data.length);
-		if(data.length != 1){
-			for(int j = 0; j < data.length; j++){
-				if(data[j] <= 88 && !dip){
-					count++;
-					dip = true;
-				}
-				else if(data[j] > 88 && dip){
-					dip = false;
-				}
-				if(min > data[j]){
-					min = data[j];
-				}
-			}
 
-			if(count < 5){
-				severity = "None";
-			}
-			else if(count < 15){
-				severity = "Mild";
-			}
-			else if(count < 30){
-				severity = "Moderate";
-			}
-			else{
-				severity = "Highly Severe";
-			}
+		System.out.println("Number of SpO2 data values : " + a1.data.length);
+		System.out.println("Number of Pulse rate values : " + a2.data.length);
 
+		a1.analyze();
+		a2.analyze();
 
+		if(a1.data.length != 1)
+		{
 
 			// Write results to file
 			resultfile = new FileWriter("result.txt");
@@ -105,24 +108,50 @@ public class analyzer{
 
 			resultwriter.write("For 1 hour of Sleep Apnea Data :");
 			resultwriter.newLine();
-			resultwriter.write("AHI (Apnea-hypopnea index) = "+count);
+
+			resultwriter.write("AHI (Apnea-hypopnea index) = " + a1.count);
 			resultwriter.newLine();
-	    	resultwriter.write("Minimum Oxygen Level = "+min);
+
+	    	resultwriter.write("Minimum Oxygen Level = " + a1.min);
 			resultwriter.newLine();
-			resultwriter.write("Disease Severity : "+severity);
+
+			resultwriter.write("Disease Severity : " + a1.severity);
+			resultwriter.newLine();
+
+			resultwriter.write("Minimum Heart Rate : " + a2.min);
+			resultwriter.newLine();
+
+			resultwriter.write("Maximum Heart Rate : " + a2.max);
+			resultwriter.newLine();
+
+			resultwriter.write("Average Heart Rate : " + a2.average);
+			resultwriter.newLine();
+
+			resultwriter.write("Diagnosis : " + a2.result);
 
 	    	datawriter.write("Analysis Done = true");
 			datawriter.newLine();    		
-			datawriter.write(line2.substring(1,line2.length())+"\n");
+
+			datawriter.write(line2.substring(1,line2.length()));
+			datawriter.newLine();    	
+
+			datawriter.write(line3.substring(1,line2.length()));
+			datawriter.newLine();    
+
 			resultwriter.close();
 			datawriter.close();
 
 			System.out.println("Data Analysis Done!");
+		
 		}
-		else{
+
+		else
+		{
+			
 			System.out.println("Empty Data");
 			Thread.sleep(500);
-		}
+		
+			}
 
 
 
