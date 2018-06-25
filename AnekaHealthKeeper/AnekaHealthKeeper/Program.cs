@@ -254,7 +254,7 @@ namespace AnekaHealthKeeper
                     // Start Aneka
                     Logger.Start();
                     Configuration conf =
-                    Configuration.GetConfiguration(@"C:\xampp\htdocs\HealthKeeper\Aneka\conf.xml");
+                    Configuration.GetConfiguration(@"C:\Aneka\conf.xml");
 
                     // Analyze data.txt
                     while (Analyze() == false)
