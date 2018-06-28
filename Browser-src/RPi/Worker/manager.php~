@@ -41,8 +41,11 @@ if(isset($_GET['sync'])){
 	$masterIP = fgets($file);
 	$masterIP = preg_replace('/\s+/', '', $masterIP);
 	fclose($file);
+	$array = explode(":", $masterIP);
+	$masterIP = $array[1];
 	shell_exec("sudo rm -rf *.jar");
-	shell_exec("wget http://".$masterIP."/HealthKeeper/RPi/Worker/analyzer.jar");
+	shell_exec("wget -O analyzer.jar http://".$masterIP."/HealthKeeper/RPi/Worker/analyzer.jar");
+	shell_exec("sudo chmod 777 *");
 }
 ?>
 
