@@ -120,9 +120,9 @@ if(isset($_GET['analyze'])){
 	
 	$result = "";
 	
-	if(!$toMaster){
-		if(rand(0, 1)==0){
-			$toMaster = true;		
+	if($toMaster){
+		if(rand(0, 1)==1){
+			//$toMaster = true;		
 		}	
 	}
 	
@@ -133,7 +133,6 @@ if(isset($_GET['analyze'])){
 		$i += 1;
 	}
 	$getRequest = substr($getRequest, 0, strlen($getRequest)-1);
-	
 		
 	if(!$toMaster && !$toAneka){
 		// Work given to worker with least load

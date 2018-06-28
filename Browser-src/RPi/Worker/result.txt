@@ -1,8 +1,0 @@
-For 1 hour of Sleep Apnea Data :
-AHI (Apnea-hypopnea index) = 0
-Minimum Oxygen Level = 99
-Disease Severity : None
-Minimum Heart Rate : 86
-Maximum Heart Rate : 98
-Average Heart Rate : 92
-Diagnosis : Normal ECG
