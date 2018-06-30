@@ -4,8 +4,6 @@
 
 <?php
 if(isset($_GET['data1'])){
-	
-	// Write Data to file
 	$file = fopen("data.txt", "w+");
 	fwrite($file, "Analysis Done = false".PHP_EOL);
 	$i = 1;

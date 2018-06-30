@@ -10,19 +10,21 @@
 
 <?php
 
-// Remove all worker nodes
-if(isset($_POST['remove'])){
-	file_put_contents("config.txt", "EnableMaster EnableAneka".PHP_EOL);
-	echo "All Workers removed<br/>";
-}
 {
 	// Read IPs from config.txt
 	$file = fopen("config.txt", "r");
 	$content = "";
 	$line = fgets($file);
+	$localIP = getHostByName(getHostName());
 	while(($line = fgets($file)) !== false){
 		$content=$content.$line;	
+		//Set MasterIP of workers
+		if(isset($_POST['config'])){
+			$ip = preg_replace('/\s+/', '', $line);	
+			$set = @file_get_contents("http://".$ip."/HealthKeeper/manager.php/?setIP=".$localIP);	
+		}
 	}
+	if(isset($_POST['config'])){echo "All Workers Configured<br/>";}
 	fclose($file);
 	
 	// Alter first line of config.txt as per Enable master or aneka set or not
@@ -71,7 +73,9 @@ if(isset($_POST['remove'])){
 	<input type='checkbox' name='enableMaster' value='Yes' checked />Enable Master as Worker <br/>
 	<input type='checkbox' name='enableAneka' value='Yes' checked />Enable Aneka<br/>
 	<input type='text' name='ip' id='ip'  maxlength=\"500\" /> <br/>
-	<input type='submit' name='add' value='Add Worker' /> <br/><br/>
+	<input type='submit' name='add' value='Add Worker' /> <br/>
+	<input type='submit' name='config' value='Configure Workers' /> 
+	<br/><br/>
 	<input type='submit' name='remove' value='Remove all workers' />
 	<input type='submit' name='sync' value='Sync Jar file' />
 	</form>";
@@ -99,9 +103,35 @@ else{
 $user = '';
 }
 
+
+// Display Latest Hash
+$hashfile = fopen("lastHash.txt", "r");
+$hash = fgets($hashfile);
+echo "Master Latest Hash : ".$hash."<br/>";
+
+$file = fopen("config.txt", "r");
+$line = fgets($file);
+while(($line = fgets($file)) !== false){
+	$ip = preg_replace('/\s+/', '', $line);	
+	$hashfile = fopen("http://".$ip."/HealthKeeper/lastHash.txt", "r");	
+	$hash = fgets($hashfile);
+	echo "Latest Hash of Worker with IP ".$ip." : ".$hash;
+}
+fclose($file);	
+
+// Remove all worker nodes
+if(isset($_POST['remove'])){
+	file_put_contents("config.txt", "EnableMaster EnableAneka".PHP_EOL);
+	echo "All Workers removed<br/>";
+}
+
+// Go Back to Home page
 if(isset($_POST['back'])) {
 	header('Location: ../home.php/?username='.$user); 
 }
+
+
+
 
 ?>
 </body>
