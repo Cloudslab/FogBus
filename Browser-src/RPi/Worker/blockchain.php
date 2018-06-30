@@ -5,6 +5,22 @@
 <?php
 if(isset($_GET['data1'])){
 	
+	// Verify publickey
+	$file = fopen("config.txt", "r");
+	$masterIP = fgets($file);
+	$masterIP = preg_replace('/\s+/', '', $masterIP);
+	fclose($file);
+	$array = explode(":", $masterIP);
+	$masterIP = $array[1];
+	
+	$file = fopen("http://".$masterIP."/HealthKeeper/RPi/Master/publicKey.txt", "r");
+	$publickey = fgets($file);
+	fclose($file);
+
+	if(isset($_GET['publickey']) && preg_replace('/\s+/', '', $publickey) != rawurldecode(preg_replace('/\s+/', '', $_GET['publickey']))){
+		exit("Unknown Source. Discarding Block");	
+	}	
+	
 	// Write Block Data to file
 	$file = fopen("block.txt", "w+");
 	fwrite($file, "New Data".PHP_EOL);

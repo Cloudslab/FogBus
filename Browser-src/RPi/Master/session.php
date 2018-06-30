@@ -188,8 +188,8 @@ if(isset($_GET['analyze'])){
 	}	
 	
 	// Debug : Blockchain data sent to master
-	//$block =	@file_get_contents('http://localhost/HealthKeeper/RPi/Worker/blockchain.php/?'.$getRequestblock); 
-	//echo "Error : ".$block;
+	$block =	@file_get_contents('http://localhost/HealthKeeper/RPi/Worker/blockchain.php/?'.$getRequestblock); 
+	echo "Error : ".$block;
 	
 		
 	if(!$toMaster && !$toAneka){

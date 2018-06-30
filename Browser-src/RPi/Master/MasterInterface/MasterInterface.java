@@ -79,6 +79,14 @@ public class MasterInterface{
 			System.out.println("Signature : " + signature);
 			System.out.println("Signature Valid : " + StringUtil.Verify(data, publickey, signature));
 
+			fileWriter = new FileWriter("publicKey.txt");
+			bufferedWriter = new BufferedWriter(fileWriter);
+
+			bufferedWriter.write(publickey);
+			bufferedWriter.newLine();
+
+			bufferedWriter.close();
+
 			fileWriter = new FileWriter("data.txt");
 			bufferedWriter = new BufferedWriter(fileWriter);
 

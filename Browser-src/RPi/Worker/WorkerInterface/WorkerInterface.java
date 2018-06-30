@@ -88,7 +88,7 @@ public class WorkerInterface{
 			bufferedWriter = new BufferedWriter(fileWriter);
 
 			// Check Source
-			if(!StringUtil.Verify(data, publickey, signature)){
+			if(!StringUtil.Verify(data, publickey, signature) || unknownsrc){
 				msg = "Data Breach! Signature Verification failure. Discarding block";
 				System.out.println(msg);
 				bufferedWriter.write(msg);
