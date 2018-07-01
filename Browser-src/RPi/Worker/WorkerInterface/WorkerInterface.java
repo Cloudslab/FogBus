@@ -27,6 +27,10 @@ public class WorkerInterface{
 		int salt;
 		String publickey;
 		String signature;
+		String savedpublickey = "empty";
+		String savedsignature = "empty";
+		String saveddata = "empty";
+		Boolean unknownsrc;
 		String msg;
 		Blockchain chain = new Blockchain();
 
@@ -84,12 +88,21 @@ public class WorkerInterface{
 
 			bufferedReader.close();
 
+			// DDoS check
+			unknownsrc = saveddata.equals(data) && savedsignature.equals(signature) && savedpublickey.equals(publickey);
+
 			fileWriter = new FileWriter("error.txt");
 			bufferedWriter = new BufferedWriter(fileWriter);
 
 			// Check Source
-			if(!StringUtil.Verify(data, publickey, signature) || unknownsrc){
+			if(!StringUtil.Verify(data, publickey, signature)){
 				msg = "Data Breach! Signature Verification failure. Discarding block";
+				System.out.println(msg);
+				bufferedWriter.write(msg);
+				bufferedWriter.newLine();
+			}
+			else if(unknownsrc){
+				msg = "Unknown Source! Block repetition. Discarding block";
 				System.out.println(msg);
 				bufferedWriter.write(msg);
 				bufferedWriter.newLine();
@@ -97,6 +110,11 @@ public class WorkerInterface{
 			else{
 				// Add block to blockchain
 				chain.AddBlock(data);
+
+				// Update saved values
+				savedpublickey = publickey;
+				savedsignature = signature;
+				saveddata = data;
 
 				// Validate blockchain
 				if(!chain.GetLatestBlock().hash.equals(hash.replaceAll("\\s+",""))){
@@ -129,8 +147,6 @@ public class WorkerInterface{
 				}
 
 			}
-
-
 
 			bufferedWriter.close();
 
