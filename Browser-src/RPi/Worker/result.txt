@@ -1,5 +1,5 @@
 For 1 hour of Sleep Apnea Data :
-AHI (Apnea-hypopnea index) = 2
+AHI (Apnea-hypopnea index) = 1
 Minimum Oxygen Level = 78
 Disease Severity : None
 Minimum Heart Rate : 67

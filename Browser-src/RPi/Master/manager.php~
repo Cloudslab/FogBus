@@ -107,7 +107,7 @@ $user = '';
 // Display Latest Hash
 $hashfile = fopen("lastHash.txt", "r");
 $hash = fgets($hashfile);
-echo "Master Latest Hash : ".$hash."<br/>";
+echo "Master Latest Hash : <br/>".$hash."<br/>";
 
 $file = fopen("config.txt", "r");
 $line = fgets($file);

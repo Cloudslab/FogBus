@@ -136,8 +136,8 @@ if(isset($_GET['analyze'])){
 	
 	$result = "";
 	
-	if($toMaster && !$toAneka){
-		if(rand(0, 1)==1){
+	if($toMaster && $toAneka){
+		if(rand(0, 1)==0){
 			$toMaster = false;		
 		}	
 	}
