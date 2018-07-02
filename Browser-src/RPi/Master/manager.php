@@ -107,7 +107,7 @@ $user = '';
 // Display Latest Hash
 $hashfile = fopen("lastHash.txt", "r");
 $hash = fgets($hashfile);
-echo "Master Latest Hash : ".$hash."<br/>";
+echo "Master Latest Hash : <br/>".$hash."<br/>";
 
 $file = fopen("config.txt", "r");
 $line = fgets($file);
@@ -115,7 +115,7 @@ while(($line = fgets($file)) !== false){
 	$ip = preg_replace('/\s+/', '', $line);	
 	$hashfile = fopen("http://".$ip."/HealthKeeper/lastHash.txt", "r");	
 	$hash = fgets($hashfile);
-	echo "Latest Hash of Worker with IP ".$ip." : ".$hash;
+	echo "Latest Hash of Worker with IP ".$ip." : ".$hash."<br/>";
 }
 fclose($file);	
 

@@ -115,7 +115,7 @@ while(($line = fgets($file)) !== false){
 	$ip = preg_replace('/\s+/', '', $line);	
 	$hashfile = fopen("http://".$ip."/HealthKeeper/lastHash.txt", "r");	
 	$hash = fgets($hashfile);
-	echo "Latest Hash of Worker with IP ".$ip." : ".$hash;
+	echo "Latest Hash of Worker with IP ".$ip." : ".$hash."<br/>";
 }
 fclose($file);	
 
@@ -125,7 +125,7 @@ if(isset($_POST['remove'])){
 	echo "All Workers removed<br/>";
 }
 
-// Go Back
+// Go Back to Home page
 if(isset($_POST['back'])) {
 	header('Location: ../home.php/?username='.$user); 
 }

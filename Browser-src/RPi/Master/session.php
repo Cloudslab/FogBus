@@ -178,18 +178,18 @@ if(isset($_GET['analyze'])){
 	
 	// Send new data to be added to blockchain
 	for($i=0; $i<count($ips); $i++) {
-		$ipworker = $ips[i];
+		$ipworker = $ips[$i];
 		$ipworker = preg_replace('/\s+/', '', $ipworker);
 		$block =	@file_get_contents('http://'.$ipworker.'/HealthKeeper/blockchain.php/?'.$getRequestblock); 
-		if(strlen($block)>5){
+		if(strpos($block, 'Tamper') !== false || strpos($block, 'block') !== false){
 			echo "<br/>Error at Worker IP : ".$ipworker."<br/>";
 			echo $block.PHP_EOL;
 		}	
 	}	
 	
 	// Debug : Blockchain data sent to master
-	$block =	@file_get_contents('http://localhost/HealthKeeper/RPi/Worker/blockchain.php/?'.$getRequestblock); 
-	echo "Error : ".$block;
+	//$block =	@file_get_contents('http://localhost/HealthKeeper/RPi/Worker/blockchain.php/?'.$getRequestblock); 
+	//echo "Error : ".$block;
 	
 		
 	if(!$toMaster && !$toAneka){

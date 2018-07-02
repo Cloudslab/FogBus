@@ -127,7 +127,7 @@ public class WorkerInterface{
 				if(salt!=chain.GetLatestBlock().salt){
 					msg = "Data Tamper! Failed to verify Proof-of-Work";
 					System.out.println(msg);
-					System.out.println("Chain Hash : " + chain.GetLatestBlock().salt);
+					System.out.println("Chain Salt : " + chain.GetLatestBlock().salt);
 					bufferedWriter.write(msg);
 					bufferedWriter.newLine();
 				}
