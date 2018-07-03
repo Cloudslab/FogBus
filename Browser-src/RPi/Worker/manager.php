@@ -20,7 +20,7 @@ if(isset($_POST['ip'])){
 	
 }
 else{
-	echo "Set Master IP here".PHP_EOL;
+	echo "Set Master IP here<br/>".PHP_EOL;
 	$file = fopen("config.txt", "r");
 	$k = fgets($file);
 	echo $k.PHP_EOL;
@@ -36,6 +36,8 @@ else{
 	fclose($file);
 
 }
+
+// Syncronize Jar file from Master Node
 if(isset($_GET['sync'])){
 	$file = fopen("config.txt", "r");
 	$masterIP = fgets($file);
@@ -46,6 +48,15 @@ if(isset($_GET['sync'])){
 	shell_exec("sudo rm -rf *.jar");
 	shell_exec("wget -O analyzer.jar http://".$masterIP."/HealthKeeper/RPi/Worker/analyzer.jar");
 	shell_exec("sudo chmod 777 *");
+}
+
+// Set Master IP by Get request
+if(isset($_GET['setIP'])){
+	$file = fopen("config.txt", "w+");
+	$k = "Master IP : ".$_GET['setIP'];
+	echo "Master IP Set to : ".$_GET['setIP'].PHP_EOL;
+	fwrite($file, $k);
+	fclose($file);	
 }
 ?>
 

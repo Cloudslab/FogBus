@@ -34,6 +34,8 @@ Enter Data for analysis:
 <?php
 
 // If data entered, show the data values stored in data files
+$datafile = fopen("data.txt", "w");
+$data = "New Data".PHP_EOL;
 $i = 1;
 while(true){
 	if(isset($_GET['data'.$i])){
@@ -47,6 +49,8 @@ while(true){
 			fwrite($file,",".$content);
 		}
 		fclose($file);
+		
+		$data .= $content.PHP_EOL;
 	}
 	else{
 		break;	
@@ -54,6 +58,7 @@ while(true){
 	$i = $i + 1;
 }
 
+fwrite($datafile, $data);
 
 ?>
 
@@ -63,6 +68,17 @@ while(true){
 
 // If Analyze is clicked
 if(isset($_GET['analyze'])){
+
+	// Wait for Blockchain update
+	$file = fopen("data.txt", "r");
+	$k = fgets($file);
+	while(!preg_match("/Block Added/", $k)){
+		fclose($file);
+		$file = fopen("data.txt", "r");
+		$k = fgets($file);
+		usleep(500000);
+	}
+	fclose($file);
 
 	$content = array();
 	$i = 1;
@@ -120,12 +136,14 @@ if(isset($_GET['analyze'])){
 	
 	$result = "";
 	
-	if($toMaster){
-		if(rand(0, 1)==1){
+	if($toMaster && $toAneka){
+		if(rand(0, 1)==0){
 			$toMaster = false;		
 		}	
 	}
 	
+	// Form get request
+	// Add data
 	$getRequest = '';
 	$i = 1;
 	foreach($content as $data){
@@ -133,6 +151,46 @@ if(isset($_GET['analyze'])){
 		$i += 1;
 	}
 	$getRequest = substr($getRequest, 0, strlen($getRequest)-1);
+	
+	// Add hash, prevhash, salt, public Key and sigature from file
+	$file = fopen("data.txt", "r");
+	$k = fgets($file); // Block added
+	$k = fgets($file); // Data1
+	$k = fgets($file); // Data2
+	$k = fgets($file); // Hash
+	$k = preg_replace('/\s+/', '', $k);
+	$getRequestblock = $getRequest.'&hash='.urlencode($k);
+	$k = fgets($file); // PrevHash
+	$k = preg_replace('/\s+/', '', $k);
+	$getRequestblock .= '&prevhash='.urlencode($k);
+	$k = fgets($file); // Salt
+	$k = preg_replace('/\s+/', '', $k);
+	$getRequestblock .= '&salt='.urlencode($k);
+	$k = fgets($file); // Public Key
+	$k = preg_replace('/\s+/', '', $k);
+	$getRequestblock .= '&publickey='.urlencode($k);
+	$k = fgets($file); // Signature
+	$k = preg_replace('/\s+/', '', $k);
+	$getRequestblock .= '&signature='.urlencode($k);
+	
+	// $getRequest is one with data only, $getRequest2block has data and block details
+	// $getRequest if for worker.php, $getRequestBlock is for blockchain.php
+	
+	// Send new data to be added to blockchain
+	for($i=0; $i<count($ips); $i++) {
+		$ipworker = $ips[$i];
+		$ipworker = preg_replace('/\s+/', '', $ipworker);
+		$block =	@file_get_contents('http://'.$ipworker.'/HealthKeeper/blockchain.php/?'.$getRequestblock); 
+		if(strpos($block, 'Tamper') !== false || strpos($block, 'block') !== false){
+			echo "<br/>Error at Worker IP : ".$ipworker."<br/>";
+			echo $block.PHP_EOL;
+		}	
+	}	
+	
+	// Debug : Blockchain data sent to master
+	//$block =	@file_get_contents('http://localhost/HealthKeeper/RPi/Worker/blockchain.php/?'.$getRequestblock); 
+	//echo "Error : ".$block;
+	
 		
 	if(!$toMaster && !$toAneka){
 		// Work given to worker with least load
@@ -151,7 +209,7 @@ if(isset($_GET['analyze'])){
 		}
 		$ipworker = $ips[$minindex];
 		$ipworker = preg_replace('/\s+/', '', $ipworker);
-		// Send data
+		// Send data for analysis
 		echo "<br/><br/>Work sent to Worker ".($minindex+1)." with IP address : ".$ipworker."<br/><br/>";	
 		// Get result and store in $result variable
 		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/worker.php/?'.$getRequest);
@@ -161,7 +219,7 @@ if(isset($_GET['analyze'])){
 		$minindex = 0;
 		$ipworker = "localhost";	
 		echo "<br/><br/>Work Done by Master<br/><br/>";
-		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/RPi/Worker/worker.php/?'.$getRequest);
+		$result = file_get_contents('http://'.$ipworker.'/HealthKeeper/RPi/Worker/worker.php/?'.$getRequest.'&analyze=true');
 	}
 	else{
 		// Work done to Aneka

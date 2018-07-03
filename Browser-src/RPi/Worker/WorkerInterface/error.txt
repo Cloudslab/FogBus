@@ -1,0 +1,3 @@
+Data Breach! Signature Verification failure. Discarding block
+Data Tamper! Failed to verify Latest hash
+Data Tamper! Failed to verify Proof-of-Work
