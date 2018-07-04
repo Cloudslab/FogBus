@@ -772,6 +772,8 @@ public class pregexp extends ModuleBody {
         }
 
         public Object lambda3sub(Object re, Object i, Object sk, Object fk) {
+            Object obj;
+            Object obj2;
             frame0 gnu_kawa_slib_pregexp_frame0 = new frame0();
             gnu_kawa_slib_pregexp_frame0.staticLink = this;
             gnu_kawa_slib_pregexp_frame0.re$1 = re;
@@ -796,9 +798,7 @@ public class pregexp extends ModuleBody {
                     return Scheme.applyToArgs.apply1(gnu_kawa_slib_pregexp_frame0.fk);
                 } else if (Scheme.isEqv.apply2(gnu_kawa_slib_pregexp_frame0.re$1, pregexp.Lit28) == Boolean.FALSE) {
                     boolean x = characters.isChar(gnu_kawa_slib_pregexp_frame0.re$1);
-                    Object obj;
                     CharSequence charSequence;
-                    Object obj2;
                     if (x ? Scheme.numLss.apply2(gnu_kawa_slib_pregexp_frame0.f18i, this.f26n) != Boolean.FALSE : x) {
                         Procedure procedure = this.case$Mnsensitive$Qu != Boolean.FALSE ? characters.char$Eq$Qu : unicode.char$Mnci$Eq$Qu;
                         obj = this.f27s;
@@ -2230,6 +2230,7 @@ public class pregexp extends ModuleBody {
     }
 
     public static Object pregexpWrapQuantifierIfAny(Object vv, Object s, Object n) {
+        Object apply1;
         Object re = lists.car.apply1(vv);
         Object i = lists.cadr.apply1(vv);
         while (Scheme.numGEq.apply2(i, n) == Boolean.FALSE) {
@@ -2240,7 +2241,6 @@ public class pregexp extends ModuleBody {
                     Boolean x2;
                     Pair new$Mnre;
                     Pair new$Mnvv;
-                    Object apply1;
                     Boolean pq;
                     if (x) {
                         if ($Stpregexp$Mnspace$Mnsensitive$Qu$St != Boolean.FALSE) {
@@ -2496,13 +2496,13 @@ public class pregexp extends ModuleBody {
     }
 
     public static Object pregexpReadNums(Object s, Object i, Object n) {
-        boolean x;
+        char c;
         Object p = LList.Empty;
         Object q = LList.Empty;
         Object obj = Lit8;
         Object obj2 = i;
         while (true) {
-            char c;
+            boolean x;
             if (Scheme.numGEq.apply2(obj2, n) != Boolean.FALSE) {
                 pregexpError$V(new Object[]{Lit76});
             }

@@ -824,10 +824,10 @@ public class LispFormat extends CompoundFormat {
         if (!(arg instanceof Sequence)) {
             return null;
         }
-        Pair arg2;
         int count = ((Sequence) arg).size();
         Object[] arr = new Object[count];
         int i = 0;
+        Pair arg2;
         while (arg2 instanceof Pair) {
             Pair pair = arg2;
             int i2 = i + 1;

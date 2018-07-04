@@ -500,8 +500,8 @@ public class Web extends AndroidNonvisibleComponent implements Component {
     }
 
     private void writeRequestFile(HttpURLConnection connection, String path) throws IOException {
-        BufferedOutputStream out;
         BufferedInputStream in = new BufferedInputStream(MediaUtil.openMedia(this.form, path));
+        BufferedOutputStream out;
         try {
             connection.setDoOutput(true);
             connection.setChunkedStreamingMode(0);
@@ -561,9 +561,9 @@ public class Web extends AndroidNonvisibleComponent implements Component {
     }
 
     private static String saveResponseContent(HttpURLConnection connection, String responseFileName, String responseType) throws IOException {
+        BufferedOutputStream out;
         File file = createFile(responseFileName, responseType);
         BufferedInputStream in = new BufferedInputStream(getConnectionStream(connection), 4096);
-        BufferedOutputStream out;
         try {
             out = new BufferedOutputStream(new FileOutputStream(file), 4096);
             while (true) {
