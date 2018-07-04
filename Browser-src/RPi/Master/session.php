@@ -58,8 +58,9 @@ while(true){
 	$i = $i + 1;
 }
 
-fwrite($datafile, $data);
-
+if(isset($_GET['data1'])){
+	fwrite($datafile, $data);
+}
 ?>
 
 
@@ -182,8 +183,8 @@ if(isset($_GET['analyze'])){
 		$ipworker = preg_replace('/\s+/', '', $ipworker);
 		$block =	@file_get_contents('http://'.$ipworker.'/HealthKeeper/blockchain.php/?'.$getRequestblock); 
 		if(strpos($block, 'Tamper') !== false || strpos($block, 'block') !== false){
-			echo "<br/>Error at Worker IP : ".$ipworker."<br/>";
-			echo $block.PHP_EOL;
+			//echo "<br/>Error at Worker IP : ".$ipworker."<br/>";
+			//echo $block.PHP_EOL;
 		}	
 	}	
 	
