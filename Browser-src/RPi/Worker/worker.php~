@@ -20,7 +20,7 @@ if(isset($_GET['data1'])){
 	fclose($file);
 
 	// Execute Analysis code
-	exec("java -jar analyzer.jar");
+	//exec("java -jar analyzer.jar");
 
 	// Wait for analysis done
 	$file = fopen("data.txt", "r");

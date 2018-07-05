@@ -1,8 +1,8 @@
 For 1 hour of Sleep Apnea Data :
-AHI (Apnea-hypopnea index) = 0
-Minimum Oxygen Level = 97
+AHI (Apnea-hypopnea index) = 4
+Minimum Oxygen Level = 67
 Disease Severity : None
-Minimum Heart Rate : 95
-Maximum Heart Rate : 111
-Average Heart Rate : 103
-Diagnosis : High Probability of Tachycardia
+Minimum Heart Rate : 67
+Maximum Heart Rate : 90
+Average Heart Rate : 79
+Diagnosis : Normal ECG

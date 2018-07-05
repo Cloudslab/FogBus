@@ -6,7 +6,7 @@
   <ResubmitMode value="AUTO" />
   <PollingTime value="1000" />
   <LogMessages value="true" />
-  <SchedulerUri value="tcp://172.16.201.135:9090/Aneka" />
+  <SchedulerUri value="tcp://192.168.0.6:9092/Aneka" />
   <UserCredential type="Aneka.Security.UserCredentials" assembly="Aneka">
     <Instance username="Shreshth Tuli" password="20.4.1998"/>
   </UserCredential>
