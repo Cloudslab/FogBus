@@ -58,8 +58,9 @@ while(true){
 	$i = $i + 1;
 }
 
-fwrite($datafile, $data);
-
+if(isset($_GET['data1'])){
+	fwrite($datafile, $data);
+}
 ?>
 
 

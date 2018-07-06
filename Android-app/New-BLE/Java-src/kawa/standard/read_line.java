@@ -16,6 +16,7 @@ public class read_line {
         char mode;
         int length;
         Object dataStr;
+        FString delimStr;
         int start = in.pos - 1;
         int pos = start;
         int limit = in.limit;
@@ -26,7 +27,6 @@ public class read_line {
             pos = pos2 + 1;
             int ch = buffer[pos2];
             char last;
-            FString delimStr;
             if (ch == 13 || ch == 10) {
                 pos--;
                 if (handling == "trim" || handling == "peek") {

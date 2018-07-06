@@ -90,41 +90,41 @@ public class StringUtils {
         if (d2 <= d1) {
             return "";
         }
-        char ch;
+        int offset;
         int i1 = (int) d1;
         int i2 = ((int) d2) - i1;
-        int offset = 0;
+        int offset2 = 0;
         while (true) {
-            int offset2;
+            char ch;
             i1--;
             if (i1 < 0) {
                 break;
-            } else if (offset >= len) {
+            } else if (offset2 >= len) {
                 return "";
             } else {
-                offset2 = offset + 1;
-                ch = s.charAt(offset);
-                if (ch >= '?' && ch < '?' && offset2 < len) {
-                    offset2++;
+                offset = offset2 + 1;
+                ch = s.charAt(offset2);
+                if (ch >= '?' && ch < '?' && offset < len) {
+                    offset++;
                 }
-                offset = offset2;
+                offset2 = offset;
             }
         }
-        i1 = offset;
+        i1 = offset2;
         while (true) {
             i2--;
             if (i2 < 0) {
-                return s.substring(i1, offset);
+                return s.substring(i1, offset2);
             }
-            if (offset >= len) {
+            if (offset2 >= len) {
                 return "";
             }
-            offset2 = offset + 1;
-            ch = s.charAt(offset);
-            if (ch >= '?' && ch < '?' && offset2 < len) {
-                offset2++;
+            offset = offset2 + 1;
+            ch = s.charAt(offset2);
+            if (ch >= '?' && ch < '?' && offset < len) {
+                offset++;
             }
-            offset = offset2;
+            offset2 = offset;
         }
     }
 

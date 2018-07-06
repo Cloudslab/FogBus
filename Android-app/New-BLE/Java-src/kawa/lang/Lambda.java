@@ -852,13 +852,13 @@ public class Lambda extends Syntax {
     }
 
     public Object rewriteAttrs(LambdaExp lexp, Object body, Translator tr) {
+        SyntaxForm body2;
         String accessFlagName = null;
         String allocationFlagName = null;
         int accessFlag = 0;
         int allocationFlag = 0;
         SyntaxForm syntax0 = null;
         while (true) {
-            SyntaxForm body2;
             if (!(body2 instanceof SyntaxForm)) {
                 if (!(body2 instanceof Pair)) {
                     break;

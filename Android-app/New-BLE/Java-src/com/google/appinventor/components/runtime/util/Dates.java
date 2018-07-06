@@ -65,13 +65,13 @@ public final class Dates {
 
     @SimpleFunction
     public static Calendar DateValue(String value) {
+        DateFormat dateFormat;
         Calendar date = new GregorianCalendar();
         try {
             DateFormat dateTimeFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
             dateTimeFormat.setLenient(true);
             date.setTime(dateTimeFormat.parse(value));
         } catch (ParseException e) {
-            DateFormat dateFormat;
             try {
                 dateFormat = new SimpleDateFormat("MM/dd/yyyy");
                 dateFormat.setLenient(true);

@@ -4264,8 +4264,8 @@ public class srfi1 extends ModuleBody {
     }
 
     public static Object splitAt(Object x, IntNum k) {
-        Object prefix = LList.Empty;
         Object k2;
+        Object prefix = LList.Empty;
         while (!numbers.isZero((Number) k2)) {
             try {
                 prefix = lists.cons(lists.car.apply1(x), prefix);
@@ -5682,14 +5682,14 @@ public class srfi1 extends ModuleBody {
 
     public Object applyN(ModuleMethod moduleMethod, Object[] objArr) {
         Object obj;
+        Object obj2;
+        Object obj3;
         int length;
         Object[] objArr2;
-        Object obj2;
         Procedure procedure;
-        Object obj3;
+        Object obj4;
         int length2;
         Object[] objArr3;
-        Object obj4;
         Procedure procedure2;
         Procedure procedure3;
         Object obj5;
@@ -5746,13 +5746,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return count$V(procedure, obj3, objArr3);
+                            return count$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -5764,9 +5764,9 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj4 = objArr[1];
+                    obj3 = objArr[1];
                     try {
-                        procedure2 = (Procedure) obj4;
+                        procedure2 = (Procedure) obj3;
                         obj = objArr[2];
                         try {
                             procedure3 = (Procedure) obj;
@@ -5780,7 +5780,7 @@ public class srfi1 extends ModuleBody {
                             throw new WrongType(e2, "unfold-right", 3, obj);
                         }
                     } catch (ClassCastException e22) {
-                        throw new WrongType(e22, "unfold-right", 2, obj4);
+                        throw new WrongType(e22, "unfold-right", 2, obj3);
                     }
                 } catch (ClassCastException e3) {
                     throw new WrongType(e3, "unfold-right", 1, obj2);
@@ -5789,9 +5789,9 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj4 = objArr[1];
+                    obj3 = objArr[1];
                     try {
-                        procedure2 = (Procedure) obj4;
+                        procedure2 = (Procedure) obj3;
                         obj = objArr[2];
                         try {
                             procedure3 = (Procedure) obj;
@@ -5809,7 +5809,7 @@ public class srfi1 extends ModuleBody {
                             throw new WrongType(e222, "unfold", 3, obj);
                         }
                     } catch (ClassCastException e2222) {
-                        throw new WrongType(e2222, "unfold", 2, obj4);
+                        throw new WrongType(e2222, "unfold", 2, obj3);
                     }
                 } catch (ClassCastException e32) {
                     throw new WrongType(e32, "unfold", 1, obj2);
@@ -5818,14 +5818,14 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     obj5 = objArr[2];
                     length2 = objArr.length - 3;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return fold$V(procedure, obj3, obj5, objArr3);
+                            return fold$V(procedure, obj4, obj5, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 3];
                     }
@@ -5836,14 +5836,14 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     obj5 = objArr[2];
                     length2 = objArr.length - 3;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return foldRight$V(procedure, obj3, obj5, objArr3);
+                            return foldRight$V(procedure, obj4, obj5, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 3];
                     }
@@ -5854,14 +5854,14 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     obj5 = objArr[2];
                     length2 = objArr.length - 3;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return pairFoldRight$V(procedure, obj3, obj5, objArr3);
+                            return pairFoldRight$V(procedure, obj4, obj5, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 3];
                     }
@@ -5872,14 +5872,14 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     obj5 = objArr[2];
                     length2 = objArr.length - 3;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return pairFold$V(procedure, obj3, obj5, objArr3);
+                            return pairFold$V(procedure, obj4, obj5, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 3];
                     }
@@ -5888,25 +5888,25 @@ public class srfi1 extends ModuleBody {
                 }
             case 132:
                 obj = objArr[0];
-                obj3 = objArr[1];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return appendMap$V(obj, obj3, objArr2);
+                        return appendMap$V(obj, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
             case 133:
                 obj = objArr[0];
-                obj3 = objArr[1];
+                obj4 = objArr[1];
                 length = objArr.length - 2;
                 objArr2 = new Object[length];
                 while (true) {
                     length--;
                     if (length < 0) {
-                        return appendMap$Ex$V(obj, obj3, objArr2);
+                        return appendMap$Ex$V(obj, obj4, objArr2);
                     }
                     objArr2[length] = objArr[length + 2];
                 }
@@ -5914,13 +5914,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return pairForEach$V(procedure, obj3, objArr3);
+                            return pairForEach$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -5931,13 +5931,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return map$Ex$V(procedure, obj3, objArr3);
+                            return map$Ex$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -5948,13 +5948,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return filterMap$V(procedure, obj3, objArr3);
+                            return filterMap$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -5965,13 +5965,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return any$V(procedure, obj3, objArr3);
+                            return any$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -5982,13 +5982,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return every$V(procedure, obj3, objArr3);
+                            return every$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -5999,13 +5999,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return listIndex$V(procedure, obj3, objArr3);
+                            return listIndex$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -6048,13 +6048,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return lsetAdjoin$V(procedure, obj3, objArr3);
+                            return lsetAdjoin$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -6097,13 +6097,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return lsetIntersection$V(procedure, obj3, objArr3);
+                            return lsetIntersection$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -6114,13 +6114,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return lsetIntersection$Ex$V(procedure, obj3, objArr3);
+                            return lsetIntersection$Ex$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -6131,13 +6131,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return lsetDifference$V(procedure, obj3, objArr3);
+                            return lsetDifference$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -6148,13 +6148,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return lsetDifference$Ex$V(procedure, obj3, objArr3);
+                            return lsetDifference$Ex$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -6197,13 +6197,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return lsetDiff$PlIntersection$V(procedure, obj3, objArr3);
+                            return lsetDiff$PlIntersection$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }
@@ -6214,13 +6214,13 @@ public class srfi1 extends ModuleBody {
                 obj2 = objArr[0];
                 try {
                     procedure = (Procedure) obj2;
-                    obj3 = objArr[1];
+                    obj4 = objArr[1];
                     length2 = objArr.length - 2;
                     objArr3 = new Object[length2];
                     while (true) {
                         length2--;
                         if (length2 < 0) {
-                            return lsetDiff$PlIntersection$Ex$V(procedure, obj3, objArr3);
+                            return lsetDiff$PlIntersection$Ex$V(procedure, obj4, objArr3);
                         }
                         objArr3[length2] = objArr[length2 + 2];
                     }

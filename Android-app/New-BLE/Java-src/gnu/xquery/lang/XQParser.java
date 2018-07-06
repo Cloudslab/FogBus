@@ -2225,12 +2225,12 @@ public class XQParser extends Lexer {
     }
 
     void parseContent(char delimiter, Vector result) throws IOException, SyntaxException {
-        Expression text;
         this.tokenBufferLength = 0;
         int prevEnclosed = result.size() - 1;
         boolean skipBoundarySpace = !this.boundarySpacePreserve && delimiter == '<';
         boolean skippable = skipBoundarySpace;
         while (true) {
+            Expression text;
             int next = read();
             if (next == delimiter) {
                 if (delimiter == '<') {

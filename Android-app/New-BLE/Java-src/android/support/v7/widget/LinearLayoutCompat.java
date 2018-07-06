@@ -220,12 +220,12 @@ public class LinearLayoutCompat extends ViewGroup {
     }
 
     void drawDividersHorizontal(Canvas canvas) {
-        LayoutParams lp;
-        int position;
         int count = getVirtualChildCount();
         boolean isLayoutRtl = ViewUtils.isLayoutRtl(this);
         int i = 0;
         while (i < count) {
+            LayoutParams lp;
+            int position;
             View child = getVirtualChildAt(i);
             if (!(child == null || child.getVisibility() == 8 || !hasDividerBeforeChildAt(i))) {
                 lp = (LayoutParams) child.getLayoutParams();
@@ -375,8 +375,7 @@ public class LinearLayoutCompat extends ViewGroup {
     }
 
     void measureVertical(int widthMeasureSpec, int heightMeasureSpec) {
-        int totalLength;
-        int childHeight;
+        int measuredWidth;
         this.mTotalLength = 0;
         int maxWidth = 0;
         int childState = 0;
@@ -395,9 +394,10 @@ public class LinearLayoutCompat extends ViewGroup {
         int i = 0;
         while (i < count) {
             LayoutParams lp;
+            int totalLength;
+            int childHeight;
             boolean matchWidthLocally;
             int margin;
-            int measuredWidth;
             View child = getVirtualChildAt(i);
             if (child == null) {
                 this.mTotalLength += measureNullChild(i);
@@ -568,6 +568,9 @@ public class LinearLayoutCompat extends ViewGroup {
     }
 
     void measureHorizontal(int widthMeasureSpec, int heightMeasureSpec) {
+        LayoutParams lp;
+        int totalLength;
+        boolean matchHeightLocally;
         int childHeight;
         int i;
         this.mTotalLength = 0;
@@ -602,10 +605,7 @@ public class LinearLayoutCompat extends ViewGroup {
         int largestChildWidth = Integer.MIN_VALUE;
         int i2 = 0;
         while (i2 < count) {
-            LayoutParams lp;
-            int totalLength;
             int childWidth;
-            boolean matchHeightLocally;
             int margin;
             int childBaseline;
             View child = getVirtualChildAt(i2);

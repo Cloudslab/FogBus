@@ -353,6 +353,7 @@ public class printf extends ModuleBody {
         }
 
         public Object lambda23pad$V(Object pre, Object[] argsArray) {
+            Object apply2;
             LList strs = LList.makeList(argsArray, 0);
             try {
                 Object len = Integer.valueOf(strings.stringLength((CharSequence) pre));
@@ -370,26 +371,26 @@ public class printf extends ModuleBody {
                     } else if (this.left$Mnadjust != Boolean.FALSE) {
                         Object[] objArr = new Object[2];
                         objArr[0] = strs;
-                        r5 = AddOp.$Mn.apply2(this.width, len);
+                        apply2 = AddOp.$Mn.apply2(this.width, len);
                         try {
-                            objArr[1] = LList.list1(strings.makeString(((Number) r5).intValue(), printf.Lit29));
+                            objArr[1] = LList.list1(strings.makeString(((Number) apply2).intValue(), printf.Lit29));
                             return lists.cons(pre, append.append$V(objArr));
                         } catch (ClassCastException e2) {
-                            throw new WrongType(e2, "make-string", 1, r5);
+                            throw new WrongType(e2, "make-string", 1, apply2);
                         }
                     } else if (this.leading$Mn0s != Boolean.FALSE) {
-                        r5 = AddOp.$Mn.apply2(this.width, len);
+                        apply2 = AddOp.$Mn.apply2(this.width, len);
                         try {
-                            return lists.cons(pre, lists.cons(strings.makeString(((Number) r5).intValue(), printf.Lit9), strs));
+                            return lists.cons(pre, lists.cons(strings.makeString(((Number) apply2).intValue(), printf.Lit9), strs));
                         } catch (ClassCastException e22) {
-                            throw new WrongType(e22, "make-string", 1, r5);
+                            throw new WrongType(e22, "make-string", 1, apply2);
                         }
                     } else {
-                        r5 = AddOp.$Mn.apply2(this.width, len);
+                        apply2 = AddOp.$Mn.apply2(this.width, len);
                         try {
-                            return lists.cons(strings.makeString(((Number) r5).intValue(), printf.Lit29), lists.cons(pre, strs));
+                            return lists.cons(strings.makeString(((Number) apply2).intValue(), printf.Lit29), lists.cons(pre, strs));
                         } catch (ClassCastException e222) {
-                            throw new WrongType(e222, "make-string", 1, r5);
+                            throw new WrongType(e222, "make-string", 1, apply2);
                         }
                     }
                 }
@@ -844,13 +845,13 @@ public class printf extends ModuleBody {
         }
 
         public Object lambda29f(Object digs, Object exp, Object strip$Mn0s) {
-            Object i0;
-            Object list2;
             try {
                 digs = printf.stdio$ClRoundString((CharSequence) digs, AddOp.$Pl.apply2(exp, this.staticLink.precision), strip$Mn0s != Boolean.FALSE ? exp : strip$Mn0s);
                 boolean x;
+                Object list2;
                 if (Scheme.numGEq.apply2(exp, printf.Lit1) != Boolean.FALSE) {
                     try {
+                        Object i0;
                         if (numbers.isZero((Number) exp)) {
                             i0 = printf.Lit1;
                         } else {
@@ -929,13 +930,13 @@ public class printf extends ModuleBody {
         }
 
         public Object lambda30formatReal$V(Object signed$Qu, Object sgn, Object digs, Object exp, Object[] argsArray) {
-            Object apply3;
             LList rest = LList.makeList(argsArray, 0);
             if (lists.isNull(rest)) {
                 try {
                     Object obj;
                     Object obj2;
                     Object lambda29f;
+                    Object apply3;
                     if (characters.isChar$Eq(printf.Lit5, (Char) sgn)) {
                         obj = "-";
                     } else {
