@@ -45,7 +45,7 @@ Information System}, \orgname{The University of Melbourne, Parkville}, \orgaddre
 \author{Shreshth Tuli}, 
 \author{Shikhar Tuli}, 
 \author{Redowan Mahmud}, 
-\author{Rajkumar Buyya}} (\cyear{2016}), 
+\author{Rajkumar Buyya}} (\cyear{2018}), 
 \ctitle{FogBus: A simplified framework for implementing Fog, Edge and Cloud computing applications/research secured using Blockchain Technology}, \cjournal{Softw Pract Exper.}, \cvol{2018;00:1--6}.}
 
 \maketitle
@@ -366,9 +366,103 @@ The “Refresh” button connects the “WebViewer” to the url. When the Start
 \captionof{figure}{Welcome and session screens of the Android Application}
 \end{figure}
 
+\section{Performance Evaluation}
+
+In this section we have tested the FogBus framework with the Sleep Apnea Analysis case study on different scenarios. Each scenario was built using a combination of the following test case options:
+\begin{enumerate}
+\item \textit{Maximum Load / Constant instruction rate}:  In the maximum load case, next task was sent as soon as the previous task was over to ensure that the fogbus framework is continuously on work and has no idle time. In the constant number of instructions case, every task was sent at a gap of 5 seconds. This would mean a total of 60 tasks but due to the overhead of master node and network propagation 60 was the maximum limit.
+\item  \textit{With / Without Blockchain}: As the names of scenarios suggest the test cases were based on whether the blockchain security was enabled on not. If the blockchain is disabled there is a significant reduction in latency, network usage, and energy consumption.
+\item \textit{Fog Only / Cloud Only / Master Node Only}: This was whether the tasks were sent to only the Raspberry Pis or Azure through Aneka or Master itself performed all computation.
+\end{enumerate}
+As the test configurations were built as a combination of these test case options, the total number of configurations were $2 \  \times \ 2 \ \times \  3 \ =\  12$. Each configuration was tested for 5 minutes as the following parameters were observed and recorded:
+\begin{enumerate}
+\item Numer of tasks performed in 5-minute duration
+\item Power consumption (Master + workers + Azure)
+\item Energy per task (Master + workers + Azure)
+\item Bytes sent / second by master
+\item Bytes received / second by master
+\item Network usage per task (Based on the bytes sent + received per task)
+\item Average task latency (i.e. the time duration between when the master sends data for analysis to worker/Aneka/itself and when it gets results)
+\item Master CPU Usage \%
+\item Master RAM Usage \%
+\item Master Cache Usage
+\end{enumerate}
+
+The data parameters were recorded using Microsoft Performance Monitor\copyright at the Master and Azure machines, and using NMON Performance Monitor at the Raspberry Pi. The green bars in graphs are for Fog Only case and blue bars are for Cloud Only case.
+
+\subsection{Number of Tasks}
+
+The number of tasks performed in a constant duration of 5 minutes can be seen in the graphs for the different cases. We observe that the Number of tasks is higher in the Fog Only case than the Cloud Only case. For the Maximum Load case (i.e. tasks sent with no interval) the number of tasks that are performed depends on the Network propagation and time required by the node to perform analysis. As the results show us, it is apparent that the network propagation difference in fog and cloud cases (lesser in the former case) is more than the difference in computation time (lesser in the latter case). This shows that the Fog Only case is better for performing high number of tasks.\\
+We also see that without blockchain the framework is able to perform much higher number of tasks. This is because of lower workload and lesser amount of data to be shared among nodes.
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{g11} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=7cm]{g12}
+\captionof{figure}{Number of tasks performed in 5 minutes}
+\end{figure}
+
+
+\subsection{Latency}
+
+Latency is inversely proportional to the Number of tasks. The results show that the latency in Fog case is much lesser than the Cloud Only case. Also similar to the previous parameter, without blockchain the latency is lower due to signature verification and proof of work validation that needs to be done with blockchain.
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{g71} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=7cm]{g72}
+\captionof{figure}{Network Usage}
+\end{figure}
+
+\subsection{Network Usage}
+
+Network Usage is calculated as: $(Number\ of\ bytes\ sent\ /\ second\ +\ Number\ of\ bytes\ received\ /\ second)/(Number\ of\ tasks)$, where bytes sent or received are by master node. Network Usage is lower in the Fog Only case as Aneka overhead of Network communication is not present in this case. Also, without blockchain a lot of data sharing is eliminated which is there in the blockchain case for signature verification, blockchain hash data, public keys, etc.
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{g61} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=7cm]{g62}
+\captionof{figure}{Network Usage}
+\end{figure}
+
+\newpage
+
+\subsection{Energy}
+
+Energy consumption is also lower in the Fog case which is because the cloud power consumption is much higher as compared to edge devices.
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{g31} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=7cm]{g32}
+\captionof{figure}{Energy Used per task}
+\end{figure}
+
+\subsection{Master Node CPU, RAM, Cache Usage}
+
+Master CPU, RAM and Cache usage are much lower in the Fog Only case due to elimination of Aneka overhead.
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{g81} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=7cm]{g82}
+\captionof{figure}{Master CPU Usage \%}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{g91} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=7cm]{g92}
+\captionof{figure}{Master RAM Usage \%}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{g101} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=7cm]{g102}
+\captionof{figure}{Master Cache Usage in $10^8$ bytes}
+\end{figure}
+
+\subsection{Discussion}
+
+From the results it is clear that Without Blockchain Case is much better in terms of latency, Network Usage, CPU Usage, etc. This is because of the much lesser load on the nodes for sharing data and maintaining blockchains.\\ 
+We see that for the Sleep Apnea analysis case study, the Fog domain is much more favorable. Due to lesser latency, lower network usage, lesser energy consumption, etc. the Fog environment is much more suited for this type of applications. For application that involve high computation like calculating Fast Fourier Transform or involving Matrix Multiplication, the Fog devices may not be able to perform well in such calculation and the Cloud would be more suitable. Due to the light-weight computation requirement of Sleep Apnea Analysis application that we have deployed in our case study; the Fog domain is more suitable.
 
 \section{Future Work}
-This software forms a base for setting up Fog Computing Environment which is not OS or architecture specific. Though the framework is complete by itself and fully functions to perform real-time, sensor-based Sleep Apnea analysis, but has a large scope of improvement and further developments:
+This software forms a base for setting up Fog Computing Environment which is not OS or architecture specific. Though the framework is complete by itself and fully functions to perform real-time, sensor-based Sleep Apnea analysis and can be used for other applications as well, but has a large scope of improvement and further developments:
 
 \subsection{Load Balancing Scheme}
 As discussed earlier, the current load balancing scheme is naive and can be greatly improved. Currently, the load balancing scheme focuses on task distribution based on CPU load, whichever device has the least load, the task is given to it. There can be a cumulative ranking parameter which takes into account many other factors as per requirement. These factors can be and are not limited to: Network Bandwidth, Memory Load, etc. Different weights can be given to these parameters are per the scenario. 
@@ -383,9 +477,9 @@ Some applications require data to be secure as well as kept private. The current
 The current system allows any device to connect to master and share or view data. This can be used by hackers to forge DDoS or similar attacks. As Fog platforms also contains low range devices with limited threshold management, such attacks even at a low scale can destroy such devices. Thus, a signature-based validation technique can be used to ensure user and data authenticity.
 
 
-\section{Performance Evaluation}
-
 \section{Conclusions}
+
+\section{Software Availability}
 
 
 \bibliography{wileyNJD-AMA}
