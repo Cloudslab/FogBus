@@ -16,7 +16,7 @@
 
 \begin{document}
 
-\title{FogBus: A simplified framework for implementing Fog, Edge and Cloud computing applications/ research secured using Blockchain Technology}
+\title{FogBus: A simplified framework for implementing Fog, Edge and Cloud computing applications/research secured using Blockchain Technology}
 
 \author[1,2]{Shreshth Tuli*}
 
@@ -75,11 +75,12 @@ The model is developed to provide a framework the aims of which include:
 \item Provide a platform to easily form an integrated system that can use this interaction to provide services to the end user
 \item Implement resource management policies and allow easy extension/implementation of such policies for efficient load distribution
 \item Set up a friendly interface between the framework and end user
+\item Keep all data secured, and ensure data sources are legit and existing data is not tampered by hackers
 \end{enumerate}
 
 \subsection{Physical Components}
 
-In the FogBus framework, all devices interact at different levels with different devices. The overall model is based on Master-Slave design where the Master node receives data from sensor for analysis/computation. The Master node then sends this data as a task to different workers: Local worker, Private Cloud or Public Cloud. Therefore, the core components of network include Master Node, Worker Nodes, Sensors and Cloud. All other components including gateways, switches and other interface devices ‘glue’ the core components together.\\
+In the FogBus framework, all devices interact at different levels with different devices. The overall model is based on the hierarchal Master-Slave design where the Master node receives data from sensor for analysis/computation. The Master node then sends this data as a task to different workers: Local worker, Private Cloud or Public Cloud. Therefore, the core components of network include Master Node, Worker Nodes, Sensors and Cloud. All other components including gateways, switches and other interface devices ‘glue’ the core components together.\\
 The core physical components in the FogBus framework include:
 \begin{enumerate}
 \item \textit{Master Node}: It is the main physical computer which distributes tasks among the Worker nodes based on some load balancing scheme. It directly controls the Worker Nodes.
@@ -103,18 +104,19 @@ Other components that help in the communication between the core components and 
 \subsection{Network Structure}
 \begin{figure}[h]
 \centering
-\includegraphics[width=13cm]{network-arch}
+\includegraphics[width=12cm]{network-arch}
 \captionof{figure}{Network level structure of the FogBus framework}
 \end{figure}
-Figure 1 depicts how different physical components as described in section 3.2 are connected in the FogBus model. The User connects it's device to the local network and interacts with the Master Node using an interface which can be an Android or other smart device. This interface allows communication between sensor/actuator with the Master Node. \\
-The Master Node also referred to as the Broker Node collects data from the sensor uses it itself for analysis or sends it to one of the followings:
+
+Figure 1 depicts how different physical components, as described in section 3.2, are connected in the FogBus model. The User connects hos/her device to the local network and interacts with the Master Node using an interface which can be an Android or other smart device. This interface allows communication between sensor/actuator with the Master Node. \\
+The Master Node, also referred to as the Broker Node, collects data from the sensor and uses the data itself for analysis or sends it to one of the following:
 \begin{itemize}
 \item Worker Node in local Network
 \item Private Cloud
 \item Public Cloud or data center
 \end{itemize}
-All communication among the Master Node, Worker Nodes, Private Cloud and User is facilitated by the Network Router. Additional workers can be installed in the network using Switches. Communication of the Master Node and the Public Cloud is facilitated with Internet, and the Network Router directs internet data packets through the connection provided by the Internet Service Provider.\\
-The Master Node collects results/actions from the devices mentioned above and send it to user interface/actuator. The master or worker nodes can also receive data directly from data sets and perform actions accordingly. \\
+All communication among the Master Node, Worker Nodes, Private Cloud and User is facilitated by the Network Router. Additional workers can be installed in the network using Switches. Communication of the Master Node and the Public Cloud is facilitated with Internet, and the Network Router directs Internet data packets through the connection provided by the Internet Service Provider.\\
+The Master Node collects results/actions from the devices mentioned above and send it to user interface or actuator. The master or worker nodes can also receive data directly from data sets and perform actions accordingly. \\
 It is in the hands of the user, which service to run and which master to connect to. There can be Master nodes dedicated for specific tasks and in IoT environment multiple services can even run simultaneously requiring connections with multiple masters and/or multiple service running on same master node. 
 
 \subsection{Sequence of Communication}
@@ -128,7 +130,7 @@ A defined sequence of tasks and communication of data helps reduce failure rate 
 \section{Functional Components}
 
 \subsection{Resource Manager}
-As devices at different levels of the network, as shown in the ‘Network Level Model’, offer range of computational capabilities and latencies, it is important to distribute work accordingly to ensure optimum QoS. The devices at the ‘edge’ of the network provide very low latency due to close proximity with the user, sensors and actuators, but have tendency to have significantly low computation power and thus higher execution times. The devices far away from users like those on the cloud provide significantly higher latency but due to their much higher computation capabilities provide much lesser execution time. There is thus a trade-off between network propagation latency and computation latency. Depending on different scenarios, different resource management techniques are used.\\
+As devices at different levels of the network, as shown in the ‘Network Level Model’, offer range of computational capabilities and latencies, it is important to distribute work accordingly to ensure optimum QoS. The devices at the ‘edge’ of the network provide very low latency due to close proximity with the user, sensors and actuators but have tendency to have significantly low computation power and thus higher execution times. The devices far away from users like those on the cloud provide significantly higher latency but due to their much higher computation capabilities provide much lesser execution time. There is thus a trade-off between network propagation latency and computation latency. Depending on different scenarios, different resource management techniques are used.\\
 There is scope of considerable reduction of latency caused due to propagation of data if low-computation workload is allocated to edge devices. Even though their execution time would be higher but the critical factor here would be the time caused by data transfer over the network. On the other hand, significant reduction in time can be achieved if high-computation workload is sent to more powerful machines like cloud because in such tasks edge devices might lead to deadlocks and cause the whole system to collapse. \\
 The Resource manager of the model should decide the following:
 \begin{enumerate}
@@ -143,12 +145,12 @@ It is a design decision in the implementation strategy how these decisions are t
 \item \textit{Computation Complexity of Application}: The order of complexity of application determines the number of task request to be sent to cloud. For very high complexity tasks it might me suitable to only use cloud resources to prevent bottlenecking of the software because of low computational capabilities of edge nodes.
 \item \textit{Cost of Computation}: Different levels have different currency for computation. Devices over the cloud are metered and are charged based on time of usage. Embedded devices in IoT applications are charged based on the initial physical component cost and then the cost of energy expenditure for functioning of these devices. By normalizing these different currencies using conversion factors, one can determine the cumulative cost for running the framework per unit time/task/user. Inherent to the model requirements, but depending on the scenario, this cost needs to be minimized. 
 \end{enumerate}
-Different load balancing algorithms can be implemented that specialize in improving some of these parameters based on user needs. A weighted sum of quantifiable factor of each of these parameters and the weights themselves would determine which balancing technique should be used for a specific situation.
+Different load balancing algorithms can be implemented that specialize in improving some of these parameters based on user needs. A weighted sum of quantifiable factor of each of these parameters and the weights themselves would determine which balancing technique should be used for a specific situation. The \textit{Session Manager} in the Master Node with the help of Workers' \textit{Resource Monitors} handle the resource management in the FogBus framework. See \textit{Implementation} for more details.
 
 \subsection{Blockchain and Digital Signature}
 Maintaining integrity of data and ensuring that data is not sent by an unregistered source is very important for the credibility of the system. This is extremely important in systems that maintain real time medical records, financial transactions and other secured platforms. \\
 For the integrity of data and prevention from tampering of existing data the model uses Blockchain Technology. Technically, blockchain is a suite of distributed ledger technologies that can be programmed to record and track anything of value. \\
-Whenever new data is received by the Master node, it packs it to form a “block”. This block hash a SHA256 hash value which is created using the data, block index and a nonce value. The Master node, whenever creating a block mines the block to create a “proof-of-work” which allows the hash to have a particular form/pattern. The Master also creates a random public/private key pair that allow to for a unique signature with the original data. The private key is not shared with the worker node and only data, signature and public key are shared. With this the Worker node is able to verify that the data is from a legitimate source as it saves the public key of the Master node. If any other key is used, that data is rejected. Also, the public/private key pair is kept dynamic per block generation to prevent hackers to generate private key using brute force techniques. Even if one is able to generate a private key for a transaction, it would change for the next and thus become hack proof. \\
+Whenever new data is received by the Master node, it packs it to form a “block”. This block hash a SHA256 hash value which is created using the data, block index and a nonce value. The Master node, whenever creating a block mines the block to create a “proof-of-work” which allows the hash to have a particular form/pattern. The Master also creates a random public/private key pair that allow to form a unique signature with the original data. The private key is not shared with the worker node and only data, signature and public key are shared. With this the Worker node is able to verify that the data is from a legitimate source as it saves the public key of the Master node. If any other key is used, that data is rejected. Also, the public/private key pair is kept dynamic per block generation to prevent hackers to generate private key using brute force techniques. Even if one is able to generate a private key for a transaction, it would change for the next and thus become hack proof. \\
 The user is also given ability to track the data/block flow through the worker nodes by displaying the latest hashes of the blockchain copy at each node. This ensures that the user is able to see and automatically take action on which nodes are more prone to attack and/or are being targeted by hackers.\\
 Thus:
 \begin{enumerate}
@@ -159,20 +161,25 @@ Thus:
 \item Automatic majority chain deployed in minority workers
 \item User displayed the latest hashes of each node
 \end{enumerate}
-Points 1 and 2 ensure that the data recorded is from genuine source and points 3, 4 and 5 ensure data integrity.
+Points 1 and 2 ensure that the data recorded is from genuine source and points 3, 4 and 5 ensure data integrity. The \textit{Master Interface} and \textit{Worker Interface} modules in respective nodes handle the blockchain and signature verification in the FogBus framework. See \textit{Implementation} for more details.
+\begin{figure}[h]
+\centering
+\includegraphics[width=12cm]{blockchain}
+\captionof{figure}{Simple Load balancing scheme implemented in code}
+\end{figure}
 
 \subsection{Data Input/Output}
-There exist several ways of interacting and sharing data from sensors and among fog nodes. It is crucial that this data sharing mechanism is failsafe in terms of data theft and fraudulent manipulation. The streams of data might be or not be dedicated. Another important part is that the protocol followed for communication among fog devices should be supported by all nodes, complex and rarely used encryption standards may restrict diversity of devices that can be used. \\
+There exist several ways of interacting and sharing data from sensors and among fog nodes. It is crucial that this data sharing mechanism is failsafe in terms of data theft and fraudulent manipulation. The streams of data can also be dedicated. Another important part is that the protocol followed for communication among fog devices should be supported by all nodes, complex and rarely used encryption standards may restrict diversity of devices that can be used. \\
 The sharing of data with sensors and actuators needs to be as close to real time as possible. For mission critical application proper data transfer frequencies are important. For the case of static transfer frequencies, very high frequencies can lead to computation lag from the worker nodes, very low frequency can cause reduction in the Quality-of-service (QoS). \\
-The current model uses HTTP protocol for communication between different nodes in the local network and the Aneka’s protocols for task distribution to cloud and other devices. All data is currently transferred in plain text using the HTTP REST APIs specifically GET and POST.
+The current model uses HTTP protocol for communication between different nodes in the local network and the Aneka’s protocols for task distribution to cloud and other devices. All data is currently transferred in plain text using the HTTP REST APIs specifically GET and POST. The \textit{User Interface} and the \textit{Session Manager} collectively handle the Data I/O in the FogBus framework. See \textit{Implementation} for more details.
 
 \subsection{Computation over Data}
 Another important criteria for model development is that it is generic in terms of the service it provides. In the IoT world there are several applications in which Fog, Edge and Cloud Computing can be used, and there are several others that haven’t even been thought of. It is important that the frame work allows services to be used that can be changed, modified and/or extended easily. \\
 The computation/analysis requirement of the service also affects the Resource management policy and data transfer rate requirements. Based on different services and end-user requirements, performance metrics can be designed and the framework can be optimized accordingly.\\
-The model uses Java runtime environment for data analysis due to it’s ability to be run in diverse machines. 
+The model uses Java runtime environment for data analysis due to it’s ability to be run in diverse machines. The \textit{Analysis Application} in the Workers does the computation over data. See \textit{Implementation} for more details.
 
 \subsection{Data Storage}
-Many applications require data to be stored for future use. This data being shared among multiple nodes is prone to attacks. It is thus important to implement strategies/techniques that keep data resilient and prevent it from tampering. Not only keeping saved data secure is important, but the methods used for data extraction and sharing among nodes is also a concern.
+Many applications require data to be stored for future use. This data being shared among multiple nodes is prone to attacks. It is thus important to implement strategies/techniques that keep data resilient and prevent it from tampering. Not only keeping saved data secure is important, but the methods used for data extraction and sharing among nodes is also a concern. The \textit{Network} and \textit{Session Managers} handle the data storage in the FogBus framework. See \textit{Implementation} for more details.
 
 \section{Implementation}
 The software has been built using platforms that are supported by a wide range of devices including those used for IoT application. The main software is divided into four different components:
@@ -183,7 +190,7 @@ The software has been built using platforms that are supported by a wide range o
 \item Analysis Jar file (Based on Java)
 \item User Interface (Android Application, or web-based interface)
 \end{enumerate}
-The web scripts require an Apache server to be set up in all nodes and MySQL server in master. Each of these have different roles and are distributed among different nodes. Assuming that the local network is secure, all public cloud interaction is based on Blockchain to prevent hackers from accessing and manipulating data.\\
+The web scripts require an Apache server to be set up in all nodes and MySQL server in master. Each of these have different roles and are distributed among different nodes. All local network and public cloud interaction is based on Blockchain to prevent hackers from accessing and manipulating data.\\
 Interaction with the user plays a key role in obtaining the user requirements and also acts as an intermediary between the network and sensors/actuators. It is crucial for the user interface to be accessible from a wide range of devices and be friendly for interaction. Some requirements of this interface include:
 \begin{itemize}
 \item Set the architecture of the network in terms of worker nodes
@@ -194,12 +201,15 @@ Interaction with the user plays a key role in obtaining the user requirements an
 \item Enable or Disable Master as a worker
 \item Enable or Disable Aneka tasks to be spun
 \end{itemize}
-The current model uses PHP based web scripts as an interface with the user and also backend interface among master and worker nodes. An abstract level depiction of the implementation is shown in Figure 3.
+The current implementation of the FogBus model uses PHP based web scripts as an interface with the user and also backend interface among master and worker nodes. An abstract level depiction of the implementation is shown in Figure 4.
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{model-with-interface}
 \captionof{figure}{Sequence of communication among different components}
 \end{figure}
+
+Java and PHP (based on HTTP) have been chosen for all local interface because they are cross platform languages. Compiled Java program runs on all platforms for which there exists a JVM (Java Virtual Machine), which includes large number of Operating systems (Windows, Linux, Mac OS X). PHP scripts can run almost everywhere (Unix, Windows, Linux, Embedded Systems, Risc, NetWare). Most embedded and IoT devices come with networking protocol stacks for HTTP communication, and can be easily installed in those that don't. \\
+Due to the cross platform nature of the languages used to develop the FogBus framework, it can be deployed in a plethora of devices.
 
 \subsection{Master Node}
 
@@ -222,7 +232,7 @@ This Manager also lets user configure other worker nodes automatically by sendin
 This module performs the most of the software functionalities.. The user can manually input the data for send data via the GET request to the master node. After inputting the data, if the “Analyze” button is clicked, then the content of configuration file is parsed to obtain list of worker IP addresses. \\
 Variables \$toMaster and \$toAneka store if the task is to be given to the Master or Aneka or not. This module also handles the “Fail over” and “Load Balancing” schemes of the software. The variable \$ips is an array of the IP addresses and \$loads is their corresponding loads. The PHP method file\_get\_contents() allows us to get a string form of the webpage passed as the argument. An error operator lets it return FALSE in case of errors. If any HTTP request for load returns FALSE then variable \$my\_var is set to 100, and error message is displayed on the screen. Setting load to 100 has the effect that this node would never get the task and hence removed from load balancing IPs. The next time the worker IPs are accessed for load, this is checked again and if the particular worker node is available, it is taken into the load balancer. \\
 Using a for loop, the \$loads array is populated by accessing the Resource Monitor of the workers corresponding to the IP address. If the load of any worker is < 80\%, then the variables \$toMaster and \$toAneka are set to false. In effect, when master is enabled as worker, this sets \$toMaster to true only when all worker nodes have more that 80\% load. Same is the case for Aneka container. If the task is not given to the master or Aneka, i.e. \$toMaster and \$toAneka are false, then the IP of the worker with minimum load gets the task. The task is sent using the GET method to the Worker Module of the worker with that IP address. Otherwise, randomly either the master or Aneka gets the task. If the task is sent to master, then it is sent using GET method the Worker Module in the local machine. If the task is sent to Aneka, then it is sent using the GET method to the Aneka Interface. \\
-The load balancing strategy used is shown in Figure 4.
+The load balancing strategy used is shown in Figure 5.
 This module also sends the block details to the other worker nodes. It saves the data received from the sensors to a data file which the Master Interface java application uses to form a new block. The new block hash values and proof-of-work with public key and signature are shared to each node for updating blockchains. If any node reports error in terms of blockchain tampering or signature verification, then the blockchain in majority of the network is copied to that node.
 \begin{figure}[h]
 \centering
@@ -244,8 +254,8 @@ When the Aneka software gets the data for analysis it itself decides to which co
 
 \subsubsection{Aneka software}
 The Aneka code (in C\#) parses the data file every 500ms and checks if pending analysis exists. If yes then it forms Aneka tasks/threads and launches it to other Aneka containers which might be on the cloud or in local network. \\
-Here also blockchain has been implemented in this to ensure data integrity and secure the data and results from hackers. Whenever a new thread or task is spun, the proof of work is calculated by the master node and is sent to other nodes for verification. If verification passes then the block of data is added to the chain, otherwise the data is discarded. Each time new task is sent, the chain is validated by checking the correctness of the last block’s hash value and matching the previous has value of the last block with the hash value of second last block. \\
-management has also been implemented so that data from unknown sources can not be added to the blockchain, thus ensuring no outside and unwanted manipulation can be done. Each Aneka node is given a public and private key. The signatures are formed using private key and verified using public keys. 
+Here also blockchain has been implemented to ensure data integrity and secure the data and results from hackers. Whenever a new thread or task is spun, the proof of work is calculated by the master node and is sent to other nodes for verification. If verification passes then the block of data is added to the chain, otherwise the data is discarded. Each time new task is sent, the chain is validated by checking the correctness of the last block’s hash value and matching the previous hash value of the last block with the hash value of second last block. \\
+Digital Signature management has also been implemented so that data from unknown sources can not be added to the blockchain, thus ensuring no outside and unwanted manipulation can be done. Each Aneka node is given a public and private key. The signatures are formed using private key and verified using public keys. 
 
 \subsection{Worker Node}
 The framework at the Worker Node side can be described in terms of following major modules.
@@ -259,7 +269,7 @@ The worker’s manager page allows user to set the Master IP address which is us
 \subsection{Worker Module}
 This module receives data to be analyzed using the GET method. It acts as an interface between the Master Node and the Java based analysis application.
 
-\subsubsection{Analysis Appplication}
+\subsubsection{Analysis Application}
 It performs the computation on the data sent by the Master node and sends results to the Worker Module to be forwarded to the Master Node. 
 
 \subsubsection{Worker Interface}
@@ -280,7 +290,7 @@ This Module takes in the updated block details from the master node, analyzes th
 \end{itemize}
 If the source verification fails then block is ignored and data breach is informed to the master node. If block details check fails then the errors are reported to master. If the block is valid, it is added to the blockchain and no errors are reported to Master.\\
 Thus, a hacker can not add new data or tamper with existing data due to the following argument:
-The hacker can manipulate with data only in the following ways:
+the hacker can manipulate with data only in the following ways:
 \begin{enumerate}
 \item Add new data (and different from last)
 For adding different data from the last one the hacker would need to develop a tuple of data, public key and signature that pass the signature verification test and match with master public key. Two sub cases arise:
@@ -290,11 +300,11 @@ For adding different data from the last one the hacker would need to develop a t
 \end{itemize}
 \item Add new data (same as last)
 \begin{itemize}
-\item For adding new data which is same as last the hacker can easily keep using the same tuple of public key, data and signature. This is very much probable for causing deadlocks and DDoS attacks, but due to the check performed by WorkerInterface which rejects repeated blocks, this is not possible (the MasterInterface ensures that every new block has at least one of public key, signature or data different from previous block)
+\item For adding new data which is same as last the hacker can easily keep using the same tuple of public key, data and signature. This is very much probable for causing deadlocks and DDoS attacks, but due to the check performed by \textit{Worker Interface} which rejects repeated blocks, this is not possible (the \textit{Master Interface }ensures that every new block has at least one of public key, signature or data different from previous block)
 \item Hacker cannot use different public key and signature for the same data as then the Master public key check would reject it.
 \end{itemize}
 3.	Tamper existing data \\
-When the validation of blockchain is performed the following checks at the WorkerInterface report data tampering:
+When the validation of blockchain is performed the following checks at the \textit{Worker Interface} report data tampering:
 \begin{itemize}
 \item Hash of the block matches the calculated hash value
 \item Proof-of-work follows the required pattern
@@ -318,11 +328,11 @@ This was divided into two parts: Data analysis application and the Android Inter
 \subsection{Physical Infrastructure}
 The devices on which the FogBus framework was deployed:
 \begin{enumerate}
-\item Master Node: Dell XPS 13
-\item Worker Node: 2x Raspberry Pis 
-\item User Interface: Android Device
-\item Sensor: Pulse Oximeter
-\item Public Cloud: Microsoft Azure B1s Machine
+\item Master Node: Dell XPS 13 laptop, OS: Windows 10 
+\item Worker Node: 2x Raspberry Pis, OS: Raspbian Stretch
+\item User Interface: Android Device, OS: Android 8.0
+\item Sensor: Pulse Oximeter, Data encoding UTF-8
+\item Public Cloud: Microsoft Azure B1s Machine, OS: Windows Server 2016
 \end{enumerate}
 All nodes and android device were connected using a local hotspot.
 
@@ -354,10 +364,10 @@ Using both the diagnosis results, disease severity of the patient can be evaluat
 References \\
 MIT App Inventor: http://appinventor.mit.edu/explore/front.html \\
 App Inventor JavaBridge: http://www.appinventor.org/jBridgeIntro \\
-The android app “HealthKeeper.apk” allows the android device to act as an intermediary between the Oximeter sensor and the Master server. Rather than sending data manually through the GET HTML form, this app records and sends data automatically. The app has been developed on an open source platform: “MIT App Inventor” which can be seen at this link. The source file for “HealthKeeper.apk” can be found \href{https://drive.google.com/open?id=1rPIf_NHuBXp6peUX3vkzqJg5hfht3KDC}{here}. The application is divided into two screens namely: Welcome screen and Session screen. As shown in the End User tutorial, the Welcome screen asks user to pair the Bluetooth Oximeter with the Android device and enter the Master server’s IP address. \\
-The masterip is the global variable which stores the IP address entered by the user. The list global variable stores a list of masterip and Bluetooth device address. The PairSensor is a list picker to select from the available bluetooth devices. After picking, the BluetoothClient connects to the selected address and displays it on the screen. When the “Connect” button is clicked, the list objects are appended and sent to the Session screen. \\
-The Session screen is the main screen that handles all interaction with the master server. The blocks below show the variable initializations. The data variable stores the data received from sensor in list form, loop variable is a boolean for timer, and url variable stores the web address of the master node’s index page. \\
-The “Refresh” button connects the “WebViewer” to the url. When the StartRecording button is clicked, the timer is reset, the BluetoothClient connects to the address and starts collecting data from the sensor till the StopRecording button is clicked. When the StopRecording button is clicked, the data is submitted to the master node via the GET method. When Analyze button is clicked, the data is submitted for analysis and results displayed on the WebViewer. The analysis function is shown in Figure 6, which Connects the WebViewer to the Session Manager with GET request: analyze value set, which ensure that data is submitted for analysis.
+The android app (named “HealthKeeper.apk”) allows the android device to act as an intermediary between the Oximeter sensor and the Master server. Rather than sending data manually through the GET HTML form, this app records and sends data automatically. The app has been developed on an open source platform: “MIT App Inventor” which can be seen at this link. The source file for the android applicatoin can be found \href{https://drive.google.com/open?id=1rPIf_NHuBXp6peUX3vkzqJg5hfht3KDC}{here}. The application is divided into two screens namely: Welcome screen and Session screen. The Welcome screen asks user to pair the Bluetooth Oximeter with the Android device and enter the Master server’s IP address. \\
+The \textit{masterip} is the global variable which stores the IP address entered by the user. The list global variable stores a list of \textit{masterip} and Bluetooth device address. The \textit{PairSensor} is a list picker to select from the available bluetooth devices. After picking, the BluetoothClient connects to the selected address and displays it on the screen. When the “Connect” button is clicked, the list objects are appended and sent to the Session screen. Based on the make of different oximeters, the corresponding service and characteristic UUIDs are used. \\
+The Session screen is the main screen that handles all interaction with the master server. The blocks below show the variable initializations. The data variable stores the data received from sensor in list form, \textit{loop} variable is a boolean for timer, and \textit{url} variable stores the web address of the master node’s index page.\\
+The “Refresh” button connects the “WebViewer” to the url. When the "Start Recording" button is clicked, the timer is reset, the BluetoothClient connects to the address and starts collecting data from the sensor till the "Stop Recording" button is clicked. When the Stop Recording button is clicked, the timer is stopped. When Analyze button is clicked, the data is submitted for analysis and results displayed on the WebViewer. The analysis function is shown in Figure 6, which Connects the WebViewer to the Session Manager with GET request: analyze value set, which ensure that data is submitted for analysis.
 
 \begin{figure}[h]
 \centering
@@ -370,13 +380,13 @@ The “Refresh” button connects the “WebViewer” to the url. When the Start
 
 In this section we have tested the FogBus framework with the Sleep Apnea Analysis case study on different scenarios. Each scenario was built using a combination of the following test case options:
 \begin{enumerate}
-\item \textit{Maximum Load / Constant instruction rate}:  In the maximum load case, next task was sent as soon as the previous task was over to ensure that the fogbus framework is continuously on work and has no idle time. In the constant number of instructions case, every task was sent at a gap of 5 seconds. This would mean a total of 60 tasks but due to the overhead of master node and network propagation 60 was the maximum limit.
+\item \textit{Maximum Load / Constant instruction rate}:  In the maximum load case, next task was sent as soon as the previous task was over to ensure that the FogBus framework is continuously on work and has no idle time. The 'Maximum Load' case can also be called as 'No Interval' case. In the constant number of instructions case, every task was sent at a gap of 5 seconds. It can also be called as 'With Interval' case. This would mean a total of 60 tasks (for a 5 minute test) but due to the overhead of master node and network propagation 60 was the maximum limit.
 \item  \textit{With / Without Blockchain}: As the names of scenarios suggest the test cases were based on whether the blockchain security was enabled on not. If the blockchain is disabled there is a significant reduction in latency, network usage, and energy consumption.
 \item \textit{Fog Only / Cloud Only / Master Node Only}: This was whether the tasks were sent to only the Raspberry Pis or Azure through Aneka or Master itself performed all computation.
 \end{enumerate}
 As the test configurations were built as a combination of these test case options, the total number of configurations were $2 \  \times \ 2 \ \times \  3 \ =\  12$. Each configuration was tested for 5 minutes as the following parameters were observed and recorded:
 \begin{enumerate}
-\item Numer of tasks performed in 5-minute duration
+\item Number of tasks performed in 5-minute duration
 \item Power consumption (Master + workers + Azure)
 \item Energy per task (Master + workers + Azure)
 \item Bytes sent / second by master
@@ -388,7 +398,7 @@ As the test configurations were built as a combination of these test case option
 \item Master Cache Usage
 \end{enumerate}
 
-The data parameters were recorded using Microsoft Performance Monitor\copyright at the Master and Azure machines, and using NMON Performance Monitor at the Raspberry Pi. The green bars in graphs are for Fog Only case and blue bars are for Cloud Only case.
+The data parameters were recorded using Microsoft Performance Monitor$^\copyright$ at the Master and Azure machines, and using NMON Performance Monitor at the Raspberry Pi. The green bars in graphs are for Fog Only case and blue bars are for Cloud Only case.
 
 \subsection{Number of Tasks}
 
@@ -396,29 +406,29 @@ The number of tasks performed in a constant duration of 5 minutes can be seen in
 We also see that without blockchain the framework is able to perform much higher number of tasks. This is because of lower workload and lesser amount of data to be shared among nodes.
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{g11} \ \ \ \ \ \ \ \ \ \ \       
-\includegraphics[width=7cm]{g12}
+\includegraphics[width=8cm]{g11} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=8cm]{g12}
 \captionof{figure}{Number of tasks performed in 5 minutes}
 \end{figure}
 
 
 \subsection{Latency}
 
-Latency is inversely proportional to the Number of tasks. The results show that the latency in Fog case is much lesser than the Cloud Only case. Also similar to the previous parameter, without blockchain the latency is lower due to signature verification and proof of work validation that needs to be done with blockchain.
+Latency is another critical parameter for mission critical applications like Healthcare, robotics, etc. Latency is inversely proportional to the Number of tasks. The results show that the latency in Fog case is much lesser than the Cloud Only case. Also similar to the previous parameter, without blockchain the latency is lower due to signature verification and proof of work validation that needs to be done with blockchain. Results show that computing in the Fog Only case not only cuts down response time but also safeguards the application from scalability issues (leading to delayed responses) arising due to large topologies and high data-generation rates.
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{g71} \ \ \ \ \ \ \ \ \ \ \       
-\includegraphics[width=7cm]{g72}
-\captionof{figure}{Network Usage}
+\includegraphics[width=8cm]{g71} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=8cm]{g72}
+\captionof{figure}{Latency}
 \end{figure}
 
 \subsection{Network Usage}
 
-Network Usage is calculated as: $(Number\ of\ bytes\ sent\ /\ second\ +\ Number\ of\ bytes\ received\ /\ second)/(Number\ of\ tasks)$, where bytes sent or received are by master node. Network Usage is lower in the Fog Only case as Aneka overhead of Network communication is not present in this case. Also, without blockchain a lot of data sharing is eliminated which is there in the blockchain case for signature verification, blockchain hash data, public keys, etc.
+Network usage is a significant factor in such systems. It is not only important for the Network Bandwidth requirements but also the data I/O capabilities of devices. If the Network Router can not support the required I/O of the framework then it can lead to network congestion and even breakdown of the full system. Thus it is important for the framework to balance Network usage and keep is as low as possible. Network Usage is calculated as: $(Number\ of\ bytes\ sent\ /\ second\ +\ Number\ of\ bytes\ received\ /\ second)/(Number\ of\ tasks)$, where bytes sent or received are by master node. Network Usage is lower in the Fog Only case as Aneka overhead of Network communication is not present in this case. Also, without blockchain a lot of data sharing is eliminated which is there in the blockchain case for signature verification, blockchain hash data, public keys, etc.
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{g61} \ \ \ \ \ \ \ \ \ \ \       
-\includegraphics[width=7cm]{g62}
+\includegraphics[width=8cm]{g61} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=8cm]{g62}
 \captionof{figure}{Network Usage}
 \end{figure}
 
@@ -426,34 +436,23 @@ Network Usage is calculated as: $(Number\ of\ bytes\ sent\ /\ second\ +\ Number\
 
 \subsection{Energy}
 
-Energy consumption is also lower in the Fog case which is because the cloud power consumption is much higher as compared to edge devices.
+Energy consumption is a very important parameter for deploying such network of computing devices. After the installation cost, the Energy consumption plays an important role in the maintenance costs of the system. In these tests the Energy coonsumption per task was calculated as $(Average\ Power\ Consumption\ \times\ 300\ seconds)/(Number\ of\ tasks)$. Energy consumption is also lower in the Fog case which is because the cloud power consumption is much higher as compared to edge devices. Average power consumption of a Raspberry Pi is 1.5W and that of a Windows Machine is 115W which is around 77 times the former. This makes maintenance of Fog devices much easier due to low expenditure on energy consumed. 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{g31} \ \ \ \ \ \ \ \ \ \ \       
-\includegraphics[width=7cm]{g32}
+\includegraphics[width=8cm]{g31} \ \ \ \ \ \ \ \ \ \ \       
+\includegraphics[width=8cm]{g32}
 \captionof{figure}{Energy Used per task}
 \end{figure}
 
 \subsection{Master Node CPU, RAM, Cache Usage}
 
-Master CPU, RAM and Cache usage are much lower in the Fog Only case due to elimination of Aneka overhead.
+The Figure 12 Master CPU, RAM and Cache usage for the Master node for each case. Series1: Fog Only without blockchain, Series2: Cloud Only without blockchain, Series3: Fog Only with blockchain, and Series4: Cloud Only with blockchain. The parameter values are much lower in the Fog Only case due to elimination of Aneka overhead. Even without blockchain these parameters are lower due to elimination of hash creation, mining, etc tasks.
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{g81} \ \ \ \ \ \ \ \ \ \ \       
-\includegraphics[width=7cm]{g82}
+\includegraphics[width=5.5cm]{g81} \ \  
+\includegraphics[width=5.5cm]{g82} \ \ 
+\includegraphics[width=5.5cm]{g83}
 \captionof{figure}{Master CPU Usage \%}
-\end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[width=7cm]{g91} \ \ \ \ \ \ \ \ \ \ \       
-\includegraphics[width=7cm]{g92}
-\captionof{figure}{Master RAM Usage \%}
-\end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[width=7cm]{g101} \ \ \ \ \ \ \ \ \ \ \       
-\includegraphics[width=7cm]{g102}
-\captionof{figure}{Master Cache Usage in $10^8$ bytes}
 \end{figure}
 
 \subsection{Discussion}
