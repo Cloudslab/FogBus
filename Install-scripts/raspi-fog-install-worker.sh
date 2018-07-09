@@ -13,8 +13,9 @@ mysql -u root -praspberry -e "CREATE DATABASE data;GRANT ALL PRIVILEGES ON data.
 service apache2 restart
 sudo mkdir /var/www/html/HealthKeeper/
 sudo chmod -R 777 /var/www/html/HealthKeeper/
-sudo cp -a ./Raspi-Fog/Browser-src/RPi/Worker/* /var/www/html/HealthKeeper/
+sudo cp -a ./FogBus/Browser-src/RPi/Worker/* /var/www/html/HealthKeeper/
 sudo chmod 777 /var/www/html/HeathKeeper/*
+cd /var/www/html/HealthKeeper/
 echo ".................................."
 echo "Successfully Installed Raspi-Fog"
 echo "Note the worker IP address :"
@@ -22,6 +23,6 @@ hostname -I
 echo "Press Enter to run"
 read
 chromium-browser localhost/HealthKeeper/manager.php --no-sandbox &
-java -jar /var/www/html/HealthKeeper/WorkerInterface.jar
+java -jar WorkerInterface.jar
 
 
