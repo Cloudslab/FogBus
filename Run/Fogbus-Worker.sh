@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo chmod 777 /var/www/html/HeathKeeper/*
 cd /var/www/html/HealthKeeper/
 echo "Note the worker IP address :"
 hostname -I

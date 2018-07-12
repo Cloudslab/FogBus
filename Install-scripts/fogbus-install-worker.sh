@@ -14,8 +14,10 @@ service apache2 restart
 sudo mkdir /var/www/html/HealthKeeper/
 sudo chmod -R 777 /var/www/html/HealthKeeper/
 sudo cp -a ./FogBus/Browser-src/RPi/Worker/* /var/www/html/HealthKeeper/
-sudo chmod 777 /var/www/html/HeathKeeper/*
+sudo chmod -R -f 777 /var/www/html/HeathKeeper/*
+chmod 777 ./FogBus/Run/*
 cd /var/www/html/HealthKeeper/
+sudo chmod -R -f 777 ./*
 echo ".................................."
 echo "Successfully Installed Raspi-Fog"
 echo "Note the worker IP address :"

@@ -153,7 +153,7 @@ if(isset($_GET['analyze'])){
 	}
 	$getRequest = substr($getRequest, 0, strlen($getRequest)-1);
 	
-	// Add hash, prevhash, salt, public Key and sigature from file
+	// Add hash, prevhash, salt, public Key and signature from file
 	$file = fopen("data.txt", "r");
 	$k = fgets($file); // Block added
 	$k = fgets($file); // Data1
