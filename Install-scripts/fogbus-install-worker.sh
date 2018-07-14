@@ -26,5 +26,3 @@ echo "Press Enter to run"
 read
 chromium-browser localhost/HealthKeeper/manager.php --no-sandbox &
 java -jar WorkerInterface.jar
-
-
