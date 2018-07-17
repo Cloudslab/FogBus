@@ -518,7 +518,7 @@ Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockch
 
 \section{Framework}
 
-\subsection{Model}
+\subsection{Model Introduction}
 
 FogBus is a lightweight and platform independent framework which allows an end-to-end implementation of fog, edge and cloud computing environment. It is designed to run on almost all IoT/embedded devices and support a wide range of machines in terms of their computation capabilities. A driving factor for developing this framework independent of operating system and machine architecture is to allow the diversity of embedded devices in the IoT world to be used in the network. The framework integrates all edge devices (using a lightweight balancing framework for small-scale computation) and also cloud/other heavy devices (using the Aneka framework for heavy computation) and provides an end to end solution for integrating computation at different levels to provide better latency (by allocating simple and small-scale work to edge nodes) and high computation power (by allocating heavy computation work to cloud), which in effect to the end user feels like high computation with low latency. This is the fundamental ideology on which fog computing is based.\\
 The framework is secured using Blockchain technology and digital signature management to ensure data remains secure and can not be tampered by hackers. Due to edge devices being fragile, the Blockchain structure had to ensure that critical data is not stolen and/or gets leaked when an edge device is compromised. 
@@ -533,7 +533,9 @@ The model is developed to provide a framework the aims of which include:
 \item Keep all data secured, and ensure data sources are legit and existing data is not tampered by hackers
 \end{enumerate}
 
-\subsection{Physical Components}
+\subsection{Hardware Architecture}
+
+\subsubsection{Core Components}
 
 In the FogBus framework, all devices interact at different levels with different devices. The overall model is based on the hierarchal Master-Slave design where the Master node receives data from sensor for analysis/computation. The Master node then sends this data as a task to different workers: Local worker, Private Cloud or Public Cloud. Therefore, the core components of network include Master Node, Worker Nodes, Sensors and Cloud. All other components including gateways, switches and other interface devices ‘glue’ the core components together.\\
 The core physical components in the FogBus framework include:
@@ -548,6 +550,9 @@ The core physical components in the FogBus framework include:
 \item \textit{Hybrid Cloud}: Hybrid cloud is a composition of two or more clouds (private, community or public) that remain distinct entities but are bound together, offering the benefits of multiple deployment models
 \end{itemize}
 \end{enumerate}
+
+\subsubsection{Network Components}
+
 Other components that help in the communication between the core components and help in functioning of the network include:
 \begin{enumerate}
 \item \textit{Network Router}: A Router is a network device that directs data packets in the network to the required source destination which is characterized by the IP (Internet Protocol) address of the destination. It allows communication among the Master node, Worker nodes and Cloud.
@@ -556,7 +561,9 @@ Other components that help in the communication between the core components and 
 \item \textit{User Interface}: The means by which the user and the FogBus system interact to access, use or instruct some or many nodes across the network. 
 \end{enumerate}
 
-\subsection{Network Structure}
+\subsection{Communication Architecture}
+
+\subsubsection{Network Structure}
 \begin{figure}[h]
 \centering
 \includegraphics[width=9cm]{network-arch}
@@ -574,7 +581,7 @@ All communication among the Master Node, Worker Nodes, Private Cloud and User is
 The Master Node collects results/actions from the devices mentioned above and send it to user interface or actuator. The master or worker nodes can also receive data directly from data sets and perform actions accordingly. \\
 It is in the hands of the user, which service to run and which master to connect to. There can be Master nodes dedicated for specific tasks and in IoT environment multiple services can even run simultaneously requiring connections with multiple masters and/or multiple service running on same master node. 
 
-\subsection{Scalability of architecture}
+\subsubsection{Scalability of network architecture}
 
 Scalability of an IoT framework is highly crucial to allow addition of worker nodes easily when the computational demand increases. The traditional Master/Slave system lacks this feature as inherent to it there is one master and several workers connected to the same Master. This can lead to deadlocks when there are several simultaneous requests and the data is being sent to or received by several worker nodes concurrently. To tackle this problem the FogBus framework is based on a model that allows dynamic interconversion between broker and worker nodes to allow scalability on demand. \\
 As shown in Figure 2, the FogBus framework allows networks to be scaled by allocating Broker privileges to worker nodes. If many worker nodes are connected to the Broker then some Worker nodes automatically get broker privileges. As shown, initially there are 3 worker nodes connected to the broker. Then, 5 more worker nodes are added. Some worker nodes convert themselves to Brokers and the number of workers per broker reduces from 8 to 2. This approach is possible only because of the platform independence property of the FogBus architecture. \\
@@ -586,7 +593,7 @@ This solution for scalability does not hinder with Blockchain management as the 
 \captionof{figure}{Scalability in FogBus architecture}
 \end{figure}
 
-\subsection{Sequence of Communication}
+\subsubsection{Sequence of Communication}
 A defined sequence of tasks and communication of data helps reduce failure rate and makes it easier to understand the flow of data through the system. Figure 2 below shows the sequence of tasks and data flow in the network.
 \begin{figure}[h]
 \centering
@@ -594,9 +601,9 @@ A defined sequence of tasks and communication of data helps reduce failure rate 
 \captionof{figure}{Sequence of communication among different components}
 \end{figure}
 
-\section{Functional Components}
+\subsection{Software Architecture}
 
-\subsection{Resource Manager}
+\subsubsection{Resource Manager}
 As devices at different levels of the network, as shown in the ‘Network Level Model’, offer range of computational capabilities and latencies, it is important to distribute work accordingly to ensure optimum QoS. The devices at the ‘edge’ of the network provide very low latency due to close proximity with the user, sensors and actuators but have tendency to have significantly low computation power and thus higher execution times. The devices far away from users like those on the cloud provide significantly higher latency but due to their much higher computation capabilities provide much lesser execution time. There is thus a trade-off between network propagation latency and computation latency. Depending on different scenarios, different resource management techniques are used.\\
 There is scope of considerable reduction of latency caused due to propagation of data if low-computation workload is allocated to edge devices. Even though their execution time would be higher but the critical factor here would be the time caused by data transfer over the network. On the other hand, significant reduction in time can be achieved if high-computation workload is sent to more powerful machines like cloud because in such tasks edge devices might lead to deadlocks and cause the whole system to collapse. \\
 The Resource manager of the model should decide the following:
@@ -614,7 +621,7 @@ It is a design decision in the implementation strategy how these decisions are t
 \end{enumerate}
 Different load balancing algorithms can be implemented that specialize in improving some of these parameters based on user needs. A weighted sum of quantifiable factor of each of these parameters and the weights themselves would determine which balancing technique should be used for a specific situation. The \textit{Session Manager} in the Master Node with the help of Workers' \textit{Resource Monitors} handle the resource management in the FogBus framework. See \textit{Implementation} for more details.
 
-\subsection{Blockchain and Digital Signature}
+\subsubsection{Blockchain and Digital Signature}
 Maintaining integrity of data and ensuring that data is not sent by an unregistered source is very important for the credibility of the system. This is extremely important in systems that maintain real time medical records, financial transactions and other secured platforms. \\
 For the integrity of data and prevention from tampering of existing data the model uses Blockchain Technology. Technically, blockchain is a suite of distributed ledger technologies that can be programmed to record and track anything of value. \\
 Whenever new data is received by the Master node, it packs it to form a “block”. This block's hash is a SHA256 hash value which is created using the data, block index and a nonce value. The Master node, whenever creating a block mines the block to create a “proof-of-work” which allows the hash to have a particular form/pattern. The Master also creates a random public/private key pair that allow to form a unique signature with the original data. The private key is not shared with the worker node and only data, signature and public key are shared. With this the Worker node is able to verify that the data is from a legitimate source as it saves the public key of the Master node. If any other key is used, that data is rejected. Also, the public/private key pair is kept dynamic per block generation to prevent hackers to generate private key using brute force techniques. Even if one is able to generate a private key for a transaction, it would change for the next and thus become hack proof. \\
@@ -635,17 +642,17 @@ Points 1 and 2 ensure that the data recorded is from genuine source and points 3
 \captionof{figure}{Blockchain concept level diagram}
 \end{figure}
 
-\subsection{Data Input/Output}
+\subsubsection{Data Input/Output}
 There exist several ways of interacting and sharing data from sensors and among fog nodes. It is crucial that this data sharing mechanism is failsafe in terms of data theft and fraudulent manipulation. The streams of data can also be dedicated. Another important part is that the protocol followed for communication among fog devices should be supported by all nodes, complex and rarely used encryption standards may restrict diversity of devices that can be used. \\
 The sharing of data with sensors and actuators needs to be as close to real time as possible. For mission critical application proper data transfer frequencies are important. For the case of static transfer frequencies, very high frequencies can lead to computation lag from the worker nodes, very low frequency can cause reduction in the Quality-of-service (QoS). \\
 The current model uses HTTP protocol for communication between different nodes in the local network and the Aneka’s protocols for task distribution to cloud and other devices. All data is currently transferred in plain text using the HTTP REST APIs specifically GET and POST. The \textit{User Interface} and the \textit{Session Manager} collectively handle the Data I/O in the FogBus framework. See \textit{Implementation} for more details.
 
-\subsection{Computation over Data}
+\subsubsection{Data Computation}
 Another important criteria for model development is that it is generic in terms of the service it provides. In the IoT world there are several applications in which Fog, Edge and Cloud Computing can be used, and there are several others that haven’t even been thought of. It is important that the frame work allows services to be used that can be changed, modified and/or extended easily. \\
 The computation/analysis requirement of the service also affects the Resource management policy and data transfer rate requirements. Based on different services and end-user requirements, performance metrics can be designed and the framework can be optimized accordingly.\\
 The model uses Java runtime environment for data analysis due to its ability to be run in diverse machines. The \textit{Analysis Application} in the Workers does the computation over data. See \textit{Implementation} for more details.
 
-\subsection{Data Storage}
+\subsubsection{Data Storage}
 Many applications require data to be stored for future use. This data being shared among multiple nodes is prone to attacks. It is thus important to implement strategies/techniques that keep data resilient and prevent it from tampering. Not only keeping saved data secure is important, but the methods used for data extraction and sharing among nodes is also a concern. The \textit{Network} and \textit{Session Managers} handle the data storage in the FogBus framework. See \textit{Implementation} for more details.
 
 \section{Implementation}
