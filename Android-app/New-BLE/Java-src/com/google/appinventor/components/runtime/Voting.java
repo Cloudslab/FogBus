@@ -66,7 +66,7 @@ public class Voting extends AndroidNonvisibleComponent implements Component {
         }
     }
 
-    class C04382 implements AsyncCallbackPair<JSONObject> {
+    class C04432 implements AsyncCallbackPair<JSONObject> {
 
         class C02951 implements Runnable {
             C02951() {
@@ -104,7 +104,7 @@ public class Voting extends AndroidNonvisibleComponent implements Component {
             }
         }
 
-        C04382() {
+        C04432() {
         }
 
         public void onSuccess(JSONObject result) {
@@ -139,7 +139,7 @@ public class Voting extends AndroidNonvisibleComponent implements Component {
         }
     }
 
-    class C04394 implements AsyncCallbackPair<String> {
+    class C04444 implements AsyncCallbackPair<String> {
 
         class C03011 implements Runnable {
             C03011() {
@@ -150,7 +150,7 @@ public class Voting extends AndroidNonvisibleComponent implements Component {
             }
         }
 
-        C04394() {
+        C04444() {
         }
 
         public void onSuccess(String response) {
@@ -226,7 +226,7 @@ public class Voting extends AndroidNonvisibleComponent implements Component {
     }
 
     private void postRequestBallot() {
-        WebServiceUtil.getInstance().postCommandReturningObject(this.serviceURL, REQUESTBALLOT_COMMAND, null, new C04382());
+        WebServiceUtil.getInstance().postCommandReturningObject(this.serviceURL, REQUESTBALLOT_COMMAND, null, new C04432());
     }
 
     private ArrayList<String> JSONArrayToArrayList(JSONArray ja) throws JSONException {
@@ -253,7 +253,7 @@ public class Voting extends AndroidNonvisibleComponent implements Component {
     }
 
     private void postSendBallot(String userChoice, String userId) {
-        AsyncCallbackPair<String> myCallback = new C04394();
+        AsyncCallbackPair<String> myCallback = new C04444();
         WebServiceUtil.getInstance().postCommand(this.serviceURL, SENDBALLOT_COMMAND, Lists.newArrayList(new BasicNameValuePair(USER_CHOICE_PARAMETER, userChoice), new BasicNameValuePair(USER_ID_PARAMETER, userId)), myCallback);
     }
 

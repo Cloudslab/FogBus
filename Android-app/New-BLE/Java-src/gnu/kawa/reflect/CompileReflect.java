@@ -112,9 +112,9 @@ public class CompileReflect {
                 if (known > 0) {
                     return QuoteExp.getInstance(type.getReflectClass());
                 }
-                return new ApplyExp(Compilation.typeType.getDeclaredMethod("getReflectClass", 0), new Expression[]{arg0});
+                return new ApplyExp(Compilation.typeType.getDeclaredMethod("getReflectClass", 0), arg0);
             } else if (type != null) {
-                Expression applyExp = new ApplyExp(exp.getFunction(), new Expression[]{new QuoteExp(type), arg1});
+                Expression applyExp = new ApplyExp(exp.getFunction(), new QuoteExp(type), arg1);
                 applyExp.setLine((Expression) exp);
                 Expression exp2 = applyExp;
             }
@@ -152,7 +152,7 @@ public class CompileReflect {
                 }
             }
             if (part != null) {
-                applyExp2 = new ApplyExp(exp2.getFunction(), new Expression[]{arg0, new QuoteExp(part)});
+                applyExp2 = new ApplyExp(exp2.getFunction(), arg0, new QuoteExp(part));
                 applyExp2.setLine(exp2);
                 return applyExp2;
             } else if (type != Type.pointer_type && comp.warnUnknownMember()) {

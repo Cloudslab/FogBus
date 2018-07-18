@@ -31,11 +31,11 @@ import org.osmdroid.util.GeoPoint;
 @DesignerComponent(category = ComponentCategory.MAPS, description = "LineString", version = 1)
 public class LineString extends MapFeatureBase implements MapLineString {
     private static final String TAG = LineString.class.getSimpleName();
-    private static final MapFeatureVisitor<Double> distanceComputation = new C04271();
+    private static final MapFeatureVisitor<Double> distanceComputation = new C04321();
     private List<GeoPoint> points = new ArrayList();
 
-    static class C04271 implements MapFeatureVisitor<Double> {
-        C04271() {
+    static class C04321 implements MapFeatureVisitor<Double> {
+        C04321() {
         }
 
         public Double visit(MapMarker marker, Object... arguments) {

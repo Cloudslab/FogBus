@@ -2,9 +2,9 @@ package com.google.appinventor.common.version;
 
 public final class GitBuildId {
     public static final String ACRA_URI = "${acra.uri}";
-    public static final String ANT_BUILD_DATE = "May 31 2018";
-    public static final String GIT_BUILD_FINGERPRINT = "b9f6e1fc798b25c4460b015c23e5d0678cde6613";
-    public static final String GIT_BUILD_VERSION = "nb168";
+    public static final String ANT_BUILD_DATE = "July 11 2018";
+    public static final String GIT_BUILD_FINGERPRINT = "7ef907e7d5e96a5430ee2e1c3170ebd5640d0c07";
+    public static final String GIT_BUILD_VERSION = "nb169";
 
     private GitBuildId() {
     }

@@ -28,8 +28,8 @@ public class ACRA {
     private static OnSharedPreferenceChangeListener mPrefListener;
     private static ReportsCrashes mReportsCrashes;
 
-    static class C03781 implements OnSharedPreferenceChangeListener {
-        C03781() {
+    static class C03831 implements OnSharedPreferenceChangeListener {
+        C03831() {
         }
 
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
@@ -46,20 +46,20 @@ public class ACRA {
         mApplication = app;
         mReportsCrashes = (ReportsCrashes) mApplication.getClass().getAnnotation(ReportsCrashes.class);
         if (mReportsCrashes == null) {
-            log.mo1612e(LOG_TAG, "ACRA#init called but no ReportsCrashes annotation on Application " + mApplication.getPackageName());
+            log.mo1614e(LOG_TAG, "ACRA#init called but no ReportsCrashes annotation on Application " + mApplication.getPackageName());
             return;
         }
         SharedPreferences prefs = getACRASharedPreferences();
         try {
             checkCrashResources();
-            log.mo1610d(LOG_TAG, "ACRA is enabled for " + mApplication.getPackageName() + ", intializing...");
+            log.mo1612d(LOG_TAG, "ACRA is enabled for " + mApplication.getPackageName() + ", intializing...");
             ErrorReporter errorReporter = new ErrorReporter(mApplication.getApplicationContext(), prefs, !shouldDisableACRA(prefs));
             errorReporter.setDefaultReportSenders();
             errorReporterSingleton = errorReporter;
         } catch (ACRAConfigurationException e) {
-            log.mo1620w(LOG_TAG, "Error : ", e);
+            log.mo1622w(LOG_TAG, "Error : ", e);
         }
-        mPrefListener = new C03781();
+        mPrefListener = new C03831();
         prefs.registerOnSharedPreferenceChangeListener(mPrefListener);
     }
 
@@ -119,7 +119,7 @@ public class ACRA {
     public static ACRAConfiguration getConfig() {
         if (configProxy == null) {
             if (mApplication == null) {
-                log.mo1619w(LOG_TAG, "Calling ACRA.getConfig() before ACRA.init() gives you an empty configuration instance. You might prefer calling ACRA.getNewDefaultConfig(Application) to get an instance with default values taken from a @ReportsCrashes annotation.");
+                log.mo1621w(LOG_TAG, "Calling ACRA.getConfig() before ACRA.init() gives you an empty configuration instance. You might prefer calling ACRA.getNewDefaultConfig(Application) to get an instance with default values taken from a @ReportsCrashes annotation.");
             }
             configProxy = getNewDefaultConfig(mApplication);
         }

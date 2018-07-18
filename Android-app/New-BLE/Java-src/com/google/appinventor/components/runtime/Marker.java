@@ -31,8 +31,8 @@ import org.osmdroid.util.GeoPoint;
 @UsesAssets(fileNames = "marker.svg")
 public class Marker extends MapFeatureBaseWithFill implements MapMarker {
     private static final String TAG = Marker.class.getSimpleName();
-    private static final MapFeatureVisitor<Double> bearingComputation = new C04312();
-    private static final MapFeatureVisitor<Double> distanceComputation = new C04301();
+    private static final MapFeatureVisitor<Double> bearingComputation = new C04362();
+    private static final MapFeatureVisitor<Double> distanceComputation = new C04351();
     private int anchorHAlign = 3;
     private int anchorVAlign = 3;
     private int height = -1;
@@ -40,8 +40,8 @@ public class Marker extends MapFeatureBaseWithFill implements MapMarker {
     private GeoPoint location = new GeoPoint(0.0d, 0.0d);
     private int width = -1;
 
-    static class C04301 implements MapFeatureVisitor<Double> {
-        C04301() {
+    static class C04351 implements MapFeatureVisitor<Double> {
+        C04351() {
         }
 
         public Double visit(MapMarker marker, Object... arguments) {
@@ -77,8 +77,8 @@ public class Marker extends MapFeatureBaseWithFill implements MapMarker {
         }
     }
 
-    static class C04312 implements MapFeatureVisitor<Double> {
-        C04312() {
+    static class C04362 implements MapFeatureVisitor<Double> {
+        C04362() {
         }
 
         public Double visit(MapMarker marker, Object... arguments) {

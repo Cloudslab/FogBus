@@ -47,7 +47,7 @@ abstract class ModernAsyncTask<Params, Progress, Result> {
     };
     private volatile Status mStatus = Status.PENDING;
     private final AtomicBoolean mTaskInvoked = new AtomicBoolean();
-    private final WorkerRunnable<Params, Result> mWorker = new C03962();
+    private final WorkerRunnable<Params, Result> mWorker = new C04012();
 
     static class C00261 implements ThreadFactory {
         private final AtomicInteger mCount = new AtomicInteger(1);
@@ -102,8 +102,8 @@ abstract class ModernAsyncTask<Params, Progress, Result> {
         }
     }
 
-    class C03962 extends WorkerRunnable<Params, Result> {
-        C03962() {
+    class C04012 extends WorkerRunnable<Params, Result> {
+        C04012() {
             super();
         }
 

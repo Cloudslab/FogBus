@@ -149,8 +149,8 @@ public class Toolbar extends ViewGroup {
         }
     }
 
-    class C04231 implements android.support.v7.widget.ActionMenuView.OnMenuItemClickListener {
-        C04231() {
+    class C04281 implements android.support.v7.widget.ActionMenuView.OnMenuItemClickListener {
+        C04281() {
         }
 
         public boolean onMenuItemClick(MenuItem item) {
@@ -331,7 +331,7 @@ public class Toolbar extends ViewGroup {
         this.mGravity = 8388627;
         this.mTempViews = new ArrayList();
         this.mTempMargins = new int[2];
-        this.mMenuViewItemClickListener = new C04231();
+        this.mMenuViewItemClickListener = new C04281();
         this.mShowOverflowMenuRunnable = new C01472();
         TintTypedArray a = TintTypedArray.obtainStyledAttributes(getContext(), attrs, C0111R.styleable.Toolbar, defStyleAttr, 0);
         this.mTitleTextAppearance = a.getResourceId(C0111R.styleable.Toolbar_titleTextAppearance, 0);

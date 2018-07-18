@@ -59,7 +59,7 @@ public class std_syntax extends ModuleBody {
     static final SyntaxPattern Lit12 = new SyntaxPattern("\f\u0007\f\u000f\b", new Object[0], 2);
     static final SyntaxTemplate Lit13 = new SyntaxTemplate("\u0001\u0001", "\u000b", new Object[0], 0);
     static final SyntaxPattern Lit14 = new SyntaxPattern("\f\u0007\f\u000f\r\u0017\u0010\b\b", new Object[0], 3);
-    static final SyntaxTemplate Lit15 = new SyntaxTemplate("\u0001\u0001\u0003", "\u0011\u0018\u00041\b\u0011\u0018\f\b\u000b\b\u0011\u0018\u0014\u0011\u0018\f)\t\u0003\b\u0015\u0013\u0018\u001c", new Object[]{Lit70, Lit73, Lit72, PairWithPosition.make(Lit73, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 385052)}, 1);
+    static final SyntaxTemplate Lit15 = new SyntaxTemplate("\u0001\u0001\u0003", "\u0011\u0018\u00041\b\u0011\u0018\f\b\u000b\b\u0011\u0018\u0014\u0011\u0018\f)\t\u0003\b\u0015\u0013\u0018\u001c", new Object[]{Lit70, Lit73, Lit72, PairWithPosition.make(Lit73, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 385052)}, 1);
     static final SimpleSymbol Lit16 = ((SimpleSymbol) new SimpleSymbol("or").readResolve());
     static final SyntaxPattern Lit17 = new SyntaxPattern("\f\u0007\b", new Object[0], 1);
     static final SyntaxPattern Lit18 = new SyntaxPattern("\f\u0007\f\u000f\b", new Object[0], 2);
@@ -184,7 +184,7 @@ public class std_syntax extends ModuleBody {
         objArr[1] = Lit64;
         objArr[2] = Lit65;
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\r\u000f\b\b\b", new Object[0], 2), "\u0001\u0003", "\u0011\u0018\u0004Á\u0011\u0018\f\t\u0003\u0011\u0018\u0014\u0011\u0018\u001c\b\u0011\u0018$\u0011\u0018\u001c\b\u0011\u0018,\b\u0003\b\u0011\u00184\t\u0003\u0011\u0018<\b\u0011\u0018D\b\r\u000b", new Object[]{Lit56, (SimpleSymbol) new SimpleSymbol("define-constant").readResolve(), Lit64, Lit65, Lit67, Lit66, (SimpleSymbol) new SimpleSymbol("invoke").readResolve(), PairWithPosition.make(Lit66, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("setProperties").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 1024020), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 1024020), (SimpleSymbol) new SimpleSymbol("java.lang.Object[]").readResolve()}, 1);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\r\u000f\b\b\b", new Object[0], 2), "\u0001\u0003", "\u0011\u0018\u0004Á\u0011\u0018\f\t\u0003\u0011\u0018\u0014\u0011\u0018\u001c\b\u0011\u0018$\u0011\u0018\u001c\b\u0011\u0018,\b\u0003\b\u0011\u00184\t\u0003\u0011\u0018<\b\u0011\u0018D\b\r\u000b", new Object[]{Lit56, (SimpleSymbol) new SimpleSymbol("define-constant").readResolve(), Lit64, Lit65, Lit67, Lit66, (SimpleSymbol) new SimpleSymbol("invoke").readResolve(), PairWithPosition.make(Lit66, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("setProperties").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 1024020), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 1024020), (SimpleSymbol) new SimpleSymbol("java.lang.Object[]").readResolve()}, 1);
         Lit45 = new SyntaxRules(objArr, syntaxRuleArr, 2);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("delay").readResolve();
@@ -242,8 +242,8 @@ public class std_syntax extends ModuleBody {
         syntaxRuleArr[2] = new SyntaxRule(new SyntaxPattern("\f\u0018<\f\u0007\f\u000f\f\u0017\b\b", new Object[0], 3), "\u0001\u0001\u0001", "\u000b", new Object[0], 0);
         syntaxRuleArr[3] = new SyntaxRule(new SyntaxPattern("\f\u0018,\f\u0007\f\u000f\b\b", new Object[0], 2), "\u0001\u0001", "\u000b", new Object[0], 0);
         syntaxRuleArr[4] = new SyntaxRule(new SyntaxPattern("\f\u0018<\f\u0007\f\u000f\f\u0017\b\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0013", new Object[0], 0);
-        syntaxRuleArr[5] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\b\b", new Object[0], 1), "\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("do binding with no value", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 794643), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 794628)}, 0);
-        syntaxRuleArr[6] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0007\f\u000f\f\u0017\f\u001f\b\b", new Object[0], 4), "\u0001\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("do binding must have syntax: (var [:: type] init [step])", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 806917), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 802820)}, 0);
+        syntaxRuleArr[5] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\b\b", new Object[0], 1), "\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("do binding with no value", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 794643), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 794628)}, 0);
+        syntaxRuleArr[6] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0007\f\u000f\f\u0017\f\u001f\b\b", new Object[0], 4), "\u0001\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("do binding must have syntax: (var [:: type] init [step])", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 806917), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 802820)}, 0);
         Lit35 = new SyntaxRules(objArr, syntaxRuleArr, 4);
         objArr = new Object[]{Lit32, Lit64};
         syntaxRuleArr = new SyntaxRule[4];
@@ -260,8 +260,8 @@ public class std_syntax extends ModuleBody {
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\b\u0003", new Object[0], 1), "\u0000", "\u0011\u0018\u0004\t\u0010\u0002", new Object[]{Lit70}, 0);
         syntaxRuleArr[1] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\b\u000b", new Object[0], 2), "\u0001\u0000", "\u0011\u0018\u0004\u0011\b\u0003\n", new Object[]{Lit70}, 0);
         syntaxRuleArr[2] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\u000b\u0013", new Object[0], 3), "\u0001\u0000\u0000", "\u0011\u0018\u0004\u0011\b\u0003\b\u0011\u0018\f\t\n\u0012", new Object[]{Lit70, Lit30}, 0);
-        syntaxRuleArr[3] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\u000b", new Object[0], 2), "\u0001\u0000", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("invalid bindings list in let*", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 679943), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 675846)}, 0);
-        syntaxRuleArr[4] = new SyntaxRule(new SyntaxPattern("\f\u0018\u0003", new Object[0], 1), "\u0000", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("missing bindings list in let*", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 692231), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 688134)}, 0);
+        syntaxRuleArr[3] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\u000b", new Object[0], 2), "\u0001\u0000", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("invalid bindings list in let*", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 679943), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 675846)}, 0);
+        syntaxRuleArr[4] = new SyntaxRule(new SyntaxPattern("\f\u0018\u0003", new Object[0], 1), "\u0000", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("missing bindings list in let*", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 692231), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 688134)}, 0);
         Lit31 = new SyntaxRules(objArr, syntaxRuleArr, 3);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("let").readResolve();
@@ -283,8 +283,8 @@ public class std_syntax extends ModuleBody {
         syntaxRuleArr = new SyntaxRule[5];
         syntaxRuleArr[1] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0007\f\u0002\f\u000f\f\u0017\b\b", new Object[]{Lit64}, 3), "\u0001\u0001\u0001", "\u0013", new Object[0], 0);
         syntaxRuleArr[2] = new SyntaxRule(new SyntaxPattern("\f\u0018<\f\u0007\f\u000f\f\u0017\b\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0013", new Object[0], 0);
-        syntaxRuleArr[3] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\b\b", new Object[0], 1), "\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("let binding with no value", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 552979), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 552964)}, 0);
-        syntaxRuleArr[4] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0007\f\u000f\f\u0017\f\u001f\b\b", new Object[0], 4), "\u0001\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("let binding must have syntax: (var [type] init)", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 565253), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 561156)}, 0);
+        syntaxRuleArr[3] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\b\b", new Object[0], 1), "\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("let binding with no value", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 552979), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 552964)}, 0);
+        syntaxRuleArr[4] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0007\f\u000f\f\u0017\f\u001f\b\b", new Object[0], 4), "\u0001\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("let binding must have syntax: (var [type] init)", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 565253), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 561156)}, 0);
         Lit27 = new SyntaxRules(objArr, syntaxRuleArr, 4);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("%let-lambda2").readResolve();
@@ -318,7 +318,7 @@ public class std_syntax extends ModuleBody {
         syntaxRuleArr = new SyntaxRule[4];
         objArr2 = new Object[]{Lit56};
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007<\f\u0002\r\u000f\b\b\b\b", new Object[]{Lit75}, 2), "\u0001\u0003", "\u0011\u0018\u0004\b\r\u000b", objArr2, 1);
-        objArr2 = new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("junk following else (in case)", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 241674), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 237577)};
+        objArr2 = new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("junk following else (in case)", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 241674), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 237577)};
         syntaxRuleArr[1] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007<\f\u0002\r\u000f\b\b\b\u0013", new Object[]{Lit75}, 3), "\u0001\u0003\u0000", "\u0018\u0004", objArr2, 0);
         syntaxRuleArr[2] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\\,\r\u000f\b\b\b\r\u0017\u0010\b\b\b", new Object[0], 3), "\u0001\u0003\u0003", "\u0011\u0018\u0004A\u0011\u0018\f\t\u0003\b\r\u000b\b\u0011\u0018\u0014\b\u0015\u0013", new Object[]{Lit72, Lit8, Lit56}, 1);
         syntaxRuleArr[3] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\\,\r\u000f\b\b\b\r\u0017\u0010\b\b\f\u001f\r' \b\b", new Object[0], 5), "\u0001\u0003\u0003\u0001\u0003", "\u0011\u0018\u0004A\u0011\u0018\f\t\u0003\b\r\u000b1\u0011\u0018\u0014\b\u0015\u0013\b\u0011\u0018\u001c\t\u0003\t\u001b\b%#", new Object[]{Lit72, Lit8, Lit56, Lit6}, 1);
@@ -339,11 +339,11 @@ public class std_syntax extends ModuleBody {
         syntaxRuleArr = new SyntaxRule[8];
         objArr2 = new Object[]{Lit56};
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0002\f\u0007\r\u000f\b\b\b\b", new Object[]{Lit75}, 2), "\u0001\u0003", "\u0011\u0018\u0004\t\u0003\b\r\u000b", objArr2, 1);
-        objArr2 = new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("else clause must be last clause of cond", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 86035), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 86020)};
+        objArr2 = new Object[]{PairWithPosition.make(Lit69, PairWithPosition.make("else clause must be last clause of cond", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 86035), "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 86020)};
         syntaxRuleArr[1] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0002\f\u0007\r\u000f\b\b\b\r\u0017\u0010\b\b", new Object[]{Lit75}, 3), "\u0001\u0003\u0003", "\u0018\u0004", objArr2, 0);
-        objArr2 = new Object[]{Lit70, Lit77, Lit72, PairWithPosition.make(Lit77, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 102423)};
+        objArr2 = new Object[]{Lit70, Lit77, Lit72, PairWithPosition.make(Lit77, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 102423)};
         syntaxRuleArr[2] = new SyntaxRule(new SyntaxPattern("\f\u0018<\f\u0007\f\u0002\f\u000f\b\b", new Object[]{Lit76}, 2), "\u0001\u0001", "\u0011\u0018\u00041\b\u0011\u0018\f\b\u0003\b\u0011\u0018\u0014\u0011\u0018\f\b\t\u000b\u0018\u001c", objArr2, 0);
-        objArr2 = new Object[]{Lit70, Lit77, Lit72, PairWithPosition.make(Lit77, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm", 122898), Lit2};
+        objArr2 = new Object[]{Lit70, Lit77, Lit72, PairWithPosition.make(Lit77, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm", 122898), Lit2};
         syntaxRuleArr[3] = new SyntaxRule(new SyntaxPattern("\f\u0018<\f\u0007\f\u0002\f\u000f\b\f\u0017\r\u001f\u0018\b\b", new Object[]{Lit76}, 4), "\u0001\u0001\u0001\u0003", "\u0011\u0018\u00041\b\u0011\u0018\f\b\u0003\b\u0011\u0018\u0014\u0011\u0018\f!\t\u000b\u0018\u001c\b\u0011\u0018$\t\u0013\b\u001d\u001b", objArr2, 1);
         syntaxRuleArr[4] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\b\b", new Object[0], 1), "\u0001", "\u0003", new Object[0], 0);
         syntaxRuleArr[5] = new SyntaxRule(new SyntaxPattern("\f\u0018\u001c\f\u0007\b\f\u000f\r\u0017\u0010\b\b", new Object[0], 3), "\u0001\u0001\u0003", "\u0011\u0018\u0004\t\u0003\b\u0011\u0018\f\t\u000b\b\u0015\u0013", new Object[]{Lit16, Lit2}, 1);
@@ -364,7 +364,7 @@ public class std_syntax extends ModuleBody {
         syntax$Mncolumn = new ModuleMethod(moduleBody, 10, Lit53, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         simpleSymbol = Lit54;
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 11, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/std_syntax.scm:298");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/std_syntax.scm:298");
         begin$Mnfor$Mnsyntax = Macro.make(simpleSymbol, moduleMethod, $instance);
         $instance.run();
     }

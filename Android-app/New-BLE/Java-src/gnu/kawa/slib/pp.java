@@ -25,7 +25,7 @@ public class pp extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pp.scm:9");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pp.scm:9");
             this.lambda$Fn1 = moduleMethod;
         }
 

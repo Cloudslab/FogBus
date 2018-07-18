@@ -153,9 +153,9 @@ public class DateTime extends Quantity implements Cloneable {
         if (pos >= len || str.charAt(pos) != '-') {
             return -1;
         }
-        int month;
         pos++;
         start = pos;
+        int month;
         if ((mask & 4) != 0) {
             part = parseDigits(str, start);
             month = part >> 16;

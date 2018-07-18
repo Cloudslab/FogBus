@@ -50,11 +50,11 @@ public abstract class MapFeatureContainerBase extends AndroidViewComponent imple
     private static final String GEOJSON_GEOMETRYCOLLECTION = "GeometryCollection";
     private static final String GEOJSON_TYPE = "type";
     private static final String TAG = MapFeatureContainerBase.class.getSimpleName();
-    private final MapFeatureVisitor<Void> featureAdder = new C04291();
+    private final MapFeatureVisitor<Void> featureAdder = new C04341();
     protected List<MapFeature> features = new CopyOnWriteArrayList();
 
-    class C04291 implements MapFeatureVisitor<Void> {
-        C04291() {
+    class C04341 implements MapFeatureVisitor<Void> {
+        C04341() {
         }
 
         public Void visit(MapMarker marker, Object... arguments) {

@@ -24,7 +24,12 @@ public class CloudDBJedisListener extends JedisPubSub {
             List<Object> data = (List) JsonUtil.getObjectFromJson(message);
             String tag = (String) data.get(0);
             for (Object value : (List) data.get(1)) {
-                this.cloudDB.DataChanged(tag, value);
+                String retValue = JsonUtil.getJsonRepresentationIfValueFileName(value);
+                if (retValue == null) {
+                    this.cloudDB.DataChanged(tag, value);
+                } else {
+                    this.cloudDB.DataChanged(tag, retValue);
+                }
             }
         } catch (JSONException e) {
             Log.e(LOG_TAG, "onMessage: JSONException", e);

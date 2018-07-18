@@ -421,6 +421,7 @@ public class NxtDirectCommands extends LegoMindstormsNxtBase {
 
     @SimpleFunction(description = "Download a file to the robot.")
     public void DownloadFile(String source, String destination) {
+        Integer handle;
         String functionName = "DownloadFile";
         if (!checkBluetooth(functionName)) {
             return;
@@ -434,7 +435,6 @@ public class NxtDirectCommands extends LegoMindstormsNxtBase {
                 File tempFile = MediaUtil.copyMediaToTempFile(this.form, source);
                 try {
                     InputStream in = new BufferedInputStream(new FileInputStream(tempFile), 1024);
-                    Integer handle;
                     try {
                         byte[] buffer;
                         long sentLength;

@@ -35,7 +35,7 @@ public class ppfile extends ModuleBody {
 
         public frame0() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/ppfile.scm:34");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/ppfile.scm:34");
             this.lambda$Fn2 = moduleMethod;
         }
 
@@ -204,7 +204,7 @@ public class ppfile extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 2, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/ppfile.scm:27");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/ppfile.scm:27");
             this.lambda$Fn1 = moduleMethod;
         }
 
@@ -243,7 +243,7 @@ public class ppfile extends ModuleBody {
         ModuleBody moduleBody = $instance;
         pprint$Mnfilter$Mnfile = new ModuleMethod(moduleBody, 3, Lit2, -4094);
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 4, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/ppfile.scm:70");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/ppfile.scm:70");
         lambda$Fn3 = moduleMethod;
         pprint$Mnfile = new ModuleMethod(moduleBody, 5, Lit3, 8193);
         $instance.run();

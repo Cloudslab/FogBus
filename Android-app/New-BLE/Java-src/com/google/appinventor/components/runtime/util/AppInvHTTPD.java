@@ -42,8 +42,8 @@ public class AppInvHTTPD extends NanoHTTPD {
     private Language scheme;
     private boolean secure;
 
-    class C03161 implements Runnable {
-        C03161() {
+    class C03171 implements Runnable {
+        C03171() {
         }
 
         public void run() {
@@ -190,7 +190,7 @@ public class AppInvHTTPD extends NanoHTTPD {
                 return res;
             }
             seq = 1;
-            this.androidUIHandler.post(new C03161());
+            this.androidUIHandler.post(new C03171());
             return res;
         } else if (uri.equals("/_update") || uri.equals("/_install")) {
             String url = parms.getProperty("url", "");

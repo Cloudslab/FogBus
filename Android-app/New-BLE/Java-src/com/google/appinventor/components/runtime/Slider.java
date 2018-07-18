@@ -1,9 +1,14 @@
 package com.google.appinventor.components.runtime;
 
+import android.content.res.ColorStateList;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
+import android.graphics.drawable.StateListDrawable;
+import android.os.Build.VERSION;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import com.google.appinventor.components.annotations.DesignerComponent;
@@ -24,8 +29,6 @@ public class Slider extends AndroidViewComponent implements OnSeekBarChangeListe
     private static final String initialLeftColorString = "&HFFFFC800";
     private static final int initialRightColor = -7829368;
     private static final String initialRightColorString = "&HFF888888";
-    private Drawable beforeThumb;
-    private LayerDrawable fullBar;
     private int leftColor;
     private float maxValue;
     private float minValue;
@@ -34,6 +37,15 @@ public class Slider extends AndroidViewComponent implements OnSeekBarChangeListe
     private final SeekBar seekbar;
     private boolean thumbEnabled;
     private float thumbPosition;
+
+    class C02581 implements OnTouchListener {
+        C02581() {
+        }
+
+        public boolean onTouch(View view, MotionEvent motionEvent) {
+            return !Slider.this.thumbEnabled;
+        }
+    }
 
     private class SeekBarHelper {
         private SeekBarHelper() {
@@ -48,8 +60,9 @@ public class Slider extends AndroidViewComponent implements OnSeekBarChangeListe
         super(container);
         this.referenceGetThumb = SdkLevel.getLevel() >= 16;
         this.seekbar = new SeekBar(container.$context());
-        this.fullBar = (LayerDrawable) this.seekbar.getProgressDrawable();
-        this.beforeThumb = this.fullBar.findDrawableByLayerId(16908301);
+        if (SdkLevel.getLevel() >= 21) {
+            this.seekbar.setSplitTrack(false);
+        }
         this.leftColor = -14336;
         this.rightColor = -7829368;
         setSliderColors();
@@ -64,8 +77,25 @@ public class Slider extends AndroidViewComponent implements OnSeekBarChangeListe
     }
 
     private void setSliderColors() {
-        this.fullBar.setColorFilter(this.rightColor, Mode.SRC);
-        this.beforeThumb.setColorFilter(this.leftColor, Mode.SRC);
+        if (VERSION.SDK_INT >= 21) {
+            this.seekbar.setProgressTintList(ColorStateList.valueOf(this.leftColor));
+            if (VERSION.SDK_INT >= 22 || !(this.seekbar.getProgressDrawable() instanceof StateListDrawable)) {
+                this.seekbar.setProgressBackgroundTintList(ColorStateList.valueOf(this.rightColor));
+                this.seekbar.setProgressBackgroundTintMode(Mode.MULTIPLY);
+                return;
+            }
+            StateListDrawable drawable = (StateListDrawable) this.seekbar.getProgressDrawable();
+            if (drawable.getCurrent() instanceof LayerDrawable) {
+                Drawable background = ((LayerDrawable) drawable.getCurrent()).findDrawableByLayerId(16908288);
+                background.setTintList(ColorStateList.valueOf(this.rightColor));
+                background.setTintMode(Mode.MULTIPLY);
+                return;
+            }
+            return;
+        }
+        LayerDrawable fullBar = (LayerDrawable) this.seekbar.getProgressDrawable();
+        fullBar.setColorFilter(this.rightColor, Mode.SRC);
+        fullBar.findDrawableByLayerId(16908301).setColorFilter(this.leftColor, Mode.SRC);
     }
 
     private void setSeekbarPosition() {
@@ -80,7 +110,7 @@ public class Slider extends AndroidViewComponent implements OnSeekBarChangeListe
         if (this.referenceGetThumb) {
             new SeekBarHelper().getThumb(alpha);
         }
-        this.seekbar.setEnabled(this.thumbEnabled);
+        this.seekbar.setOnTouchListener(new C02581());
     }
 
     @SimpleProperty(category = PropertyCategory.APPEARANCE, description = "Returns whether or not the slider thumb is being be shown", userVisible = true)

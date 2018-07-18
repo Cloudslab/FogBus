@@ -98,7 +98,7 @@ public class misc extends ModuleBody {
 
         public frame0() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/misc.scm:107");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/misc.scm:107");
             this.lambda$Fn5 = moduleMethod;
         }
 
@@ -132,7 +132,7 @@ public class misc extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 2, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/misc.scm:104");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/misc.scm:104");
             this.lambda$Fn4 = moduleMethod;
         }
 
@@ -165,10 +165,10 @@ public class misc extends ModuleBody {
         symbol$Qu = new ModuleMethod(moduleBody, 4, Lit5, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         symbol$Mn$Grstring = new ModuleMethod(moduleBody, 5, Lit6, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 6, null, 8194);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/misc.scm:25");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/misc.scm:25");
         lambda$Fn1 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 7, null, -4094);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/misc.scm:27");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/misc.scm:27");
         lambda$Fn2 = moduleMethod;
         symbol$Mnlocal$Mnname = new ModuleMethod(moduleBody, 8, Lit7, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         symbol$Mnnamespace = new ModuleMethod(moduleBody, 9, Lit8, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);

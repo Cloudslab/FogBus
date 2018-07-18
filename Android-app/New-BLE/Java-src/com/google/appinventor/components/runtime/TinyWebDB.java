@@ -32,7 +32,7 @@ public class TinyWebDB extends AndroidNonvisibleComponent implements Component {
     private Handler androidUIHandler = new Handler();
     private String serviceURL = "http://tinywebdb.appinventor.mit.edu/";
 
-    class C04362 implements AsyncCallbackPair<String> {
+    class C04412 implements AsyncCallbackPair<String> {
 
         class C02671 implements Runnable {
             C02671() {
@@ -43,7 +43,7 @@ public class TinyWebDB extends AndroidNonvisibleComponent implements Component {
             }
         }
 
-        C04362() {
+        C04412() {
         }
 
         public void onSuccess(String response) {
@@ -84,7 +84,7 @@ public class TinyWebDB extends AndroidNonvisibleComponent implements Component {
     }
 
     private void postStoreValue(String tag, Object valueToStore) {
-        AsyncCallbackPair<String> myCallback = new C04362();
+        AsyncCallbackPair<String> myCallback = new C04412();
         try {
             WebServiceUtil.getInstance().postCommand(this.serviceURL, STOREAVALUE_COMMAND, Lists.newArrayList(new BasicNameValuePair(TAG_PARAMETER, tag), new BasicNameValuePair(VALUE_PARAMETER, JsonUtil.getJsonRepresentation(valueToStore))), myCallback);
         } catch (JSONException e) {

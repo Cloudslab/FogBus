@@ -346,7 +346,7 @@ public class XQResolveNames extends ResolveNames {
             NamedCollator coll = this.parser.defaultCollator;
             return coll == null ? QuoteExp.nullExp : new QuoteExp(coll);
         } else {
-            return new ApplyExp(ClassType.make("gnu.xquery.util.NamedCollator").getDeclaredMethod("find", 1), new Expression[]{args[argno]});
+            return new ApplyExp(ClassType.make("gnu.xquery.util.NamedCollator").getDeclaredMethod("find", 1), args[argno]);
         }
     }
 
@@ -445,7 +445,7 @@ public class XQResolveNames extends ResolveNames {
                                     return getCompilation().syntaxError(ex.getMessage());
                                 }
                             }
-                            app = new ApplyExp(ClassType.make("gnu.xquery.util.QNameUtils").getDeclaredMethod("resolveQName", 3), new Expression[]{args[0], new QuoteExp(constructorNamespaces), new QuoteExp(this.parser.prologNamespaces)});
+                            app = new ApplyExp(ClassType.make("gnu.xquery.util.QNameUtils").getDeclaredMethod("resolveQName", 3), args[0], new QuoteExp(constructorNamespaces), new QuoteExp(this.parser.prologNamespaces));
                             app.setFlag(4);
                             return app;
                         case CASTABLE_AS_BUILTIN /*-34*/:
@@ -551,7 +551,7 @@ public class XQResolveNames extends ResolveNames {
                                 }
                                 return new QuoteExp(val);
                             }
-                            app = new ApplyExp(new PrimProcedure(ClassType.make("gnu.xquery.util.QNameUtils").getDeclaredMethod("resolvePrefix", 3)), new Expression[]{args[0], new QuoteExp(this.parser.constructorNamespaces), new QuoteExp(this.parser.prologNamespaces)});
+                            app = new ApplyExp(new PrimProcedure(ClassType.make("gnu.xquery.util.QNameUtils").getDeclaredMethod("resolvePrefix", 3)), args[0], new QuoteExp(this.parser.constructorNamespaces), new QuoteExp(this.parser.prologNamespaces));
                             app.setFlag(4);
                             return app;
                         case RESOLVE_URI_BUILTIN /*-12*/:
@@ -589,7 +589,7 @@ public class XQResolveNames extends ResolveNames {
                                 return err;
                             }
                             base = getBaseUriExpr();
-                            aexp = new ApplyExp(meth, new Expression[]{args[0], base});
+                            aexp = new ApplyExp(meth, args[0], base);
                             if (code == -9) {
                                 aexp.setType(NodeType.documentNodeTest);
                             } else {
@@ -605,7 +605,7 @@ public class XQResolveNames extends ResolveNames {
                             }
                             base = getBaseUriExpr();
                             Expression uri = args.length > 0 ? args[0] : QuoteExp.voidExp;
-                            aexp = new ApplyExp(meth, new Expression[]{uri, base});
+                            aexp = new ApplyExp(meth, uri, base);
                             aexp.setType(NodeType.documentNodeTest);
                             return aexp;
                         case NAMESPACE_URI_BUILTIN /*-7*/:
@@ -660,7 +660,7 @@ public class XQResolveNames extends ResolveNames {
                 this.messages.error('e', "type constructor requires a single argument");
                 return exp;
             }
-            return new ApplyExp(XQParser.makeFunctionExp("gnu.xquery.util.CastAs", "castAs"), new Expression[]{exp.getFunction(), exp.getArgs()[0]});
+            return new ApplyExp(XQParser.makeFunctionExp("gnu.xquery.util.CastAs", "castAs"), exp.getFunction(), exp.getArgs()[0]);
         }
         if (proc instanceof MakeElement) {
             MakeElement make = proc;

@@ -53,8 +53,8 @@ public class TransportMediator extends TransportController {
         }
     }
 
-    class C03971 implements TransportMediatorCallback {
-        C03971() {
+    class C04021 implements TransportMediatorCallback {
+        C04021() {
         }
 
         public void handleKey(KeyEvent key) {
@@ -103,7 +103,7 @@ public class TransportMediator extends TransportController {
 
     private TransportMediator(Activity activity, View view, TransportPerformer callbacks) {
         this.mListeners = new ArrayList();
-        this.mTransportKeyCallback = new C03971();
+        this.mTransportKeyCallback = new C04021();
         this.mKeyEventCallback = new C00322();
         this.mContext = activity != null ? activity : view.getContext();
         this.mCallbacks = callbacks;

@@ -94,7 +94,7 @@ public class reflection extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/reflection.scm:30");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/reflection.scm:30");
             this.lambda$Fn1 = moduleMethod;
         }
 
@@ -132,28 +132,28 @@ public class reflection extends ModuleBody {
         Lit28 = simpleSymbol;
         objArr[0] = simpleSymbol;
         SyntaxRule[] syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<gnu.kawa.reflect.StaticSet>").readResolve(), PairWithPosition.make(Lit33, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/reflection.scm", 454679)}, 0);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<gnu.kawa.reflect.StaticSet>").readResolve(), PairWithPosition.make(Lit33, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/reflection.scm", 454679)}, 0);
         Lit29 = new SyntaxRules(objArr, syntaxRuleArr, 3);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("primitive-get-static").readResolve();
         Lit26 = simpleSymbol;
         objArr[0] = simpleSymbol;
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<gnu.kawa.reflect.StaticGet>").readResolve(), PairWithPosition.make(Lit33, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/reflection.scm", 430103)}, 0);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<gnu.kawa.reflect.StaticGet>").readResolve(), PairWithPosition.make(Lit33, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/reflection.scm", 430103)}, 0);
         Lit27 = new SyntaxRules(objArr, syntaxRuleArr, 3);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("primitive-set-field").readResolve();
         Lit24 = simpleSymbol;
         objArr[0] = simpleSymbol;
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<kawa.lang.SetFieldProc>").readResolve(), PairWithPosition.make(Lit34, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/reflection.scm", 401431)}, 0);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<kawa.lang.SetFieldProc>").readResolve(), PairWithPosition.make(Lit34, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/reflection.scm", 401431)}, 0);
         Lit25 = new SyntaxRules(objArr, syntaxRuleArr, 3);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("primitive-get-field").readResolve();
         Lit22 = simpleSymbol;
         objArr[0] = simpleSymbol;
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<kawa.lang.GetFieldProc>").readResolve(), PairWithPosition.make(Lit34, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/reflection.scm", 376855)}, 0);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\u0011\u0018\u0014\t\u0003\t\u000b\t\u0013\u0018\u001c", new Object[]{Lit31, Lit32, (SimpleSymbol) new SimpleSymbol("<kawa.lang.GetFieldProc>").readResolve(), PairWithPosition.make(Lit34, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/reflection.scm", 376855)}, 0);
         Lit23 = new SyntaxRules(objArr, syntaxRuleArr, 3);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("primitive-array-length").readResolve();

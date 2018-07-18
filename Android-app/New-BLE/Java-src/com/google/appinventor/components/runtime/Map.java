@@ -17,6 +17,7 @@ import com.google.appinventor.components.runtime.LocationSensor.LocationSensorLi
 import com.google.appinventor.components.runtime.util.AsynchUtil;
 import com.google.appinventor.components.runtime.util.ErrorMessages;
 import com.google.appinventor.components.runtime.util.GeoJSONUtil;
+import com.google.appinventor.components.runtime.util.GeometryUtil;
 import com.google.appinventor.components.runtime.util.MapFactory;
 import com.google.appinventor.components.runtime.util.MapFactory.MapCircle;
 import com.google.appinventor.components.runtime.util.MapFactory.MapController;
@@ -33,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.osmdroid.util.BoundingBox;
 
-@DesignerComponent(androidMinSdk = 8, category = ComponentCategory.MAPS, description = "<p>A two-dimensional container that renders map tiles in the background and allows for multiple Marker elements to identify points on the map. Map tiles are supplied by OpenStreetMap contributors and the United States Geological Survey.</p><p>The Map component provides three utilities for manipulating its boundaries within App Inventor. First, a locking mechanism is provided to allow the map to be moved relative to other components on the Screen. Second, when unlocked, the user can pan the Map to any location. At this new location, the &quot;Set Initial Boundary&quot; button can be pressed to save the current Map coordinates to its properties. Lastly, if the Map is moved to a different location, for example to add Markers off-screen, then the &quot;Reset Map to Initial Bounds&quot; button can be used to re-center the Map at the starting location.</p>", version = 3)
+@DesignerComponent(androidMinSdk = 8, category = ComponentCategory.MAPS, description = "<p>A two-dimensional container that renders map tiles in the background and allows for multiple Marker elements to identify points on the map. Map tiles are supplied by OpenStreetMap contributors and the United States Geological Survey.</p><p>The Map component provides three utilities for manipulating its boundaries within App Inventor. First, a locking mechanism is provided to allow the map to be moved relative to other components on the Screen. Second, when unlocked, the user can pan the Map to any location. At this new location, the &quot;Set Initial Boundary&quot; button can be pressed to save the current Map coordinates to its properties. Lastly, if the Map is moved to a different location, for example to add Markers off-screen, then the &quot;Reset Map to Initial Bounds&quot; button can be used to re-center the Map at the starting location.</p>", version = 4)
 @UsesLibraries(libraries = "osmdroid.aar, osmdroid.jar, androidsvg.jar, jts.jar")
 @SimpleObject
 @UsesAssets(fileNames = "location.png")
@@ -162,6 +163,17 @@ public class Map extends MapFeatureContainerBase implements MapEventListener {
         return this.mapController.isZoomEnabled();
     }
 
+    @DesignerProperty(defaultValue = "0.0", editorType = "float")
+    @SimpleProperty
+    public void Rotation(float rotation) {
+        this.mapController.setRotation(rotation);
+    }
+
+    @SimpleProperty(category = PropertyCategory.APPEARANCE, description = "Sets or gets the rotation of the map in decimal degrees if any")
+    public float Rotation() {
+        return this.mapController.getRotation();
+    }
+
     @DesignerProperty(defaultValue = "1", editorType = "map_type")
     @SimpleProperty
     public void MapType(int type) {
@@ -230,10 +242,10 @@ public class Map extends MapFeatureContainerBase implements MapEventListener {
 
     @SimpleProperty
     public void BoundingBox(YailList boundingbox) {
-        double latNorth = ((Double) ((YailList) boundingbox.get(1)).get(1)).doubleValue();
-        double longWest = ((Double) ((YailList) boundingbox.get(1)).get(2)).doubleValue();
-        double latSouth = ((Double) ((YailList) boundingbox.get(2)).get(1)).doubleValue();
-        this.mapController.setBoundingBox(new BoundingBox(latNorth, ((Double) ((YailList) boundingbox.get(2)).get(2)).doubleValue(), latSouth, longWest));
+        double latNorth = GeometryUtil.coerceToDouble(((YailList) boundingbox.get(1)).get(1));
+        double longWest = GeometryUtil.coerceToDouble(((YailList) boundingbox.get(1)).get(2));
+        double latSouth = GeometryUtil.coerceToDouble(((YailList) boundingbox.get(2)).get(1));
+        this.mapController.setBoundingBox(new BoundingBox(latNorth, GeometryUtil.coerceToDouble(((YailList) boundingbox.get(2)).get(2)), latSouth, longWest));
     }
 
     @SimpleProperty(category = PropertyCategory.APPEARANCE, description = "Bounding box for the map stored as [[North, West], [South, East]].")

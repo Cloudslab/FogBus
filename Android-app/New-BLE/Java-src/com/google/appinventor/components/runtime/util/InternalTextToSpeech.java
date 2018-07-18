@@ -21,8 +21,8 @@ public class InternalTextToSpeech implements ITextToSpeech {
     private int ttsMaxRetries = 20;
     private int ttsRetryDelay = 500;
 
-    class C03281 implements OnInitListener {
-        C03281() {
+    class C03291 implements OnInitListener {
+        C03291() {
         }
 
         public void onInit(int status) {
@@ -32,10 +32,10 @@ public class InternalTextToSpeech implements ITextToSpeech {
         }
     }
 
-    class C03302 implements OnUtteranceCompletedListener {
+    class C03312 implements OnUtteranceCompletedListener {
 
-        class C03291 implements Runnable {
-            C03291() {
+        class C03301 implements Runnable {
+            C03301() {
             }
 
             public void run() {
@@ -43,11 +43,11 @@ public class InternalTextToSpeech implements ITextToSpeech {
             }
         }
 
-        C03302() {
+        C03312() {
         }
 
         public void onUtteranceCompleted(String utteranceId) {
-            InternalTextToSpeech.this.activity.runOnUiThread(new C03291());
+            InternalTextToSpeech.this.activity.runOnUiThread(new C03301());
         }
     }
 
@@ -60,7 +60,7 @@ public class InternalTextToSpeech implements ITextToSpeech {
     private void initializeTts() {
         if (this.tts == null) {
             Log.d(LOG_TAG, "INTERNAL TTS is reinitializing");
-            this.tts = new TextToSpeech(this.activity, new C03281());
+            this.tts = new TextToSpeech(this.activity, new C03291());
         }
     }
 
@@ -82,7 +82,7 @@ public class InternalTextToSpeech implements ITextToSpeech {
         if (this.isTtsInitialized) {
             Log.d(LOG_TAG, "TTS initialized after " + retries + " retries.");
             this.tts.setLanguage(loc);
-            this.tts.setOnUtteranceCompletedListener(new C03302());
+            this.tts.setOnUtteranceCompletedListener(new C03312());
             HashMap<String, String> params = new HashMap();
             int i = this.nextUtteranceId;
             this.nextUtteranceId = i + 1;

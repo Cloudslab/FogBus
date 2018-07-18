@@ -529,7 +529,7 @@ public class LangObjType extends ObjectType implements TypeValue {
         if (method == null) {
             return null;
         }
-        Expression aexp = new ApplyExp(method, new Expression[]{value});
+        Expression aexp = new ApplyExp(method, value);
         aexp.setType(this);
         return aexp;
     }

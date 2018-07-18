@@ -25,14 +25,14 @@ import org.osmdroid.util.GeoPoint;
 @SimpleObject
 @DesignerComponent(category = ComponentCategory.MAPS, description = "Rectangle", version = 1)
 public class Rectangle extends PolygonBase implements MapRectangle {
-    private static final MapFeatureVisitor<Double> distanceComputation = new C04341();
+    private static final MapFeatureVisitor<Double> distanceComputation = new C04391();
     private double east = 0.0d;
     private double north = 0.0d;
     private double south = 0.0d;
     private double west = 0.0d;
 
-    static class C04341 implements MapFeatureVisitor<Double> {
-        C04341() {
+    static class C04391 implements MapFeatureVisitor<Double> {
+        C04391() {
         }
 
         public Double visit(MapMarker marker, Object... arguments) {

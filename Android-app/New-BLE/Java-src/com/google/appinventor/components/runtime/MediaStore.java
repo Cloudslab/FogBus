@@ -37,8 +37,8 @@ public final class MediaStore extends AndroidNonvisibleComponent implements Comp
     protected final ComponentContainer componentContainer;
     private String serviceURL = "http://ai-mediaservice.appspot.com";
 
-    class C04321 implements AsyncCallbackPair<String> {
-        C04321() {
+    class C04371 implements AsyncCallbackPair<String> {
+        C04371() {
         }
 
         public void onSuccess(final String response) {
@@ -76,7 +76,7 @@ public final class MediaStore extends AndroidNonvisibleComponent implements Comp
 
     @SimpleFunction
     public void PostMedia(String mediafile) throws FileNotFoundException {
-        AsyncCallbackPair<String> myCallback = new C04321();
+        AsyncCallbackPair<String> myCallback = new C04371();
         try {
             String newMediaPath;
             HttpClient client = new DefaultHttpClient();

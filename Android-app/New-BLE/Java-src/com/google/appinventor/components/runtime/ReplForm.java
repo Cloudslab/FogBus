@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.widget.Toast;
+import com.google.appinventor.components.annotations.SimpleObject;
 import com.google.appinventor.components.annotations.SimpleProperty;
 import com.google.appinventor.components.common.ComponentConstants;
 import com.google.appinventor.components.runtime.util.AppInvHTTPD;
@@ -19,6 +20,7 @@ import com.google.appinventor.components.runtime.util.ImageViewUtil;
 import com.google.appinventor.components.runtime.util.RetValManager;
 import dalvik.system.DexClassLoader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -27,6 +29,7 @@ import java.util.Random;
 import java.util.Set;
 
 public class ReplForm extends Form {
+    private static final String LOG_TAG = ReplForm.class.getSimpleName();
     private static final String REPL_ASSET_DIR = (Environment.getExternalStorageDirectory().getAbsolutePath() + "/AppInventor/assets/");
     private static final String REPL_COMP_DIR = (REPL_ASSET_DIR + "external_comps/");
     public static ReplForm topform;
@@ -76,7 +79,7 @@ public class ReplForm extends Form {
 
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        Log.d("ReplForm", "onCreate");
+        Log.d(LOG_TAG, "onCreate");
         this.loadedExternalDexs = new ArrayList();
         processExtras(getIntent(), false);
         ActionBar actionBar = getSupportActionBar();
@@ -112,7 +115,7 @@ public class ReplForm extends Form {
 
     public void setFormName(String formName) {
         this.formName = formName;
-        Log.d("ReplForm", "formName is now " + formName);
+        Log.d(LOG_TAG, "formName is now " + formName);
     }
 
     protected void closeForm(Intent resultIntent) {
@@ -120,7 +123,7 @@ public class ReplForm extends Form {
     }
 
     protected void setResult(Object result) {
-        Log.d("ReplForm", "setResult: " + result);
+        Log.d(LOG_TAG, "setResult: " + result);
         this.replResult = result;
         this.replResultFormName = this.formName;
     }
@@ -148,15 +151,15 @@ public class ReplForm extends Form {
 
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        Log.d("ReplForm", "onNewIntent Called");
+        Log.d(LOG_TAG, "onNewIntent Called");
         processExtras(intent, true);
     }
 
     void HandleReturnValues() {
-        Log.d("ReplForm", "HandleReturnValues() Called, replResult = " + this.replResult);
+        Log.d(LOG_TAG, "HandleReturnValues() Called, replResult = " + this.replResult);
         if (this.replResult != null) {
             OtherScreenClosed(this.replResultFormName, this.replResult);
-            Log.d("ReplForm", "Called OtherScreenClosed");
+            Log.d(LOG_TAG, "Called OtherScreenClosed");
             this.replResult = null;
         }
     }
@@ -164,13 +167,13 @@ public class ReplForm extends Form {
     protected void processExtras(Intent intent, boolean restart) {
         Bundle extras = intent.getExtras();
         if (extras != null) {
-            Log.d("ReplForm", "extras: " + extras);
+            Log.d(LOG_TAG, "extras: " + extras);
             for (String str : extras.keySet()) {
-                Log.d("ReplForm", "Extra Key: " + str);
+                Log.d(LOG_TAG, "Extra Key: " + str);
             }
         }
         if (extras != null && extras.getBoolean("rundirect")) {
-            Log.d("ReplForm", "processExtras rundirect is true and restart is " + restart);
+            Log.d(LOG_TAG, "processExtras rundirect is true and restart is " + restart);
             this.isDirect = true;
             this.assetsLoaded = true;
             if (restart) {
@@ -199,10 +202,10 @@ public class ReplForm extends Form {
             if (this.httpdServer == null) {
                 checkAssetDir();
                 this.httpdServer = new AppInvHTTPD(8001, new File(REPL_ASSET_DIR), secure, this);
-                Log.i("ReplForm", "started AppInvHTTPD");
+                Log.i(LOG_TAG, "started AppInvHTTPD");
             }
         } catch (IOException ex) {
-            Log.e("ReplForm", "Setting up NanoHTTPD: " + ex.toString());
+            Log.e(LOG_TAG, "Setting up NanoHTTPD: " + ex.toString());
         }
     }
 
@@ -243,7 +246,7 @@ public class ReplForm extends Form {
                     File loadComponent = new File(compFolder.getPath() + File.separator + compFolder.getName() + ".jar");
                     component.renameTo(loadComponent);
                     if (loadComponent.exists() && !this.loadedExternalDexs.contains(loadComponent.getName())) {
-                        Log.d("ReplForm", "Loading component dex " + loadComponent.getAbsolutePath());
+                        Log.d(LOG_TAG, "Loading component dex " + loadComponent.getAbsolutePath());
                         this.loadedExternalDexs.add(loadComponent.getName());
                         sb.append(File.pathSeparatorChar);
                         sb.append(loadComponent.getAbsolutePath());
@@ -252,12 +255,12 @@ public class ReplForm extends Form {
             }
             DexClassLoader dexCloader = new DexClassLoader(sb.substring(1), dexOutput.getAbsolutePath(), null, parentClassLoader);
             Thread.currentThread().setContextClassLoader(dexCloader);
-            Log.d("ReplForm", Thread.currentThread().toString());
-            Log.d("ReplForm", Looper.getMainLooper().getThread().toString());
+            Log.d(LOG_TAG, Thread.currentThread().toString());
+            Log.d(LOG_TAG, Looper.getMainLooper().getThread().toString());
             Looper.getMainLooper().getThread().setContextClassLoader(dexCloader);
             return;
         }
-        Log.d("ReplForm", "Unable to create components directory");
+        Log.d(LOG_TAG, "Unable to create components directory");
         dispatchErrorOccurredEventDialog(this, "loadComponents", ErrorMessages.ERROR_EXTENSION_ERROR, Integer.valueOf(1), FusiontablesControl.APP_NAME, "Unable to create component directory.");
     }
 
@@ -266,6 +269,29 @@ public class ReplForm extends Form {
         this.currentTheme = theme;
         super.Theme(theme);
         updateTitle();
+    }
+
+    public String getAssetPathForExtension(Component component, String asset) throws FileNotFoundException {
+        SimpleObject annotation = (SimpleObject) component.getClass().getAnnotation(SimpleObject.class);
+        if (annotation != null && !annotation.external()) {
+            return Form.ASSETS_PREFIX + asset;
+        }
+        String pkgPath = null;
+        for (String extensionId = component.getClass().getName(); extensionId.contains("."); extensionId = extensionId.substring(0, extensionId.lastIndexOf(46))) {
+            File dir = new File(REPL_COMP_DIR + extensionId + "/assets");
+            if (dir.exists() && dir.isDirectory()) {
+                pkgPath = dir.getAbsolutePath();
+                break;
+            }
+        }
+        if (pkgPath != null) {
+            File result = new File(pkgPath, asset);
+            Log.d(LOG_TAG, "result = " + result.getAbsolutePath());
+            if (result.exists()) {
+                return "file://" + result.getAbsolutePath();
+            }
+        }
+        throw new FileNotFoundException();
     }
 
     protected boolean isRepl() {

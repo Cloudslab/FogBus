@@ -48,7 +48,7 @@ public class conditions extends ModuleBody {
     static final SimpleSymbol Lit17 = ((SimpleSymbol) new SimpleSymbol("extract-condition").readResolve());
     static final SimpleSymbol Lit18;
     static final SyntaxRules Lit19;
-    static final PairWithPosition Lit2 = PairWithPosition.make(Lit5, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/conditions.scm", 925699);
+    static final PairWithPosition Lit2 = PairWithPosition.make(Lit5, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/conditions.scm", 925699);
     static final SimpleSymbol Lit20 = ((SimpleSymbol) new SimpleSymbol("type-field-alist->condition").readResolve());
     static final SimpleSymbol Lit21 = ((SimpleSymbol) new SimpleSymbol(LispLanguage.quote_sym).readResolve());
     static final SimpleSymbol Lit22 = ((SimpleSymbol) new SimpleSymbol("thing").readResolve());
@@ -78,7 +78,7 @@ public class conditions extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/conditions.scm:166");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/conditions.scm:166");
             this.lambda$Fn1 = moduleMethod;
         }
 
@@ -153,7 +153,7 @@ public class conditions extends ModuleBody {
         Lit13 = simpleSymbol;
         objArr2[0] = simpleSymbol;
         SyntaxRule[] syntaxRuleArr2 = new SyntaxRule[1];
-        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\b", new Object[0], 1), "\u0001", "\u0011\u0018\u0004\b\u0011\u0018\f\u0011\u0018\u0014\b\u0003", new Object[]{PairWithPosition.make((SimpleSymbol) new SimpleSymbol("$lookup$").readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol("*").readResolve(), Pair.make(Pair.make((SimpleSymbol) new SimpleSymbol(LispLanguage.quasiquote_sym).readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol(".type-field-alist").readResolve(), LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/conditions.scm", 581639), (SimpleSymbol) new SimpleSymbol("as").readResolve(), (SimpleSymbol) new SimpleSymbol("<condition>").readResolve()}, 0);
+        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\b", new Object[0], 1), "\u0001", "\u0011\u0018\u0004\b\u0011\u0018\f\u0011\u0018\u0014\b\u0003", new Object[]{PairWithPosition.make((SimpleSymbol) new SimpleSymbol("$lookup$").readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol("*").readResolve(), Pair.make(Pair.make((SimpleSymbol) new SimpleSymbol(LispLanguage.quasiquote_sym).readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol(".type-field-alist").readResolve(), LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/conditions.scm", 581639), (SimpleSymbol) new SimpleSymbol("as").readResolve(), (SimpleSymbol) new SimpleSymbol("<condition>").readResolve()}, 0);
         Lit14 = new SyntaxRules(objArr2, syntaxRuleArr2, 1);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("define-condition-type").readResolve();
@@ -165,12 +165,12 @@ public class conditions extends ModuleBody {
         Lit7 = simpleSymbol2;
         r4[2] = simpleSymbol2;
         r4[3] = Lit21;
-        r4[4] = PairWithPosition.make(Lit22, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/conditions.scm", 327708);
+        r4[4] = PairWithPosition.make(Lit22, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/conditions.scm", 327708);
         r4[5] = (SimpleSymbol) new SimpleSymbol("and").readResolve();
-        r4[6] = PairWithPosition.make(Lit10, PairWithPosition.make(Lit22, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/conditions.scm", 331803), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/conditions.scm", 331791);
+        r4[6] = PairWithPosition.make(Lit10, PairWithPosition.make(Lit22, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/conditions.scm", 331803), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/conditions.scm", 331791);
         r4[7] = Lit12;
         r4[8] = Lit22;
-        r4[9] = PairWithPosition.make(Lit18, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/conditions.scm", 339996);
+        r4[9] = PairWithPosition.make(Lit18, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/conditions.scm", 339996);
         r4[10] = Lit15;
         r4[11] = Lit17;
         r4[12] = Lit18;

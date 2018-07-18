@@ -186,7 +186,7 @@ public class swing extends ModuleBody {
         try {
             return (Paintable) Invoke.make.apply2(loc$$Lsgnu$Dtkawa$Dtmodels$DtFillShape$Gr.get(), shape);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/swing.scm", 19, 9);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/swing.scm", 19, 9);
             throw e;
         }
     }
@@ -195,7 +195,7 @@ public class swing extends ModuleBody {
         try {
             return (Paintable) Invoke.make.apply2(loc$$Lsgnu$Dtkawa$Dtmodels$DtDrawShape$Gr.get(), shape);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/swing.scm", 22, 9);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/swing.scm", 22, 9);
             throw e;
         }
     }
@@ -204,7 +204,7 @@ public class swing extends ModuleBody {
         try {
             return Invoke.make.apply3(loc$$Lsgnu$Dtkawa$Dtmodels$DtWithPaint$Gr.get(), pic, paint);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/swing.scm", 26, 10);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/swing.scm", 26, 10);
             throw e;
         }
     }
@@ -244,7 +244,7 @@ public class swing extends ModuleBody {
         try {
             return Scheme.applyToArgs.apply2(GetNamedPart.getNamedPart.apply2(loc$gnu$Dtkawa$Dtmodels$DtWithComposite.get(), Lit0), arguments);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/swing.scm", 29, 4);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/swing.scm", 29, 4);
             throw e;
         }
     }

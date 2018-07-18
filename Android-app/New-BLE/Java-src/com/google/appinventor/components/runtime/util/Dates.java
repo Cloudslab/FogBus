@@ -6,6 +6,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 @SimpleObject
@@ -65,28 +66,22 @@ public final class Dates {
 
     @SimpleFunction
     public static Calendar DateValue(String value) {
-        DateFormat dateFormat;
         Calendar date = new GregorianCalendar();
-        try {
-            DateFormat dateTimeFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-            dateTimeFormat.setLenient(true);
-            date.setTime(dateTimeFormat.parse(value));
-        } catch (ParseException e) {
+        date.setTime(tryParseDate(value));
+        return date;
+    }
+
+    private static Date tryParseDate(String value) {
+        String[] arr$ = new String[]{"MM/dd/yyyy hh:mm:ss a", "MM/dd/yyyy HH:mm:ss", "MM/dd/yyyy hh:mm a", "MM/dd/yyyy HH:mm", "MM/dd/yyyy", "hh:mm:ss a", "HH:mm:ss", "hh:mm a", "HH:mm"};
+        int i$ = 0;
+        while (i$ < arr$.length) {
             try {
-                dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-                dateFormat.setLenient(true);
-                date.setTime(dateFormat.parse(value));
-            } catch (ParseException e2) {
-                try {
-                    dateFormat = new SimpleDateFormat("HH:mm");
-                    dateFormat.setLenient(true);
-                    date.setTime(dateFormat.parse(value));
-                } catch (ParseException e3) {
-                    throw new IllegalArgumentException("illegal date/time format in function DateValue()");
-                }
+                return new SimpleDateFormat(arr$[i$]).parse(value);
+            } catch (ParseException e) {
+                i$++;
             }
         }
-        return date;
+        throw new IllegalArgumentException("illegal date/time format in function DateValue()");
     }
 
     @SimpleFunction
@@ -116,7 +111,7 @@ public final class Dates {
     public static String FormatDateTime(Calendar date, String pattern) {
         SimpleDateFormat formatdate = new SimpleDateFormat();
         if (pattern.length() == 0) {
-            formatdate.applyPattern("MMM d, yyyy HH:mm:ss a");
+            formatdate.applyPattern("MMM d, yyyy hh:mm:ss a");
         } else {
             formatdate.applyPattern(pattern);
         }

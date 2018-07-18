@@ -470,7 +470,7 @@ public class NotificationCompat {
     }
 
     public static class Action extends android.support.v4.app.NotificationCompatBase.Action {
-        public static final android.support.v4.app.NotificationCompatBase.Action.Factory FACTORY = new C03931();
+        public static final android.support.v4.app.NotificationCompatBase.Action.Factory FACTORY = new C03981();
         public PendingIntent actionIntent;
         public int icon;
         private final Bundle mExtras;
@@ -538,8 +538,8 @@ public class NotificationCompat {
             Builder extend(Builder builder);
         }
 
-        static class C03931 implements android.support.v4.app.NotificationCompatBase.Action.Factory {
-            C03931() {
+        static class C03981 implements android.support.v4.app.NotificationCompatBase.Action.Factory {
+            C03981() {
             }
 
             public Action build(int icon, CharSequence title, PendingIntent actionIntent, Bundle extras, RemoteInput[] remoteInputs) {
@@ -749,7 +749,7 @@ public class NotificationCompat {
         private UnreadConversation mUnreadConversation;
 
         public static class UnreadConversation extends android.support.v4.app.NotificationCompatBase.UnreadConversation {
-            static final Factory FACTORY = new C03941();
+            static final Factory FACTORY = new C03991();
             private final long mLatestTimestamp;
             private final String[] mMessages;
             private final String[] mParticipants;
@@ -795,8 +795,8 @@ public class NotificationCompat {
                 }
             }
 
-            static class C03941 implements Factory {
-                C03941() {
+            static class C03991 implements Factory {
+                C03991() {
                 }
 
                 public UnreadConversation build(String[] messages, RemoteInput remoteInput, PendingIntent replyPendingIntent, PendingIntent readPendingIntent, String[] participants, long latestTimestamp) {

@@ -36,7 +36,7 @@ public class FragmentActivity extends Activity {
     private static final String TAG = "FragmentActivity";
     SimpleArrayMap<String, LoaderManagerImpl> mAllLoaderManagers;
     boolean mCheckedForLoaderManager;
-    final FragmentContainer mContainer = new C03922();
+    final FragmentContainer mContainer = new C03972();
     boolean mCreated;
     final FragmentManagerImpl mFragments = new FragmentManagerImpl();
     final Handler mHandler = new C00071();
@@ -82,8 +82,8 @@ public class FragmentActivity extends Activity {
         }
     }
 
-    class C03922 implements FragmentContainer {
-        C03922() {
+    class C03972 implements FragmentContainer {
+        C03972() {
         }
 
         @Nullable

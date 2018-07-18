@@ -698,7 +698,7 @@ public class genwrite extends ModuleBody {
 
         public frame1() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/genwrite.scm:72");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/genwrite.scm:72");
             this.lambda$Fn1 = moduleMethod;
         }
 

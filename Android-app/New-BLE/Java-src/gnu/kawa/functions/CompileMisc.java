@@ -191,8 +191,7 @@ public class CompileMisc implements Inlineable {
     }
 
     public static Expression validateApplyMakeProcedure(ApplyExp exp, InlineCalls visitor, Type required, Procedure proc) {
-        String keyword;
-        Expression next;
+        Object key;
         exp.visitArgs(visitor);
         Expression[] args = exp.getArgs();
         int alen = args.length;
@@ -201,7 +200,8 @@ public class CompileMisc implements Inlineable {
         String name = null;
         int i = 0;
         while (i < alen) {
-            Object key;
+            String keyword;
+            Expression next;
             Expression arg = args[i];
             if (arg instanceof QuoteExp) {
                 key = ((QuoteExp) arg).getValue();
@@ -340,7 +340,7 @@ public class CompileMisc implements Inlineable {
             code.emitStore(contVar);
             Type type = ((target instanceof IgnoreTarget) || (target instanceof ConsumerTarget)) ? null : Type.objectType;
             code.emitTryStart(false, type);
-            new ApplyExp(lambda, new Expression[]{new ReferenceExp(contDecl)}).compile(comp, target);
+            new ApplyExp(lambda, new ReferenceExp(contDecl)).compile(comp, target);
             if (code.reachableHere()) {
                 code.emitLoad(contVar);
                 code.emitPushInt(1);
@@ -361,11 +361,12 @@ public class CompileMisc implements Inlineable {
             code.popScope();
             return;
         }
+        param.setCanCall(false);
         CompileTimeContinuation contProxy = new CompileTimeContinuation();
         contProxy.exitableBlock = code.startExitableBlock(target instanceof StackTarget ? target.getType() : null, ExitThroughFinallyChecker.check(param, lambda.body));
         contProxy.blockTarget = target;
         param.setValue(new QuoteExp(contProxy));
-        lambda.body.compile(comp, target);
+        new ApplyExp(lambda, QuoteExp.nullExp).compile(comp, target);
         code.endExitableBlock();
     }
 
@@ -463,7 +464,7 @@ public class CompileMisc implements Inlineable {
             if (i2 < 0) {
                 break;
             }
-            letExp.body = new IfExp(visitor.visitApplyOnly(new ApplyExp(mproc.isEq, new Expression[]{new ReferenceExp(largs[i2]), empty}), null), collect ? new ReferenceExp(resultDecl) : QuoteExp.voidExp, letExp.body);
+            letExp.body = new IfExp(visitor.visitApplyOnly(new ApplyExp(mproc.isEq, new ReferenceExp(largs[i2]), empty), null), collect ? new ReferenceExp(resultDecl) : QuoteExp.voidExp, letExp.body);
             initArgs[i2] = args[i2 + 1];
         }
         if (collect) {

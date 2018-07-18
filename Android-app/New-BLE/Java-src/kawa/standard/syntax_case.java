@@ -67,7 +67,7 @@ public class syntax_case extends Syntax {
                             work.maxVars = varCount;
                         }
                         block = new BlockExp();
-                        Expression applyExp = new ApplyExp(new PrimProcedure(Pattern.matchPatternMethod, language), new Expression[]{new QuoteExp(r0), new ReferenceExp(work.inputExpression), new ReferenceExp(tr.matchArray), new QuoteExp(IntNum.zero())});
+                        Expression applyExp = new ApplyExp(new PrimProcedure(Pattern.matchPatternMethod, language), new QuoteExp(r0), new ReferenceExp(work.inputExpression), new ReferenceExp(tr.matchArray), new QuoteExp(IntNum.zero()));
                         int newVarCount = varCount - outerVarCount;
                         Expression[] inits = new Expression[newVarCount];
                         int i = newVarCount;

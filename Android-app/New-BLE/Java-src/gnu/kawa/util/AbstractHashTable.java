@@ -16,14 +16,14 @@ public abstract class AbstractHashTable<Entry extends Entry<K, V>, K, V> extends
     static class AbstractEntrySet<Entry extends Entry<K, V>, K, V> extends AbstractSet<Entry> {
         AbstractHashTable<Entry, K, V> htable;
 
-        class C03711 implements Iterator<Entry> {
+        class C03761 implements Iterator<Entry> {
             int curIndex = -1;
             Entry currentEntry;
             Entry nextEntry;
             int nextIndex;
             Entry previousEntry;
 
-            C03711() {
+            C03761() {
             }
 
             public boolean hasNext() {
@@ -83,7 +83,7 @@ public abstract class AbstractHashTable<Entry extends Entry<K, V>, K, V> extends
         }
 
         public Iterator<Entry> iterator() {
-            return new C03711();
+            return new C03761();
         }
     }
 

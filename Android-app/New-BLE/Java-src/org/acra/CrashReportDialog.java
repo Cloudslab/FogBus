@@ -27,8 +27,8 @@ public final class CrashReportDialog extends Activity {
     private EditText userComment;
     private EditText userEmail;
 
-    class C03801 implements OnClickListener {
-        C03801() {
+    class C03851 implements OnClickListener {
+        C03851() {
         }
 
         public void onClick(View v) {
@@ -62,8 +62,8 @@ public final class CrashReportDialog extends Activity {
         }
     }
 
-    class C03812 implements OnClickListener {
-        C03812() {
+    class C03862 implements OnClickListener {
+        C03862() {
         }
 
         public void onClick(View v) {
@@ -137,11 +137,11 @@ public final class CrashReportDialog extends Activity {
         buttons.setPadding(buttons.getPaddingLeft(), 10, buttons.getPaddingRight(), buttons.getPaddingBottom());
         Button yes = new Button(this);
         yes.setText(17039379);
-        yes.setOnClickListener(new C03801());
+        yes.setOnClickListener(new C03851());
         buttons.addView(yes, new LinearLayout.LayoutParams(-1, -2, 1.0f));
         Button no = new Button(this);
         no.setText(17039369);
-        no.setOnClickListener(new C03812());
+        no.setOnClickListener(new C03862());
         buttons.addView(no, new LinearLayout.LayoutParams(-1, -2, 1.0f));
         root.addView(buttons, new LinearLayout.LayoutParams(-1, -2));
         setContentView(root);

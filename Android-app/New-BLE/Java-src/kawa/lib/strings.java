@@ -408,11 +408,11 @@ public class strings extends ModuleBody {
     }
 
     public static CharSequence list$To$String(LList list) {
-        Object list2;
         int len = lists.length(list);
         Object result = new FString(len);
         int i = 0;
         while (i < len) {
+            Object list2;
             try {
                 Pair pair = (Pair) list2;
                 try {

@@ -36,7 +36,7 @@ public class LambdaExp extends ScopeExp {
     public static final int SEQUENCE_RESULT = 1024;
     static Method searchForKeywordMethod3;
     static Method searchForKeywordMethod4;
-    static final ApplyExp unknownContinuation = new ApplyExp((Expression) null, null);
+    static final ApplyExp unknownContinuation = new ApplyExp((Expression) null, (Expression[]) null);
     Vector applyMethods;
     Variable argsArray;
     public Expression body;

@@ -74,7 +74,7 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarVisibili
     private boolean mHasEmbeddedTabs;
     private boolean mHiddenByApp;
     private boolean mHiddenBySystem;
-    final ViewPropertyAnimatorListener mHideListener = new C04581();
+    final ViewPropertyAnimatorListener mHideListener = new C04621();
     boolean mHideOnContentScroll;
     private boolean mLastMenuVisibility;
     private ArrayList<OnMenuVisibilityListener> mMenuVisibilityListeners = new ArrayList();
@@ -83,17 +83,17 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarVisibili
     private int mSavedTabPosition = -1;
     private TabImpl mSelectedTab;
     private boolean mShowHideAnimationEnabled;
-    final ViewPropertyAnimatorListener mShowListener = new C04592();
+    final ViewPropertyAnimatorListener mShowListener = new C04632();
     private boolean mShowingForMode;
     private ActionBarContainer mSplitView;
     private ScrollingTabContainerView mTabScrollView;
     private ArrayList<TabImpl> mTabs = new ArrayList();
     private Context mThemedContext;
     private TintManager mTintManager;
-    final ViewPropertyAnimatorUpdateListener mUpdateListener = new C04163();
+    final ViewPropertyAnimatorUpdateListener mUpdateListener = new C04213();
 
-    class C04163 implements ViewPropertyAnimatorUpdateListener {
-        C04163() {
+    class C04213 implements ViewPropertyAnimatorUpdateListener {
+        C04213() {
         }
 
         public void onAnimationUpdate(View view) {
@@ -338,8 +338,8 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarVisibili
         }
     }
 
-    class C04581 extends ViewPropertyAnimatorListenerAdapter {
-        C04581() {
+    class C04621 extends ViewPropertyAnimatorListenerAdapter {
+        C04621() {
         }
 
         public void onAnimationEnd(View view) {
@@ -360,8 +360,8 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarVisibili
         }
     }
 
-    class C04592 extends ViewPropertyAnimatorListenerAdapter {
-        C04592() {
+    class C04632 extends ViewPropertyAnimatorListenerAdapter {
+        C04632() {
         }
 
         public void onAnimationEnd(View view) {

@@ -375,6 +375,8 @@ public class LinearLayoutCompat extends ViewGroup {
     }
 
     void measureVertical(int widthMeasureSpec, int heightMeasureSpec) {
+        int childHeight;
+        boolean matchWidthLocally;
         int measuredWidth;
         this.mTotalLength = 0;
         int maxWidth = 0;
@@ -395,8 +397,6 @@ public class LinearLayoutCompat extends ViewGroup {
         while (i < count) {
             LayoutParams lp;
             int totalLength;
-            int childHeight;
-            boolean matchWidthLocally;
             int margin;
             View child = getVirtualChildAt(i);
             if (child == null) {
@@ -568,9 +568,6 @@ public class LinearLayoutCompat extends ViewGroup {
     }
 
     void measureHorizontal(int widthMeasureSpec, int heightMeasureSpec) {
-        LayoutParams lp;
-        int totalLength;
-        boolean matchHeightLocally;
         int childHeight;
         int i;
         this.mTotalLength = 0;
@@ -605,7 +602,10 @@ public class LinearLayoutCompat extends ViewGroup {
         int largestChildWidth = Integer.MIN_VALUE;
         int i2 = 0;
         while (i2 < count) {
+            LayoutParams lp;
+            int totalLength;
             int childWidth;
+            boolean matchHeightLocally;
             int margin;
             int childBaseline;
             View child = getVirtualChildAt(i2);

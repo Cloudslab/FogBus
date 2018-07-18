@@ -8,7 +8,7 @@ import android.util.Log;
 
 public class RemoteInput extends android.support.v4.app.RemoteInputCompatBase.RemoteInput {
     public static final String EXTRA_RESULTS_DATA = "android.remoteinput.resultsData";
-    public static final Factory FACTORY = new C03951();
+    public static final Factory FACTORY = new C04001();
     private static final Impl IMPL;
     public static final String RESULTS_CLIP_LABEL = "android.remoteinput.results";
     private static final String TAG = "RemoteInput";
@@ -69,8 +69,8 @@ public class RemoteInput extends android.support.v4.app.RemoteInputCompatBase.Re
         Bundle getResultsFromIntent(Intent intent);
     }
 
-    static class C03951 implements Factory {
-        C03951() {
+    static class C04001 implements Factory {
+        C04001() {
         }
 
         public RemoteInput build(String resultKey, CharSequence label, CharSequence[] choices, boolean allowFreeFormInput, Bundle extras) {

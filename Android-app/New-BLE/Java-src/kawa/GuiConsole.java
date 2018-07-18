@@ -26,8 +26,8 @@ public class GuiConsole extends JFrame implements ActionListener, DocumentCloseL
     ReplDocument document;
     ReplPane pane;
 
-    class C03721 extends WindowAdapter {
-        C03721() {
+    class C03771 extends WindowAdapter {
+        C03771() {
         }
 
         public void windowClosing(WindowEvent e) {
@@ -82,7 +82,7 @@ public class GuiConsole extends JFrame implements ActionListener, DocumentCloseL
     }
 
     private void setupMenus() {
-        WindowListener windowExitCmd = new C03721();
+        WindowListener windowExitCmd = new C03771();
         MenuBar menubar = new MenuBar();
         Menu fileMenu = new Menu("File");
         Menu utilitiesMenu = new Menu("Utilities");

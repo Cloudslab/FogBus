@@ -58,7 +58,7 @@ public class NodeType extends ObjectType implements TypeValue, NodePredicate, Ex
     }
 
     public Expression convertValue(Expression value) {
-        ApplyExp aexp = new ApplyExp(coerceMethod, new Expression[]{value});
+        ApplyExp aexp = new ApplyExp(coerceMethod, value);
         aexp.setType(this);
         return aexp;
     }

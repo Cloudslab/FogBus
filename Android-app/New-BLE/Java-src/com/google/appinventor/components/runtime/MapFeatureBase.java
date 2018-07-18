@@ -26,7 +26,7 @@ public abstract class MapFeatureBase implements MapFeature, HasStroke {
     protected MapFeatureContainer container = null;
     private String description = "";
     private final MapFeatureVisitor<Double> distanceComputation;
-    private MapFeatureVisitor<Double> distanceToPoint = new C04281();
+    private MapFeatureVisitor<Double> distanceToPoint = new C04331();
     private boolean draggable = false;
     private Geometry geometry = null;
     private boolean infobox = false;
@@ -36,8 +36,8 @@ public abstract class MapFeatureBase implements MapFeature, HasStroke {
     private String title = "";
     private boolean visible = true;
 
-    class C04281 implements MapFeatureVisitor<Double> {
-        C04281() {
+    class C04331 implements MapFeatureVisitor<Double> {
+        C04331() {
         }
 
         public Double visit(MapMarker marker, Object... arguments) {

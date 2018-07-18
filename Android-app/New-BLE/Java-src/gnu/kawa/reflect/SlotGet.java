@@ -256,6 +256,6 @@ public class SlotGet extends Procedure2 implements HasSetter, Inlineable {
     }
 
     public static ApplyExp makeGetField(Expression value, String fieldName) {
-        return new ApplyExp(field, new Expression[]{value, new QuoteExp(fieldName)});
+        return new ApplyExp(field, value, new QuoteExp(fieldName));
     }
 }

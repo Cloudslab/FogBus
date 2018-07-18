@@ -72,7 +72,7 @@ public class Parser {
             }
             skipToken();
             exp2 = parseAssignmentExpression();
-            return new ApplyExp(new QuoteExp(op.proc), new Expression[]{exp1, exp2});
+            return new ApplyExp(new QuoteExp(op.proc), exp1, exp2);
         }
     }
 
@@ -294,7 +294,7 @@ public class Parser {
             return exp;
         }
         skipToken();
-        return new ApplyExp(new QuoteExp(op.proc), new Expression[]{exp});
+        return new ApplyExp(new QuoteExp(op.proc), exp);
     }
 
     public Expression parseUnaryExpression() throws IOException, SyntaxException {
@@ -336,7 +336,7 @@ public class Parser {
             }
             getToken();
             Expression exp2 = parseBinaryExpression(op.prio + 1);
-            exp1 = new ApplyExp(new QuoteExp(op.proc), new Expression[]{exp1, exp2});
+            exp1 = new ApplyExp(new QuoteExp(op.proc), exp1, exp2);
         }
         return exp1;
     }

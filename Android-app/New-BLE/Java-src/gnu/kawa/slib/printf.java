@@ -40,7 +40,7 @@ public class printf extends ModuleBody {
     public static final printf $instance = new printf();
     static final IntNum Lit0 = IntNum.make(-15);
     static final IntNum Lit1 = IntNum.make(0);
-    static final PairWithPosition Lit10 = PairWithPosition.make(Lit13, PairWithPosition.make(Lit37, PairWithPosition.make(Lit25, PairWithPosition.make(Lit12, PairWithPosition.make(Lit30, PairWithPosition.make(Lit54, PairWithPosition.make(Lit38, PairWithPosition.make(Lit26, PairWithPosition.make(Lit41, PairWithPosition.make(Lit31, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266284), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266280), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266276), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266272), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266268), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266264), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266260), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266256), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266252), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 266247);
+    static final PairWithPosition Lit10 = PairWithPosition.make(Lit13, PairWithPosition.make(Lit37, PairWithPosition.make(Lit25, PairWithPosition.make(Lit12, PairWithPosition.make(Lit30, PairWithPosition.make(Lit54, PairWithPosition.make(Lit38, PairWithPosition.make(Lit26, PairWithPosition.make(Lit41, PairWithPosition.make(Lit31, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266284), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266280), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266276), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266272), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266268), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266264), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266260), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266256), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266252), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 266247);
     static final Char Lit11 = Char.make(46);
     static final Char Lit12;
     static final Char Lit13;
@@ -50,7 +50,7 @@ public class printf extends ModuleBody {
     static final IntNum Lit17 = IntNum.make(-1);
     static final Char Lit18 = Char.make(92);
     static final Char Lit19 = Char.make(110);
-    static final PairWithPosition Lit2 = PairWithPosition.make(Lit6, PairWithPosition.make(Lit5, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 446503), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 446498);
+    static final PairWithPosition Lit2 = PairWithPosition.make(Lit6, PairWithPosition.make(Lit5, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 446503), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 446498);
     static final Char Lit20 = Char.make(78);
     static final Char Lit21 = Char.make(10);
     static final Char Lit22 = Char.make(116);
@@ -98,7 +98,7 @@ public class printf extends ModuleBody {
     static final IntNum Lit60 = IntNum.make(-10);
     static final IntNum Lit61 = IntNum.make(3);
     static final FVector Lit62 = FVector.make("y", "z", "a", "f", "p", "n", "u", "m", "", "k", "M", "G", "T", "P", "E", "Z", "Y");
-    static final PairWithPosition Lit63 = PairWithPosition.make("i", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1634315);
+    static final PairWithPosition Lit63 = PairWithPosition.make("i", LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1634315);
     static final SimpleSymbol Lit64 = ((SimpleSymbol) new SimpleSymbol("format-real").readResolve());
     static final Char Lit65 = Char.make(63);
     static final Char Lit66 = Char.make(42);
@@ -131,10 +131,10 @@ public class printf extends ModuleBody {
 
         public frame0() {
             PropertySet moduleMethod = new ModuleMethod(this, 2, null, 16388);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:111");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:111");
             this.lambda$Fn2 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 3, null, 12291);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:123");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:123");
             this.lambda$Fn3 = moduleMethod;
         }
 
@@ -290,16 +290,16 @@ public class printf extends ModuleBody {
 
         public frame10() {
             PropertySet moduleMethod = new ModuleMethod(this, 16, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:472");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:472");
             this.lambda$Fn13 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 17, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:476");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:476");
             this.lambda$Fn14 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 18, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:484");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:484");
             this.lambda$Fn15 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 19, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:494");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:494");
             this.lambda$Fn16 = moduleMethod;
         }
 
@@ -840,7 +840,7 @@ public class printf extends ModuleBody {
 
         public frame11() {
             PropertySet moduleMethod = new ModuleMethod(this, 14, null, -4093);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:401");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:401");
             this.lambda$Fn17 = moduleMethod;
         }
 
@@ -930,12 +930,12 @@ public class printf extends ModuleBody {
         }
 
         public Object lambda30formatReal$V(Object signed$Qu, Object sgn, Object digs, Object exp, Object[] argsArray) {
+            Object lambda29f;
             LList rest = LList.makeList(argsArray, 0);
             if (lists.isNull(rest)) {
                 try {
                     Object obj;
                     Object obj2;
-                    Object lambda29f;
                     Object apply3;
                     if (characters.isChar$Eq(printf.Lit5, (Char) sgn)) {
                         obj = "-";
@@ -1154,7 +1154,7 @@ public class printf extends ModuleBody {
 
         public frame12() {
             PropertySet moduleMethod = new ModuleMethod(this, 20, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:546");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:546");
             this.lambda$Fn18 = moduleMethod;
         }
 
@@ -1198,7 +1198,7 @@ public class printf extends ModuleBody {
 
         public frame13() {
             PropertySet moduleMethod = new ModuleMethod(this, 21, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:564");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:564");
             this.lambda$Fn19 = moduleMethod;
         }
 
@@ -1526,7 +1526,7 @@ public class printf extends ModuleBody {
 
         public frame1() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, 12291);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:126");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:126");
             this.lambda$Fn4 = moduleMethod;
         }
 
@@ -1560,10 +1560,10 @@ public class printf extends ModuleBody {
 
         public frame2() {
             PropertySet moduleMethod = new ModuleMethod(this, 10, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:81");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:81");
             this.lambda$Fn6 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 11, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:78");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:78");
             this.lambda$Fn5 = moduleMethod;
         }
 
@@ -1616,7 +1616,7 @@ public class printf extends ModuleBody {
 
         public frame3() {
             PropertySet moduleMethod = new ModuleMethod(this, 9, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:84");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:84");
             this.lambda$Fn7 = moduleMethod;
         }
 
@@ -1719,10 +1719,10 @@ public class printf extends ModuleBody {
 
         public frame4() {
             PropertySet moduleMethod = new ModuleMethod(this, 7, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:90");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:90");
             this.lambda$Fn9 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 8, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:87");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:87");
             this.lambda$Fn8 = moduleMethod;
         }
 
@@ -1795,7 +1795,7 @@ public class printf extends ModuleBody {
 
         public frame5() {
             PropertySet moduleMethod = new ModuleMethod(this, 6, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:92");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:92");
             this.lambda$Fn10 = moduleMethod;
         }
 
@@ -1861,7 +1861,7 @@ public class printf extends ModuleBody {
 
         public frame6() {
             PropertySet moduleMethod = new ModuleMethod(this, 5, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:67");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:67");
             this.lambda$Fn11 = moduleMethod;
         }
 
@@ -1896,7 +1896,7 @@ public class printf extends ModuleBody {
 
         public frame7() {
             PropertySet moduleMethod = new ModuleMethod(this, 4, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:69");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:69");
             this.lambda$Fn12 = moduleMethod;
         }
 
@@ -2022,7 +2022,7 @@ public class printf extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 12, null, 16388);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm:106");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm:106");
             this.lambda$Fn1 = moduleMethod;
         }
 
@@ -2339,7 +2339,7 @@ public class printf extends ModuleBody {
         Lit25 = make3;
         Char make4 = Char.make(101);
         Lit13 = make4;
-        Lit33 = PairWithPosition.make(charR, PairWithPosition.make(charR2, PairWithPosition.make(charR3, PairWithPosition.make(make, PairWithPosition.make(make2, PairWithPosition.make(charR4, PairWithPosition.make(charR5, PairWithPosition.make(charR6, PairWithPosition.make(charR7, PairWithPosition.make(make3, PairWithPosition.make(make4, PairWithPosition.make(Lit55, PairWithPosition.make(Lit57, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1781780), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1781776), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1781772), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1781768), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777704), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777700), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777696), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777692), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777688), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777684), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777680), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777676), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/printf.scm", 1777671);
+        Lit33 = PairWithPosition.make(charR, PairWithPosition.make(charR2, PairWithPosition.make(charR3, PairWithPosition.make(make, PairWithPosition.make(make2, PairWithPosition.make(charR4, PairWithPosition.make(charR5, PairWithPosition.make(charR6, PairWithPosition.make(charR7, PairWithPosition.make(make3, PairWithPosition.make(make4, PairWithPosition.make(Lit55, PairWithPosition.make(Lit57, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1781780), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1781776), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1781772), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1781768), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777704), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777700), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777696), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777692), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777688), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777684), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777680), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777676), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/printf.scm", 1777671);
         ModuleBody moduleBody = $instance;
         stdio$Clparse$Mnfloat = new ModuleMethod(moduleBody, 22, Lit69, 8194);
         stdio$Clround$Mnstring = new ModuleMethod(moduleBody, 23, Lit70, 12291);

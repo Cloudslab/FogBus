@@ -133,7 +133,7 @@ public class ValuesMap extends MethodProc implements Inlineable {
         Expression app = new ApplyExp((Expression) lambda, startCounter >= 0 ? new Expression[]{new ReferenceExp(param), new ReferenceExp(counterDecl)} : new Expression[]{new ReferenceExp(param)});
         if (matchesMethod != null) {
             if (app.getType().getImplementationType() != Type.booleanType) {
-                app = new ApplyExp(matchesMethod, new Expression[]{app, new ReferenceExp(counterDecl)});
+                app = new ApplyExp(matchesMethod, app, new ReferenceExp(counterDecl));
             }
             app = new IfExp(app, new ReferenceExp(param), QuoteExp.voidExp);
         }

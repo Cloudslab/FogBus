@@ -63,8 +63,8 @@ public final class GeoJSONUtil {
         void apply(MapFeature mapFeature, Object obj);
     }
 
-    static class C04401 implements PropertyApplication {
-        C04401() {
+    static class C04451 implements PropertyApplication {
+        C04451() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -74,8 +74,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04412 implements PropertyApplication {
-        C04412() {
+    static class C04462 implements PropertyApplication {
+        C04462() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -85,8 +85,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04423 implements PropertyApplication {
-        C04423() {
+    static class C04473 implements PropertyApplication {
+        C04473() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -94,8 +94,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04434 implements PropertyApplication {
-        C04434() {
+    static class C04484 implements PropertyApplication {
+        C04484() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -103,8 +103,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04445 implements PropertyApplication {
-        C04445() {
+    static class C04495 implements PropertyApplication {
+        C04495() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -114,8 +114,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04456 implements PropertyApplication {
-        C04456() {
+    static class C04506 implements PropertyApplication {
+        C04506() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -125,8 +125,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04467 implements PropertyApplication {
-        C04467() {
+    static class C04517 implements PropertyApplication {
+        C04517() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -136,8 +136,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04478 implements PropertyApplication {
-        C04478() {
+    static class C04528 implements PropertyApplication {
+        C04528() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -145,8 +145,8 @@ public final class GeoJSONUtil {
         }
     }
 
-    static class C04489 implements PropertyApplication {
-        C04489() {
+    static class C04539 implements PropertyApplication {
+        C04539() {
         }
 
         public void apply(MapFeature feature, Object value) {
@@ -395,15 +395,15 @@ public final class GeoJSONUtil {
         colors.put("red", Integer.valueOf(-65536));
         colors.put("white", Integer.valueOf(-1));
         colors.put("yellow", Integer.valueOf(-256));
-        SUPPORTED_PROPERTIES.put(PROPERTY_ANCHOR_HORIZONTAL.toLowerCase(), new C04401());
-        SUPPORTED_PROPERTIES.put(PROPERTY_ANCHOR_VERTICAL.toLowerCase(), new C04412());
-        SUPPORTED_PROPERTIES.put(PROPERTY_DESCRIPTION, new C04423());
-        SUPPORTED_PROPERTIES.put(PROPERTY_DRAGGABLE, new C04434());
-        SUPPORTED_PROPERTIES.put(PROPERTY_FILL, new C04445());
-        SUPPORTED_PROPERTIES.put(PROPERTY_HEIGHT, new C04456());
-        SUPPORTED_PROPERTIES.put(PROPERTY_IMAGE, new C04467());
-        SUPPORTED_PROPERTIES.put(PROPERTY_INFOBOX, new C04478());
-        SUPPORTED_PROPERTIES.put(PROPERTY_STROKE, new C04489());
+        SUPPORTED_PROPERTIES.put(PROPERTY_ANCHOR_HORIZONTAL.toLowerCase(), new C04451());
+        SUPPORTED_PROPERTIES.put(PROPERTY_ANCHOR_VERTICAL.toLowerCase(), new C04462());
+        SUPPORTED_PROPERTIES.put(PROPERTY_DESCRIPTION, new C04473());
+        SUPPORTED_PROPERTIES.put(PROPERTY_DRAGGABLE, new C04484());
+        SUPPORTED_PROPERTIES.put(PROPERTY_FILL, new C04495());
+        SUPPORTED_PROPERTIES.put(PROPERTY_HEIGHT, new C04506());
+        SUPPORTED_PROPERTIES.put(PROPERTY_IMAGE, new C04517());
+        SUPPORTED_PROPERTIES.put(PROPERTY_INFOBOX, new C04528());
+        SUPPORTED_PROPERTIES.put(PROPERTY_STROKE, new C04539());
         SUPPORTED_PROPERTIES.put(PROPERTY_STROKE_WIDTH, new PropertyApplication() {
             public void apply(MapFeature feature, Object value) {
                 if (feature instanceof HasStroke) {

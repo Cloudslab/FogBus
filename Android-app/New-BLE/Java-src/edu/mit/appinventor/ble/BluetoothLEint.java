@@ -125,8 +125,8 @@ final class BluetoothLEint {
     private int txPower = -1;
     private final Handler uiThread;
 
-    class C03501 extends ScanCallback {
-        C03501() {
+    class C03551 extends ScanCallback {
+        C03551() {
         }
 
         public void onScanResult(int callbackType, final ScanResult scanResult) {
@@ -159,8 +159,8 @@ final class BluetoothLEint {
         }
     }
 
-    class C03512 extends BluetoothGattCallback {
-        C03512() {
+    class C03562 extends BluetoothGattCallback {
+        C03562() {
         }
 
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
@@ -258,8 +258,8 @@ final class BluetoothLEint {
         }
     }
 
-    class C03543 extends ScanCallback {
-        C03543() {
+    class C03593 extends ScanCallback {
+        C03593() {
         }
 
         public void onScanResult(int callbackType, ScanResult result) {
@@ -1004,9 +1004,9 @@ final class BluetoothLEint {
         this.mLeDeviceRssi = new HashMap();
         this.gattMap = new HashMap();
         this.uiThread = new Handler();
-        this.mDeviceScanCallback = new C03501();
-        this.mGattCallback = new C03512();
-        this.mAdvertisementScanCallback = new C03543();
+        this.mDeviceScanCallback = new C03551();
+        this.mGattCallback = new C03562();
+        this.mAdvertisementScanCallback = new C03593();
     }
 
     boolean isScanning() {
@@ -1616,8 +1616,8 @@ final class BluetoothLEint {
     void StartAdvertising(final String inData, final String serviceUuid) {
         new BLEAction<Void>("StartAdvertising") {
 
-            class C03521 extends AdvertiseCallback {
-                C03521() {
+            class C03571 extends AdvertiseCallback {
+                C03571() {
                 }
 
                 public void onStartSuccess(AdvertiseSettings settingsInEffect) {
@@ -1638,7 +1638,7 @@ final class BluetoothLEint {
                     BluetoothLEint.this.signalError("StartAdvertising", BluetoothLEint.ERROR_ADVERTISEMENTS_NOT_SUPPORTED, new Object[0]);
                 } else if (BluetoothLEint.this.validateUUID(serviceUuid, "Service", "StartAdvertising")) {
                     BluetoothLEint.this.mBluetoothLeAdvertiser = btAdapter.getBluetoothLeAdvertiser();
-                    AdvertiseCallback advertisingCallback = new C03521();
+                    AdvertiseCallback advertisingCallback = new C03571();
                     AdvertiseSettings advSettings = new AdvertiseSettings.Builder().setAdvertiseMode(2).setTxPowerLevel(3).setConnectable(false).build();
                     ParcelUuid pUuid = new ParcelUuid(UUID.fromString(serviceUuid));
                     AdvertiseData advData = new AdvertiseData.Builder().setIncludeDeviceName(true).addServiceUuid(pUuid).addServiceData(pUuid, inData.getBytes(Charset.forName("UTF-8"))).build();
@@ -1672,8 +1672,8 @@ final class BluetoothLEint {
     void ScanAdvertisements(final long scanPeriod) {
         new BLEAction<Void>("ScanAdvertisements") {
 
-            class C03531 implements Runnable {
-                C03531() {
+            class C03581 implements Runnable {
+                C03581() {
                 }
 
                 public void run() {
@@ -1687,7 +1687,7 @@ final class BluetoothLEint {
                 BluetoothLEint.this.scannedAdvertisers = new HashMap();
                 BluetoothLEint.this.scannedAdvertiserNames = new ArrayList();
                 BluetoothLEint.this.nameToAddress = new HashMap();
-                BluetoothLEint.this.uiThread.postDelayed(new C03531(), scanPeriod);
+                BluetoothLEint.this.uiThread.postDelayed(new C03581(), scanPeriod);
                 BluetoothAdapter btAdapter = obtainBluetoothAdapter();
                 if (btAdapter != null) {
                     BluetoothLEint.this.mBluetoothLeAdvertisementScanner = btAdapter.getBluetoothLeScanner();

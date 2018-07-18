@@ -40,6 +40,7 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
@@ -47,7 +48,7 @@ import java.util.Map.Entry;
 import org.json.JSONException;
 import org.json.XML;
 
-@DesignerComponent(category = ComponentCategory.CONNECTIVITY, description = "Non-visible component that provides functions for HTTP GET, POST, PUT, and DELETE requests.", iconName = "images/web.png", nonVisible = true, version = 4)
+@DesignerComponent(category = ComponentCategory.CONNECTIVITY, description = "Non-visible component that provides functions for HTTP GET, POST, PUT, and DELETE requests.", iconName = "images/web.png", nonVisible = true, version = 5)
 @UsesLibraries(libraries = "json.jar")
 @SimpleObject
 @UsesPermissions(permissionNames = "android.permission.INTERNET,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.READ_EXTERNAL_STORAGE")
@@ -389,6 +390,16 @@ public class Web extends AndroidNonvisibleComponent implements Component {
     }
 
     @SimpleFunction
+    public String UriDecode(String text) {
+        try {
+            return URLDecoder.decode(text, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            Log.e(LOG_TAG, "UTF-8 is unsupported?", e);
+            return "";
+        }
+    }
+
+    @SimpleFunction
     public Object JsonTextDecode(String jsonText) {
         try {
             return decodeJsonText(jsonText);
@@ -561,9 +572,9 @@ public class Web extends AndroidNonvisibleComponent implements Component {
     }
 
     private static String saveResponseContent(HttpURLConnection connection, String responseFileName, String responseType) throws IOException {
-        BufferedOutputStream out;
         File file = createFile(responseFileName, responseType);
         BufferedInputStream in = new BufferedInputStream(getConnectionStream(connection), 4096);
+        BufferedOutputStream out;
         try {
             out = new BufferedOutputStream(new FileOutputStream(file), 4096);
             while (true) {

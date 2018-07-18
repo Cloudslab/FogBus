@@ -626,7 +626,7 @@ public class CompileArith implements Inlineable {
         }
         Expression arg = exp.getArg(0);
         if (kind == 1 || kind == 2) {
-            return visitor.visitApplyOnly(new ApplyExp(BitwiseOp.xor, new Expression[]{arg, QuoteExp.getInstance(IntNum.minusOne())}), null);
+            return visitor.visitApplyOnly(new ApplyExp(BitwiseOp.xor, arg, QuoteExp.getInstance(IntNum.minusOne())), null);
         }
         String cname;
         if (kind == 4) {
@@ -684,7 +684,7 @@ public class CompileArith implements Inlineable {
         int len = args.length;
         Expression prev = args[0];
         for (int i = 1; i < len; i++) {
-            Expression next = new ApplyExp(rproc, new Expression[]{prev, args[i]});
+            Expression next = new ApplyExp(rproc, prev, args[i]);
             Expression inlined = visitor.maybeInline(next, null, proc);
             prev = inlined != null ? inlined : next;
         }

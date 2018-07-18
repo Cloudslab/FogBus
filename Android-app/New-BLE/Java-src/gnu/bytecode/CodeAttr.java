@@ -1482,7 +1482,7 @@ public class CodeAttr extends Attribute implements AttrContainer {
         label.setTypes(this);
         fixupAdd(4, label);
         reserve(3);
-        put1(YaVersion.YOUNG_ANDROID_VERSION);
+        put1(167);
         this.PC += 2;
         setUnreachable();
     }
@@ -1929,7 +1929,7 @@ public class CodeAttr extends Attribute implements AttrContainer {
             reserve(1);
             put1(177);
         } else {
-            emitTypedOp(172, popType().promote());
+            emitTypedOp((int) YaVersion.YOUNG_ANDROID_VERSION, popType().promote());
         }
         setUnreachable();
     }

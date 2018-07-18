@@ -118,8 +118,8 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         }
     }
 
-    class C04611 extends ViewPropertyAnimatorListenerAdapter {
-        C04611() {
+    class C04651 extends ViewPropertyAnimatorListenerAdapter {
+        C04651() {
         }
 
         public void onAnimationEnd(View view) {
@@ -133,8 +133,8 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         }
     }
 
-    class C04622 extends ViewPropertyAnimatorListenerAdapter {
-        C04622() {
+    class C04662 extends ViewPropertyAnimatorListenerAdapter {
+        C04662() {
         }
 
         public void onAnimationEnd(View view) {
@@ -162,8 +162,8 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         this.mInnerInsets = new Rect();
         this.mLastInnerInsets = new Rect();
         this.ACTION_BAR_ANIMATE_DELAY = 600;
-        this.mTopAnimatorListener = new C04611();
-        this.mBottomAnimatorListener = new C04622();
+        this.mTopAnimatorListener = new C04651();
+        this.mBottomAnimatorListener = new C04662();
         this.mRemoveActionBarHideOffset = new C01163();
         this.mAddActionBarHideOffset = new C01174();
         init(context);

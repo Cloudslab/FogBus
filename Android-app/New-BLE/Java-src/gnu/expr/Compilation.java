@@ -2434,7 +2434,7 @@ Error: jadx.core.utils.exceptions.JadxRuntimeException: Can't find block by offs
     }
 
     public static ApplyExp makeCoercion(Expression value, Expression type) {
-        return new ApplyExp(new QuoteExp(Convert.getInstance()), new Expression[]{type, value});
+        return new ApplyExp(new QuoteExp(Convert.getInstance()), type, value);
     }
 
     public static Expression makeCoercion(Expression value, Type type) {
