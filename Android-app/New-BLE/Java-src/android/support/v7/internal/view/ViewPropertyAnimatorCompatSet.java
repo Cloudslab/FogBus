@@ -14,13 +14,13 @@ public class ViewPropertyAnimatorCompatSet {
     private Interpolator mInterpolator;
     private boolean mIsStarted;
     private ViewPropertyAnimatorListener mListener;
-    private final ViewPropertyAnimatorListenerAdapter mProxyListener = new C04601();
+    private final ViewPropertyAnimatorListenerAdapter mProxyListener = new C04641();
 
-    class C04601 extends ViewPropertyAnimatorListenerAdapter {
+    class C04641 extends ViewPropertyAnimatorListenerAdapter {
         private int mProxyEndCount = 0;
         private boolean mProxyStarted = false;
 
-        C04601() {
+        C04641() {
         }
 
         public void onAnimationStart(View view) {

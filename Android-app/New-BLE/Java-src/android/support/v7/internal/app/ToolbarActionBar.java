@@ -36,7 +36,7 @@ public class ToolbarActionBar extends ActionBar {
     private boolean mLastMenuVisibility;
     private ListMenuPresenter mListMenuPresenter;
     private boolean mMenuCallbackSet;
-    private final OnMenuItemClickListener mMenuClicker = new C04152();
+    private final OnMenuItemClickListener mMenuClicker = new C04202();
     private final Runnable mMenuInvalidator = new C01121();
     private ArrayList<OnMenuVisibilityListener> mMenuVisibilityListeners = new ArrayList();
     private boolean mToolbarMenuPrepared;
@@ -51,8 +51,8 @@ public class ToolbarActionBar extends ActionBar {
         }
     }
 
-    class C04152 implements OnMenuItemClickListener {
-        C04152() {
+    class C04202 implements OnMenuItemClickListener {
+        C04202() {
         }
 
         public boolean onMenuItemClick(MenuItem item) {

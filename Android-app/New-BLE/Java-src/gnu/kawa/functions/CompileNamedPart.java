@@ -283,7 +283,7 @@ public class CompileNamedPart {
                 return QuoteExp.getInstance(new GetNamedInstancePart(val.toString()));
             }
         }
-        return new ApplyExp(Invoke.make, new Expression[]{new QuoteExp(ClassType.make("gnu.kawa.functions.GetNamedInstancePart")), member});
+        return new ApplyExp(Invoke.make, new QuoteExp(ClassType.make("gnu.kawa.functions.GetNamedInstancePart")), member);
     }
 
     public static Expression validateGetNamedInstancePart(ApplyExp exp, InlineCalls visitor, Type required, Procedure proc) {
@@ -310,6 +310,6 @@ public class CompileNamedPart {
         exp.visitArgs(visitor);
         Expression[] args = exp.getArgs();
         String pname = ((SetNamedInstancePart) proc).pname;
-        return visitor.visitApplyOnly(new ApplyExp(SlotSet.set$Mnfield$Ex, new Expression[]{args[0], new QuoteExp(pname), args[1]}), required);
+        return visitor.visitApplyOnly(new ApplyExp(SlotSet.set$Mnfield$Ex, args[0], new QuoteExp(pname), args[1]), required);
     }
 }

@@ -1,7 +1,7 @@
 Signature-Version: 1.0
 SHA1-Digest-Manifest-Main-Attributes: sY6+RQ4DWdnxCfSpiwTT6GRIwA0=
 Created-By: 1.7.0_45 (Oracle Corporation)
-SHA1-Digest-Manifest: 4U7vGWA+eBSR/T7fn5o/ghENmzc=
+SHA1-Digest-Manifest: dRcXcIF/VjkV511sT56+u02KQz0=
 
 Name: res/drawable/abc_btn_check_material.xml
 SHA1-Digest: qqKDcqHOhBip1wTOipczEivN5o8=
@@ -86,10 +86,6 @@ SHA1-Digest: ViuGJMQKprUdITWoAs1n21Kd9ZE=
 
 Name: res/layout/support_simple_spinner_dropdown_item.xml
 SHA1-Digest: hNGwBkoSgpK4NcqrC4FcpZjl/YY=
-
-Name: assets/external_comps/edu.mit.appinventor.ble/extension.properti
- es
-SHA1-Digest: jtxU+zhc/GvfB9mOAx0ekaHvs8w=
 
 Name: res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png
 SHA1-Digest: XEff6jUDEFWHjcuOO3DKy9ou9IE=
@@ -402,11 +398,11 @@ SHA1-Digest: 2lRuxodMxnuWn+IclaJShuAV5+Y=
 Name: res/layout-v17/notification_template_big_media_narrow.xml
 SHA1-Digest: Gf50c6WVdba7mjwGhXAfi8nO1TA=
 
-Name: res/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png
-SHA1-Digest: wdsBgVfWTR47Q52inLJ7Dd/C6V0=
-
 Name: res/color/abc_primary_text_disable_only_material_dark.xml
 SHA1-Digest: IDcAhz2R68G5Bb60gXT/Ea0IK/4=
+
+Name: res/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png
+SHA1-Digest: wdsBgVfWTR47Q52inLJ7Dd/C6V0=
 
 Name: res/color/abc_primary_text_material_dark.xml
 SHA1-Digest: sQyp118xgNq10Z7nfRx7Ws+0kx4=
@@ -420,11 +416,11 @@ SHA1-Digest: +HWkIZrAQsQpU0N7PJk2A2VU+XA=
 Name: res/layout/abc_action_menu_layout.xml
 SHA1-Digest: jboorR0ZZkhxjihXXSraqWy+8n0=
 
-Name: res/drawable-xxhdpi-v4/abc_ic_clear_mtrl_alpha.png
-SHA1-Digest: ZZWyDow+zrRVr48KPd70SSV/Icw=
-
 Name: res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png
 SHA1-Digest: OoW+UsZxT3+boQlDAN2FOFBlb3g=
+
+Name: res/drawable-xxhdpi-v4/abc_ic_clear_mtrl_alpha.png
+SHA1-Digest: ZZWyDow+zrRVr48KPd70SSV/Icw=
 
 Name: res/layout-v21/abc_screen_toolbar.xml
 SHA1-Digest: m8AMnitKBzTLXj6bY+u4oI6oN2s=
@@ -657,7 +653,7 @@ Name: res/anim/zoom_exit.xml
 SHA1-Digest: Pr9rKYxLrT0ThcQ3+N3MJpp/zaM=
 
 Name: classes.dex
-SHA1-Digest: qbXx6WTlbEz7vQYLr7N9vxH34VM=
+SHA1-Digest: o3iBhSedmL+U6oZhX/i/oXWDdhY=
 
 Name: res/layout/abc_screen_content_include.xml
 SHA1-Digest: PXi6QrDDesoRdh852GncC34a4+E=
@@ -693,17 +689,14 @@ SHA1-Digest: XhJt+0uemfensB5jPL5pYEy1IQs=
 Name: res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
 SHA1-Digest: j7oKd56yOLmG/qIDUU3a+2EFFV4=
 
-Name: assets/external_comps/edu.mit.appinventor.ble/components.json
-SHA1-Digest: 1MNzgGqCNHgHQc+gCdzfDdTDPGI=
-
 Name: res/drawable-mdpi-v4/abc_text_cursor_mtrl_alpha.9.png
 SHA1-Digest: EJF/sBbo0ujvA5DSk3RpZy0K9AQ=
 
-Name: res/anim/slide_v_enter_reverse.xml
-SHA1-Digest: KGjl9372Wi4UEPKkQA55aw1JUww=
-
 Name: res/anim/abc_slide_out_bottom.xml
 SHA1-Digest: gyVlUI5w93FowhEdR8/uH4dkQUQ=
+
+Name: res/anim/slide_v_enter_reverse.xml
+SHA1-Digest: KGjl9372Wi4UEPKkQA55aw1JUww=
 
 Name: res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png
 SHA1-Digest: 4CNgdraLjH84scvRJUfzItc3PbA=
@@ -728,9 +721,6 @@ SHA1-Digest: Q/SgvjTDdnY3tvATVbiTsSM6cfo=
 
 Name: res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png
 SHA1-Digest: 16vIEVXQ+k0+9qfLK8Cds0zIZCY=
-
-Name: assets/external_comps/edu.mit.appinventor.ble/classes.jar
-SHA1-Digest: J27RFqqBqTEugZOnkcSMqzSrd3I=
 
 Name: res/drawable-hdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png
 SHA1-Digest: eTjeUWohlvqhSKtb/IoGHnZ045U=
@@ -836,10 +826,6 @@ SHA1-Digest: XI/8mKg+lFBg6GPmpkV9cv9l9n4=
 Name: res/drawable-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png
 SHA1-Digest: 9xaOt2IPC9LDuFLaZGGLGevrCPA=
 
-Name: assets/external_comps/edu.mit.appinventor.ble/files/component_bu
- ild_infos.json
-SHA1-Digest: aBL33u64dIL9b+cX+fDN0+8a/Mg=
-
 Name: res/drawable/abc_btn_borderless_material.xml
 SHA1-Digest: a34HFTCLfE6qRhIYeb2+m0GeFSM=
 
@@ -854,10 +840,6 @@ SHA1-Digest: GBTGtTneT/y1hAQqRkkoNwIIONs=
 
 Name: res/drawable-mdpi-v4/abc_ic_clear_mtrl_alpha.png
 SHA1-Digest: Nnv6rsiIRVznO++FM4fqetZP2Dw=
-
-Name: assets/external_comps/edu.mit.appinventor.ble/files/AndroidRunti
- me.jar
-SHA1-Digest: n7gTjVFJ8MVJhqJapQqGUElt/v0=
 
 Name: res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
 SHA1-Digest: CwBgZCf6HQH3oXQJ4vFliod7poc=

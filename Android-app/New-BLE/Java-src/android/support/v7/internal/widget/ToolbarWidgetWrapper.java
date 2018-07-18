@@ -60,10 +60,10 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
         }
     }
 
-    class C04632 extends ViewPropertyAnimatorListenerAdapter {
+    class C04672 extends ViewPropertyAnimatorListenerAdapter {
         private boolean mCanceled = false;
 
-        C04632() {
+        C04672() {
         }
 
         public void onAnimationEnd(View view) {
@@ -77,8 +77,8 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
         }
     }
 
-    class C04643 extends ViewPropertyAnimatorListenerAdapter {
-        C04643() {
+    class C04683 extends ViewPropertyAnimatorListenerAdapter {
+        C04683() {
         }
 
         public void onAnimationStart(View view) {
@@ -491,9 +491,9 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
 
     public void animateToVisibility(int visibility) {
         if (visibility == 8) {
-            ViewCompat.animate(this.mToolbar).alpha(0.0f).setListener(new C04632());
+            ViewCompat.animate(this.mToolbar).alpha(0.0f).setListener(new C04672());
         } else if (visibility == 0) {
-            ViewCompat.animate(this.mToolbar).alpha(1.0f).setListener(new C04643());
+            ViewCompat.animate(this.mToolbar).alpha(1.0f).setListener(new C04683());
         }
     }
 

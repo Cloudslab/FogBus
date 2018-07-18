@@ -56,6 +56,8 @@ public final class MapFactory {
 
         int getOverlayCount();
 
+        float getRotation();
+
         View getView();
 
         int getZoom();
@@ -93,6 +95,8 @@ public final class MapFactory {
         void setMapType(MapType mapType);
 
         void setPanEnabled(boolean z);
+
+        void setRotation(float f);
 
         void setRotationEnabled(boolean z);
 

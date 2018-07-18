@@ -45,8 +45,8 @@ public class ReplDocument extends DefaultStyledDocument implements DocumentListe
     int paneCount;
     Future thread;
 
-    class C03754 implements Runnable {
-        C03754() {
+    class C03804 implements Runnable {
+        C03804() {
         }
 
         public void run() {
@@ -74,8 +74,8 @@ public class ReplDocument extends DefaultStyledDocument implements DocumentListe
         void closed(ReplDocument replDocument);
     }
 
-    class C04571 extends QueueReader {
-        C04571() {
+    class C04611 extends QueueReader {
+        C04611() {
         }
 
         public void checkAvailable() {
@@ -103,14 +103,14 @@ public class ReplDocument extends DefaultStyledDocument implements DocumentListe
         ModuleBody.exitIncrement();
         addDocumentListener(this);
         this.language = language;
-        this.in_r = new C04571();
+        this.in_r = new C04611();
         this.out_stream = new ReplPaneOutPort(this, "/dev/stdout", defaultStyle);
         this.err_stream = new ReplPaneOutPort(this, "/dev/stderr", redStyle);
         this.in_p = new GuiInPort(this.in_r, Path.valueOf("/dev/stdin"), this.out_stream, this);
         this.thread = Future.make(new repl(language) {
 
-            class C03731 implements Runnable {
-                C03731() {
+            class C03781 implements Runnable {
+                C03781() {
                 }
 
                 public void run() {
@@ -125,7 +125,7 @@ public class ReplDocument extends DefaultStyledDocument implements DocumentListe
                 }
                 ReplDocument.this.environment = env;
                 Shell.run(this.language, env);
-                SwingUtilities.invokeLater(new C03731());
+                SwingUtilities.invokeLater(new C03781());
                 return Values.empty;
             }
         }, penvironment, this.in_p, this.out_stream, this.err_stream);
@@ -171,7 +171,7 @@ public class ReplDocument extends DefaultStyledDocument implements DocumentListe
     }
 
     public void checkingPendingInput() {
-        SwingUtilities.invokeLater(new C03754());
+        SwingUtilities.invokeLater(new C03804());
     }
 
     public void focusGained(FocusEvent e) {

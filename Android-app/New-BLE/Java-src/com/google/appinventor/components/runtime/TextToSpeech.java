@@ -43,8 +43,8 @@ public class TextToSpeech extends AndroidNonvisibleComponent implements Componen
     private float speechRate = 1.0f;
     private final ITextToSpeech tts;
 
-    class C04351 implements TextToSpeechCallback {
-        C04351() {
+    class C04401 implements TextToSpeechCallback {
+        C04401() {
         }
 
         public void onSuccess() {
@@ -92,7 +92,7 @@ public class TextToSpeech extends AndroidNonvisibleComponent implements Componen
             useExternalLibrary = false;
         }
         Log.v(LOG_TAG, "Using " + (useExternalLibrary ? "external" : "internal") + " TTS library.");
-        TextToSpeechCallback callback = new C04351();
+        TextToSpeechCallback callback = new C04401();
         this.tts = useExternalLibrary ? new ExternalTextToSpeech(container, callback) : new InternalTextToSpeech(container.$context(), callback);
         this.form.registerForOnStop(this);
         this.form.registerForOnResume(this);

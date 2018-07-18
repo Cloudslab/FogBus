@@ -88,7 +88,7 @@ public class define_syntax extends Syntax {
             if (rule instanceof LambdaExp) {
                 ((LambdaExp) rule).setFlag(256);
             }
-            rule = new ApplyExp(this.hygienic ? makeHygienic : makeNonHygienic, new Expression[]{new QuoteExp(name2), rule, ThisExp.makeGivingContext(defs)});
+            rule = new ApplyExp(this.hygienic ? makeHygienic : makeNonHygienic, new QuoteExp(name2), rule, ThisExp.makeGivingContext(defs));
             decl.noteValue(rule);
             decl.setProcedureDecl(true);
             if (decl.context instanceof ModuleExp) {
@@ -99,7 +99,7 @@ public class define_syntax extends Syntax {
                 }
                 tr.formStack.addElement(result);
                 if (tr.immediate) {
-                    tr.formStack.addElement(new ApplyExp(setCapturedScope, new Expression[]{new ReferenceExp(decl), new QuoteExp(defs)}));
+                    tr.formStack.addElement(new ApplyExp(setCapturedScope, new ReferenceExp(decl), new QuoteExp(defs)));
                 }
             }
         }

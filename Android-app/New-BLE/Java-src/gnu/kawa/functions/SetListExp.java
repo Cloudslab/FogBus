@@ -20,6 +20,6 @@ class SetListExp extends ApplyExp {
         if (exp.getArgs().length != 2) {
             return exp;
         }
-        return Compilation.makeCoercion(visitor.visitApplyOnly(new ApplyExp(Invoke.invoke, new Expression[]{getArgs()[0], QuoteExp.getInstance("set"), Compilation.makeCoercion(exp.getArgs()[0], Type.intType), exp.getArgs()[1]}), required), Type.voidType);
+        return Compilation.makeCoercion(visitor.visitApplyOnly(new ApplyExp(Invoke.invoke, getArgs()[0], QuoteExp.getInstance("set"), Compilation.makeCoercion(exp.getArgs()[0], Type.intType), exp.getArgs()[1]), required), Type.voidType);
     }
 }

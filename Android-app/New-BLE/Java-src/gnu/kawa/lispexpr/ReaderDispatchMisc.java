@@ -34,13 +34,13 @@ public class ReaderDispatchMisc extends ReadTableEntry {
     }
 
     public Object read(Lexer in, int ch, int count) throws IOException, SyntaxException {
-        String name;
         LispReader reader = (LispReader) in;
         char saveReadState = '\u0000';
         if (this.code >= 0) {
             ch = this.code;
         }
         GeneralHashTable<Integer, Object> map;
+        String name;
         LineBufferedReader port;
         switch (ch) {
             case 33:

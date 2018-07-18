@@ -61,19 +61,18 @@ public class ApplyExp extends Expression {
         return this.func instanceof QuoteExp ? ((QuoteExp) this.func).getValue() : null;
     }
 
-    public ApplyExp(Expression f, Expression[] a) {
+    public ApplyExp(Expression f, Expression... a) {
         this.func = f;
         this.args = a;
     }
 
-    public ApplyExp(Procedure p, Expression[] a) {
+    public ApplyExp(Procedure p, Expression... a) {
         this.func = new QuoteExp(p);
         this.args = a;
     }
 
-    public ApplyExp(Method m, Expression[] a) {
-        this.func = new QuoteExp(new PrimProcedure(m));
-        this.args = a;
+    public ApplyExp(Method m, Expression... a) {
+        this(new QuoteExp(new PrimProcedure(m)), a);
     }
 
     protected boolean mustCompile() {

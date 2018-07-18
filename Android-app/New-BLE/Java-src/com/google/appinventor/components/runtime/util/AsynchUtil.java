@@ -10,8 +10,8 @@ public class AsynchUtil {
     public static void runAsynchronously(final Handler androidUIHandler, final Runnable call, final Runnable callback) {
         new Thread(new Runnable() {
 
-            class C03171 implements Runnable {
-                C03171() {
+            class C03181 implements Runnable {
+                C03181() {
                 }
 
                 public void run() {
@@ -22,7 +22,7 @@ public class AsynchUtil {
             public void run() {
                 call.run();
                 if (callback != null) {
-                    androidUIHandler.post(new C03171());
+                    androidUIHandler.post(new C03181());
                 }
             }
         }).start();

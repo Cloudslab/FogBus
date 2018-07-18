@@ -76,7 +76,7 @@ public class GetModuleClass extends ProcedureN implements Inlineable {
                 value = QuoteExp.getInstance(path);
             } else {
                 Expression clas = new ApplyExp(getModuleClass, Expression.noExpressions);
-                value = new ApplyExp(maker, new Expression[]{clas});
+                value = new ApplyExp(maker, clas);
             }
             decl.setValue(value);
             comp.mainLambda.add(null, decl);
@@ -85,6 +85,6 @@ public class GetModuleClass extends ProcedureN implements Inlineable {
         if (comp.immediate) {
             return ref;
         }
-        return new ApplyExp(getModuleUriDummy, new Expression[]{ref});
+        return new ApplyExp(getModuleUriDummy, ref);
     }
 }

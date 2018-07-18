@@ -374,7 +374,7 @@ public class srfi13 extends ModuleBody {
 
         public frame0() {
             PropertySet moduleMethod = new ModuleMethod(this, 4, null, 12291);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:174");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:174");
             this.lambda$Fn4 = moduleMethod;
         }
 
@@ -653,7 +653,7 @@ public class srfi13 extends ModuleBody {
             throw r6;
         L_0x014a:
             r5 = move-exception;
-            r6 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+            r6 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
             r7 = 515; // 0x203 float:7.22E-43 double:2.544E-321;
             r8 = 5;
             r5.setLine(r6, r7, r8);
@@ -666,7 +666,7 @@ public class srfi13 extends ModuleBody {
             throw r7;
         L_0x015d:
             r5 = move-exception;
-            r6 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+            r6 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
             r7 = 518; // 0x206 float:7.26E-43 double:2.56E-321;
             r8 = 9;
             r5.setLine(r6, r7, r8);
@@ -1193,7 +1193,7 @@ public class srfi13 extends ModuleBody {
 
         public frame1() {
             PropertySet moduleMethod = new ModuleMethod(this, 5, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:227");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:227");
             this.lambda$Fn6 = moduleMethod;
         }
 
@@ -3356,7 +3356,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mnhash, this.f56s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 912, 55);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 912, 55);
                 throw e;
             }
         }
@@ -3405,7 +3405,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mnhash$Mnci, this.f57s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 921, 58);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 921, 58);
                 throw e;
             }
         }
@@ -3773,7 +3773,7 @@ public class srfi13 extends ModuleBody {
 
         public frame64() {
             PropertySet moduleMethod = new ModuleMethod(this, 128, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:996");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:996");
             this.lambda$Fn151 = moduleMethod;
         }
 
@@ -3824,7 +3824,7 @@ public class srfi13 extends ModuleBody {
 
         public frame65() {
             PropertySet moduleMethod = new ModuleMethod(this, 129, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1004");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1004");
             this.lambda$Fn152 = moduleMethod;
         }
 
@@ -3864,7 +3864,7 @@ public class srfi13 extends ModuleBody {
 
         public frame66() {
             PropertySet moduleMethod = new ModuleMethod(this, TransportMediator.KEYCODE_MEDIA_RECORD, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1010");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1010");
             this.lambda$Fn153 = moduleMethod;
         }
 
@@ -3904,7 +3904,7 @@ public class srfi13 extends ModuleBody {
 
         public frame67() {
             PropertySet moduleMethod = new ModuleMethod(this, 131, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1016");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1016");
             this.lambda$Fn154 = moduleMethod;
         }
 
@@ -3974,7 +3974,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mntrim, this.f70s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1023, 53);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1023, 53);
                 throw e;
             }
         }
@@ -4000,7 +4000,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e3, "%substring/shared", 0, obj);
                 }
             } catch (UnboundLocationException e4) {
-                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1024, 29);
+                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1024, 29);
                 throw e4;
             }
         }
@@ -4044,7 +4044,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mntrim$Mnright, this.f71s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1030, 59);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1030, 59);
                 throw e;
             }
         }
@@ -4068,7 +4068,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e2, "%substring/shared", 0, obj);
                 }
             } catch (UnboundLocationException e3) {
-                e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1031, 35);
+                e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1031, 35);
                 throw e3;
             }
         }
@@ -4175,7 +4175,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mntrim$Mnboth, this.f73s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1037, 58);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1037, 58);
                 throw e;
             }
         }
@@ -4199,7 +4199,7 @@ public class srfi13 extends ModuleBody {
                                 throw new WrongType(e, "%substring/shared", 2, apply2);
                             }
                         } catch (UnboundLocationException e2) {
-                            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1040, 58);
+                            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1040, 58);
                             throw e2;
                         }
                     } catch (ClassCastException e3) {
@@ -4209,7 +4209,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e4, "%substring/shared", 0, obj);
                 }
             } catch (UnboundLocationException e22) {
-                e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1038, 29);
+                e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1038, 29);
                 throw e22;
             }
         }
@@ -4254,7 +4254,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mnpad$Mnright, this.f75s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1046, 58);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1046, 58);
                 throw e;
             }
         }
@@ -4269,9 +4269,9 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda162(Object start, Object end) {
-            Object obj;
             try {
                 Scheme.applyToArgs.apply4(srfi13.loc$check$Mnarg.get(), srfi13.lambda$Fn163, this.f74n, srfi13.string$Mnpad$Mnright);
+                Object obj;
                 if (Scheme.numLEq.apply2(this.f74n, AddOp.$Mn.apply2(end, start)) != Boolean.FALSE) {
                     obj = this.f75s;
                     try {
@@ -4313,7 +4313,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e2222, "make-string", 1, obj2);
                 }
             } catch (UnboundLocationException e4) {
-                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1047, 7);
+                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1047, 7);
                 throw e4;
             }
         }
@@ -4358,7 +4358,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mnpad, this.f77s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1058, 52);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1058, 52);
                 throw e;
             }
         }
@@ -4373,10 +4373,10 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda165(Object start, Object end) {
+            Object obj;
             try {
                 Scheme.applyToArgs.apply4(srfi13.loc$check$Mnarg.get(), srfi13.lambda$Fn166, this.f76n, srfi13.string$Mnpad);
                 Object len = AddOp.$Mn.apply2(end, start);
-                Object obj;
                 if (Scheme.numLEq.apply2(this.f76n, len) != Boolean.FALSE) {
                     obj = this.f77s;
                     try {
@@ -4423,7 +4423,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e22222, "make-string", 1, obj2);
                 }
             } catch (UnboundLocationException e4) {
-                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1059, 7);
+                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1059, 7);
                 throw e4;
             }
         }
@@ -4497,7 +4497,7 @@ public class srfi13 extends ModuleBody {
                     try {
                         obj = Scheme.applyToArgs.apply2(srfi13.loc$char$Mnset.get(), this.criterion);
                     } catch (UnboundLocationException e3) {
-                        e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1097, 26);
+                        e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1097, 26);
                         throw e3;
                     }
                 } else {
@@ -4513,7 +4513,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e22, "make-string", 1, len);
                 }
             } catch (UnboundLocationException e32) {
-                e32.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1096, 22);
+                e32.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1096, 22);
                 throw e32;
             }
         }
@@ -4531,13 +4531,13 @@ public class srfi13 extends ModuleBody {
 
         public frame74() {
             PropertySet moduleMethod = new ModuleMethod(this, 142, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1089");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1089");
             this.lambda$Fn169 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 143, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1099");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1099");
             this.lambda$Fn170 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 144, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1104");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1104");
             this.lambda$Fn171 = moduleMethod;
         }
 
@@ -4591,7 +4591,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return Scheme.applyToArgs.apply3(srfi13.loc$char$Mnset$Mncontains$Qu.get(), this.cset, c) != Boolean.FALSE ? i : AddOp.$Pl.apply2(i, srfi13.Lit1);
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1099, 45);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1099, 45);
                 throw e;
             }
         }
@@ -4630,7 +4630,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e3, "string-set!", 1, obj);
                 }
             } catch (UnboundLocationException e4) {
-                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_WEB_UNABLE_TO_POST_OR_PUT_FILE, 35);
+                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_WEB_UNABLE_TO_POST_OR_PUT_FILE, 35);
                 throw e4;
             }
         }
@@ -4704,7 +4704,7 @@ public class srfi13 extends ModuleBody {
                     try {
                         obj = Scheme.applyToArgs.apply2(srfi13.loc$char$Mnset.get(), this.criterion);
                     } catch (UnboundLocationException e3) {
-                        e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1125, 26);
+                        e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1125, 26);
                         throw e3;
                     }
                 } else {
@@ -4720,7 +4720,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e22, "make-string", 1, len);
                 }
             } catch (UnboundLocationException e32) {
-                e32.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1124, 22);
+                e32.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1124, 22);
                 throw e32;
             }
         }
@@ -4738,13 +4738,13 @@ public class srfi13 extends ModuleBody {
 
         public frame76() {
             PropertySet moduleMethod = new ModuleMethod(this, 147, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1116");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1116");
             this.lambda$Fn174 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 148, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1128");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1128");
             this.lambda$Fn175 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 149, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1133");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1133");
             this.lambda$Fn176 = moduleMethod;
         }
 
@@ -4801,7 +4801,7 @@ public class srfi13 extends ModuleBody {
                 }
                 return i;
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1128, 45);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1128, 45);
                 throw e;
             }
         }
@@ -4840,7 +4840,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e3, "string-set!", 1, obj);
                 }
             } catch (UnboundLocationException e4) {
-                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1133, 35);
+                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1133, 35);
                 throw e4;
             }
         }
@@ -4955,7 +4955,7 @@ public class srfi13 extends ModuleBody {
                                         throw new WrongType(e32, "string-ref", 1, obj);
                                     }
                                 } catch (UnboundLocationException e4) {
-                                    e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1162, 9);
+                                    e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1162, 9);
                                     throw e4;
                                 }
                             } catch (ClassCastException e2222) {
@@ -4996,7 +4996,7 @@ public class srfi13 extends ModuleBody {
                         return misc.error$V("Second param is neither char-set, char, or predicate procedure.", new Object[]{srfi13.string$Mnindex, this.criterion});
                     }
                 } catch (UnboundLocationException e42) {
-                    e42.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1159, 5);
+                    e42.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1159, 5);
                     throw e42;
                 }
             }
@@ -5044,9 +5044,9 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda180(Object start, Object end) {
+            Object i;
             Object apply2;
             Object obj;
-            Object i;
             boolean x;
             if (characters.isChar(this.criterion)) {
                 i = AddOp.$Mn.apply2(end, srfi13.Lit1);
@@ -5112,7 +5112,7 @@ public class srfi13 extends ModuleBody {
                                         throw new WrongType(e32, "string-ref", 1, obj);
                                     }
                                 } catch (UnboundLocationException e4) {
-                                    e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1182, 9);
+                                    e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1182, 9);
                                     throw e4;
                                 }
                             } catch (ClassCastException e2222) {
@@ -5153,7 +5153,7 @@ public class srfi13 extends ModuleBody {
                         return misc.error$V("Second param is neither char-set, char, or predicate procedure.", new Object[]{srfi13.string$Mnindex$Mnright, this.criterion});
                     }
                 } catch (UnboundLocationException e42) {
-                    e42.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1179, 5);
+                    e42.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1179, 5);
                     throw e42;
                 }
             }
@@ -5201,10 +5201,10 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda182(Object start, Object end) {
-            Object apply2;
-            Object i;
-            boolean x;
             Object obj;
+            Object i;
+            Object apply2;
+            boolean x;
             if (characters.isChar(this.criterion)) {
                 i = start;
                 while (true) {
@@ -5272,7 +5272,7 @@ public class srfi13 extends ModuleBody {
                                     throw new WrongType(e32, "string-ref", 1, obj);
                                 }
                             } catch (UnboundLocationException e4) {
-                                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1203, 9);
+                                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1203, 9);
                                 throw e4;
                             }
                         } catch (ClassCastException e2222) {
@@ -5313,7 +5313,7 @@ public class srfi13 extends ModuleBody {
                     return misc.error$V("Second param is neither char-set, char, or predicate procedure.", new Object[]{srfi13.string$Mnskip, this.criterion});
                 }
             } catch (UnboundLocationException e42) {
-                e42.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1200, 5);
+                e42.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1200, 5);
                 throw e42;
             }
         }
@@ -5421,10 +5421,10 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda184(Object start, Object end) {
+            Object obj;
             Object i;
             Object apply2;
             boolean x;
-            Object obj;
             if (characters.isChar(this.criterion)) {
                 i = AddOp.$Mn.apply2(end, srfi13.Lit1);
                 while (true) {
@@ -5492,7 +5492,7 @@ public class srfi13 extends ModuleBody {
                                     throw new WrongType(e32, "string-ref", 1, obj);
                                 }
                             } catch (UnboundLocationException e4) {
-                                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1225, 9);
+                                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1225, 9);
                                 throw e4;
                             }
                         } catch (ClassCastException e2222) {
@@ -5533,7 +5533,7 @@ public class srfi13 extends ModuleBody {
                     return misc.error$V("CRITERION param is neither char-set or char.", new Object[]{srfi13.string$Mnskip$Mnright, this.criterion});
                 }
             } catch (UnboundLocationException e42) {
-                e42.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1222, 5);
+                e42.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1222, 5);
                 throw e42;
             }
         }
@@ -5581,22 +5581,22 @@ public class srfi13 extends ModuleBody {
 
         Object lambda186(Object start, Object end) {
             Object obj;
-            Object obj2;
             Object i;
             Object i2;
+            Object obj2;
             if (characters.isChar(this.criterion)) {
-                obj2 = srfi13.Lit0;
+                obj = srfi13.Lit0;
                 i = start;
                 while (Scheme.numGEq.apply2(i, end) == Boolean.FALSE) {
                     i2 = AddOp.$Pl.apply2(i, srfi13.Lit1);
-                    obj = this.criterion;
+                    obj2 = this.criterion;
                     try {
-                        Char charR = (Char) obj;
+                        Char charR = (Char) obj2;
                         Object obj3 = this.f81s;
                         try {
                             try {
                                 if (characters.isChar$Eq(charR, Char.make(strings.stringRef((CharSequence) obj3, ((Number) i).intValue())))) {
-                                    obj2 = AddOp.$Pl.apply2(obj2, srfi13.Lit1);
+                                    obj = AddOp.$Pl.apply2(obj, srfi13.Lit1);
                                 }
                                 i = i2;
                             } catch (ClassCastException e) {
@@ -5606,16 +5606,16 @@ public class srfi13 extends ModuleBody {
                             throw new WrongType(e2, "string-ref", 1, obj3);
                         }
                     } catch (ClassCastException e3) {
-                        throw new WrongType(e3, "char=?", 1, obj);
+                        throw new WrongType(e3, "char=?", 1, obj2);
                     }
                 }
-                return obj2;
+                return obj;
             }
             try {
                 Procedure procedure;
                 Object obj4;
                 if (Scheme.applyToArgs.apply2(srfi13.loc$char$Mnset$Qu.get(), this.criterion) != Boolean.FALSE) {
-                    obj2 = srfi13.Lit0;
+                    obj = srfi13.Lit0;
                     i = start;
                     while (Scheme.numGEq.apply2(i, end) == Boolean.FALSE) {
                         i2 = AddOp.$Pl.apply2(i, srfi13.Lit1);
@@ -5623,52 +5623,52 @@ public class srfi13 extends ModuleBody {
                         try {
                             obj4 = srfi13.loc$char$Mnset$Mncontains$Qu.get();
                             Object obj5 = this.criterion;
-                            obj = this.f81s;
+                            obj2 = this.f81s;
                             try {
                                 try {
-                                    if (procedure.apply3(obj4, obj5, Char.make(strings.stringRef((CharSequence) obj, ((Number) i).intValue()))) != Boolean.FALSE) {
-                                        obj2 = AddOp.$Pl.apply2(obj2, srfi13.Lit1);
+                                    if (procedure.apply3(obj4, obj5, Char.make(strings.stringRef((CharSequence) obj2, ((Number) i).intValue()))) != Boolean.FALSE) {
+                                        obj = AddOp.$Pl.apply2(obj, srfi13.Lit1);
                                     }
                                     i = i2;
                                 } catch (ClassCastException e22) {
                                     throw new WrongType(e22, "string-ref", 2, i);
                                 }
                             } catch (ClassCastException e32) {
-                                throw new WrongType(e32, "string-ref", 1, obj);
+                                throw new WrongType(e32, "string-ref", 1, obj2);
                             }
                         } catch (UnboundLocationException e4) {
-                            e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1248, 16);
+                            e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1248, 16);
                             throw e4;
                         }
                     }
-                    return obj2;
+                    return obj;
                 } else if (misc.isProcedure(this.criterion)) {
-                    obj2 = srfi13.Lit0;
+                    obj = srfi13.Lit0;
                     i = start;
                     while (Scheme.numGEq.apply2(i, end) == Boolean.FALSE) {
                         i2 = AddOp.$Pl.apply2(i, srfi13.Lit1);
                         procedure = Scheme.applyToArgs;
                         obj4 = this.criterion;
-                        obj = this.f81s;
+                        obj2 = this.f81s;
                         try {
                             try {
-                                if (procedure.apply2(obj4, Char.make(strings.stringRef((CharSequence) obj, ((Number) i).intValue()))) != Boolean.FALSE) {
-                                    obj2 = AddOp.$Pl.apply2(obj2, srfi13.Lit1);
+                                if (procedure.apply2(obj4, Char.make(strings.stringRef((CharSequence) obj2, ((Number) i).intValue()))) != Boolean.FALSE) {
+                                    obj = AddOp.$Pl.apply2(obj, srfi13.Lit1);
                                 }
                                 i = i2;
                             } catch (ClassCastException e222) {
                                 throw new WrongType(e222, "string-ref", 2, i);
                             }
                         } catch (ClassCastException e322) {
-                            throw new WrongType(e322, "string-ref", 1, obj);
+                            throw new WrongType(e322, "string-ref", 1, obj2);
                         }
                     }
-                    return obj2;
+                    return obj;
                 } else {
                     return misc.error$V("CRITERION param is neither char-set or char.", new Object[]{srfi13.string$Mncount, this.criterion});
                 }
             } catch (UnboundLocationException e42) {
-                e42.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1246, 5);
+                e42.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1246, 5);
                 throw e42;
             }
         }
@@ -5743,7 +5743,7 @@ public class srfi13 extends ModuleBody {
     /* compiled from: srfi13.scm */
     public class frame83 extends ModuleBody {
         final ModuleMethod lambda$Fn189 = new ModuleMethod(this, 166, null, 0);
-        final ModuleMethod lambda$Fn190 = new ModuleMethod(this, YaVersion.YOUNG_ANDROID_VERSION, null, 12291);
+        final ModuleMethod lambda$Fn190 = new ModuleMethod(this, 167, null, 12291);
         LList maybe$Mnstarts$Plends;
         Object pattern;
         Object text;
@@ -5753,7 +5753,7 @@ public class srfi13 extends ModuleBody {
         }
 
         public Object apply3(ModuleMethod moduleMethod, Object obj, Object obj2, Object obj3) {
-            return moduleMethod.selector == YaVersion.YOUNG_ANDROID_VERSION ? lambda190(obj, obj2, obj3) : super.apply3(moduleMethod, obj, obj2, obj3);
+            return moduleMethod.selector == 167 ? lambda190(obj, obj2, obj3) : super.apply3(moduleMethod, obj, obj2, obj3);
         }
 
         public int match0(ModuleMethod moduleMethod, CallContext callContext) {
@@ -5766,7 +5766,7 @@ public class srfi13 extends ModuleBody {
         }
 
         public int match3(ModuleMethod moduleMethod, Object obj, Object obj2, Object obj3, CallContext callContext) {
-            if (moduleMethod.selector != YaVersion.YOUNG_ANDROID_VERSION) {
+            if (moduleMethod.selector != 167) {
                 return super.match3(moduleMethod, obj, obj2, obj3, callContext);
             }
             callContext.value1 = obj;
@@ -5940,13 +5940,13 @@ public class srfi13 extends ModuleBody {
         Object pattern;
 
         public frame87() {
-            PropertySet moduleMethod = new ModuleMethod(this, 172, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1399");
+            PropertySet moduleMethod = new ModuleMethod(this, YaVersion.YOUNG_ANDROID_VERSION, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1399");
             this.lambda$Fn197 = moduleMethod;
         }
 
         public Object apply1(ModuleMethod moduleMethod, Object obj) {
-            return moduleMethod.selector == 172 ? lambda197(obj) : super.apply1(moduleMethod, obj);
+            return moduleMethod.selector == YaVersion.YOUNG_ANDROID_VERSION ? lambda197(obj) : super.apply1(moduleMethod, obj);
         }
 
         Object lambda197(Object args) {
@@ -5954,7 +5954,7 @@ public class srfi13 extends ModuleBody {
         }
 
         public int match1(ModuleMethod moduleMethod, Object obj, CallContext callContext) {
-            if (moduleMethod.selector != 172) {
+            if (moduleMethod.selector != YaVersion.YOUNG_ANDROID_VERSION) {
                 return super.match1(moduleMethod, obj, callContext);
             }
             callContext.value1 = obj;
@@ -5973,10 +5973,10 @@ public class srfi13 extends ModuleBody {
 
         public frame88() {
             PropertySet moduleMethod = new ModuleMethod(this, 173, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1468");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1468");
             this.lambda$Fn198 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 174, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1472");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1472");
             this.lambda$Fn199 = moduleMethod;
         }
 
@@ -6454,7 +6454,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return srfi13.stringParseFinalStart$PlEnd(srfi13.string$Mntokenize, this.f89s, srfi13.loc$rest.get());
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1696, 57);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1696, 57);
                 throw e;
             }
         }
@@ -6472,7 +6472,7 @@ public class srfi13 extends ModuleBody {
                         try {
                             temp = srfi13.stringIndexRight$V(this.f89s, srfi13.loc$token$Mnchars.get(), new Object[]{start, i});
                         } catch (UnboundLocationException e) {
-                            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1698, 48);
+                            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1698, 48);
                             throw e;
                         }
                     }
@@ -6517,7 +6517,7 @@ public class srfi13 extends ModuleBody {
                             throw new WrongType(e32, "substring", 1, obj);
                         }
                     } catch (UnboundLocationException e4) {
-                        e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_BAD_VALUE_FOR_TEXT_RECEIVING, 34);
+                        e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_BAD_VALUE_FOR_TEXT_RECEIVING, 34);
                         throw e4;
                     }
                 } catch (ClassCastException e22222) {
@@ -6540,12 +6540,12 @@ public class srfi13 extends ModuleBody {
 
         public frame94() {
             PropertySet moduleMethod = new ModuleMethod(this, 186, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1744");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1744");
             this.lambda$Fn214 = moduleMethod;
             this.lambda$Fn213 = new ModuleMethod(this, 187, null, 8194);
             this.lambda$Fn211 = new ModuleMethod(this, 188, null, 0);
             moduleMethod = new ModuleMethod(this, FullScreenVideoUtil.FULLSCREEN_VIDEO_DIALOG_FLAG, null, 12291);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1740");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1740");
             this.lambda$Fn215 = moduleMethod;
         }
 
@@ -6699,7 +6699,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e, "string-length", 1, apply4);
                 }
             } catch (UnboundLocationException e2) {
-                e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1749, 36);
+                e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1749, 36);
                 throw e2;
             }
         }
@@ -6714,7 +6714,7 @@ public class srfi13 extends ModuleBody {
                 Scheme.applyToArgs.apply4(srfi13.loc$check$Mnarg.get(), this.lambda$Fn214, to, srfi13.xsubstring);
                 return misc.values(to, start, end);
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1744, 6);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1744, 6);
                 throw e;
             }
         }
@@ -6764,7 +6764,7 @@ public class srfi13 extends ModuleBody {
 
         public frame95() {
             PropertySet moduleMethod = new ModuleMethod(this, FullScreenVideoUtil.FULLSCREEN_VIDEO_ACTION_STOP, null, 12291);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1781");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1781");
             this.lambda$Fn221 = moduleMethod;
         }
 
@@ -6819,7 +6819,6 @@ public class srfi13 extends ModuleBody {
         }
 
         Object lambda221(Object sto, Object start, Object end) {
-            Object obj;
             Object tocopy = AddOp.$Mn.apply2(sto, this.sfrom);
             Object tend = AddOp.$Pl.apply2(this.tstart, tocopy);
             Object slen = AddOp.$Mn.apply2(end, start);
@@ -6831,11 +6830,11 @@ public class srfi13 extends ModuleBody {
                         if (numbers.isZero((Number) slen)) {
                             return misc.error$V("Cannot replicate empty (sub)string", new Object[]{srfi13.string$Mnxcopy$Ex, this.target, this.tstart, this.f91s, this.sfrom, sto, start, end});
                         } else if (Scheme.numEqu.apply2(srfi13.Lit1, slen) != Boolean.FALSE) {
-                            obj = this.target;
+                            r4 = this.target;
                             r2 = this.f91s;
                             try {
                                 try {
-                                    return srfi13.stringFill$Ex$V(obj, Char.make(strings.stringRef((CharSequence) r2, ((Number) start).intValue())), new Object[]{this.tstart, tend});
+                                    return srfi13.stringFill$Ex$V(r4, Char.make(strings.stringRef((CharSequence) r2, ((Number) start).intValue())), new Object[]{this.tstart, tend});
                                 } catch (ClassCastException e) {
                                     throw new WrongType(e, "string-ref", 2, start);
                                 }
@@ -6846,20 +6845,20 @@ public class srfi13 extends ModuleBody {
                             r2 = DivideOp.$Sl.apply2(this.sfrom, slen);
                             try {
                                 double doubleValue = numbers.floor(LangObjType.coerceRealNum(r2)).doubleValue();
-                                obj = DivideOp.$Sl.apply2(sto, slen);
+                                r4 = DivideOp.$Sl.apply2(sto, slen);
                                 try {
-                                    if (doubleValue != numbers.floor(LangObjType.coerceRealNum(obj)).doubleValue()) {
+                                    if (doubleValue != numbers.floor(LangObjType.coerceRealNum(r4)).doubleValue()) {
                                         return srfi13.$PcMultispanRepcopy$Ex(this.target, this.tstart, this.f91s, this.sfrom, sto, start, end);
                                     }
                                     r2 = this.target;
                                     try {
                                         CharSequence charSequence = (CharSequence) r2;
-                                        obj = this.tstart;
+                                        r4 = this.tstart;
                                         try {
-                                            int intValue = ((Number) obj).intValue();
-                                            Object obj2 = this.f91s;
+                                            int intValue = ((Number) r4).intValue();
+                                            Object obj = this.f91s;
                                             try {
-                                                CharSequence charSequence2 = (CharSequence) obj2;
+                                                CharSequence charSequence2 = (CharSequence) obj;
                                                 Object apply2 = AddOp.$Pl.apply2(start, DivideOp.modulo.apply2(this.sfrom, slen));
                                                 try {
                                                     int intValue2 = ((Number) apply2).intValue();
@@ -6873,16 +6872,16 @@ public class srfi13 extends ModuleBody {
                                                     throw new WrongType(e32, "%string-copy!", 3, apply2);
                                                 }
                                             } catch (ClassCastException e322) {
-                                                throw new WrongType(e322, "%string-copy!", 2, obj2);
+                                                throw new WrongType(e322, "%string-copy!", 2, obj);
                                             }
                                         } catch (ClassCastException e3222) {
-                                            throw new WrongType(e3222, "%string-copy!", 1, obj);
+                                            throw new WrongType(e3222, "%string-copy!", 1, r4);
                                         }
                                     } catch (ClassCastException e22) {
                                         throw new WrongType(e22, "%string-copy!", 0, r2);
                                     }
                                 } catch (ClassCastException e32222) {
-                                    throw new WrongType(e32222, "floor", 1, obj);
+                                    throw new WrongType(e32222, "floor", 1, r4);
                                 }
                             } catch (ClassCastException e222) {
                                 throw new WrongType(e222, "floor", 1, r2);
@@ -6936,7 +6935,7 @@ public class srfi13 extends ModuleBody {
                 Scheme.applyToArgs.apply4(srfi13.loc$check$Mnarg.get(), srfi13.lambda$Fn220, sto, srfi13.string$Mnxcopy$Ex);
                 return misc.values(sto, start, end);
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1785, 6);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1785, 6);
                 throw e;
             }
         }
@@ -6958,7 +6957,7 @@ public class srfi13 extends ModuleBody {
             try {
                 return lists.cons(srfi13.loc$delim.get(), lists.cons(lists.car.apply1(lis), lambda223recur(lists.cdr.apply1(lis))));
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1857, 13);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1857, 13);
                 throw e;
             }
         }
@@ -7202,7 +7201,7 @@ public class srfi13 extends ModuleBody {
             throw r6;
         L_0x014f:
             r5 = move-exception;
-            r6 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+            r6 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
             r7 = 489; // 0x1e9 float:6.85E-43 double:2.416E-321;
             r8 = 5;
             r5.setLine(r6, r7, r8);
@@ -7215,7 +7214,7 @@ public class srfi13 extends ModuleBody {
             throw r7;
         L_0x0162:
             r5 = move-exception;
-            r6 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+            r6 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
             r7 = 492; // 0x1ec float:6.9E-43 double:2.43E-321;
             r8 = 9;
             r5.setLine(r6, r7, r8);
@@ -7267,7 +7266,7 @@ public class srfi13 extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 2, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:150");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:150");
             this.lambda$Fn2 = moduleMethod;
         }
 
@@ -7335,7 +7334,7 @@ public class srfi13 extends ModuleBody {
         r4[2] = simpleSymbol;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("rest").readResolve();
         Lit27 = simpleSymbol;
-        r4[3] = PairWithPosition.make(simpleSymbol, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 553003);
+        r4[3] = PairWithPosition.make(simpleSymbol, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 553003);
         r4[4] = Lit27;
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018L\f\u0007\f\u000f\f\u0017\f\u001f\b\f'\f/\f7\f?\rG@\b\b", new Object[0], 9), "\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0003", "\u0011\u0018\u00041\b\u0011\u0018\f\b#\b\u0011\u0018\u00141\t\u0003\t\u000b\u0018\u001c\u0011\u0018\f\t+\t;\b\u0011\u0018\u0014!\t\u0013\b\u001b\u0011\u0018\f\t3\u0011\u0018$\bEC", r4, 1);
         Lit44 = new SyntaxRules(objArr, syntaxRuleArr, 9);
@@ -7351,7 +7350,7 @@ public class srfi13 extends ModuleBody {
         substring$Mnspec$Mnok$Qu = new ModuleMethod(moduleBody, 197, Lit48, 12291);
         check$Mnsubstring$Mnspec = new ModuleMethod(moduleBody, 198, Lit49, 16388);
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 199, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:223");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:223");
         lambda$Fn5 = moduleMethod;
         substring$Slshared = new ModuleMethod(moduleBody, HttpRequestContext.HTTP_OK, Lit50, -4094);
         $Pcsubstring$Slshared = new ModuleMethod(moduleBody, ErrorMessages.ERROR_CAMERA_NO_IMAGE_RETURNED, Lit51, 12291);
@@ -7363,11 +7362,11 @@ public class srfi13 extends ModuleBody {
         string$Mnfold = new ModuleMethod(moduleBody, 207, Lit57, -4093);
         string$Mnfold$Mnright = new ModuleMethod(moduleBody, 208, Lit58, -4093);
         moduleMethod = new ModuleMethod(moduleBody, 209, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:377");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:377");
         lambda$Fn17 = moduleMethod;
         string$Mnunfold = new ModuleMethod(moduleBody, 210, Lit59, -4092);
         moduleMethod = new ModuleMethod(moduleBody, 211, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:422");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:422");
         lambda$Fn18 = moduleMethod;
         string$Mnunfold$Mnright = new ModuleMethod(moduleBody, 212, Lit60, -4092);
         string$Mnfor$Mneach = new ModuleMethod(moduleBody, 213, Lit61, -4094);
@@ -7375,7 +7374,7 @@ public class srfi13 extends ModuleBody {
         string$Mnevery = new ModuleMethod(moduleBody, 215, Lit63, -4094);
         string$Mnany = new ModuleMethod(moduleBody, 216, Lit64, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 217, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:535");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:535");
         lambda$Fn27 = moduleMethod;
         string$Mntabulate = new ModuleMethod(moduleBody, 218, Lit65, 8194);
         $Pcstring$Mnprefix$Mnlength = new ModuleMethod(moduleBody, 219, Lit66, 24582);
@@ -7399,75 +7398,75 @@ public class srfi13 extends ModuleBody {
         string$Mncompare = new ModuleMethod(moduleBody, 237, Lit84, -4091);
         string$Mncompare$Mnci = new ModuleMethod(moduleBody, 238, Lit85, -4091);
         moduleMethod = new ModuleMethod(moduleBody, 239, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:756");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:756");
         lambda$Fn72 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 240, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:758");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:758");
         lambda$Fn73 = moduleMethod;
         string$Eq = new ModuleMethod(moduleBody, LispEscapeFormat.ESCAPE_NORMAL, Lit86, -4094);
         moduleMethod = new ModuleMethod(moduleBody, LispEscapeFormat.ESCAPE_ALL, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:767");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:767");
         lambda$Fn78 = moduleMethod;
         string$Ls$Gr = new ModuleMethod(moduleBody, 243, Lit87, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 244, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:778");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:778");
         lambda$Fn83 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 245, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:779");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:779");
         lambda$Fn84 = moduleMethod;
         string$Ls = new ModuleMethod(moduleBody, 246, Lit88, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 247, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:788");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:788");
         lambda$Fn89 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 248, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:789");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:789");
         lambda$Fn90 = moduleMethod;
         string$Gr = new ModuleMethod(moduleBody, 249, Lit89, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 250, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:801");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:801");
         lambda$Fn95 = moduleMethod;
         string$Ls$Eq = new ModuleMethod(moduleBody, Telnet.WILL, Lit90, -4094);
         moduleMethod = new ModuleMethod(moduleBody, Telnet.WONT, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:810");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:810");
         lambda$Fn100 = moduleMethod;
         string$Gr$Eq = new ModuleMethod(moduleBody, Telnet.DO, Lit91, -4094);
         moduleMethod = new ModuleMethod(moduleBody, Telnet.DONT, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:820");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:820");
         lambda$Fn105 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 255, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:822");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:822");
         lambda$Fn106 = moduleMethod;
         string$Mnci$Eq = new ModuleMethod(moduleBody, 256, Lit92, -4094);
         moduleMethod = new ModuleMethod(moduleBody, InputDeviceCompat.SOURCE_KEYBOARD, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:831");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:831");
         lambda$Fn111 = moduleMethod;
         string$Mnci$Ls$Gr = new ModuleMethod(moduleBody, 258, Lit93, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 259, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:842");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:842");
         lambda$Fn116 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 260, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:843");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:843");
         lambda$Fn117 = moduleMethod;
         string$Mnci$Ls = new ModuleMethod(moduleBody, 261, Lit94, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 262, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:852");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:852");
         lambda$Fn122 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 263, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:853");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:853");
         lambda$Fn123 = moduleMethod;
         string$Mnci$Gr = new ModuleMethod(moduleBody, 264, Lit95, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 265, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:865");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:865");
         lambda$Fn128 = moduleMethod;
         string$Mnci$Ls$Eq = new ModuleMethod(moduleBody, 266, Lit96, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 267, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:874");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:874");
         lambda$Fn133 = moduleMethod;
         string$Mnci$Gr$Eq = new ModuleMethod(moduleBody, 268, Lit97, -4094);
         $Pcstring$Mnhash = new ModuleMethod(moduleBody, 269, Lit98, 20485);
         string$Mnhash = new ModuleMethod(moduleBody, 270, Lit99, -4095);
         moduleMethod = new ModuleMethod(moduleBody, 271, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:922");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:922");
         lambda$Fn138 = moduleMethod;
         string$Mnhash$Mnci = new ModuleMethod(moduleBody, 272, Lit100, -4095);
         string$Mnupcase = new ModuleMethod(moduleBody, 273, Lit101, -4095);
@@ -7485,11 +7484,11 @@ public class srfi13 extends ModuleBody {
         string$Mntrim$Mnright = new ModuleMethod(moduleBody, 285, Lit113, -4095);
         string$Mntrim$Mnboth = new ModuleMethod(moduleBody, 286, Lit114, -4095);
         moduleMethod = new ModuleMethod(moduleBody, 287, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1047");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1047");
         lambda$Fn163 = moduleMethod;
         string$Mnpad$Mnright = new ModuleMethod(moduleBody, 288, Lit115, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 289, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1059");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1059");
         lambda$Fn166 = moduleMethod;
         string$Mnpad = new ModuleMethod(moduleBody, 290, Lit116, -4094);
         string$Mndelete = new ModuleMethod(moduleBody, 291, Lit117, -4094);
@@ -7522,14 +7521,14 @@ public class srfi13 extends ModuleBody {
         string$Mnreplace = new ModuleMethod(moduleBody, ScreenDensityUtil.DEFAULT_NORMAL_SHORT_DIMENSION, Lit144, -4092);
         string$Mntokenize = new ModuleMethod(moduleBody, 321, Lit145, -4095);
         moduleMethod = new ModuleMethod(moduleBody, 322, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1738");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1738");
         lambda$Fn210 = moduleMethod;
         xsubstring = new ModuleMethod(moduleBody, 323, Lit146, -4094);
         moduleMethod = new ModuleMethod(moduleBody, 324, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1779");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1779");
         lambda$Fn216 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 325, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm:1785");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm:1785");
         lambda$Fn220 = moduleMethod;
         string$Mnxcopy$Ex = new ModuleMethod(moduleBody, 326, Lit147, -4092);
         $Pcmultispan$Mnrepcopy$Ex = new ModuleMethod(moduleBody, 327, Lit148, 28679);
@@ -7852,7 +7851,7 @@ public class srfi13 extends ModuleBody {
                                     throw new WrongType(e, "%substring/shared", 2, obj);
                                 }
                             } catch (UnboundLocationException e2) {
-                                e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 226, 10);
+                                e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 226, 10);
                                 throw e2;
                             }
                         } catch (ClassCastException e3) {
@@ -7862,14 +7861,14 @@ public class srfi13 extends ModuleBody {
                         throw new WrongType(e32, "%substring/shared", 0, s);
                     }
                 } catch (UnboundLocationException e22) {
-                    e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 223, 5);
+                    e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 223, 5);
                     throw e22;
                 }
             } catch (ClassCastException e322) {
                 throw new WrongType(e322, "string-length", 1, s);
             }
         } catch (UnboundLocationException e222) {
-            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 221, 3);
+            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 221, 3);
             throw e222;
         }
     }
@@ -8506,7 +8505,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame3.proc, string$Mnmap);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame3.lambda$Fn9, gnu_kawa_slib_srfi13_frame3.lambda$Fn10);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 271, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 271, 3);
             throw e;
         }
     }
@@ -8560,7 +8559,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame4.proc, string$Mnmap$Ex);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame4.lambda$Fn11, gnu_kawa_slib_srfi13_frame4.lambda$Fn12);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 285, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 285, 3);
             throw e;
         }
     }
@@ -8607,7 +8606,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame5.kons, string$Mnfold);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame5.lambda$Fn13, gnu_kawa_slib_srfi13_frame5.lambda$Fn14);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 295, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 295, 3);
             throw e;
         }
     }
@@ -8622,12 +8621,13 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame6.kons, string$Mnfold$Mnright);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame6.lambda$Fn15, gnu_kawa_slib_srfi13_frame6.lambda$Fn16);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_TWITTER_BLANK_CONSUMER_KEY_OR_SECRET, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_TWITTER_BLANK_CONSUMER_KEY_OR_SECRET, 3);
             throw e;
         }
     }
 
     public static Object stringUnfold$V(Object p, Object f, Object g, Object seed, Object[] argsArray) {
+        Object min;
         LList base$Plmake$Mnfinal = LList.makeList(argsArray, 0);
         try {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, p, string$Mnunfold);
@@ -8643,7 +8643,6 @@ public class srfi13 extends ModuleBody {
                                 try {
                                     try {
                                         Object valueOf;
-                                        Object min;
                                         Object apply2 = Scheme.applyToArgs.apply2(Scheme.applyToArgs.apply3(loc$base.get(), "", strings.isString(loc$base.get()) ? Boolean.TRUE : Boolean.FALSE), Scheme.applyToArgs.apply3(loc$make$Mnfinal.get(), lambda$Fn17, misc.isProcedure(loc$make$Mnfinal.get()) ? Boolean.TRUE : Boolean.FALSE));
                                         Object chunks = LList.Empty;
                                         int i = 0;
@@ -8744,7 +8743,7 @@ public class srfi13 extends ModuleBody {
                                                                                     throw new WrongType(e3, "%string-copy!", 2, r20);
                                                                                 }
                                                                             } catch (UnboundLocationException e4) {
-                                                                                e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_NXT_UNABLE_TO_DOWNLOAD_FILE, 29);
+                                                                                e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_NXT_UNABLE_TO_DOWNLOAD_FILE, 29);
                                                                                 throw e4;
                                                                             }
                                                                         } catch (ClassCastException e222222222) {
@@ -8766,46 +8765,46 @@ public class srfi13 extends ModuleBody {
                                                         throw new WrongType(e32, "string-length", 1, r20);
                                                     }
                                                 } catch (UnboundLocationException e42) {
-                                                    e42.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_NXT_NOT_CONNECTED_TO_ROBOT, 38);
+                                                    e42.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_NXT_NOT_CONNECTED_TO_ROBOT, 38);
                                                     throw e42;
                                                 }
                                             } catch (ClassCastException e22222222222222) {
                                                 throw new WrongType(e22222222222222, "string-length", 1, finalR);
                                             }
                                         } catch (UnboundLocationException e422) {
-                                            e422.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 400, 20);
+                                            e422.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 400, 20);
                                             throw e422;
                                         }
                                     } catch (UnboundLocationException e4222) {
-                                        e4222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 377, 46);
+                                        e4222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 377, 46);
                                         throw e4222;
                                     }
                                 } catch (UnboundLocationException e42222) {
-                                    e42222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 377, 6);
+                                    e42222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 377, 6);
                                     throw e42222;
                                 }
                             } catch (UnboundLocationException e422222) {
-                                e422222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 376, 57);
+                                e422222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 376, 57);
                                 throw e422222;
                             }
                         } catch (UnboundLocationException e4222222) {
-                            e4222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 376, 20);
+                            e4222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 376, 20);
                             throw e4222222;
                         }
                     } catch (UnboundLocationException e42222222) {
-                        e42222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 375, 3);
+                        e42222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 375, 3);
                         throw e42222222;
                     }
                 } catch (UnboundLocationException e422222222) {
-                    e422222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 374, 3);
+                    e422222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 374, 3);
                     throw e422222222;
                 }
             } catch (UnboundLocationException e4222222222) {
-                e4222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 373, 3);
+                e4222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 373, 3);
                 throw e4222222222;
             }
         } catch (UnboundLocationException e42222222222) {
-            e42222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 372, 3);
+            e42222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 372, 3);
             throw e42222222222;
         }
     }
@@ -8920,7 +8919,7 @@ public class srfi13 extends ModuleBody {
                                                                             throw new WrongType(e3, "%string-copy!", 2, r21);
                                                                         }
                                                                     } catch (UnboundLocationException e4) {
-                                                                        e4.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 463, 30);
+                                                                        e4.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 463, 30);
                                                                         throw e4;
                                                                     }
                                                                 } catch (ClassCastException e2222222222) {
@@ -8945,34 +8944,34 @@ public class srfi13 extends ModuleBody {
                                             throw new WrongType(e32, "string-length", 1, r21);
                                         }
                                     } catch (UnboundLocationException e42) {
-                                        e42.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 449, 31);
+                                        e42.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 449, 31);
                                         throw e42;
                                     }
                                 } catch (ClassCastException e2222222222222222) {
                                     throw new WrongType(e2222222222222222, "string-length", 1, finalR);
                                 }
                             } catch (UnboundLocationException e422) {
-                                e422.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 447, 20);
+                                e422.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 447, 20);
                                 throw e422;
                             }
                         } catch (UnboundLocationException e4222) {
-                            e4222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 422, 46);
+                            e4222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 422, 46);
                             throw e4222;
                         }
                     } catch (UnboundLocationException e42222) {
-                        e42222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 422, 6);
+                        e42222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 422, 6);
                         throw e42222;
                     }
                 } catch (UnboundLocationException e422222) {
-                    e422222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 421, 57);
+                    e422222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 421, 57);
                     throw e422222;
                 }
             } catch (UnboundLocationException e4222222) {
-                e4222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 421, 20);
+                e4222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 421, 20);
                 throw e4222222;
             }
         } catch (UnboundLocationException e42222222) {
-            e42222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 420, 3);
+            e42222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 420, 3);
             throw e42222222;
         }
     }
@@ -8990,7 +8989,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame7.proc, string$Mnfor$Mneach);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame7.lambda$Fn19, gnu_kawa_slib_srfi13_frame7.lambda$Fn20);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 468, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 468, 3);
             throw e;
         }
     }
@@ -9004,7 +9003,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame8.proc, string$Mnfor$Mneach$Mnindex);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame8.lambda$Fn21, gnu_kawa_slib_srfi13_frame8.lambda$Fn22);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 476, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 476, 3);
             throw e;
         }
     }
@@ -9048,11 +9047,11 @@ public class srfi13 extends ModuleBody {
                 }
                 return s;
             } catch (UnboundLocationException e3) {
-                e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 535, 3);
+                e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 535, 3);
                 throw e3;
             }
         } catch (UnboundLocationException e32) {
-            e32.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 534, 3);
+            e32.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 534, 3);
             throw e32;
         }
     }
@@ -9592,15 +9591,15 @@ public class srfi13 extends ModuleBody {
                     Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame27.proc$Gr, string$Mncompare);
                     return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame27.lambda$Fn60, gnu_kawa_slib_srfi13_frame27.lambda$Fn61);
                 } catch (UnboundLocationException e) {
-                    e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 728, 3);
+                    e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 728, 3);
                     throw e;
                 }
             } catch (UnboundLocationException e2) {
-                e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 727, 3);
+                e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 727, 3);
                 throw e2;
             }
         } catch (UnboundLocationException e22) {
-            e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 726, 3);
+            e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 726, 3);
             throw e22;
         }
     }
@@ -9621,15 +9620,15 @@ public class srfi13 extends ModuleBody {
                     Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), misc.procedure$Qu, gnu_kawa_slib_srfi13_frame29.proc$Gr, string$Mncompare$Mnci);
                     return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame29.lambda$Fn64, gnu_kawa_slib_srfi13_frame29.lambda$Fn65);
                 } catch (UnboundLocationException e) {
-                    e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 736, 3);
+                    e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 736, 3);
                     throw e;
                 }
             } catch (UnboundLocationException e2) {
-                e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 735, 3);
+                e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 735, 3);
                 throw e2;
             }
         } catch (UnboundLocationException e22) {
-            e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 734, 3);
+            e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 734, 3);
             throw e22;
         }
     }
@@ -9757,7 +9756,6 @@ public class srfi13 extends ModuleBody {
     }
 
     public static Object stringHash$V(Object s, Object[] argsArray) {
-        Object apply2;
         frame56 gnu_kawa_slib_srfi13_frame56 = new frame56();
         gnu_kawa_slib_srfi13_frame56.f56s = s;
         LList maybe$Mnbound$Plstart$Plend = LList.makeList(argsArray, 0);
@@ -9770,6 +9768,7 @@ public class srfi13 extends ModuleBody {
                 Object obj2 = loc$bound.get();
                 IntNum intNum = Lit7;
                 try {
+                    Object apply2;
                     boolean x = numbers.isInteger(loc$bound.get());
                     if (x) {
                         try {
@@ -9778,13 +9777,13 @@ public class srfi13 extends ModuleBody {
                                 try {
                                     apply2 = Scheme.numLEq.apply2(Lit0, loc$bound.get());
                                 } catch (UnboundLocationException e) {
-                                    e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 909, 19);
+                                    e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 909, 19);
                                     throw e;
                                 }
                             }
                             apply2 = x ? Boolean.TRUE : Boolean.FALSE;
                         } catch (UnboundLocationException e2) {
-                            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 908, 21);
+                            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 908, 21);
                             throw e2;
                         }
                     }
@@ -9799,7 +9798,7 @@ public class srfi13 extends ModuleBody {
                                     try {
                                         apply2 = loc$bound.get();
                                     } catch (UnboundLocationException e22) {
-                                        e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 911, 18);
+                                        e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 911, 18);
                                         throw e22;
                                     }
                                 }
@@ -9809,29 +9808,28 @@ public class srfi13 extends ModuleBody {
                                 throw new WrongType(e3, "zero?", 1, apply2);
                             }
                         } catch (UnboundLocationException e222) {
-                            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 911, 29);
+                            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 911, 29);
                             throw e222;
                         }
                     } catch (UnboundLocationException e2222) {
-                        e2222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 910, 7);
+                        e2222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 910, 7);
                         throw e2222;
                     }
                 } catch (UnboundLocationException e22222) {
-                    e22222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_ACTIONBAR_NOT_SUPPORTED, 72);
+                    e22222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_ACTIONBAR_NOT_SUPPORTED, 72);
                     throw e22222;
                 }
             } catch (UnboundLocationException e222222) {
-                e222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_ACTIONBAR_NOT_SUPPORTED, 42);
+                e222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_ACTIONBAR_NOT_SUPPORTED, 42);
                 throw e222222;
             }
         } catch (UnboundLocationException e2222222) {
-            e2222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_ACTIONBAR_NOT_SUPPORTED, 3);
+            e2222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_ACTIONBAR_NOT_SUPPORTED, 3);
             throw e2222222;
         }
     }
 
     public static Object stringHashCi$V(Object s, Object[] argsArray) {
-        Object apply2;
         frame57 gnu_kawa_slib_srfi13_frame57 = new frame57();
         gnu_kawa_slib_srfi13_frame57.f57s = s;
         LList maybe$Mnbound$Plstart$Plend = LList.makeList(argsArray, 0);
@@ -9844,6 +9842,7 @@ public class srfi13 extends ModuleBody {
                 Object obj2 = loc$bound.get();
                 IntNum intNum = Lit9;
                 try {
+                    Object apply2;
                     boolean x = numbers.isInteger(loc$bound.get());
                     if (x) {
                         try {
@@ -9852,13 +9851,13 @@ public class srfi13 extends ModuleBody {
                                 try {
                                     apply2 = Scheme.numLEq.apply2(Lit0, loc$bound.get());
                                 } catch (UnboundLocationException e) {
-                                    e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 918, 19);
+                                    e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 918, 19);
                                     throw e;
                                 }
                             }
                             apply2 = x ? Boolean.TRUE : Boolean.FALSE;
                         } catch (UnboundLocationException e2) {
-                            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 917, 21);
+                            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 917, 21);
                             throw e2;
                         }
                     }
@@ -9873,7 +9872,7 @@ public class srfi13 extends ModuleBody {
                                     try {
                                         apply2 = loc$bound.get();
                                     } catch (UnboundLocationException e22) {
-                                        e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 920, 18);
+                                        e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 920, 18);
                                         throw e22;
                                     }
                                 }
@@ -9883,23 +9882,23 @@ public class srfi13 extends ModuleBody {
                                 throw new WrongType(e3, "zero?", 1, apply2);
                             }
                         } catch (UnboundLocationException e222) {
-                            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 920, 29);
+                            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 920, 29);
                             throw e222;
                         }
                     } catch (UnboundLocationException e2222) {
-                        e2222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 919, 7);
+                        e2222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 919, 7);
                         throw e2222;
                     }
                 } catch (UnboundLocationException e22222) {
-                    e22222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 916, 72);
+                    e22222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 916, 72);
                     throw e22222;
                 }
             } catch (UnboundLocationException e222222) {
-                e222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 916, 42);
+                e222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 916, 42);
                 throw e222222;
             }
         } catch (UnboundLocationException e2222222) {
-            e2222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 916, 3);
+            e2222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 916, 3);
             throw e2222222;
         }
     }
@@ -9959,7 +9958,7 @@ public class srfi13 extends ModuleBody {
                                             return stringDowncase$Ex$V(s, new Object[]{i1, end});
                                         }
                                     } catch (UnboundLocationException e) {
-                                        e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 959, 31);
+                                        e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 959, 31);
                                         throw e;
                                     }
                                 } catch (ClassCastException e2) {
@@ -9978,7 +9977,7 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e22222, "string-set!", 1, s);
                 }
             } catch (UnboundLocationException e3) {
-                e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 955, 28);
+                e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 955, 28);
                 throw e3;
             }
         }
@@ -10019,11 +10018,11 @@ public class srfi13 extends ModuleBody {
                     throw new WrongType(e2, "%substring/shared", 0, obj);
                 }
             } catch (UnboundLocationException e3) {
-                e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 996, 3);
+                e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 996, 3);
                 throw e3;
             }
         } catch (UnboundLocationException e32) {
-            e32.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 995, 3);
+            e32.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 995, 3);
             throw e32;
         }
     }
@@ -10049,14 +10048,14 @@ public class srfi13 extends ModuleBody {
                         throw new WrongType(e2, "%substring/shared", 0, s);
                     }
                 } catch (UnboundLocationException e3) {
-                    e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1004, 5);
+                    e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1004, 5);
                     throw e3;
                 }
             } catch (ClassCastException e22) {
                 throw new WrongType(e22, "string-length", 1, s);
             }
         } catch (UnboundLocationException e32) {
-            e32.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_CANVAS_WIDTH_ERROR, 3);
+            e32.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_CANVAS_WIDTH_ERROR, 3);
             throw e32;
         }
     }
@@ -10074,7 +10073,7 @@ public class srfi13 extends ModuleBody {
                 throw new WrongType(e, "%substring/shared", 1, obj);
             }
         } catch (UnboundLocationException e2) {
-            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1010, 5);
+            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1010, 5);
             throw e2;
         }
     }
@@ -10092,7 +10091,7 @@ public class srfi13 extends ModuleBody {
                 throw new WrongType(e, "%substring/shared", 2, apply2);
             }
         } catch (UnboundLocationException e2) {
-            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1016, 5);
+            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1016, 5);
             throw e2;
         }
     }
@@ -10136,19 +10135,19 @@ public class srfi13 extends ModuleBody {
                     try {
                         return Scheme.applyToArgs.apply4(loc$let$Mnoptionals$St.get(), criterion$Plstart$Plend, Scheme.applyToArgs.apply2(Scheme.applyToArgs.apply2(loc$criterion.get(), GetNamedPart.getNamedPart.apply2(loc$char$Mnset.get(), Lit11)), loc$rest.get()), call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame68.lambda$Fn155, gnu_kawa_slib_srfi13_frame68.lambda$Fn156));
                     } catch (UnboundLocationException e) {
-                        e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 72);
+                        e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 72);
                         throw e;
                     }
                 } catch (UnboundLocationException e2) {
-                    e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 51);
+                    e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 51);
                     throw e2;
                 }
             } catch (UnboundLocationException e22) {
-                e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 40);
+                e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 40);
                 throw e22;
             }
         } catch (UnboundLocationException e222) {
-            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 3);
+            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1022, 3);
             throw e222;
         }
     }
@@ -10163,19 +10162,19 @@ public class srfi13 extends ModuleBody {
                     try {
                         return Scheme.applyToArgs.apply4(loc$let$Mnoptionals$St.get(), criterion$Plstart$Plend, Scheme.applyToArgs.apply2(Scheme.applyToArgs.apply2(loc$criterion.get(), GetNamedPart.getNamedPart.apply2(loc$char$Mnset.get(), Lit11)), loc$rest.get()), call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame69.lambda$Fn157, gnu_kawa_slib_srfi13_frame69.lambda$Fn158));
                     } catch (UnboundLocationException e) {
-                        e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 72);
+                        e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 72);
                         throw e;
                     }
                 } catch (UnboundLocationException e2) {
-                    e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 51);
+                    e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 51);
                     throw e2;
                 }
             } catch (UnboundLocationException e22) {
-                e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 40);
+                e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 40);
                 throw e22;
             }
         } catch (UnboundLocationException e222) {
-            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 3);
+            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1029, 3);
             throw e222;
         }
     }
@@ -10190,19 +10189,19 @@ public class srfi13 extends ModuleBody {
                     try {
                         return Scheme.applyToArgs.apply4(loc$let$Mnoptionals$St.get(), criterion$Plstart$Plend, Scheme.applyToArgs.apply2(Scheme.applyToArgs.apply2(loc$criterion.get(), GetNamedPart.getNamedPart.apply2(loc$char$Mnset.get(), Lit11)), loc$rest.get()), call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame70.lambda$Fn159, gnu_kawa_slib_srfi13_frame70.lambda$Fn160));
                     } catch (UnboundLocationException e) {
-                        e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 72);
+                        e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 72);
                         throw e;
                     }
                 } catch (UnboundLocationException e2) {
-                    e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 51);
+                    e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 51);
                     throw e2;
                 }
             } catch (UnboundLocationException e22) {
-                e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 40);
+                e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 40);
                 throw e22;
             }
         } catch (UnboundLocationException e222) {
-            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 3);
+            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1036, 3);
             throw e222;
         }
     }
@@ -10215,11 +10214,11 @@ public class srfi13 extends ModuleBody {
             try {
                 return Scheme.applyToArgs.apply4(loc$let$Mnoptionals$St.get(), LList.makeList(argsArray, 0), Scheme.applyToArgs.apply2(Invoke.make.apply3(LangPrimType.charType, Lit12, characters.isChar(LangPrimType.charType) ? Boolean.TRUE : Boolean.FALSE), loc$rest.get()), call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame71.lambda$Fn161, gnu_kawa_slib_srfi13_frame71.lambda$Fn162));
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1045, 63);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1045, 63);
                 throw e;
             }
         } catch (UnboundLocationException e2) {
-            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1045, 3);
+            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1045, 3);
             throw e2;
         }
     }
@@ -10232,11 +10231,11 @@ public class srfi13 extends ModuleBody {
             try {
                 return Scheme.applyToArgs.apply4(loc$let$Mnoptionals$St.get(), LList.makeList(argsArray, 0), Scheme.applyToArgs.apply2(Invoke.make.apply3(LangPrimType.charType, Lit12, characters.isChar(LangPrimType.charType) ? Boolean.TRUE : Boolean.FALSE), loc$rest.get()), call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame72.lambda$Fn164, gnu_kawa_slib_srfi13_frame72.lambda$Fn165));
             } catch (UnboundLocationException e) {
-                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1057, 63);
+                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1057, 63);
                 throw e;
             }
         } catch (UnboundLocationException e2) {
-            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1057, 3);
+            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1057, 3);
             throw e2;
         }
     }
@@ -10306,7 +10305,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), characters.char$Qu, gnu_kawa_slib_srfi13_frame82.f82char, string$Mnfill$Ex);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame82.lambda$Fn187, gnu_kawa_slib_srfi13_frame82.lambda$Fn188);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1270, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1270, 3);
             throw e;
         }
     }
@@ -10552,7 +10551,7 @@ public class srfi13 extends ModuleBody {
                                                                                             throw new WrongType(e22, "string-ref", 2, obj3);
                                                                                         }
                                                                                     } catch (UnboundLocationException e3) {
-                                                                                        e3.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1422, 59);
+                                                                                        e3.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1422, 59);
                                                                                         throw e3;
                                                                                     }
                                                                                 } catch (ClassCastException e4) {
@@ -10565,7 +10564,7 @@ public class srfi13 extends ModuleBody {
                                                                             throw new WrongType(e42, "string-ref", 1, obj2);
                                                                         }
                                                                     } catch (UnboundLocationException e32) {
-                                                                        e32.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1422, 7);
+                                                                        e32.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1422, 7);
                                                                         throw e32;
                                                                     }
                                                                 }
@@ -10595,19 +10594,19 @@ public class srfi13 extends ModuleBody {
                                                                         throw new WrongType(e422, "string-ref", 1, obj2);
                                                                     }
                                                                 } catch (UnboundLocationException e322) {
-                                                                    e322.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1418, 18);
+                                                                    e322.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1418, 18);
                                                                     throw e322;
                                                                 }
                                                             }
                                                         } catch (UnboundLocationException e3222) {
-                                                            e3222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1410, 6);
+                                                            e3222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1410, 6);
                                                             throw e3222;
                                                         }
                                                     } catch (ClassCastException e222222) {
                                                         throw new WrongType(e222222, "string-ref", 2, obj3);
                                                     }
                                                 } catch (UnboundLocationException e32222) {
-                                                    e32222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1406, 27);
+                                                    e32222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1406, 27);
                                                     throw e32222;
                                                 }
                                             } catch (ClassCastException e4222) {
@@ -10619,31 +10618,31 @@ public class srfi13 extends ModuleBody {
                                         throw new WrongType(e2222222, "make-vector", 1, rvlen);
                                     }
                                 } catch (UnboundLocationException e322222) {
-                                    e322222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_BAD_VALUE_FOR_VERTICAL_ALIGNMENT, 26);
+                                    e322222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_BAD_VALUE_FOR_VERTICAL_ALIGNMENT, 26);
                                     throw e322222;
                                 }
                             } catch (UnboundLocationException e3222222) {
-                                e3222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_BAD_VALUE_FOR_VERTICAL_ALIGNMENT, 22);
+                                e3222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", ErrorMessages.ERROR_BAD_VALUE_FOR_VERTICAL_ALIGNMENT, 22);
                                 throw e3222222;
                             }
                         } catch (UnboundLocationException e32222222) {
-                            e32222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1399, 14);
+                            e32222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1399, 14);
                             throw e32222222;
                         }
                     } catch (UnboundLocationException e322222222) {
-                        e322222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1399, 7);
+                        e322222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1399, 7);
                         throw e322222222;
                     }
                 } catch (UnboundLocationException e3222222222) {
-                    e3222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1398, 43);
+                    e3222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1398, 43);
                     throw e3222222222;
                 }
             } catch (UnboundLocationException e32222222222) {
-                e32222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1398, 20);
+                e32222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1398, 20);
                 throw e32222222222;
             }
         } catch (UnboundLocationException e322222222222) {
-            e322222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1397, 3);
+            e322222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1397, 3);
             throw e322222222222;
         }
     }
@@ -10704,13 +10703,13 @@ public class srfi13 extends ModuleBody {
                                             try {
                                                 apply2 = Scheme.numLEq.apply2(Lit0, loc$p$Mnstart.get());
                                             } catch (UnboundLocationException e) {
-                                                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 64);
+                                                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 64);
                                                 throw e;
                                             }
                                         }
                                         apply2 = x ? Boolean.TRUE : Boolean.FALSE;
                                     } catch (UnboundLocationException e2) {
-                                        e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 49);
+                                        e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 49);
                                         throw e2;
                                     }
                                 }
@@ -10762,14 +10761,14 @@ public class srfi13 extends ModuleBody {
                                                                                         throw new WrongType(e322, "string-ref", 2, apply3);
                                                                                     }
                                                                                 } catch (UnboundLocationException e22) {
-                                                                                    e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1484, 42);
+                                                                                    e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1484, 42);
                                                                                     throw e22;
                                                                                 }
                                                                             } catch (ClassCastException e3222) {
                                                                                 throw new WrongType(e3222, "string-ref", 1, pat);
                                                                             }
                                                                         } catch (UnboundLocationException e222) {
-                                                                            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1484, 14);
+                                                                            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1484, 14);
                                                                             throw e222;
                                                                         }
                                                                     } while (Scheme.numEqu.apply2(vi, Lit13) == Boolean.FALSE);
@@ -10781,53 +10780,53 @@ public class srfi13 extends ModuleBody {
                                                                 throw new WrongType(e4, "string-ref", 1, apply2);
                                                             }
                                                         } catch (UnboundLocationException e2222) {
-                                                            e2222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1479, 15);
+                                                            e2222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1479, 15);
                                                             throw e2222;
                                                         }
                                                     }
                                                     vi = AddOp.$Mn.apply1(si);
                                                     return procedure.apply4(obj, c$Eq$Plp$Mnstart$Pls$Mnstart$Pls$Mnend, apply32, vi);
                                                 } catch (UnboundLocationException e22222) {
-                                                    e22222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1476, 7);
+                                                    e22222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1476, 7);
                                                     throw e22222;
                                                 }
                                             } catch (UnboundLocationException e222222) {
-                                                e222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1472, 7);
+                                                e222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1472, 7);
                                                 throw e222222;
                                             }
                                         } catch (ClassCastException e322222) {
                                             throw new WrongType(e322222, "vector-length", 1, rv);
                                         }
                                     } catch (UnboundLocationException e2222222) {
-                                        e2222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1468, 16);
+                                        e2222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1468, 16);
                                         throw e2222222;
                                     }
                                 } catch (UnboundLocationException e22222222) {
-                                    e22222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1468, 7);
+                                    e22222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1468, 7);
                                     throw e22222222;
                                 }
                             } catch (UnboundLocationException e222222222) {
-                                e222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 32);
+                                e222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 32);
                                 throw e222222222;
                             }
                         } catch (UnboundLocationException e2222222222) {
-                            e2222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 6);
+                            e2222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1467, 6);
                             throw e2222222222;
                         }
                     } catch (UnboundLocationException e22222222222) {
-                        e22222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1466, 34);
+                        e22222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1466, 34);
                         throw e22222222222;
                     }
                 } catch (UnboundLocationException e222222222222) {
-                    e222222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1466, 6);
+                    e222222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1466, 6);
                     throw e222222222222;
                 }
             } catch (UnboundLocationException e2222222222222) {
-                e2222222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1465, 3);
+                e2222222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1465, 3);
                 throw e2222222222222;
             }
         } catch (UnboundLocationException e22222222222222) {
-            e22222222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1464, 3);
+            e22222222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1464, 3);
             throw e22222222222222;
         }
     }
@@ -10897,10 +10896,10 @@ public class srfi13 extends ModuleBody {
     }
 
     public static Object stringConcatenate$SlShared(Object strings) {
-        int slen;
         Object nchars = Lit0;
         Object first = Boolean.FALSE;
         while (lists.isPair(strings)) {
+            int slen;
             Object string = lists.car.apply1(strings);
             Object tail = lists.cdr.apply1(strings);
             try {
@@ -11035,17 +11034,17 @@ public class srfi13 extends ModuleBody {
                                                             throw new WrongType(e, "string-length", 1, apply32);
                                                         }
                                                     } catch (UnboundLocationException e2) {
-                                                        e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1621, 36);
+                                                        e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1621, 36);
                                                         throw e2;
                                                     }
                                                 } catch (UnboundLocationException e22) {
-                                                    e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1621, 17);
+                                                    e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1621, 17);
                                                     throw e22;
                                                 }
                                             }
                                             apply32 = x ? Boolean.TRUE : Boolean.FALSE;
                                         } catch (UnboundLocationException e222) {
-                                            e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1620, 19);
+                                            e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1620, 19);
                                             throw e222;
                                         }
                                     }
@@ -11068,38 +11067,38 @@ public class srfi13 extends ModuleBody {
                                         try {
                                             return procedure.apply4(obj, maybe$Mnfinal$Plend, apply2, $PcFinishStringConcatenateReverse(len, string$Mnlist, loc$final.get(), loc$end.get()));
                                         } catch (UnboundLocationException e2222) {
-                                            e2222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1627, 65);
+                                            e2222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1627, 65);
                                             throw e2222;
                                         }
                                     } catch (UnboundLocationException e22222) {
-                                        e22222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1627, 59);
+                                        e22222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1627, 59);
                                         throw e22222;
                                     }
                                 } catch (UnboundLocationException e222222) {
-                                    e222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1619, 21);
+                                    e222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1619, 21);
                                     throw e222222;
                                 }
                             } catch (ClassCastException e32) {
                                 throw new WrongType(e32, "string-length", 1, apply32);
                             }
                         } catch (UnboundLocationException e2222222) {
-                            e2222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1618, 28);
+                            e2222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1618, 28);
                             throw e2222222;
                         }
                     } catch (UnboundLocationException e22222222) {
-                        e22222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1618, 8);
+                        e22222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1618, 8);
                         throw e22222222;
                     }
                 } catch (UnboundLocationException e222222222) {
-                    e222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1617, 55);
+                    e222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1617, 55);
                     throw e222222222;
                 }
             } catch (UnboundLocationException e2222222222) {
-                e2222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1617, 36);
+                e2222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1617, 36);
                 throw e2222222222;
             }
         } catch (UnboundLocationException e22222222222) {
-            e22222222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1617, 3);
+            e22222222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1617, 3);
             throw e22222222222;
         }
     }
@@ -11261,35 +11260,35 @@ public class srfi13 extends ModuleBody {
         goto L_0x00ff;
     L_0x0146:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1630; // 0x65e float:2.284E-42 double:8.053E-321;
         r12 = 3;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x0150:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1630; // 0x65e float:2.284E-42 double:8.053E-321;
         r12 = 36;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x015b:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1630; // 0x65e float:2.284E-42 double:8.053E-321;
         r12 = 55;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x0166:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1631; // 0x65f float:2.286E-42 double:8.06E-321;
         r12 = 8;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x0171:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1631; // 0x65f float:2.286E-42 double:8.06E-321;
         r12 = 28;
         r9.setLine(r10, r11, r12);
@@ -11303,28 +11302,28 @@ public class srfi13 extends ModuleBody {
         throw r11;
     L_0x0186:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1632; // 0x660 float:2.287E-42 double:8.063E-321;
         r12 = 21;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x0191:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1633; // 0x661 float:2.288E-42 double:8.07E-321;
         r12 = 19;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x019c:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1634; // 0x662 float:2.29E-42 double:8.073E-321;
         r12 = 17;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x01a7:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1634; // 0x662 float:2.29E-42 double:8.073E-321;
         r12 = 36;
         r9.setLine(r10, r11, r12);
@@ -11352,21 +11351,21 @@ public class srfi13 extends ModuleBody {
         throw r10;
     L_0x01d0:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1645; // 0x66d float:2.305E-42 double:8.127E-321;
         r12 = 41;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x01db:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1645; // 0x66d float:2.305E-42 double:8.127E-321;
         r12 = 49;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x01e6:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1649; // 0x671 float:2.311E-42 double:8.147E-321;
         r12 = 16;
         r9.setLine(r10, r11, r12);
@@ -11387,14 +11386,14 @@ public class srfi13 extends ModuleBody {
         throw r11;
     L_0x0205:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1652; // 0x674 float:2.315E-42 double:8.16E-321;
         r12 = 56;
         r9.setLine(r10, r11, r12);
         throw r9;
     L_0x0210:
         r9 = move-exception;
-        r10 = "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm";
+        r10 = "/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm";
         r11 = 1652; // 0x674 float:2.315E-42 double:8.16E-321;
         r12 = 62;
         r9.setLine(r10, r11, r12);
@@ -11513,27 +11512,27 @@ public class srfi13 extends ModuleBody {
                             try {
                                 return Scheme.applyToArgs.apply4(loc$let$Mnoptionals$St.get(), token$Mnchars$Plstart$Plend, Scheme.applyToArgs.apply2(Scheme.applyToArgs.apply3(loc$token$Mnchars.get(), GetNamedPart.getNamedPart.apply2(loc$char$Mnset.get(), Lit14), Scheme.applyToArgs.apply2(loc$char$Mnset$Qu.get(), loc$token$Mnchars.get())), loc$rest.get()), call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame93.lambda$Fn208, gnu_kawa_slib_srfi13_frame93.lambda$Fn209));
                             } catch (UnboundLocationException e) {
-                                e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 75);
+                                e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 75);
                                 throw e;
                             }
                         } catch (UnboundLocationException e2) {
-                            e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 61);
+                            e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 61);
                             throw e2;
                         }
                     } catch (UnboundLocationException e22) {
-                        e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 50);
+                        e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 50);
                         throw e22;
                     }
                 } catch (UnboundLocationException e222) {
-                    e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 33);
+                    e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 33);
                     throw e222;
                 }
             } catch (UnboundLocationException e2222) {
-                e2222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 20);
+                e2222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1695, 20);
                 throw e2222;
             }
         } catch (UnboundLocationException e22222) {
-            e22222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1694, 3);
+            e22222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1694, 3);
             throw e22222;
         }
     }
@@ -11547,7 +11546,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), lambda$Fn210, gnu_kawa_slib_srfi13_frame94.from, xsubstring);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame94.lambda$Fn211, gnu_kawa_slib_srfi13_frame94.lambda$Fn215);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1738, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1738, 3);
             throw e;
         }
     }
@@ -11563,7 +11562,7 @@ public class srfi13 extends ModuleBody {
             Scheme.applyToArgs.apply4(loc$check$Mnarg.get(), lambda$Fn216, gnu_kawa_slib_srfi13_frame95.sfrom, string$Mnxcopy$Ex);
             return call_with_values.callWithValues(gnu_kawa_slib_srfi13_frame95.lambda$Fn217, gnu_kawa_slib_srfi13_frame95.lambda$Fn221);
         } catch (UnboundLocationException e) {
-            e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1779, 3);
+            e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1779, 3);
             throw e;
         }
     }
@@ -11746,7 +11745,7 @@ public class srfi13 extends ModuleBody {
                                     try {
                                         cons = lists.cons(lists.car.apply1(strings), lambda222buildit(lists.cdr.apply1(strings), LList.list1(loc$delim.get())));
                                     } catch (UnboundLocationException e) {
-                                        e.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1870, 53);
+                                        e.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1870, 53);
                                         throw e;
                                     }
                                 } else {
@@ -11757,13 +11756,13 @@ public class srfi13 extends ModuleBody {
                                         objArr[1] = string$Mnjoin;
                                         cons = misc.error$V(str, objArr);
                                     } catch (UnboundLocationException e2) {
-                                        e2.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1873, 9);
+                                        e2.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1873, 9);
                                         throw e2;
                                     }
                                 }
                                 cons = stringConcatenate(cons);
                             } catch (UnboundLocationException e22) {
-                                e22.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1862, 14);
+                                e22.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1862, 14);
                                 throw e22;
                             }
                         } else if (lists.isNull(strings)) {
@@ -11774,7 +11773,7 @@ public class srfi13 extends ModuleBody {
                                     cons = "";
                                 }
                             } catch (UnboundLocationException e222) {
-                                e222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1880, 13);
+                                e222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1880, 13);
                                 throw e222;
                             }
                         } else {
@@ -11782,19 +11781,19 @@ public class srfi13 extends ModuleBody {
                         }
                         return procedure.apply4(obj, delim$Plgrammar, apply2, cons);
                     } catch (UnboundLocationException e2222) {
-                        e2222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1853, 6);
+                        e2222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1853, 6);
                         throw e2222;
                     }
                 } catch (UnboundLocationException e22222) {
-                    e22222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1852, 54);
+                    e22222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1852, 54);
                     throw e22222;
                 }
             } catch (UnboundLocationException e222222) {
-                e222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1852, 34);
+                e222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1852, 34);
                 throw e222222;
             }
         } catch (UnboundLocationException e2222222) {
-            e2222222.setLine("/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1852, 3);
+            e2222222.setLine("/u2/home/jis/ai2-kawa/gnu/kawa/slib/srfi13.scm", 1852, 3);
             throw e2222222;
         }
     }

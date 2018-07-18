@@ -17,8 +17,8 @@ public abstract class VolumeProviderCompat {
         public abstract void onVolumeChanged(VolumeProviderCompat volumeProviderCompat);
     }
 
-    class C03981 implements Delegate {
-        C03981() {
+    class C04031 implements Delegate {
+        C04031() {
         }
 
         public void onSetVolumeTo(int volume) {
@@ -68,7 +68,7 @@ public abstract class VolumeProviderCompat {
         if (this.mVolumeProviderObj != null || VERSION.SDK_INT < 21) {
             return this.mVolumeProviderObj;
         }
-        this.mVolumeProviderObj = VolumeProviderCompatApi21.createVolumeProvider(this.mControlType, this.mMaxVolume, this.mCurrentVolume, new C03981());
+        this.mVolumeProviderObj = VolumeProviderCompatApi21.createVolumeProvider(this.mControlType, this.mMaxVolume, this.mCurrentVolume, new C04031());
         return this.mVolumeProviderObj;
     }
 }

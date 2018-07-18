@@ -349,9 +349,9 @@ public class require extends Syntax {
             if (decl != null) {
                 dofind = new ReferenceExp(decl);
             } else if (instanceField != null) {
-                dofind = new ApplyExp(SlotGet.staticField, new Expression[]{new QuoteExp(type), new QuoteExp("$instance")});
+                dofind = new ApplyExp(SlotGet.staticField, new QuoteExp(type), new QuoteExp("$instance"));
             }
-            Expression dofind2 = new ApplyExp(run, new Expression[]{dofind});
+            Expression dofind2 = new ApplyExp(run, dofind);
             dofind2.setLine(tr);
             forms.addElement(dofind2);
             dofind = dofind2;

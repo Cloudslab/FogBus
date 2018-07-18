@@ -1,9 +1,17 @@
 package com.google.appinventor.components.runtime.util;
 
+import android.os.Environment;
+import android.util.Base64;
+import android.util.Log;
+import com.google.appinventor.components.runtime.errors.YailRuntimeError;
 import gnu.lists.FString;
 import gnu.math.IntFraction;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import org.json.JSONArray;
@@ -12,6 +20,18 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 public class JsonUtil {
+    private static final String BINFILE_DIR = "/AppInventorBinaries";
+    private static final String LOG_TAG = "JsonUtil";
+
+    static class C03331 implements Comparator<File> {
+        C03331() {
+        }
+
+        public int compare(File f1, File f2) {
+            return Long.valueOf(f1.lastModified()).compareTo(Long.valueOf(f2.lastModified()));
+        }
+    }
+
     private JsonUtil() {
     }
 
@@ -121,5 +141,59 @@ public class JsonUtil {
             return getListFromJsonObject((JSONObject) value);
         }
         throw new JSONException("Invalid JSON string.");
+    }
+
+    public static String getJsonRepresentationIfValueFileName(Object value) {
+        try {
+            List<String> valueList;
+            if (value instanceof String) {
+                valueList = getStringListFromJsonArray(new JSONArray((String) value));
+            } else if (value instanceof List) {
+                valueList = (List) value;
+            } else {
+                throw new YailRuntimeError("getJsonRepresentationIfValueFileName called on unknown type", value.getClass().getName());
+            }
+            if (valueList.size() != 2) {
+                return null;
+            }
+            if (!((String) valueList.get(0)).startsWith(".")) {
+                return null;
+            }
+            String filename = writeFile((String) valueList.get(1), ((String) valueList.get(0)).substring(1));
+            System.out.println("Filename Written: " + filename);
+            return getJsonRepresentation(filename.replace("file:/", "file:///"));
+        } catch (JSONException e) {
+            Log.e(LOG_TAG, "JSONException", e);
+            return null;
+        }
+    }
+
+    private static String writeFile(String input, String fileExtension) {
+        try {
+            if (fileExtension.length() != 3) {
+                throw new YailRuntimeError("File Extension must be three characters", "Write Error");
+            }
+            byte[] content = Base64.decode(input, 0);
+            File destDirectory = new File(Environment.getExternalStorageDirectory() + BINFILE_DIR);
+            destDirectory.mkdirs();
+            File dest = File.createTempFile("BinFile", "." + fileExtension, destDirectory);
+            FileOutputStream outStream = new FileOutputStream(dest);
+            outStream.write(content);
+            outStream.close();
+            String retval = dest.toURI().toASCIIString();
+            trimDirectory(20, destDirectory);
+            return retval;
+        } catch (Exception e) {
+            throw new YailRuntimeError(e.getMessage(), "Write");
+        }
+    }
+
+    private static void trimDirectory(int maxSavedFiles, File directory) {
+        File[] files = directory.listFiles();
+        Arrays.sort(files, new C03331());
+        int excess = files.length - maxSavedFiles;
+        for (int i = 0; i < excess; i++) {
+            files[i].delete();
+        }
     }
 }

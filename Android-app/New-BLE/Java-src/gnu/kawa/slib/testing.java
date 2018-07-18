@@ -68,7 +68,7 @@ public class testing extends ModuleBody {
     static final SimpleSymbol Lit1 = ((SimpleSymbol) new SimpleSymbol("result-kind").readResolve());
     static final PairWithPosition Lit10;
     static final SyntaxPattern Lit100 = new SyntaxPattern("<\f\u0007\f\u000f\f\u0017\b\f\u001f\b", new Object[0], 4);
-    static final SyntaxTemplate Lit101 = new SyntaxTemplate("\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004I\u0011\u0018\f\b\u0011\u0018\u0014\b\u000b©\u0011\u0018\u001c\u0011\u0018$\b\u0011\u0018,A\u0011\u0018,\u0011\u00184\b\u000b\b\u001b\b\u0011\u0018<\u0011\u0018$\b\u0013", new Object[]{Lit150, PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2756622), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2756622), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2756619), Lit160, Lit52, Lit149, Lit145, PairWithPosition.make(Lit15, PairWithPosition.make(Lit7, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2764841), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2764841), Lit92}, 0);
+    static final SyntaxTemplate Lit101 = new SyntaxTemplate("\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004I\u0011\u0018\f\b\u0011\u0018\u0014\b\u000b©\u0011\u0018\u001c\u0011\u0018$\b\u0011\u0018,A\u0011\u0018,\u0011\u00184\b\u000b\b\u001b\b\u0011\u0018<\u0011\u0018$\b\u0013", new Object[]{Lit150, PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2756622), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2756622), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2756619), Lit160, Lit52, Lit149, Lit145, PairWithPosition.make(Lit15, PairWithPosition.make(Lit7, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2764841), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2764841), Lit92}, 0);
     static final SyntaxPattern Lit102 = new SyntaxPattern(",\f\u0007\f\u000f\b\f\u0017\b", new Object[0], 3);
     static final SyntaxTemplate Lit103;
     static final SimpleSymbol Lit104 = ((SimpleSymbol) new SimpleSymbol("test-eqv").readResolve());
@@ -80,7 +80,7 @@ public class testing extends ModuleBody {
     static final PairWithPosition Lit11;
     static final SimpleSymbol Lit110 = ((SimpleSymbol) new SimpleSymbol("test-approximate").readResolve());
     static final SyntaxPattern Lit111 = new SyntaxPattern("\\\f\u0007\f\u000f\f\u0017\f\u001f\f'\b\f/\b", new Object[0], 6);
-    static final SyntaxTemplate Lit112 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004I\u0011\u0018\f\b\u0011\u0018\u0014\b\u000b©\u0011\u0018\u001c\u0011\u0018$\b\u0011\u0018,A\u0011\u0018,\u0011\u00184\b\u000b\b+\b\u0011\u0018<\u0011\u0018$)\u0011\u0018D\b#\t\u0013\b\u001b", new Object[]{Lit150, PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2891788), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2891788), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2891785), Lit160, Lit52, Lit149, Lit145, PairWithPosition.make(Lit15, PairWithPosition.make(Lit7, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2900007), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2900007), Lit89, Lit91}, 0);
+    static final SyntaxTemplate Lit112 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004I\u0011\u0018\f\b\u0011\u0018\u0014\b\u000b©\u0011\u0018\u001c\u0011\u0018$\b\u0011\u0018,A\u0011\u0018,\u0011\u00184\b\u000b\b+\b\u0011\u0018<\u0011\u0018$)\u0011\u0018D\b#\t\u0013\b\u001b", new Object[]{Lit150, PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2891788), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2891788), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2891785), Lit160, Lit52, Lit149, Lit145, PairWithPosition.make(Lit15, PairWithPosition.make(Lit7, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2900007), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2900007), Lit89, Lit91}, 0);
     static final SyntaxPattern Lit113 = new SyntaxPattern("L\f\u0007\f\u000f\f\u0017\f\u001f\b\f'\b", new Object[0], 5);
     static final SyntaxTemplate Lit114;
     static final SimpleSymbol Lit115;
@@ -90,7 +90,7 @@ public class testing extends ModuleBody {
     static final SyntaxTemplate Lit119;
     static final SimpleSymbol Lit12 = ((SimpleSymbol) new SimpleSymbol("pass").readResolve());
     static final SyntaxPattern Lit120 = new SyntaxPattern("<\f\u0007\f\u000f\f\u0017\b\f\u001f\b", new Object[0], 4);
-    static final SyntaxTemplate Lit121 = new SyntaxTemplate("\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\fA\u0011\u0018\u0014\u0011\u0018\u001c\b\u001b\b\u0011\u0018$\u0011\u0018\u001c\t\u000b\b\u0013", new Object[]{Lit150, PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3493902), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3493902), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3493899), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3493898), Lit52, Lit149, Lit115}, 0);
+    static final SyntaxTemplate Lit121 = new SyntaxTemplate("\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\fA\u0011\u0018\u0014\u0011\u0018\u001c\b\u001b\b\u0011\u0018$\u0011\u0018\u001c\t\u000b\b\u0013", new Object[]{Lit150, PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3493902), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3493902), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3493899), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3493898), Lit52, Lit149, Lit115}, 0);
     static final SyntaxPattern Lit122 = new SyntaxPattern(",\f\u0007\f\u000f\b\f\u0017\b", new Object[0], 3);
     static final SyntaxTemplate Lit123;
     static final SimpleSymbol Lit124 = ((SimpleSymbol) new SimpleSymbol("test-apply").readResolve());
@@ -139,9 +139,9 @@ public class testing extends ModuleBody {
     static final SimpleSymbol Lit163 = ((SimpleSymbol) new SimpleSymbol("exp").readResolve());
     static final SimpleSymbol Lit164 = ((SimpleSymbol) new SimpleSymbol("p").readResolve());
     static final SimpleSymbol Lit165 = ((SimpleSymbol) new SimpleSymbol("dynamic-wind").readResolve());
-    static final SyntaxTemplate Lit17 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004I\u0011\u0018\f\b\u0011\u0018\u0014\b\u000b©\u0011\u0018\u001c\u0011\u0018$\b\u0011\u0018,A\u0011\u0018,\u0011\u00184\b\u000b\b#\b\u0011\u0018<\u0011\u0018$\t+\t\u0013\b\u001b", new Object[]{Lit150, PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2809868), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2809868), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2809865), Lit160, Lit52, Lit149, Lit145, PairWithPosition.make(Lit15, PairWithPosition.make(Lit7, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2818087), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2818087), Lit89}, 0);
+    static final SyntaxTemplate Lit17 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004I\u0011\u0018\f\b\u0011\u0018\u0014\b\u000b©\u0011\u0018\u001c\u0011\u0018$\b\u0011\u0018,A\u0011\u0018,\u0011\u00184\b\u000b\b#\b\u0011\u0018<\u0011\u0018$\t+\t\u0013\b\u001b", new Object[]{Lit150, PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2809868), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2809868), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2809865), Lit160, Lit52, Lit149, Lit145, PairWithPosition.make(Lit15, PairWithPosition.make(Lit7, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2818087), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2818087), Lit89}, 0);
     static final SyntaxPattern Lit18 = new SyntaxPattern("<\f\u0007\f\u000f\f\u0017\b\f\u001f\f'\b", new Object[0], 5);
-    static final SyntaxTemplate Lit19 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\fA\u0011\u0018\u0014\u0011\u0018\u001c\b\u001b\b\u0011\u0018$\u0011\u0018\u001c\t#\t\u000b\b\u0013", new Object[]{Lit150, PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2834444), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2834444), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2834441), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2834440), Lit52, Lit149, Lit89}, 0);
+    static final SyntaxTemplate Lit19 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\fA\u0011\u0018\u0014\u0011\u0018\u001c\b\u001b\b\u0011\u0018$\u0011\u0018\u001c\t#\t\u000b\b\u0013", new Object[]{Lit150, PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2834444), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2834444), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2834441), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2834440), Lit52, Lit149, Lit89}, 0);
     static final SimpleSymbol Lit2 = ((SimpleSymbol) new SimpleSymbol("skip").readResolve());
     static final SimpleSymbol Lit20 = ((SimpleSymbol) new SimpleSymbol("test-runner?").readResolve());
     static final SimpleSymbol Lit21 = ((SimpleSymbol) new SimpleSymbol("test-runner-pass-count").readResolve());
@@ -208,7 +208,7 @@ public class testing extends ModuleBody {
     static final SimpleSymbol Lit77 = ((SimpleSymbol) new SimpleSymbol("test-on-test-end-simple").readResolve());
     static final SimpleSymbol Lit78;
     static final SimpleSymbol Lit79 = ((SimpleSymbol) new SimpleSymbol("test-result-clear").readResolve());
-    static final PairWithPosition Lit8 = PairWithPosition.make(Lit14, PairWithPosition.make(Lit9, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1966107), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1966101);
+    static final PairWithPosition Lit8 = PairWithPosition.make(Lit14, PairWithPosition.make(Lit9, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1966107), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1966101);
     static final SimpleSymbol Lit80 = ((SimpleSymbol) new SimpleSymbol("test-result-remove").readResolve());
     static final SimpleSymbol Lit81 = ((SimpleSymbol) new SimpleSymbol("test-result-kind").readResolve());
     static final SimpleSymbol Lit82 = ((SimpleSymbol) new SimpleSymbol("test-passed?").readResolve());
@@ -313,7 +313,7 @@ public class testing extends ModuleBody {
 
         public frame0() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, 8194);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:640");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:640");
             this.lambda$Fn4 = moduleMethod;
         }
 
@@ -366,12 +366,12 @@ public class testing extends ModuleBody {
 
         public frame1() {
             PropertySet moduleMethod = new ModuleMethod(this, 4, null, 0);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:897");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:897");
             this.lambda$Fn7 = moduleMethod;
             this.lambda$Fn8 = new ModuleMethod(this, 5, null, 0);
             this.lambda$Fn9 = new ModuleMethod(this, 6, null, 0);
             moduleMethod = new ModuleMethod(this, 7, null, 0);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:897");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:897");
             this.lambda$Fn10 = moduleMethod;
         }
 
@@ -459,7 +459,7 @@ public class testing extends ModuleBody {
 
         public frame2() {
             PropertySet moduleMethod = new ModuleMethod(this, 8, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:903");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:903");
             this.lambda$Fn11 = moduleMethod;
         }
 
@@ -500,7 +500,7 @@ public class testing extends ModuleBody {
 
         public frame3() {
             PropertySet moduleMethod = new ModuleMethod(this, 9, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:915");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:915");
             this.lambda$Fn12 = moduleMethod;
         }
 
@@ -536,7 +536,7 @@ public class testing extends ModuleBody {
 
         public frame4() {
             PropertySet moduleMethod = new ModuleMethod(this, 10, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:931");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:931");
             this.lambda$Fn13 = moduleMethod;
         }
 
@@ -572,7 +572,7 @@ public class testing extends ModuleBody {
 
         public frame5() {
             PropertySet moduleMethod = new ModuleMethod(this, 11, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:971");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:971");
             this.lambda$Fn14 = moduleMethod;
         }
 
@@ -632,7 +632,7 @@ public class testing extends ModuleBody {
         SimpleSymbol simpleSymbol2 = Lit143;
         SimpleSymbol simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("test-runner-get").readResolve();
         Lit60 = simpleSymbol3;
-        r6[1] = PairWithPosition.make(PairWithPosition.make(simpleSymbol2, PairWithPosition.make(PairWithPosition.make(simpleSymbol3, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3952660), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3952660), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3952652), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3952651);
+        r6[1] = PairWithPosition.make(PairWithPosition.make(simpleSymbol2, PairWithPosition.make(PairWithPosition.make(simpleSymbol3, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3952660), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3952660), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3952652), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3952651);
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("%test-runner-fail-list!").readResolve();
         Lit34 = simpleSymbol3;
         r6[2] = simpleSymbol3;
@@ -646,7 +646,7 @@ public class testing extends ModuleBody {
         r6[6] = simpleSymbol3;
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("%test-runner-fail-list").readResolve();
         Lit33 = simpleSymbol3;
-        r6[7] = PairWithPosition.make(PairWithPosition.make(simpleSymbol3, PairWithPosition.make(Lit143, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3964958), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3964934), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3964934);
+        r6[7] = PairWithPosition.make(PairWithPosition.make(simpleSymbol3, PairWithPosition.make(Lit143, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3964958), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3964934), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3964934);
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\r\u0007\u0000\b\b", new Object[0], 1), "\u0003", "\u0011\u0018\u0004\u0011\u0018\f\b\u0011\u0018\u0014\u0011\u0018\u001c\b\u0011\u0018$Q\u0011\u0018,\b\u0005\u0011\u00184\b\u0003\u0018<", r6, 1);
         Lit140 = new SyntaxRules(objArr, syntaxRuleArr, 1);
         objArr = new Object[1];
@@ -664,7 +664,7 @@ public class testing extends ModuleBody {
         r6[6] = Lit136;
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("%test-runner-skip-list").readResolve();
         Lit31 = simpleSymbol3;
-        r6[7] = PairWithPosition.make(PairWithPosition.make(simpleSymbol3, PairWithPosition.make(Lit143, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3932190), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3932166), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3932166);
+        r6[7] = PairWithPosition.make(PairWithPosition.make(simpleSymbol3, PairWithPosition.make(Lit143, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3932190), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3932166), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3932166);
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\r\u0007\u0000\b\b", new Object[0], 1), "\u0003", "\u0011\u0018\u0004\u0011\u0018\f\b\u0011\u0018\u0014\u0011\u0018\u001c\b\u0011\u0018$Q\u0011\u0018,\b\u0005\u0011\u00184\b\u0003\u0018<", r6, 1);
         Lit138 = new SyntaxRules(objArr, syntaxRuleArr, 1);
         objArr = new Object[1];
@@ -697,7 +697,7 @@ public class testing extends ModuleBody {
         r6[0] = Lit128;
         IntNum make = IntNum.make(1);
         Lit13 = make;
-        r6[1] = PairWithPosition.make(make, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3727384);
+        r6[1] = PairWithPosition.make(make, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3727384);
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\b", new Object[0], 1), "\u0001", "\u0011\u0018\u0004\t\u0003\u0018\f", r6, 0);
         r6 = new Object[1];
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("%test-match-nth").readResolve();
@@ -710,7 +710,7 @@ public class testing extends ModuleBody {
         Lit125 = simpleSymbol;
         objArr[0] = simpleSymbol;
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\r\u000f\b\b\b", new Object[0], 2), "\u0001\u0003", "\u0011\u0018\u0004\u0011\u0018\f\b\u0011\u0018\u0014Y\u0011\u0018\u001c\t\u0010\b\u0011\u0018$\b\u0003A\u0011\u0018\u001c\t\u0010\b\r\u000b\u0018,", new Object[]{Lit144, PairWithPosition.make(PairWithPosition.make(Lit148, PairWithPosition.make(PairWithPosition.make(Lit146, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3657754), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3657754), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3657740), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3657739), Lit165, Lit147, Lit146, PairWithPosition.make(PairWithPosition.make(Lit147, PairWithPosition.make(LList.Empty, PairWithPosition.make(PairWithPosition.make(Lit146, PairWithPosition.make(Lit148, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3674156), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3674135), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3674135), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3674132), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3674124), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3674124)}, 1);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\r\u000f\b\b\b", new Object[0], 2), "\u0001\u0003", "\u0011\u0018\u0004\u0011\u0018\f\b\u0011\u0018\u0014Y\u0011\u0018\u001c\t\u0010\b\u0011\u0018$\b\u0003A\u0011\u0018\u001c\t\u0010\b\r\u000b\u0018,", new Object[]{Lit144, PairWithPosition.make(PairWithPosition.make(Lit148, PairWithPosition.make(PairWithPosition.make(Lit146, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3657754), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3657754), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3657740), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3657739), Lit165, Lit147, Lit146, PairWithPosition.make(PairWithPosition.make(Lit147, PairWithPosition.make(LList.Empty, PairWithPosition.make(PairWithPosition.make(Lit146, PairWithPosition.make(Lit148, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3674156), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3674135), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3674135), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3674132), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3674124), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3674124)}, 1);
         Lit126 = new SyntaxRules(objArr, syntaxRuleArr, 2);
         r6 = new Object[6];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("test-result-alist!").readResolve();
@@ -724,7 +724,7 @@ public class testing extends ModuleBody {
         Lit123 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\fA\u0011\u0018\u0014\u0011\u0018\u001c\b\u0013\b\u0011\u0018$\u0011\u0018\u001c\u0011\u0018,\b\u000b", r6, 0);
         Object[] objArr2 = new Object[8];
         objArr2[0] = Lit150;
-        objArr2[1] = PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3469326), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3469326), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3469323);
+        objArr2[1] = PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3469326), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3469326), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3469323);
         objArr2[2] = Lit160;
         objArr2[3] = Lit52;
         objArr2[4] = Lit149;
@@ -733,7 +733,7 @@ public class testing extends ModuleBody {
         Lit15 = simpleSymbol;
         SimpleSymbol simpleSymbol4 = (SimpleSymbol) new SimpleSymbol("test-name").readResolve();
         Lit7 = simpleSymbol4;
-        objArr2[6] = PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol4, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3477545), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3477545);
+        objArr2[6] = PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol4, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3477545), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3477545);
         objArr2[7] = Lit115;
         Lit119 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004I\u0011\u0018\f\b\u0011\u0018\u0014\b\u000b©\u0011\u0018\u001c\u0011\u0018$\b\u0011\u0018,A\u0011\u0018,\u0011\u00184\b\u000b\b#\b\u0011\u0018<\u0011\u0018$\t\u0013\b\u001b", objArr2, 0);
         Object[] objArr3 = new Object[]{Lit115};
@@ -746,21 +746,21 @@ public class testing extends ModuleBody {
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("test-result-set!").readResolve();
         Lit78 = simpleSymbol3;
         r6[2] = simpleSymbol3;
-        r6[3] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit152, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3223581), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3223581), PairWithPosition.make(Boolean.TRUE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3223596), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3223580);
+        r6[3] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit152, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3223581), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3223581), PairWithPosition.make(Boolean.TRUE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3223596), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3223580);
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("%test-on-test-end").readResolve();
         Lit87 = simpleSymbol3;
         r6[4] = simpleSymbol3;
         r6[5] = Lit154;
         r6[6] = Lit144;
-        r6[7] = PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3239966), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3239966);
-        r6[8] = PairWithPosition.make(Boolean.FALSE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3244041);
+        r6[7] = PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3239966), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3239966);
+        r6[8] = PairWithPosition.make(Boolean.FALSE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3244041);
         r6[9] = Lit151;
         r6[10] = Lit156;
-        r6[11] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit157, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3252256), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3252256), PairWithPosition.make(Lit151, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3252269), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3252255);
-        r6[12] = PairWithPosition.make(Boolean.TRUE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3256331);
+        r6[11] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit157, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3252256), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3252256), PairWithPosition.make(Lit151, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3252269), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3252255);
+        r6[12] = PairWithPosition.make(Boolean.TRUE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3256331);
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("%test-report-result").readResolve();
         Lit83 = simpleSymbol3;
-        r6[13] = PairWithPosition.make(PairWithPosition.make(simpleSymbol3, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3260424), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3260424);
+        r6[13] = PairWithPosition.make(PairWithPosition.make(simpleSymbol3, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3260424), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3260424);
         r14[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u0002\f\u000f\b", objArr4, 2), "\u0001\u0001", "\u0011\u0018\u0004\b)\u0011\u0018\f\b\u00039\u0011\u0018\u0014\t\u0003\u0018\u001cũ\u0011\u0018$\t\u0003\b\u0011\u0018,\u0011\u00184\t\u0010Q\u0011\u0018\u0014\t\u0003\u0011\u0018<\b\u000b\u0018D\b\u0011\u0018L\u0011\u0018T9\u0011\u0018\u0014\t\u0003\u0018\\\u0018d\u0018l", r6, 0);
         r6 = new Object[15];
         r6[0] = Lit161;
@@ -768,23 +768,23 @@ public class testing extends ModuleBody {
         r6[2] = Lit144;
         r6[3] = Lit153;
         r6[4] = Lit78;
-        r6[5] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit152, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3276828), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3276828), PairWithPosition.make(Lit153, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3276843), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3276827);
+        r6[5] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit152, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3276828), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3276828), PairWithPosition.make(Lit153, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3276843), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3276827);
         r6[6] = Lit87;
         r6[7] = Lit154;
-        r6[8] = PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3293213), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3293213);
-        r6[9] = PairWithPosition.make(Boolean.FALSE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3297288);
+        r6[8] = PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3293213), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3293213);
+        r6[9] = PairWithPosition.make(Boolean.FALSE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3297288);
         r6[10] = Lit151;
         r6[11] = Lit156;
-        r6[12] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit157, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3305503), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3305503), PairWithPosition.make(Lit151, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3305516), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3305502);
+        r6[12] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit157, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3305503), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3305503), PairWithPosition.make(Lit151, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3305516), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3305502);
         SimpleSymbol simpleSymbol5 = Lit158;
         SimpleSymbol simpleSymbol6 = simpleSymbol5;
-        r6[13] = PairWithPosition.make(PairWithPosition.make(simpleSymbol6, PairWithPosition.make(PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("and").readResolve(), PairWithPosition.make(PairWithPosition.make(Lit159, PairWithPosition.make(Lit153, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("<gnu.bytecode.ClassType>").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309604), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309601), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309590), PairWithPosition.make(PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("$lookup$").readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol("gnu.bytecode.ClassType").readResolve(), Pair.make(Pair.make((SimpleSymbol) new SimpleSymbol(LispLanguage.quasiquote_sym).readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol("isSubclass").readResolve(), LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3313673), PairWithPosition.make(Lit153, PairWithPosition.make(Lit156, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3313710), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3313707), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3313672), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3313672), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309590), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309585), PairWithPosition.make(PairWithPosition.make(Lit159, PairWithPosition.make(Lit151, PairWithPosition.make(Lit153, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3317784), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3317781), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3317770), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3317770), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309584), PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("else").readResolve(), PairWithPosition.make(Boolean.TRUE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3321871), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3321865), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3321865), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309584), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309578), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3309578);
-        r6[14] = PairWithPosition.make(PairWithPosition.make(Lit83, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3325959), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 3325959);
+        r6[13] = PairWithPosition.make(PairWithPosition.make(simpleSymbol6, PairWithPosition.make(PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("and").readResolve(), PairWithPosition.make(PairWithPosition.make(Lit159, PairWithPosition.make(Lit153, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("<gnu.bytecode.ClassType>").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309604), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309601), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309590), PairWithPosition.make(PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("$lookup$").readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol("gnu.bytecode.ClassType").readResolve(), Pair.make(Pair.make((SimpleSymbol) new SimpleSymbol(LispLanguage.quasiquote_sym).readResolve(), Pair.make((SimpleSymbol) new SimpleSymbol("isSubclass").readResolve(), LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3313673), PairWithPosition.make(Lit153, PairWithPosition.make(Lit156, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3313710), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3313707), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3313672), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3313672), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309590), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309585), PairWithPosition.make(PairWithPosition.make(Lit159, PairWithPosition.make(Lit151, PairWithPosition.make(Lit153, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3317784), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3317781), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3317770), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3317770), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309584), PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("else").readResolve(), PairWithPosition.make(Boolean.TRUE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3321871), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3321865), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3321865), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309584), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309578), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3309578);
+        r6[14] = PairWithPosition.make(PairWithPosition.make(Lit83, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3325959), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 3325959);
         r14[1] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004)\u0011\u0018\f\b\u0003\b\u0011\u0018\u00141\b\u0011\u0018\u001c\b\u000b9\u0011\u0018$\t\u0003\u0018,ũ\u0011\u00184\t\u0003\b\u0011\u0018<\u0011\u0018\u0014\t\u0010Q\u0011\u0018$\t\u0003\u0011\u0018D\b\u0013\u0018L\b\u0011\u0018T\u0011\u0018\\9\u0011\u0018$\t\u0003\u0018d\u0018l\u0018t", r6, 0);
         Lit116 = new SyntaxRules(objArr3, r14, 3);
         r6 = new Object[6];
         r6[0] = Lit150;
-        r6[1] = PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2916364), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2916364), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2916361), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2916360);
+        r6[1] = PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2916364), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2916364), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2916361), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2916360);
         r6[2] = Lit52;
         r6[3] = Lit149;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("%test-comp2body").readResolve();
@@ -796,7 +796,7 @@ public class testing extends ModuleBody {
         Lit114 = new SyntaxTemplate("\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\fA\u0011\u0018\u0014\u0011\u0018\u001c\b#\b\u0011\u0018$\u0011\u0018\u001c)\u0011\u0018,\b\u001b\t\u000b\b\u0013", r6, 0);
         r6 = new Object[5];
         r6[0] = Lit150;
-        r6[1] = PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2781198), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2781198), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2781195), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2781194);
+        r6[1] = PairWithPosition.make(PairWithPosition.make(Lit149, PairWithPosition.make(PairWithPosition.make(Lit60, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2781198), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2781198), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2781195), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2781194);
         r6[2] = Lit52;
         r6[3] = Lit149;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("%test-comp1body").readResolve();
@@ -816,32 +816,32 @@ public class testing extends ModuleBody {
         Lit84 = simpleSymbol3;
         r6[4] = simpleSymbol3;
         r6[5] = Lit78;
-        r6[6] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2666526), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2666526), PairWithPosition.make(Lit162, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2666539), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2666525);
+        r6[6] = PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2666526), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2666526), PairWithPosition.make(Lit162, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2666539), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2666525);
         r6[7] = Lit87;
-        r6[8] = PairWithPosition.make(Lit162, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2670622);
-        r6[9] = PairWithPosition.make(PairWithPosition.make(Lit83, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2674696), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2674696);
+        r6[8] = PairWithPosition.make(Lit162, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2670622);
+        r6[9] = PairWithPosition.make(PairWithPosition.make(Lit83, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2674696), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2674696);
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\b", new Object[0], 2), "\u0001\u0001", "\u0011\u0018\u0004\t\u0010ű\u0011\u0018\f)\u0011\u0018\u0014\b\u0003\b\u0011\u0018\u0004\t\u0010\b\u0011\u0018\u0004Q\b\u0011\u0018\u001c\b\u0011\u0018$\b\u000b9\u0011\u0018,\t\u0003\u00184\b\u0011\u0018<\t\u0003\u0018D\u0018L", r6, 0);
         Lit93 = new SyntaxRules(objArr, syntaxRuleArr, 2);
         objArr = new Object[]{Lit89};
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\f\u001f\b", new Object[0], 4), "\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004\t\u0010Ǳ\u0011\u0018\f)\u0011\u0018\u0014\b\u0003\b\u0011\u0018\u00041\b\u0011\u0018\u001c\b\u00139\u0011\u0018$\t\u0003\u0018,\b\u0011\u0018\u0004Q\b\u0011\u00184\b\u0011\u0018<\b\u001b9\u0011\u0018$\t\u0003\u0018D\b\u0011\u0018L\t\u0003\b\t\u000b\u0018T\u0018\\", new Object[]{Lit144, Lit161, Lit86, Lit163, Lit78, PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("expected-value").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2592794), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2592794), PairWithPosition.make(Lit163, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2592809), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2592793), Lit162, Lit84, PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2600988), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2600988), PairWithPosition.make(Lit162, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2601001), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2600987), Lit87, PairWithPosition.make(Lit163, PairWithPosition.make(Lit162, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2605094), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2605090), PairWithPosition.make(PairWithPosition.make(Lit83, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2609158), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2609158)}, 0);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\f\u001f\b", new Object[0], 4), "\u0001\u0001\u0001\u0001", "\u0011\u0018\u0004\t\u0010Ǳ\u0011\u0018\f)\u0011\u0018\u0014\b\u0003\b\u0011\u0018\u00041\b\u0011\u0018\u001c\b\u00139\u0011\u0018$\t\u0003\u0018,\b\u0011\u0018\u0004Q\b\u0011\u00184\b\u0011\u0018<\b\u001b9\u0011\u0018$\t\u0003\u0018D\b\u0011\u0018L\t\u0003\b\t\u000b\u0018T\u0018\\", new Object[]{Lit144, Lit161, Lit86, Lit163, Lit78, PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("expected-value").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2592794), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2592794), PairWithPosition.make(Lit163, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2592809), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2592793), Lit162, Lit84, PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit155, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2600988), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2600988), PairWithPosition.make(Lit162, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2601001), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2600987), Lit87, PairWithPosition.make(Lit163, PairWithPosition.make(Lit162, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2605094), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2605090), PairWithPosition.make(PairWithPosition.make(Lit83, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2609158), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2609158)}, 0);
         Lit90 = new SyntaxRules(objArr, syntaxRuleArr, 4);
         objArr = new Object[]{Lit84};
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\b", new Object[0], 1), "\u0001", "\u0011\u0018\u0004\t\u0003\u0018\f", new Object[]{Lit154, PairWithPosition.make(PairWithPosition.make(Lit151, PairWithPosition.make(Lit156, PairWithPosition.make(PairWithPosition.make(Lit78, PairWithPosition.make(PairWithPosition.make(Lit146, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347035), PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit157, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347058), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347058), PairWithPosition.make(Lit151, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347071), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347057), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347035), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347017), PairWithPosition.make(Boolean.FALSE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2351113), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2347017), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2342921), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2342917), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2342917)}, 0);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\b", new Object[0], 1), "\u0001", "\u0011\u0018\u0004\t\u0003\u0018\f", new Object[]{Lit154, PairWithPosition.make(PairWithPosition.make(Lit151, PairWithPosition.make(Lit156, PairWithPosition.make(PairWithPosition.make(Lit78, PairWithPosition.make(PairWithPosition.make(Lit146, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347035), PairWithPosition.make(PairWithPosition.make(Lit15, PairWithPosition.make(Lit157, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347058), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347058), PairWithPosition.make(Lit151, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347071), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347057), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347035), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347017), PairWithPosition.make(Boolean.FALSE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2351113), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2347017), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2342921), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2342917), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2342917)}, 0);
         Lit85 = new SyntaxRules(objArr, syntaxRuleArr, 1);
         objArr = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("test-result-ref").readResolve();
         Lit75 = simpleSymbol;
         objArr[0] = simpleSymbol;
         syntaxRuleArr = new SyntaxRule[2];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\b", new Object[0], 2), "\u0001\u0001", "\u0011\u0018\u0004\t\u0003\t\u000b\u0018\f", new Object[]{Lit75, PairWithPosition.make(Boolean.FALSE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1933348)}, 0);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\b", new Object[0], 2), "\u0001\u0001", "\u0011\u0018\u0004\t\u0003\t\u000b\u0018\f", new Object[]{Lit75, PairWithPosition.make(Boolean.FALSE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1933348)}, 0);
         r6 = new Object[6];
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("test-result-alist").readResolve();
         Lit51 = simpleSymbol3;
         r6[3] = simpleSymbol3;
         r6[4] = Lit161;
-        r6[5] = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("cdr").readResolve(), PairWithPosition.make(Lit164, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1945619), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1945614);
+        r6[5] = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("cdr").readResolve(), PairWithPosition.make(Lit164, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1945619), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1945614);
         syntaxRuleArr[1] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\b\u0011\u0018\f\b\u0011\u0018\u0014\t\u000b\b\u0011\u0018\u001c\b\u0003\b\u0011\u0018$\u0011\u0018\f\u0011\u0018,\b\u0013", r6, 0);
         Lit76 = new SyntaxRules(objArr, syntaxRuleArr, 3);
         objArr = new Object[1];
@@ -854,7 +854,7 @@ public class testing extends ModuleBody {
         Lit70 = simpleSymbol3;
         r6[0] = simpleSymbol3;
         r6[1] = Lit165;
-        r6[2] = PairWithPosition.make(Lit147, PairWithPosition.make(LList.Empty, PairWithPosition.make(Boolean.FALSE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1826831), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1826828), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1826820);
+        r6[2] = PairWithPosition.make(Lit147, PairWithPosition.make(LList.Empty, PairWithPosition.make(Boolean.FALSE, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1826831), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1826828), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1826820);
         r6[3] = Lit147;
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004\t\u0003\b\u0011\u0018\f\u0011\u0018\u00149\u0011\u0018\u001c\t\u0010\b\u000b\b\u0011\u0018\u001c\t\u0010\b\u0013", r6, 0);
         syntaxRuleArr[1] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\b", new Object[0], 2), "\u0001\u0001", "\u0011\u0018\u0004\t\u0003\u0011\u0018\f\b\u000b", new Object[]{Lit72, Boolean.FALSE}, 0);
@@ -865,7 +865,7 @@ public class testing extends ModuleBody {
         r6 = new Object[13];
         simpleSymbol3 = (SimpleSymbol) new SimpleSymbol("%test-should-execute").readResolve();
         Lit62 = simpleSymbol3;
-        r6[8] = PairWithPosition.make(simpleSymbol3, PairWithPosition.make(Lit149, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1781794), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 1781772);
+        r6[8] = PairWithPosition.make(simpleSymbol3, PairWithPosition.make(Lit149, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1781794), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 1781772);
         r6[9] = Lit165;
         r6[10] = Lit147;
         r6[11] = (SimpleSymbol) new SimpleSymbol("test-begin").readResolve();
@@ -875,7 +875,7 @@ public class testing extends ModuleBody {
         simpleSymbol4 = Lit12;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("xpass").readResolve();
         Lit9 = simpleSymbol;
-        Lit11 = PairWithPosition.make(simpleSymbol4, PairWithPosition.make(simpleSymbol, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2220088), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2220082);
+        Lit11 = PairWithPosition.make(simpleSymbol4, PairWithPosition.make(simpleSymbol, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2220088), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2220082);
         SimpleSymbol simpleSymbol7 = Lit7;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("source-file").readResolve();
         Lit4 = simpleSymbol;
@@ -883,7 +883,7 @@ public class testing extends ModuleBody {
         Lit5 = simpleSymbol4;
         SimpleSymbol simpleSymbol8 = (SimpleSymbol) new SimpleSymbol("source-form").readResolve();
         Lit6 = simpleSymbol8;
-        Lit10 = PairWithPosition.make(simpleSymbol7, PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol4, PairWithPosition.make(simpleSymbol8, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2072618), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2072606), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2072594), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm", 2072583);
+        Lit10 = PairWithPosition.make(simpleSymbol7, PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol4, PairWithPosition.make(simpleSymbol8, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2072618), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2072606), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2072594), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm", 2072583);
         ModuleBody moduleBody = $instance;
         test$Mnrunner$Qu = new ModuleMethod(moduleBody, 12, Lit20, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         test$Mnrunner$Mnpass$Mncount = new ModuleMethod(moduleBody, 13, Lit21, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -924,13 +924,13 @@ public class testing extends ModuleBody {
         test$Mnrunner$Mngroup$Mnpath = new ModuleMethod(moduleBody, 48, Lit56, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         $Pctest$Mnnull$Mncallback = new ModuleMethod(moduleBody, 49, Lit57, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 50, null, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:182");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:182");
         lambda$Fn1 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 51, null, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:187");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:187");
         lambda$Fn2 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 52, null, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:188");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:188");
         lambda$Fn3 = moduleMethod;
         test$Mnrunner$Mnnull = new ModuleMethod(moduleBody, 53, Lit58, 0);
         test$Mnrunner$Mnsimple = new ModuleMethod(moduleBody, 54, Lit59, 0);
@@ -958,31 +958,31 @@ public class testing extends ModuleBody {
         $Prvt$$Pctest$Mnapproximimate$Eq = new ModuleMethod(moduleBody, 76, Lit91, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         simpleSymbol = Lit94;
         PropertySet moduleMethod2 = new ModuleMethod(moduleBody, 77, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod2.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:660");
+        moduleMethod2.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:660");
         test$Mnend = Macro.make(simpleSymbol, moduleMethod2, $instance);
         simpleSymbol = Lit99;
         moduleMethod2 = new ModuleMethod(moduleBody, 78, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod2.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:669");
+        moduleMethod2.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:669");
         test$Mnassert = Macro.make(simpleSymbol, moduleMethod2, $instance);
         simpleSymbol = Lit104;
         moduleMethod2 = new ModuleMethod(moduleBody, 79, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod2.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:696");
+        moduleMethod2.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:696");
         test$Mneqv = Macro.make(simpleSymbol, moduleMethod2, $instance);
         simpleSymbol = Lit106;
         moduleMethod2 = new ModuleMethod(moduleBody, 80, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod2.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:698");
+        moduleMethod2.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:698");
         test$Mneq = Macro.make(simpleSymbol, moduleMethod2, $instance);
         simpleSymbol = Lit108;
         moduleMethod2 = new ModuleMethod(moduleBody, 81, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod2.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:700");
+        moduleMethod2.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:700");
         test$Mnequal = Macro.make(simpleSymbol, moduleMethod2, $instance);
         simpleSymbol = Lit110;
         moduleMethod2 = new ModuleMethod(moduleBody, 82, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod2.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:702");
+        moduleMethod2.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:702");
         test$Mnapproximate = Macro.make(simpleSymbol, moduleMethod2, $instance);
         simpleSymbol = Lit117;
         moduleMethod2 = new ModuleMethod(moduleBody, 83, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod2.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/testing.scm:843");
+        moduleMethod2.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/testing.scm:843");
         test$Mnerror = Macro.make(simpleSymbol, moduleMethod2, $instance);
         test$Mnapply = new ModuleMethod(moduleBody, 84, Lit124, -4095);
         $Prvt$$Pctest$Mnmatch$Mnnth = new ModuleMethod(moduleBody, 85, Lit127, 8194);
@@ -2020,9 +2020,9 @@ public class testing extends ModuleBody {
     }
 
     public static Boolean testOnGroupBeginSimple(Object runner, Object suite$Mnname, Object count) {
-        Object log$Mnfile$Mnname;
         try {
             if (lists.isNull(testRunnerGroupStack((test$Mnrunner) runner))) {
+                Object log$Mnfile$Mnname;
                 ports.display("%%%% Starting test ");
                 ports.display(suite$Mnname);
                 if (strings.isString(Boolean.TRUE)) {

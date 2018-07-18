@@ -672,9 +672,9 @@ public class XMLPrinter extends OutPort implements PositionConsumer, XConsumer {
         if (str.indexOf(46) < 0) {
             return str;
         }
-        char ch;
         int len = str.length();
         int pos = len;
+        char ch;
         do {
             pos--;
             ch = str.charAt(pos);

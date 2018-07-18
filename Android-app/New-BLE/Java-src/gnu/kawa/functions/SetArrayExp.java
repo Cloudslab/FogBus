@@ -17,7 +17,7 @@ class SetArrayExp extends ApplyExp {
     Type elementType;
 
     public SetArrayExp(Expression array, ArrayType arrayType) {
-        super(Invoke.make, new Expression[]{new QuoteExp(typeSetArray), array});
+        super(Invoke.make, new QuoteExp(typeSetArray), array);
         this.elementType = arrayType.getComponentType();
     }
 
@@ -26,6 +26,6 @@ class SetArrayExp extends ApplyExp {
         if (exp.getArgs().length != 2) {
             return exp;
         }
-        return visitor.visitApplyOnly(new ApplyExp(new ArraySet(this.elementType), new Expression[]{getArgs()[1], exp.getArgs()[0], exp.getArgs()[1]}), required);
+        return visitor.visitApplyOnly(new ApplyExp(new ArraySet(this.elementType), getArgs()[1], exp.getArgs()[0], exp.getArgs()[1]), required);
     }
 }

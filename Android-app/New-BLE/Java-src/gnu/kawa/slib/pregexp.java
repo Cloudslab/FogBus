@@ -44,7 +44,7 @@ public class pregexp extends ModuleBody {
     static final SimpleSymbol Lit103 = ((SimpleSymbol) new SimpleSymbol(":lookahead").readResolve());
     static final SimpleSymbol Lit104 = ((SimpleSymbol) new SimpleSymbol(":neg-lookahead").readResolve());
     static final SimpleSymbol Lit105 = ((SimpleSymbol) new SimpleSymbol(":lookbehind").readResolve());
-    static final PairWithPosition Lit106 = PairWithPosition.make(Lit68, PairWithPosition.make(Boolean.FALSE, PairWithPosition.make(Lit73, PairWithPosition.make(Boolean.FALSE, PairWithPosition.make(Lit14, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302017), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302014), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302012), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302009), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2301999);
+    static final PairWithPosition Lit106 = PairWithPosition.make(Lit68, PairWithPosition.make(Boolean.FALSE, PairWithPosition.make(Lit73, PairWithPosition.make(Boolean.FALSE, PairWithPosition.make(Lit14, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302017), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302014), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302012), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2302009), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2301999);
     static final SimpleSymbol Lit107 = ((SimpleSymbol) new SimpleSymbol(":neg-lookbehind").readResolve());
     static final PairWithPosition Lit108;
     static final SimpleSymbol Lit109 = ((SimpleSymbol) new SimpleSymbol(":no-backtrack").readResolve());
@@ -115,15 +115,15 @@ public class pregexp extends ModuleBody {
     static final Char Lit46;
     static final Char Lit47;
     static final Char Lit48 = Char.make(61);
-    static final PairWithPosition Lit49 = PairWithPosition.make(Lit103, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 851996);
+    static final PairWithPosition Lit49 = PairWithPosition.make(Lit103, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 851996);
     static final SimpleSymbol Lit5 = ((SimpleSymbol) new SimpleSymbol(":seq").readResolve());
     static final Char Lit50 = Char.make(33);
-    static final PairWithPosition Lit51 = PairWithPosition.make(Lit104, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 856092);
+    static final PairWithPosition Lit51 = PairWithPosition.make(Lit104, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 856092);
     static final Char Lit52 = Char.make(62);
-    static final PairWithPosition Lit53 = PairWithPosition.make(Lit109, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 860188);
+    static final PairWithPosition Lit53 = PairWithPosition.make(Lit109, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 860188);
     static final Char Lit54 = Char.make(60);
-    static final PairWithPosition Lit55 = PairWithPosition.make(Lit105, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 872479);
-    static final PairWithPosition Lit56 = PairWithPosition.make(Lit107, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 876575);
+    static final PairWithPosition Lit55 = PairWithPosition.make(Lit105, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 872479);
+    static final PairWithPosition Lit56 = PairWithPosition.make(Lit107, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 876575);
     static final SimpleSymbol Lit57 = ((SimpleSymbol) new SimpleSymbol("pregexp-read-cluster-type").readResolve());
     static final Char Lit58 = Char.make(45);
     static final Char Lit59 = Char.make(105);
@@ -131,7 +131,7 @@ public class pregexp extends ModuleBody {
     static final SimpleSymbol Lit60 = ((SimpleSymbol) new SimpleSymbol(":case-sensitive").readResolve());
     static final SimpleSymbol Lit61 = ((SimpleSymbol) new SimpleSymbol(":case-insensitive").readResolve());
     static final Char Lit62 = Char.make(120);
-    static final PairWithPosition Lit63 = PairWithPosition.make(Lit100, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 942102);
+    static final PairWithPosition Lit63 = PairWithPosition.make(Lit100, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 942102);
     static final SimpleSymbol Lit64 = ((SimpleSymbol) new SimpleSymbol("pregexp-read-subpattern").readResolve());
     static final Char Lit65;
     static final Char Lit66;
@@ -229,22 +229,22 @@ public class pregexp extends ModuleBody {
 
         public frame0() {
             PropertySet moduleMethod = new ModuleMethod(this, 9, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:513");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:513");
             this.lambda$Fn2 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 10, null, 0);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:514");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:514");
             this.lambda$Fn3 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 11, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:541");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:541");
             this.lambda$Fn4 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 12, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:545");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:545");
             this.lambda$Fn5 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 13, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:587");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:587");
             this.lambda$Fn11 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 14, null, 0);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:590");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:590");
             this.lambda$Fn12 = moduleMethod;
         }
 
@@ -419,7 +419,7 @@ public class pregexp extends ModuleBody {
 
         public frame1() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, 0);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:508");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:508");
             this.lambda$Fn13 = moduleMethod;
         }
 
@@ -449,7 +449,7 @@ public class pregexp extends ModuleBody {
 
         public frame2() {
             PropertySet moduleMethod = new ModuleMethod(this, 2, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:519");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:519");
             this.lambda$Fn14 = moduleMethod;
         }
 
@@ -481,10 +481,10 @@ public class pregexp extends ModuleBody {
 
         public frame3() {
             PropertySet moduleMethod = new ModuleMethod(this, 3, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:526");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:526");
             this.lambda$Fn15 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 4, null, 0);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:529");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:529");
             this.lambda$Fn16 = moduleMethod;
         }
 
@@ -535,7 +535,7 @@ public class pregexp extends ModuleBody {
 
         public frame4() {
             PropertySet moduleMethod = new ModuleMethod(this, 8, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:602");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:602");
             this.lambda$Fn17 = moduleMethod;
         }
 
@@ -623,13 +623,13 @@ public class pregexp extends ModuleBody {
 
         public frame5() {
             PropertySet moduleMethod = new ModuleMethod(this, 5, pregexp.Lit111, 0);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:612");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:612");
             this.fk = moduleMethod;
             moduleMethod = new ModuleMethod(this, 6, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:617");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:617");
             this.lambda$Fn18 = moduleMethod;
             moduleMethod = new ModuleMethod(this, 7, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:628");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:628");
             this.lambda$Fn19 = moduleMethod;
         }
 
@@ -745,7 +745,7 @@ public class pregexp extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 15, pregexp.Lit112, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:460");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:460");
             this.identity = moduleMethod;
         }
 
@@ -1034,7 +1034,7 @@ public class pregexp extends ModuleBody {
         Lit18 = make13;
         Char make14 = Char.make(41);
         Lit6 = make14;
-        Lit116 = PairWithPosition.make(make, PairWithPosition.make(make2, PairWithPosition.make(make3, PairWithPosition.make(make4, PairWithPosition.make(make5, PairWithPosition.make(make6, PairWithPosition.make(make7, PairWithPosition.make(make8, PairWithPosition.make(make9, PairWithPosition.make(make10, PairWithPosition.make(make11, PairWithPosition.make(make12, PairWithPosition.make(make13, PairWithPosition.make(make14, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153977), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153973), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153969), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153965), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153961), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153957), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149885), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149881), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149877), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149873), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149869), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149865), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149861), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149856);
+        Lit116 = PairWithPosition.make(make, PairWithPosition.make(make2, PairWithPosition.make(make3, PairWithPosition.make(make4, PairWithPosition.make(make5, PairWithPosition.make(make6, PairWithPosition.make(make7, PairWithPosition.make(make8, PairWithPosition.make(make9, PairWithPosition.make(make10, PairWithPosition.make(make11, PairWithPosition.make(make12, PairWithPosition.make(make13, PairWithPosition.make(make14, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153977), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153973), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153969), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153965), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153961), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3153957), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149885), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149881), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149877), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149873), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149869), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149865), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149861), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 3149856);
         SimpleSymbol simpleSymbol = (SimpleSymbol) new SimpleSymbol(":between").readResolve();
         Lit68 = simpleSymbol;
         Boolean bool = Boolean.FALSE;
@@ -1043,125 +1043,125 @@ public class pregexp extends ModuleBody {
         Boolean bool2 = Boolean.FALSE;
         SimpleSymbol simpleSymbol2 = (SimpleSymbol) new SimpleSymbol(":any").readResolve();
         Lit14 = simpleSymbol2;
-        Lit108 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(bool, PairWithPosition.make(make15, PairWithPosition.make(bool2, PairWithPosition.make(simpleSymbol2, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338881), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338878), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338876), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338873), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338863);
+        Lit108 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(bool, PairWithPosition.make(make15, PairWithPosition.make(bool2, PairWithPosition.make(simpleSymbol2, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338881), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338878), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338876), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338873), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 2338863);
         simpleSymbol = (SimpleSymbol) new SimpleSymbol(":neg-char").readResolve();
         Lit17 = simpleSymbol;
         simpleSymbol2 = (SimpleSymbol) new SimpleSymbol(":word").readResolve();
         Lit41 = simpleSymbol2;
-        Lit43 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol2, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 696359), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 696348);
+        Lit43 = PairWithPosition.make(simpleSymbol, PairWithPosition.make(simpleSymbol2, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 696359), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 696348);
         simpleSymbol2 = Lit17;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol(":space").readResolve();
         Lit36 = simpleSymbol;
-        Lit38 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 684071), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 684060);
+        Lit38 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 684071), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 684060);
         simpleSymbol2 = Lit17;
         simpleSymbol = (SimpleSymbol) new SimpleSymbol(":digit").readResolve();
         Lit30 = simpleSymbol;
-        Lit32 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 667687), "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm", 667676);
+        Lit32 = PairWithPosition.make(simpleSymbol2, PairWithPosition.make(simpleSymbol, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 667687), "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm", 667676);
         ModuleBody moduleBody = $instance;
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 16, Lit117, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:47");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:47");
         pregexp$Mnreverse$Ex = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 17, Lit118, -4096);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:57");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:57");
         pregexp$Mnerror = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 18, Lit119, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:65");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:65");
         pregexp$Mnread$Mnpattern = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 19, Lit120, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:79");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:79");
         pregexp$Mnread$Mnbranch = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 20, Lit21, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:91");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:91");
         pregexp$Mnread$Mnpiece = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 21, Lit121, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:138");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:138");
         pregexp$Mnread$Mnescaped$Mnnumber = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 22, Lit122, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:155");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:155");
         pregexp$Mnread$Mnescaped$Mnchar = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 23, Lit45, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:174");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:174");
         pregexp$Mnread$Mnposix$Mnchar$Mnclass = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 24, Lit57, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:200");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:200");
         pregexp$Mnread$Mncluster$Mntype = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 25, Lit64, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:233");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:233");
         pregexp$Mnread$Mnsubpattern = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 26, Lit74, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:254");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:254");
         pregexp$Mnwrap$Mnquantifier$Mnif$Mnany = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 27, Lit76, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:300");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:300");
         pregexp$Mnread$Mnnums = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 28, Lit123, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:323");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:323");
         pregexp$Mninvert$Mnchar$Mnlist = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 29, Lit80, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:330");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:330");
         pregexp$Mnread$Mnchar$Mnlist = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 30, Lit124, 24582);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:368");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:368");
         pregexp$Mnstring$Mnmatch = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 31, Lit125, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:379");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:379");
         pregexp$Mnchar$Mnword$Qu = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 32, Lit126, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:387");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:387");
         pregexp$Mnat$Mnword$Mnboundary$Qu = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 33, Lit99, 8194);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:399");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:399");
         pregexp$Mncheck$Mnif$Mnin$Mnchar$Mnclass$Qu = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 34, Lit127, 8194);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:429");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:429");
         pregexp$Mnlist$Mnref = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 35, Lit128, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:448");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:448");
         pregexp$Mnmake$Mnbackref$Mnlist = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 36, null, 0);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:463");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:463");
         lambda$Fn1 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 37, null, 0);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:551");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:551");
         lambda$Fn6 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 38, null, 0);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:556");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:556");
         lambda$Fn7 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 39, null, 0);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:564");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:564");
         lambda$Fn8 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 40, null, 0);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:573");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:573");
         lambda$Fn9 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 41, null, 0);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:578");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:578");
         lambda$Fn10 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 42, Lit101, 24582);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:459");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:459");
         pregexp$Mnmatch$Mnpositions$Mnaux = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 43, Lit129, 16388);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:639");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:639");
         pregexp$Mnreplace$Mnaux = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 44, Lit130, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:665");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:665");
         pregexp = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 45, Lit114, -4094);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:670");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:670");
         pregexp$Mnmatch$Mnpositions = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 46, Lit131, -4094);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:690");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:690");
         pregexp$Mnmatch = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 47, Lit132, 8194);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:700");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:700");
         pregexp$Mnsplit = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 48, Lit133, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:723");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:723");
         pregexp$Mnreplace = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 49, Lit134, 12291);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:736");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:736");
         pregexp$Mnreplace$St = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 50, Lit135, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/pregexp.scm:764");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/gnu/kawa/slib/pregexp.scm:764");
         pregexp$Mnquote = moduleMethod;
         $instance.run();
     }
@@ -2496,13 +2496,13 @@ public class pregexp extends ModuleBody {
     }
 
     public static Object pregexpReadNums(Object s, Object i, Object n) {
-        char c;
+        boolean x;
         Object p = LList.Empty;
         Object q = LList.Empty;
         Object obj = Lit8;
         Object obj2 = i;
         while (true) {
-            boolean x;
+            char c;
             if (Scheme.numGEq.apply2(obj2, n) != Boolean.FALSE) {
                 pregexpError$V(new Object[]{Lit76});
             }

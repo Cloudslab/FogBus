@@ -95,13 +95,11 @@ public class Invoke extends ProcedureN {
     }
 
     public Object applyN(Object[] args) throws Throwable {
-        String kname;
         if (this.kind == 'P') {
             throw new RuntimeException(getName() + ": invoke-special not allowed at run time");
         }
         ObjectType dtype;
         Object obj;
-        int i;
         int nargs = args.length;
         Procedure.checkArgCount(this, nargs);
         Object arg0 = args[0];
@@ -110,6 +108,7 @@ public class Invoke extends ProcedureN {
         } else {
             dtype = typeFrom(arg0, this);
         }
+        int i;
         if (this.kind == 'N') {
             obj = null;
             if (dtype instanceof TypeValue) {
@@ -130,6 +129,7 @@ public class Invoke extends ProcedureN {
                 Object arr;
                 int index;
                 Object arg;
+                String kname;
                 Type elementType = ((ArrayType) dtype).getComponentType();
                 int len = args.length - 1;
                 if (len >= 2 && (args[1] instanceof Keyword)) {

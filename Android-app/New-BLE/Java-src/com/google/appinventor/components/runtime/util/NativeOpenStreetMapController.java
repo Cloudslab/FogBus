@@ -16,7 +16,10 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver.OnPreDrawListener;
 import android.view.animation.Animation;
+import android.widget.RelativeLayout;
+import android.widget.RelativeLayout.LayoutParams;
 import com.caverock.androidsvg.SVG;
 import com.caverock.androidsvg.SVG.Colour;
 import com.caverock.androidsvg.SVG.Length;
@@ -40,6 +43,7 @@ import com.google.appinventor.components.runtime.util.MapFactory.MapMarker;
 import com.google.appinventor.components.runtime.util.MapFactory.MapPolygon;
 import com.google.appinventor.components.runtime.util.MapFactory.MapRectangle;
 import com.google.appinventor.components.runtime.util.MapFactory.MapType;
+import com.google.appinventor.components.runtime.view.ZoomControlView;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -72,6 +76,7 @@ import org.osmdroid.views.overlay.Polygon.OnClickListener;
 import org.osmdroid.views.overlay.Polygon.OnDragListener;
 import org.osmdroid.views.overlay.Polyline;
 import org.osmdroid.views.overlay.compass.CompassOverlay;
+import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider;
 import org.osmdroid.views.overlay.gestures.RotationGestureOverlay;
 import org.osmdroid.views.overlay.infowindow.OverlayInfoWindow;
 import org.osmdroid.views.overlay.mylocation.IMyLocationConsumer;
@@ -87,11 +92,13 @@ class NativeOpenStreetMapController implements MapController, MapListener {
     private static final String TAG = NativeOpenStreetMapController.class.getSimpleName();
     private boolean caches;
     private CompassOverlay compass = null;
+    private RelativeLayout containerView;
     private OverlayInfoWindow defaultInfoWindow = null;
     private SVG defaultMarkerSVG = null;
     private Set<MapEventListener> eventListeners = new HashSet();
     private Map<MapFeature, OverlayWithIW> featureOverlays = new HashMap();
     private final Form form;
+    private float lastAzimuth = Float.NaN;
     private final AppInventorLocationSensorAdapter locationProvider;
     private boolean ready = false;
     private RotationGestureOverlay rotation = null;
@@ -100,10 +107,11 @@ class NativeOpenStreetMapController implements MapController, MapListener {
     private final MyLocationNewOverlay userLocation;
     private MapView view;
     private boolean zoomControlEnabled;
+    private ZoomControlView zoomControls = null;
     private boolean zoomEnabled;
 
-    class C03361 implements OnTapListener {
-        C03361() {
+    class C03381 implements OnTapListener {
+        C03381() {
         }
 
         public void onSingleTap(MapView view, double latitude, double longitude) {
@@ -116,6 +124,16 @@ class NativeOpenStreetMapController implements MapController, MapListener {
             for (MapEventListener listener : NativeOpenStreetMapController.this.eventListeners) {
                 listener.onDoubleTap(latitude, longitude);
             }
+        }
+    }
+
+    class C03392 implements OnPreDrawListener {
+        C03392() {
+        }
+
+        public boolean onPreDraw() {
+            NativeOpenStreetMapController.this.compass.setCompassCenter((((float) NativeOpenStreetMapController.this.view.getMeasuredWidth()) / NativeOpenStreetMapController.this.view.getContext().getResources().getDisplayMetrics().density) - 35.0f, 35.0f);
+            return true;
         }
     }
 
@@ -135,8 +153,8 @@ class NativeOpenStreetMapController implements MapController, MapListener {
 
     private class MapReadyHandler extends Handler {
 
-        class C03451 implements Runnable {
-            C03451() {
+        class C03481 implements Runnable {
+            C03481() {
             }
 
             public void run() {
@@ -154,7 +172,7 @@ class NativeOpenStreetMapController implements MapController, MapListener {
                 case 0:
                     if (!NativeOpenStreetMapController.this.ready && NativeOpenStreetMapController.this.form.canDispatchEvent(null, "MapReady")) {
                         NativeOpenStreetMapController.this.ready = true;
-                        NativeOpenStreetMapController.this.form.runOnUiThread(new C03451());
+                        NativeOpenStreetMapController.this.form.runOnUiThread(new C03481());
                     }
                     NativeOpenStreetMapController.this.view.invalidate();
                     return;
@@ -471,12 +489,18 @@ class NativeOpenStreetMapController implements MapController, MapListener {
         this.view.setTilesScaledToDpi(true);
         this.view.setMapListener(this);
         this.view.getOverlayManager().add(this.touch);
-        this.view.addOnTapListener(new C03361());
+        this.view.addOnTapListener(new C03381());
+        this.zoomControls = new ZoomControlView(this.view);
         this.userLocation = new MyLocationNewOverlay(this.locationProvider, this.view);
+        this.containerView = new RelativeLayout(form);
+        this.containerView.setClipChildren(true);
+        this.containerView.addView(this.view, new LayoutParams(-1, -1));
+        this.containerView.addView(this.zoomControls);
+        this.zoomControls.setVisibility(8);
     }
 
     public View getView() {
-        return this.view;
+        return this.containerView;
     }
 
     public double getLatitude() {
@@ -493,6 +517,7 @@ class NativeOpenStreetMapController implements MapController, MapListener {
 
     public void setZoom(int zoom) {
         this.view.getController().setZoom((double) zoom);
+        this.zoomControls.updateButtons();
     }
 
     public int getZoom() {
@@ -534,25 +559,35 @@ class NativeOpenStreetMapController implements MapController, MapListener {
     public void setCompassEnabled(boolean enabled) {
         if (enabled && this.compass == null) {
             this.compass = new CompassOverlay(this.view.getContext(), this.view);
+            this.view.getViewTreeObserver().addOnPreDrawListener(new C03392());
             this.view.getOverlayManager().add(this.compass);
         }
         if (this.compass == null) {
             return;
         }
         if (enabled) {
-            this.compass.enableCompass();
-        } else {
-            this.compass.disableCompass();
+            if (this.compass.getOrientationProvider() != null) {
+                this.compass.enableCompass();
+            } else {
+                this.compass.enableCompass(new InternalCompassOrientationProvider(this.view.getContext()));
+            }
+            this.compass.onOrientationChanged(this.lastAzimuth, null);
+            return;
         }
+        this.lastAzimuth = this.compass.getOrientation();
+        this.compass.disableCompass();
     }
 
     public boolean isCompassEnabled() {
-        return this.compass != null && this.compass.isEnabled();
+        return this.compass != null && this.compass.isCompassEnabled();
     }
 
     public void setZoomControlEnabled(boolean enabled) {
-        this.view.setBuiltInZoomControls(enabled);
-        this.zoomControlEnabled = enabled;
+        if (this.zoomControlEnabled != enabled) {
+            this.zoomControls.setVisibility(enabled ? 0 : 8);
+            this.zoomControlEnabled = enabled;
+            this.containerView.invalidate();
+        }
     }
 
     public boolean isZoomControlEnabled() {
@@ -621,8 +656,8 @@ class NativeOpenStreetMapController implements MapController, MapListener {
     public void addFeature(final MapMarker aiMarker) {
         createNativeMarker(aiMarker, new AsyncCallbackPair<Marker>() {
 
-            class C03371 implements OnMarkerClickListener {
-                C03371() {
+            class C03401 implements OnMarkerClickListener {
+                C03401() {
                 }
 
                 public boolean onMarkerClick(Marker marker, MapView mapView) {
@@ -643,8 +678,8 @@ class NativeOpenStreetMapController implements MapController, MapListener {
                 }
             }
 
-            class C03382 implements OnMarkerDragListener {
-                C03382() {
+            class C03412 implements OnMarkerDragListener {
+                C03412() {
                 }
 
                 public void onMarkerDrag(Marker marker) {
@@ -673,8 +708,8 @@ class NativeOpenStreetMapController implements MapController, MapListener {
             }
 
             public void onSuccess(Marker overlay) {
-                overlay.setOnMarkerClickListener(new C03371());
-                overlay.setOnMarkerDragListener(new C03382());
+                overlay.setOnMarkerClickListener(new C03401());
+                overlay.setOnMarkerDragListener(new C03412());
                 if (aiMarker.Visible()) {
                     NativeOpenStreetMapController.this.showOverlay(overlay);
                 } else {
@@ -994,7 +1029,7 @@ class NativeOpenStreetMapController implements MapController, MapListener {
         SVG markerSvg = null;
         if (this.defaultMarkerSVG == null) {
             try {
-                this.defaultMarkerSVG = SVG.getFromAsset(this.view.getContext().getAssets(), "component/marker.svg");
+                this.defaultMarkerSVG = SVG.getFromAsset(this.view.getContext().getAssets(), "marker.svg");
             } catch (SVGParseException e) {
                 Log.e(TAG, "Invalid SVG in Marker asset", e);
             } catch (IOException e2) {
@@ -1255,6 +1290,7 @@ class NativeOpenStreetMapController implements MapController, MapListener {
     }
 
     public boolean onZoom(ZoomEvent event) {
+        this.zoomControls.updateButtons();
         for (MapEventListener listener : this.eventListeners) {
             listener.onZoom();
         }
@@ -1268,5 +1304,13 @@ class NativeOpenStreetMapController implements MapController, MapListener {
     public int getOverlayCount() {
         System.err.println(this.view.getOverlays());
         return this.view.getOverlays().size();
+    }
+
+    public void setRotation(float Rotation) {
+        this.view.setMapOrientation(Rotation);
+    }
+
+    public float getRotation() {
+        return this.view.getMapOrientation();
     }
 }

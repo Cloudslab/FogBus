@@ -234,10 +234,10 @@ public class lists extends ModuleBody {
         set$Mncar$Ex = new ModuleMethod(moduleBody, 4, Lit6, 8194);
         set$Mncdr$Ex = new ModuleMethod(moduleBody, 5, Lit7, 8194);
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 6, "car", FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/lists.scm:31");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/lists.scm:31");
         car$Fn1 = moduleMethod;
         moduleMethod = new ModuleMethod(moduleBody, 7, "cdr", FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/lists.scm:36");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/lists.scm:36");
         cdr$Fn2 = moduleMethod;
         lambda$Fn3 = new ModuleMethod(moduleBody, 8, null, 8194);
         caar$Fn4 = new ModuleMethod(moduleBody, 9, "caar", FragmentTransaction.TRANSIT_FRAGMENT_OPEN);

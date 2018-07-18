@@ -8,8 +8,8 @@ import java.util.Set;
 public class ArrayMap<K, V> extends SimpleArrayMap<K, V> implements Map<K, V> {
     MapCollections<K, V> mCollections;
 
-    class C04031 extends MapCollections<K, V> {
-        C04031() {
+    class C04081 extends MapCollections<K, V> {
+        C04081() {
         }
 
         protected int colGetSize() {
@@ -59,7 +59,7 @@ public class ArrayMap<K, V> extends SimpleArrayMap<K, V> implements Map<K, V> {
 
     private MapCollections<K, V> getCollection() {
         if (this.mCollections == null) {
-            this.mCollections = new C04031();
+            this.mCollections = new C04081();
         }
         return this.mCollections;
     }

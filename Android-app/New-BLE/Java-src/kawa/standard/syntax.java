@@ -66,6 +66,6 @@ public class syntax extends Quote {
         if (!(patternScope == null || patternScope.matchArray == null)) {
             matchArray = new ReferenceExp(patternScope.matchArray);
         }
-        return new ApplyExp(ClassType.make("kawa.lang.SyntaxTemplate").getDeclaredMethod("execute", 2), new Expression[]{new QuoteExp(template), matchArray, new ReferenceExp(tr.templateScopeDecl)});
+        return new ApplyExp(ClassType.make("kawa.lang.SyntaxTemplate").getDeclaredMethod("execute", 2), new QuoteExp(template), matchArray, new ReferenceExp(tr.templateScopeDecl));
     }
 }

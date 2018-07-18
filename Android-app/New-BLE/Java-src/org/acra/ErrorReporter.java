@@ -42,8 +42,8 @@ public class ErrorReporter implements UncaughtExceptionHandler {
     private final SharedPreferences prefs;
     private Throwable unhandledThrowable;
 
-    class C03841 extends Thread {
-        C03841() {
+    class C03891 extends Thread {
+        C03891() {
         }
 
         public void run() {
@@ -53,8 +53,8 @@ public class ErrorReporter implements UncaughtExceptionHandler {
         }
     }
 
-    class C03852 extends Thread {
-        C03852() {
+    class C03902 extends Thread {
+        C03902() {
         }
 
         public void run() {
@@ -266,7 +266,7 @@ public class ErrorReporter implements UncaughtExceptionHandler {
                 shouldDisplayToast = false;
             }
             if (shouldDisplayToast) {
-                new C03841().start();
+                new C03891().start();
             }
             CrashReportData crashReportData = this.crashReportDataFactory.createCrashData(e, forceSilentReport, this.brokenThread);
             final String reportFileName = getReportFileName(crashReportData);
@@ -281,7 +281,7 @@ public class ErrorReporter implements UncaughtExceptionHandler {
             }
             if (shouldDisplayToast) {
                 toastWaitEnded = false;
-                new C03852().start();
+                new C03902().start();
             }
             final SendWorker worker = sender;
             if (reportingInteractionMode != ReportingInteractionMode.DIALOG || this.prefs.getBoolean(ACRA.PREF_ALWAYS_ACCEPT, false)) {

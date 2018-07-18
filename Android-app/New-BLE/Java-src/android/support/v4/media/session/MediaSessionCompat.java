@@ -491,7 +491,7 @@ public class MediaSessionCompat {
         private final MediaSessionStub mStub;
         private final String mTag;
         private final Token mToken;
-        private android.support.v4.media.VolumeProviderCompat.Callback mVolumeCallback = new C03991();
+        private android.support.v4.media.VolumeProviderCompat.Callback mVolumeCallback = new C04041();
         private VolumeProviderCompat mVolumeProvider;
         private int mVolumeType;
 
@@ -613,8 +613,8 @@ public class MediaSessionCompat {
             }
         }
 
-        class C03991 extends android.support.v4.media.VolumeProviderCompat.Callback {
-            C03991() {
+        class C04041 extends android.support.v4.media.VolumeProviderCompat.Callback {
+            C04041() {
             }
 
             public void onVolumeChanged(VolumeProviderCompat volumeProvider) {

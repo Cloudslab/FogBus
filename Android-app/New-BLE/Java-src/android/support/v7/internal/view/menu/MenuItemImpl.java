@@ -58,8 +58,8 @@ public final class MenuItemImpl implements SupportMenuItem {
     private CharSequence mTitle;
     private CharSequence mTitleCondensed;
 
-    class C04171 implements VisibilityListener {
-        C04171() {
+    class C04221 implements VisibilityListener {
+        C04221() {
         }
 
         public void onActionProviderVisibilityChanged(boolean isVisible) {
@@ -476,7 +476,7 @@ public final class MenuItemImpl implements SupportMenuItem {
         this.mActionProvider = actionProvider;
         this.mMenu.onItemsChanged(true);
         if (this.mActionProvider != null) {
-            this.mActionProvider.setVisibilityListener(new C04171());
+            this.mActionProvider.setVisibilityListener(new C04221());
         }
         return this;
     }

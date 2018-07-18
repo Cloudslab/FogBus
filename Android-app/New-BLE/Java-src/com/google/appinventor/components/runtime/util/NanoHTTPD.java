@@ -59,8 +59,8 @@ public class NanoHTTPD {
     private int myTcpPort;
     private Thread myThread;
 
-    class C03341 implements Runnable {
-        C03341() {
+    class C03361 implements Runnable {
+        C03361() {
         }
 
         public void run() {
@@ -626,7 +626,7 @@ public class NanoHTTPD {
         this.myTcpPort = port;
         this.myRootDir = wwwroot;
         this.myServerSocket = new ServerSocket(this.myTcpPort);
-        this.myThread = new Thread(new C03341());
+        this.myThread = new Thread(new C03361());
         this.myThread.setDaemon(true);
         this.myThread.start();
     }
@@ -819,13 +819,13 @@ public class NanoHTTPD {
                                 newLen = 0;
                             }
                             final long dataLen = newLen;
-                            InputStream c03352 = new FileInputStream(f) {
+                            InputStream c03372 = new FileInputStream(f) {
                                 public int available() throws IOException {
                                     return (int) dataLen;
                                 }
                             };
-                            c03352.skip(startFrom);
-                            response2 = new Response(HTTP_PARTIALCONTENT, mime, c03352);
+                            c03372.skip(startFrom);
+                            response2 = new Response(HTTP_PARTIALCONTENT, mime, c03372);
                             response2.addHeader("Content-Length", "" + dataLen);
                             response2.addHeader("Content-Range", "bytes " + startFrom + "-" + endAt + "/" + fileLen);
                             response2.addHeader("ETag", etag);

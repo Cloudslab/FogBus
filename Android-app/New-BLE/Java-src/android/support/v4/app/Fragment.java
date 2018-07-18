@@ -134,8 +134,8 @@ public class Fragment implements ComponentCallbacks, OnCreateContextMenuListener
         }
     }
 
-    class C03911 implements FragmentContainer {
-        C03911() {
+    class C03961 implements FragmentContainer {
+        C03961() {
         }
 
         @Nullable
@@ -800,7 +800,7 @@ public class Fragment implements ComponentCallbacks, OnCreateContextMenuListener
 
     void instantiateChildFragmentManager() {
         this.mChildFragmentManager = new FragmentManagerImpl();
-        this.mChildFragmentManager.attachActivity(this.mActivity, new C03911(), this);
+        this.mChildFragmentManager.attachActivity(this.mActivity, new C03961(), this);
     }
 
     void performCreate(Bundle savedInstanceState) {

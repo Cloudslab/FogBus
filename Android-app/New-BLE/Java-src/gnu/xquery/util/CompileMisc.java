@@ -49,7 +49,7 @@ public class CompileMisc {
         }
         Expression exp2;
         if ((((Compare) proc).flags & 32) == 0) {
-            exp2 = new ApplyExp(ClassType.make("gnu.xquery.util.Compare").getDeclaredMethod("apply", 4), new Expression[]{new QuoteExp(IntNum.make(cproc.flags)), exp.getArg(0), exp.getArg(1), QuoteExp.nullExp});
+            exp2 = new ApplyExp(ClassType.make("gnu.xquery.util.Compare").getDeclaredMethod("apply", 4), new QuoteExp(IntNum.make(cproc.flags)), exp.getArg(0), exp.getArg(1), QuoteExp.nullExp);
         }
         if (exp2.getTypeRaw() == null) {
             exp2.setType(XDataType.booleanType);
@@ -122,7 +122,7 @@ public class CompileMisc {
             sizeMethod = Compilation.typeValues.getDeclaredMethod("countValues", 1);
         } else {
             seqType = SortNodes.typeSortedNodes;
-            Expression applyExp = new ApplyExp(SortNodes.sortNodes, new Expression[]{seq});
+            Expression applyExp = new ApplyExp(SortNodes.sortNodes, seq);
             sizeMethod = CoerceNodes.typeNodes.getDeclaredMethod("size", 0);
             seq = applyExp;
         }
@@ -130,12 +130,12 @@ public class CompileMisc {
         parser.letEnter();
         Expression pred = lexp2.body;
         if (lexp2.body.getType() != XDataType.booleanType) {
-            pred = new ApplyExp(ValuesFilter.matchesMethod, new Expression[]{pred, new ReferenceExp(posArg)});
+            pred = new ApplyExp(ValuesFilter.matchesMethod, pred, new ReferenceExp(posArg));
         }
         if (vproc.kind == 'R') {
             Declaration declaration = new Declaration(null, Type.intType);
-            Expression init = new ApplyExp(AddOp.$Mn, new Expression[]{new ReferenceExp(lastArg), new ReferenceExp(declaration)});
-            Expression init2 = new ApplyExp(AddOp.$Pl, new Expression[]{init, new QuoteExp(IntNum.one())});
+            Expression init = new ApplyExp(AddOp.$Mn, new ReferenceExp(lastArg), new ReferenceExp(declaration));
+            Expression init2 = new ApplyExp(AddOp.$Pl, init, new QuoteExp(IntNum.one()));
             Expression let = new LetExp(new Expression[]{init2});
             lexp2.replaceFollowing(dotArg, declaration);
             let.add(posArg);
@@ -143,10 +143,10 @@ public class CompileMisc {
             pred = let;
         }
         lexp2.body = new IfExp(pred, new ReferenceExp(dotArg), QuoteExp.voidExp);
-        ApplyExp doMap = new ApplyExp(ValuesMap.valuesMapWithPos, new Expression[]{lexp2, new ReferenceExp(sequence)});
+        ApplyExp doMap = new ApplyExp(ValuesMap.valuesMapWithPos, lexp2, new ReferenceExp(sequence));
         doMap.setType(dotArg.getType());
         lexp2.returnContinuation = doMap;
-        Expression lastInit = new ApplyExp(sizeMethod, new Expression[]{new ReferenceExp(sequence)});
+        Expression lastInit = new ApplyExp(sizeMethod, new ReferenceExp(sequence));
         LetExp let2 = new LetExp(new Expression[]{lastInit});
         let2.add(lastArg);
         let2.body = gnu.kawa.functions.CompileMisc.validateApplyValuesMap(doMap, visitor, required, ValuesMap.valuesMapWithPos);
@@ -187,12 +187,12 @@ public class CompileMisc {
                     if (lastArg.getCanRead()) {
                         Type typeNodes = CoerceNodes.typeNodes;
                         comp.letStart();
-                        Declaration sequence = comp.letVariable(null, typeNodes, new ApplyExp(CoerceNodes.coerceNodes, new Expression[]{exp1}));
+                        Declaration sequence = comp.letVariable(null, typeNodes, new ApplyExp(CoerceNodes.coerceNodes, exp1));
                         comp.letEnter();
-                        Expression lastInit = new ApplyExp(typeNodes.getDeclaredMethod("size", 0), new Expression[]{new ReferenceExp(sequence)});
+                        Expression lastInit = new ApplyExp(typeNodes.getDeclaredMethod("size", 0), new ReferenceExp(sequence));
                         LetExp lastLet = new LetExp(new Expression[]{lastInit});
                         lastLet.addDeclaration(lastArg);
-                        lastLet.body = new ApplyExp(exp.getFunction(), new Expression[]{new ReferenceExp(sequence), lexp2});
+                        lastLet.body = new ApplyExp(exp.getFunction(), new ReferenceExp(sequence), lexp2);
                         return comp.letDone(lastLet);
                     }
                     Expression result = exp;
@@ -294,6 +294,6 @@ public class CompileMisc {
         if (args.length != 2 || !(args[1] instanceof QuoteExp) || !(((QuoteExp) args[1]).getValue() instanceof XDataType)) {
             return exp;
         }
-        return new ApplyExp(castableMethod, new Expression[]{args[1], args[0]});
+        return new ApplyExp(castableMethod, args[1], args[0]);
     }
 }

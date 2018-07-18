@@ -43,8 +43,8 @@ public class FullScreenVideoUtil implements OnCompletionListener, OnPreparedList
     private Handler mHandler;
     private LayoutParams mMediaControllerParams = new LayoutParams(-1, -2, 80);
 
-    class C03263 implements OnTouchListener {
-        C03263() {
+    class C03273 implements OnTouchListener {
+        C03273() {
         }
 
         public boolean onTouch(View arg0, MotionEvent arg1) {
@@ -53,8 +53,8 @@ public class FullScreenVideoUtil implements OnCompletionListener, OnPreparedList
         }
     }
 
-    class C03274 implements Runnable {
-        C03274() {
+    class C03284 implements Runnable {
+        C03284() {
         }
 
         public void run() {
@@ -203,7 +203,7 @@ public class FullScreenVideoUtil implements OnCompletionListener, OnPreparedList
         this.mFullScreenVideoView.setId(this.mFullScreenVideoView.hashCode());
         this.mFullScreenVideoHolder.setId(this.mFullScreenVideoHolder.hashCode());
         this.mFullScreenVideoView.setMediaController(this.mFullScreenVideoController);
-        this.mFullScreenVideoView.setOnTouchListener(new C03263());
+        this.mFullScreenVideoView.setOnTouchListener(new C03273());
         this.mFullScreenVideoController.setAnchorView(this.mFullScreenVideoView);
         String orientation = this.mForm.ScreenOrientation();
         if (orientation.equals("landscape") || orientation.equals("sensorLandscape") || orientation.equals("reverseLandscape")) {
@@ -259,7 +259,7 @@ public class FullScreenVideoUtil implements OnCompletionListener, OnPreparedList
             return;
         }
         this.mFullScreenVideoView.start();
-        this.mHandler.postDelayed(new C03274(), 100);
+        this.mHandler.postDelayed(new C03284(), 100);
     }
 
     public void startDialog() {

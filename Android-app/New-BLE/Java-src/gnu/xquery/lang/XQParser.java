@@ -1471,7 +1471,7 @@ public class XQParser extends Lexer {
     }
 
     static Expression makeBinary(Expression func, Expression exp1, Expression exp2) {
-        return new ApplyExp(func, new Expression[]{exp1, exp2});
+        return new ApplyExp(func, exp1, exp2);
     }
 
     static Expression makeExprSequence(Expression exp1, Expression exp2) {
@@ -1610,7 +1610,7 @@ public class XQParser extends Lexer {
 
     static Expression makeNamedNodeType(boolean attribute, Expression qname, Expression tname) {
         Expression[] name = new Expression[2];
-        ApplyExp elt = new ApplyExp(ClassType.make(attribute ? "gnu.kawa.xml.AttributeType" : "gnu.kawa.xml.ElementType").getDeclaredMethod("make", 1), new Expression[]{qname});
+        ApplyExp elt = new ApplyExp(ClassType.make(attribute ? "gnu.kawa.xml.AttributeType" : "gnu.kawa.xml.ElementType").getDeclaredMethod("make", 1), qname);
         elt.setFlag(4);
         return tname == null ? elt : new BeginExp(tname, elt);
     }
@@ -1666,7 +1666,7 @@ public class XQParser extends Lexer {
             return etype;
         }
         getRawToken();
-        Expression otype = new ApplyExp(proc_OccurrenceType_getInstance, new Expression[]{etype, QuoteExp.getInstance(IntNum.make(min)), QuoteExp.getInstance(IntNum.make(max))});
+        Expression otype = new ApplyExp(proc_OccurrenceType_getInstance, etype, QuoteExp.getInstance(IntNum.make(min)), QuoteExp.getInstance(IntNum.make(max)));
         otype.setFlag(4);
         return otype;
     }
@@ -1817,7 +1817,7 @@ public class XQParser extends Lexer {
                         }
                         exp = new ApplyExp(func, args);
                     } else if (token == OP_INSTANCEOF) {
-                        exp = new ApplyExp(makeFunctionExp("gnu.xquery.lang.XQParser", "instanceOf"), new Expression[]{exp, parseDataType()});
+                        exp = new ApplyExp(makeFunctionExp("gnu.xquery.lang.XQParser", "instanceOf"), exp, parseDataType());
                     } else {
                         Expression exp2 = parseBinaryExpr(tokPriority + 1);
                         if (token == 401) {
@@ -1841,7 +1841,7 @@ public class XQParser extends Lexer {
         int op = this.curToken;
         getRawToken();
         Expression exp = parseUnaryExpr();
-        return new ApplyExp(makeFunctionExp("gnu.xquery.util.ArithOp", op == 413 ? "plus" : "minus", op == 413 ? "+" : "-"), new Expression[]{exp});
+        return new ApplyExp(makeFunctionExp("gnu.xquery.util.ArithOp", op == 413 ? "plus" : "minus", op == 413 ? "+" : "-"), exp);
     }
 
     Expression parseUnionExpr() throws IOException, SyntaxException {
@@ -1879,7 +1879,7 @@ public class XQParser extends Lexer {
             } else {
                 dot = new ReferenceExp(DOT_VARNAME, dotDecl);
             }
-            step1 = new ApplyExp(ClassType.make("gnu.xquery.util.NodeUtils").getDeclaredMethod("rootDocument", 1), new Expression[]{dot});
+            step1 = new ApplyExp(ClassType.make("gnu.xquery.util.NodeUtils").getDeclaredMethod("rootDocument", 1), dot);
             if (this.nesting == 0) {
                 z = false;
             }
@@ -1946,7 +1946,7 @@ public class XQParser extends Lexer {
             prefix = prefix.intern();
         }
         args = new Expression[3];
-        args[0] = new ApplyExp(new ReferenceExp(XQResolveNames.resolvePrefixDecl), new Expression[]{QuoteExp.getInstance(prefix)});
+        args[0] = new ApplyExp(new ReferenceExp(XQResolveNames.resolvePrefixDecl), QuoteExp.getInstance(prefix));
         if (local == null) {
             obj = "";
         } else {
@@ -2027,7 +2027,7 @@ public class XQParser extends Lexer {
         }
         Expression mkAxis = new ApplyExp(makeAxisStep, args);
         mkAxis.setFlag(4);
-        return new ApplyExp(mkAxis, new Expression[]{dot});
+        return new ApplyExp(mkAxis, dot);
     }
 
     Expression parseRelativePathExpr(Expression exp) throws IOException, SyntaxException {
@@ -2047,7 +2047,7 @@ public class XQParser extends Lexer {
             this.comp.push(lexp);
             if (descendants) {
                 this.curToken = 47;
-                lexp.body = new ApplyExp(DescendantOrSelfAxis.anyNode, new Expression[]{new ReferenceExp(DOT_VARNAME, dotDecl)});
+                lexp.body = new ApplyExp(DescendantOrSelfAxis.anyNode, new ReferenceExp(DOT_VARNAME, dotDecl));
                 beforeSlashSlash = exp;
             } else {
                 getRawToken();
@@ -2066,7 +2066,7 @@ public class XQParser extends Lexer {
                 beforeSlashSlash = null;
             }
             this.comp.pop(lexp);
-            exp = new ApplyExp(RelativeStep.relativeStep, new Expression[]{exp, lexp});
+            exp = new ApplyExp(RelativeStep.relativeStep, exp, lexp);
         }
     }
 
@@ -2088,7 +2088,7 @@ public class XQParser extends Lexer {
                 exp = new ReferenceExp(DOT_VARNAME, dotDecl);
             }
             if (axis == 9) {
-                exp = new ApplyExp(ParentAxis.make(NodeType.anyNodeTest), new Expression[]{exp});
+                exp = new ApplyExp(ParentAxis.make(NodeType.anyNodeTest), exp);
             }
             if (axis == 12) {
                 i = -1;
@@ -2156,7 +2156,7 @@ public class XQParser extends Lexer {
             this.comp.pop(lexp);
             lexp.body = cond;
             getRawToken();
-            exp = new ApplyExp(valuesFilter, new Expression[]{exp, lexp});
+            exp = new ApplyExp(valuesFilter, exp, lexp);
         }
         return exp;
     }
@@ -2239,7 +2239,7 @@ public class XQParser extends Lexer {
                     text = null;
                     if (this.tokenBufferLength > 0) {
                         str = new String(this.tokenBuffer, 0, this.tokenBufferLength);
-                        Expression applyExp = new ApplyExp(makeText, new Expression[]{new QuoteExp(str)});
+                        Expression applyExp = new ApplyExp(makeText, new QuoteExp(str));
                     }
                     this.tokenBufferLength = 0;
                     if (next == 47) {
@@ -2300,7 +2300,7 @@ public class XQParser extends Lexer {
                     } else {
                         text2 = new String(this.tokenBuffer, 0, this.tokenBufferLength);
                     }
-                    result.addElement(new ApplyExp(makeText, new Expression[]{new QuoteExp(text2)}));
+                    result.addElement(new ApplyExp(makeText, new QuoteExp(text2)));
                     this.tokenBufferLength = 0;
                     if (next == delimiter) {
                         if (next >= '\u0000') {
@@ -2375,7 +2375,7 @@ public class XQParser extends Lexer {
     }
 
     public static Expression booleanValue(Expression exp) {
-        return new ApplyExp(makeFunctionExp("gnu.xquery.util.BooleanValue", "booleanValue"), new Expression[]{exp});
+        return new ApplyExp(makeFunctionExp("gnu.xquery.util.BooleanValue", "booleanValue"), exp);
     }
 
     /* JADX WARNING: inconsistent code. */
@@ -2629,7 +2629,7 @@ public class XQParser extends Lexer {
     }
 
     static ApplyExp castQName(Expression value, boolean element) {
-        return new ApplyExp(new ReferenceExp(element ? XQResolveNames.xsQNameDecl : XQResolveNames.xsQNameIgnoreDefaultDecl), new Expression[]{value});
+        return new ApplyExp(new ReferenceExp(element ? XQResolveNames.xsQNameDecl : XQResolveNames.xsQNameIgnoreDefaultDecl), value);
     }
 
     Expression parseElementConstructor() throws IOException, SyntaxException {
@@ -2783,7 +2783,7 @@ public class XQParser extends Lexer {
         if (getStaticBaseUri() == null) {
             return exp;
         }
-        return new ApplyExp(MakeWithBaseUri.makeWithBaseUri, new Expression[]{new ApplyExp(new ReferenceExp(XQResolveNames.staticBaseUriDecl), Expression.noExpressions), exp}).setLine(exp);
+        return new ApplyExp(MakeWithBaseUri.makeWithBaseUri, new ApplyExp(new ReferenceExp(XQResolveNames.staticBaseUriDecl), Expression.noExpressions), exp).setLine(exp);
     }
 
     Expression parseParenExpr() throws IOException, SyntaxException {
@@ -2829,6 +2829,7 @@ public class XQParser extends Lexer {
     }
 
     Expression parseTypeSwitch() throws IOException, SyntaxException {
+        Declaration decl;
         char c = 'e';
         char save = pushNesting('t');
         Expression selector = parseParenExpr();
@@ -2836,7 +2837,6 @@ public class XQParser extends Lexer {
         Vector vec = new Vector();
         vec.addElement(selector);
         while (match("case")) {
-            Declaration decl;
             pushNesting('c');
             getRawToken();
             if (this.curToken == 36) {

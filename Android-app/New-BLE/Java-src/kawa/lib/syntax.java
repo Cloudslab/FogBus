@@ -132,13 +132,13 @@ public class syntax extends ModuleBody {
     static final SyntaxPattern Lit65 = new SyntaxPattern("\f\u0007,\f\u0002\f\u000f\u0013\f\u001f\b", new Object[]{Lit120}, 4);
     static final SyntaxTemplate Lit66 = new SyntaxTemplate("\u0001\u0001\u0000\u0001", "\u0012", new Object[0], 0);
     static final SyntaxPattern Lit67 = new SyntaxPattern("\f\u0007,\f\u0002\f\u000f\b\f\u0017\b", new Object[]{(SimpleSymbol) new SimpleSymbol("library").readResolve()}, 3);
-    static final SyntaxTemplate Lit68 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit102, Pair.make(Lit118, Pair.make(Pair.make(Lit104, Pair.make(Lit119, LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 458759)}, 0);
+    static final SyntaxTemplate Lit68 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit102, Pair.make(Lit118, Pair.make(Pair.make(Lit104, Pair.make(Lit119, LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 458759)}, 0);
     static final SyntaxTemplate Lit69 = new SyntaxTemplate("\u0001\u0001\u0001", "\b\u000b", new Object[0], 0);
     static final SyntaxTemplate Lit7 = new SyntaxTemplate("\u0001\u0001\u0000", "\u000b", new Object[0], 0);
     static final SyntaxTemplate Lit70 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0013", new Object[0], 0);
     static final SyntaxTemplate Lit71 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0010", new Object[0], 0);
     static final SyntaxPattern Lit72 = new SyntaxPattern("\f\u0007\f\u000f\f\u0017\b", new Object[0], 3);
-    static final SyntaxTemplate Lit73 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit102, Pair.make(Lit118, Pair.make(Pair.make(Lit104, Pair.make(Lit119, LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 466951)}, 0);
+    static final SyntaxTemplate Lit73 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit102, Pair.make(Lit118, Pair.make(Pair.make(Lit104, Pair.make(Lit119, LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 466951)}, 0);
     static final SyntaxTemplate Lit74 = new SyntaxTemplate("\u0001\u0001\u0001", "\b\u000b", new Object[0], 0);
     static final SyntaxTemplate Lit75 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0013", new Object[0], 0);
     static final SyntaxTemplate Lit76 = new SyntaxTemplate("\u0001\u0001\u0001", "\u0010", new Object[0], 0);
@@ -149,7 +149,7 @@ public class syntax extends ModuleBody {
     static final SyntaxRules Lit80;
     static final SimpleSymbol Lit81 = ((SimpleSymbol) new SimpleSymbol("case-lambda").readResolve());
     static final SyntaxPattern Lit82 = new SyntaxPattern("\f\u0007\u000b", new Object[0], 2);
-    static final SyntaxTemplate Lit83 = new SyntaxTemplate("\u0001\u0000", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit102, Pair.make((SimpleSymbol) new SimpleSymbol("gnu.expr.GenericProc").readResolve(), Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("makeWithoutSorting").readResolve(), LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 651273)}, 0);
+    static final SyntaxTemplate Lit83 = new SyntaxTemplate("\u0001\u0000", "\u0018\u0004", new Object[]{PairWithPosition.make(Lit102, Pair.make((SimpleSymbol) new SimpleSymbol("gnu.expr.GenericProc").readResolve(), Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("makeWithoutSorting").readResolve(), LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 651273)}, 0);
     static final SyntaxTemplate Lit84 = new SyntaxTemplate("\u0001\u0000", "\n", new Object[0], 0);
     static final SyntaxPattern Lit85 = new SyntaxPattern("\u001c\f\u0017\u001b#", new Object[0], 5);
     static final SyntaxTemplate Lit86 = new SyntaxTemplate("\u0001\u0000\u0001\u0000\u0000", "\u0011\u0018\u0004\t\u0013\u001a", new Object[]{Lit109}, 0);
@@ -223,7 +223,7 @@ public class syntax extends ModuleBody {
 
         public frame() {
             PropertySet moduleMethod = new ModuleMethod(this, 1, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-            moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm:83");
+            moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm:83");
             this.lambda$Fn1 = moduleMethod;
         }
 
@@ -272,23 +272,23 @@ public class syntax extends ModuleBody {
         objArr[0] = simpleSymbol;
         SyntaxRule[] syntaxRuleArr = new SyntaxRule[1];
         r7 = new Object[21];
-        r7[4] = PairWithPosition.make(Lit102, Pair.make(Lit103, Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("makeNamed").readResolve(), LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1069060);
+        r7[4] = PairWithPosition.make(Lit102, Pair.make(Lit103, Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("makeNamed").readResolve(), LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1069060);
         r7[5] = Lit108;
-        r7[6] = PairWithPosition.make(Lit102, Pair.make(Lit103, Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("pushConverter").readResolve(), LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1073161);
+        r7[6] = PairWithPosition.make(Lit102, Pair.make(Lit103, Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("pushConverter").readResolve(), LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1073161);
         r7[7] = Lit109;
-        r7[8] = PairWithPosition.make(Lit105, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1081354);
+        r7[8] = PairWithPosition.make(Lit105, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1081354);
         r7[9] = (SimpleSymbol) new SimpleSymbol("try-catch").readResolve();
         r7[10] = Lit106;
-        r7[11] = PairWithPosition.make(Lit105, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1089550);
+        r7[11] = PairWithPosition.make(Lit105, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1089550);
         r7[12] = (SimpleSymbol) new SimpleSymbol("ex").readResolve();
         r7[13] = (SimpleSymbol) new SimpleSymbol("<java.lang.ClassCastException>").readResolve();
         r7[14] = Lit115;
         r7[15] = Lit107;
-        r7[16] = PairWithPosition.make(Lit102, Pair.make((SimpleSymbol) new SimpleSymbol("gnu.mapping.WrongType").readResolve(), Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("make").readResolve(), LList.Empty)), LList.Empty)), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1097748);
-        r7[17] = PairWithPosition.make(PairWithPosition.make(Lit106, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("<int>").readResolve(), PairWithPosition.make(IntNum.make(1), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1101846), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1101840), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1101836), PairWithPosition.make(Lit105, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1101849), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1101836);
+        r7[16] = PairWithPosition.make(Lit102, Pair.make((SimpleSymbol) new SimpleSymbol("gnu.mapping.WrongType").readResolve(), Pair.make(Pair.make(Lit104, Pair.make((SimpleSymbol) new SimpleSymbol("make").readResolve(), LList.Empty)), LList.Empty)), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1097748);
+        r7[17] = PairWithPosition.make(PairWithPosition.make(Lit106, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("<int>").readResolve(), PairWithPosition.make(IntNum.make(1), LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1101846), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1101840), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1101836), PairWithPosition.make(Lit105, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1101849), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1101836);
         r7[18] = (SimpleSymbol) new SimpleSymbol("set!").readResolve();
-        r7[19] = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("field").readResolve(), PairWithPosition.make(Lit107, PairWithPosition.make(PairWithPosition.make(Lit108, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("expectedType").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1105941), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1105941), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1105940), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1105937), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1105930);
-        r7[20] = PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("primitive-throw").readResolve(), PairWithPosition.make(Lit107, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1110037), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1110020), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 1110020);
+        r7[19] = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("field").readResolve(), PairWithPosition.make(Lit107, PairWithPosition.make(PairWithPosition.make(Lit108, PairWithPosition.make((SimpleSymbol) new SimpleSymbol("expectedType").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1105941), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1105941), LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1105940), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1105937), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1105930);
+        r7[20] = PairWithPosition.make(PairWithPosition.make((SimpleSymbol) new SimpleSymbol("primitive-throw").readResolve(), PairWithPosition.make(Lit107, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1110037), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1110020), LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 1110020);
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\f\u0017\b", new Object[0], 3), "\u0001\u0001\u0001", "\u0011\u0018\u0004¹\u0011\u0018\f\t\u0003\u0011\u0018\u0014\u0011\u0018\u001c\b\u0011\u0018$)\u0011\u0018,\b\u0003\b\u0013\b\u0011\u00184\t\u0003\b\u0011\u0018<\u0011\u0018D\b\u0011\u0018L9\u0011\u0018T\t\u000b\u0018\\\b\u0011\u0018d\u0011\u0018l\b\u0011\u0018ty\b\u0011\u0018|\b\u0011\u0018\u0011\u0018d\t\u0003\u0018A\u0011\u0018\u0011\u0018\b\u000b\u0018¤", r7, 0);
         Lit101 = new SyntaxRules(objArr, syntaxRuleArr, 3);
         Object[] objArr2 = new Object[1];
@@ -305,7 +305,7 @@ public class syntax extends ModuleBody {
         Lit97 = new SyntaxTemplate("\u0001\u0001\u0000\u0000", "\u0011\u0018\u0004\u001a", r7, 0);
         objArr2 = new Object[]{Lit91, Lit112, Lit113, Lit114, Lit111};
         syntaxRuleArr2 = new SyntaxRule[8];
-        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\b", new Object[0], 0), "", "\u0018\u0004", new Object[]{PairWithPosition.make((SimpleSymbol) new SimpleSymbol("%syntax-error").readResolve(), PairWithPosition.make("Unfulfilled cond-expand", LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 802851), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 802836)}, 0);
+        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\b", new Object[0], 0), "", "\u0018\u0004", new Object[]{PairWithPosition.make((SimpleSymbol) new SimpleSymbol("%syntax-error").readResolve(), PairWithPosition.make("Unfulfilled cond-expand", LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 802851), "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 802836)}, 0);
         r7 = new Object[]{Lit110};
         syntaxRuleArr2[1] = new SyntaxRule(new SyntaxPattern("\f\u0018<\f\u0002\r\u0007\u0000\b\b\b", new Object[]{Lit111}, 1), "\u0003", "\u0011\u0018\u0004\b\u0005\u0003", r7, 1);
         r7 = new Object[]{Lit110};
@@ -342,9 +342,9 @@ public class syntax extends ModuleBody {
         syntaxRuleArr2[2] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0002\\,\f\u0007\f\u000f\b\r\u0017\u0010\b\b\f\u001f\f'\b", new Object[]{"bind"}, 5), "\u0001\u0001\u0003\u0001\u0001", "\u0011\u0018\u0004\u0011\u0018\f\t\u0003\t\u000b\t\u0010\u0019\b\u0015\u0013\t\u001b\b#", r7, 1);
         r7 = new Object[]{Lit116, Lit109, Lit77, "bind"};
         syntaxRuleArr2[3] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0002\f\b\f\u0007\f\u000f\f\u0017\f\u001f\f'\b", new Object[]{"mktmp"}, 5), "\u0001\u0001\u0001\u0001\u0001", "\u0011\u0018\u00049\u0011\u0018\f\t\u0010\b\u0003\b\u0011\u0018\f\t\u000b\b\u0011\u0018\u0014\u0011\u0018\u001c\t\u0013\t\u001b\b#", r7, 0);
-        r7 = new Object[]{Lit77, "mktmp", PairWithPosition.make(Lit117, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 569387), PairWithPosition.make(Lit117, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 569414)};
+        r7 = new Object[]{Lit77, "mktmp", PairWithPosition.make(Lit117, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 569387), PairWithPosition.make(Lit117, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 569414)};
         syntaxRuleArr2[4] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0002\u001c\f\u0007\u000b\f\u0017,\r\u001f\u0018\b\b\f',\r/(\b\b\f7\b", new Object[]{"mktmp"}, 7), "\u0001\u0000\u0001\u0003\u0001\u0003\u0001", "\u0011\u0018\u0004\u0011\u0018\f\t\n\t\u0013)\u0011\u001d\u001b\u0018\u0014\t#A\u0011-+\b\t\u0003\u0018\u001c\b3", r7, 1);
-        r7 = new Object[]{Lit116, Lit109, Lit117, Lit77, "bind", PairWithPosition.make(Lit117, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 593973)};
+        r7 = new Object[]{Lit116, Lit109, Lit117, Lit77, "bind", PairWithPosition.make(Lit117, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 593973)};
         syntaxRuleArr2[5] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0002\f\u0007\f\u000f,\r\u0017\u0010\b\b\f\u001f,\r' \b\b\f/\b", new Object[]{"mktmp"}, 6), "\u0001\u0001\u0003\u0001\u0003\u0001", "\u0011\u0018\u00049\u0011\u0018\f\t\u0010\b\u000b\b\u0011\u0018\f)\u0011\u0015\u0013\u0018\u0014\b\u0011\u0018\u001c\u0011\u0018$\t\u001bA\u0011%#\b\t\u0003\u0018,\b+", r7, 1);
         Lit78 = new SyntaxRules(objArr2, syntaxRuleArr2, 7);
         r7 = new Object[1];
@@ -357,7 +357,7 @@ public class syntax extends ModuleBody {
         Lit36 = simpleSymbol;
         objArr2[0] = simpleSymbol;
         syntaxRuleArr2 = new SyntaxRule[1];
-        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\r\u0007\u0000\b\b", new Object[0], 1), "\u0003", "\u0011\u0018\u0004\b\u0005\u0011\u0018\f\t\u0003\u0018\u0014", new Object[]{Lit110, Lit38, PairWithPosition.make(LList.Empty, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 376866)}, 1);
+        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\r\u0007\u0000\b\b", new Object[0], 1), "\u0003", "\u0011\u0018\u0004\b\u0005\u0011\u0018\f\t\u0003\u0018\u0014", new Object[]{Lit110, Lit38, PairWithPosition.make(LList.Empty, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 376866)}, 1);
         Lit37 = new SyntaxRules(objArr2, syntaxRuleArr2, 1);
         objArr2 = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("when").readResolve();
@@ -375,7 +375,7 @@ public class syntax extends ModuleBody {
         Lit15 = simpleSymbol;
         objArr2[0] = simpleSymbol;
         syntaxRuleArr2 = new SyntaxRule[1];
-        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\u0013", new Object[0], 3), "\u0001\u0001\u0000", "\u0011\u0018\u0004\t\u0003\b\u0011\u0018\f\u0011\u0018\u0014\b\u0011\u0018\u001c\u0011\u0018$\t\u000b\u0012", new Object[]{(SimpleSymbol) new SimpleSymbol("define-syntax").readResolve(), Lit109, PairWithPosition.make(Lit122, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm", 90129), (SimpleSymbol) new SimpleSymbol("syntax-case").readResolve(), Lit122}, 0);
+        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\u0013", new Object[0], 3), "\u0001\u0001\u0000", "\u0011\u0018\u0004\t\u0003\b\u0011\u0018\f\u0011\u0018\u0014\b\u0011\u0018\u001c\u0011\u0018$\t\u000b\u0012", new Object[]{(SimpleSymbol) new SimpleSymbol("define-syntax").readResolve(), Lit109, PairWithPosition.make(Lit122, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm", 90129), (SimpleSymbol) new SimpleSymbol("syntax-case").readResolve(), Lit122}, 0);
         Lit16 = new SyntaxRules(objArr2, syntaxRuleArr2, 3);
         objArr2 = new Object[1];
         simpleSymbol = (SimpleSymbol) new SimpleSymbol("define-macro").readResolve();
@@ -407,7 +407,7 @@ public class syntax extends ModuleBody {
         case$Mnlambda = Macro.make(Lit81, new ModuleMethod(moduleBody, 12, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN), $instance);
         simpleSymbol = Lit93;
         PropertySet moduleMethod = new ModuleMethod(moduleBody, 13, null, FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        moduleMethod.setProperty("source-location", "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/syntax.scm:227");
+        moduleMethod.setProperty("source-location", "/u2/home/jis/ai2-kawa/kawa/lib/syntax.scm:227");
         $Pccond$Mnexpand = Macro.make(simpleSymbol, moduleMethod, $instance);
         $instance.run();
     }

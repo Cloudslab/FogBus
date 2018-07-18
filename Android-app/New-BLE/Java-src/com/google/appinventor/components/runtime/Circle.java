@@ -23,14 +23,14 @@ import org.osmdroid.util.GeoPoint;
 @SimpleObject
 @DesignerComponent(category = ComponentCategory.MAPS, description = "Circle", version = 1)
 public class Circle extends PolygonBase implements MapCircle {
-    private static final MapFeatureVisitor<Double> distanceComputation = new C04241();
+    private static final MapFeatureVisitor<Double> distanceComputation = new C04291();
     private GeoPoint center = new GeoPoint(0.0d, 0.0d);
     private double latitude;
     private double longitude;
     private double radius;
 
-    static class C04241 implements MapFeatureVisitor<Double> {
-        C04241() {
+    static class C04291 implements MapFeatureVisitor<Double> {
+        C04291() {
         }
 
         public Double visit(MapMarker marker, Object... arguments) {

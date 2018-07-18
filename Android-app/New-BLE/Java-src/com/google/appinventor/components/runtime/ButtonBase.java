@@ -1,6 +1,7 @@
 package com.google.appinventor.components.runtime;
 
 import android.content.res.ColorStateList;
+import android.graphics.PorterDuff.Mode;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
@@ -183,7 +184,8 @@ public abstract class ButtonBase extends AndroidViewComponent implements OnClick
             ViewUtil.setBackgroundDrawable(this.view, this.defaultButtonDrawable);
         } else {
             ViewUtil.setBackgroundDrawable(this.view, null);
-            TextViewUtil.setBackgroundColor(this.view, this.backgroundColor);
+            ViewUtil.setBackgroundDrawable(this.view, this.defaultButtonDrawable);
+            this.view.getBackground().setColorFilter(this.backgroundColor, Mode.SRC_ATOP);
         }
     }
 

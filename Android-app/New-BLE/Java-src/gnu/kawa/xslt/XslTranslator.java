@@ -180,7 +180,7 @@ public class XslTranslator extends Lexer implements Consumer {
     }
 
     public void endAttribute() {
-        push(new ApplyExp(MakeAttribute.makeAttributeExp, new Expression[]{new QuoteExp(this.attributeType), new QuoteExp(this.attributeValue.toString())}));
+        push(new ApplyExp(MakeAttribute.makeAttributeExp, new QuoteExp(this.attributeType), new QuoteExp(this.attributeValue.toString())));
         this.nesting.setLength(this.nesting.length() - 1);
         this.inAttribute = false;
     }
@@ -197,7 +197,7 @@ public class XslTranslator extends Lexer implements Consumer {
             select = popMatchingAttribute("", "select", start + 1);
             if (select != null) {
                 exp = parseXPath(select);
-                Expression exp2 = new ApplyExp(XQParser.makeText, new Expression[]{exp});
+                Expression exp2 = new ApplyExp(XQParser.makeText, exp);
                 this.comp.exprStack.pop();
                 push(exp2);
             }
@@ -232,7 +232,7 @@ public class XslTranslator extends Lexer implements Consumer {
             mode = popMatchingAttribute("", "mode", start + 1);
             this.templateLambda.body = popTemplateBody(start + 1);
             this.comp.exprStack.pop();
-            push(new ApplyExp(new QuoteExp(defineTemplateProc), new Expression[]{resolveQNameExpression(name), new QuoteExp(match), new QuoteExp(DFloNum.make(0.0d)), resolveQNameExpression(mode), this.templateLambda}));
+            push(new ApplyExp(new QuoteExp(defineTemplateProc), resolveQNameExpression(name), new QuoteExp(match), new QuoteExp(DFloNum.make(0.0d)), resolveQNameExpression(mode), this.templateLambda));
             this.templateLambda = null;
         } else if (xslTag == PropertyTypeConstants.PROPERTY_TYPE_TEXT) {
             this.preserveSpace = false;

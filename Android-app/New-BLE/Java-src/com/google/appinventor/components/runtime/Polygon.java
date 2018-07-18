@@ -33,13 +33,13 @@ import org.osmdroid.util.GeoPoint;
 @DesignerComponent(category = ComponentCategory.MAPS, description = "Polygon", version = 1)
 public class Polygon extends PolygonBase implements MapPolygon {
     private static final String TAG = Polygon.class.getSimpleName();
-    private static final MapFeatureVisitor<Double> distanceComputation = new C04331();
+    private static final MapFeatureVisitor<Double> distanceComputation = new C04381();
     private List<List<List<GeoPoint>>> holePoints = new ArrayList();
     private boolean multipolygon = false;
     private List<List<GeoPoint>> points = new ArrayList();
 
-    static class C04331 implements MapFeatureVisitor<Double> {
-        C04331() {
+    static class C04381 implements MapFeatureVisitor<Double> {
+        C04381() {
         }
 
         public Double visit(MapMarker marker, Object... arguments) {

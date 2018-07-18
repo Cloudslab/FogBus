@@ -334,7 +334,7 @@ Error: java.lang.NullPointerException
             i++;
             if (mapKeywordsToAttributes) {
                 if ((i & 1) == 0) {
-                    arg = new ApplyExp(MakeAttribute.makeAttribute, new Expression[]{(Expression) vec.pop(), arg});
+                    arg = new ApplyExp(MakeAttribute.makeAttribute, (Expression) vec.pop(), arg);
                 } else {
                     if (arg instanceof QuoteExp) {
                         Object value = ((QuoteExp) arg).getValue();

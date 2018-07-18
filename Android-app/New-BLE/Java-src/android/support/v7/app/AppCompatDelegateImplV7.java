@@ -312,8 +312,8 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase implements Callb
         }
     }
 
-    class C04132 implements OnApplyWindowInsetsListener {
-        C04132() {
+    class C04182 implements OnApplyWindowInsetsListener {
+        C04182() {
         }
 
         public WindowInsetsCompat onApplyWindowInsets(View v, WindowInsetsCompat insets) {
@@ -326,8 +326,8 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase implements Callb
         }
     }
 
-    class C04143 implements OnFitSystemWindowsListener {
-        C04143() {
+    class C04193 implements OnFitSystemWindowsListener {
+        C04193() {
         }
 
         public void onFitSystemWindows(Rect insets) {
@@ -537,9 +537,9 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase implements Callb
                     this.mSubDecor = (ViewGroup) inflater.inflate(C0111R.layout.abc_screen_simple, null);
                 }
                 if (VERSION.SDK_INT >= 21) {
-                    ViewCompat.setOnApplyWindowInsetsListener(this.mSubDecor, new C04132());
+                    ViewCompat.setOnApplyWindowInsetsListener(this.mSubDecor, new C04182());
                 } else {
-                    ((FitWindowsViewGroup) this.mSubDecor).setOnFitSystemWindowsListener(new C04143());
+                    ((FitWindowsViewGroup) this.mSubDecor).setOnFitSystemWindowsListener(new C04193());
                 }
             } else if (this.mIsFloating) {
                 this.mSubDecor = (ViewGroup) inflater.inflate(C0111R.layout.abc_dialog_title_material, null);

@@ -45,7 +45,7 @@ public class trace extends ModuleBody {
         SimpleSymbol simpleSymbol2 = (SimpleSymbol) new SimpleSymbol("%do-trace").readResolve();
         Lit0 = simpleSymbol2;
         objArr2[1] = simpleSymbol2;
-        objArr2[2] = PairWithPosition.make(Boolean.FALSE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/trace.scm", 77851);
+        objArr2[2] = PairWithPosition.make(Boolean.FALSE, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/trace.scm", 77851);
         syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\r\u0007\u0000\b\b", new Object[0], 1), "\u0003", "\u0011\u0018\u0004\b\u0005\u0011\u0018\f\t\u0003\u0018\u0014", objArr2, 1);
         Lit5 = new SyntaxRules(objArr, syntaxRuleArr, 1);
         objArr = new Object[1];
@@ -53,11 +53,11 @@ public class trace extends ModuleBody {
         Lit2 = simpleSymbol;
         objArr[0] = simpleSymbol;
         syntaxRuleArr = new SyntaxRule[1];
-        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\r\u0007\u0000\b\b", new Object[0], 1), "\u0003", "\u0011\u0018\u0004\b\u0005\u0011\u0018\f\t\u0003\u0018\u0014", new Object[]{Lit7, Lit0, PairWithPosition.make(Boolean.TRUE, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/trace.scm", 57371)}, 1);
+        syntaxRuleArr[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\r\u0007\u0000\b\b", new Object[0], 1), "\u0003", "\u0011\u0018\u0004\b\u0005\u0011\u0018\f\t\u0003\u0018\u0014", new Object[]{Lit7, Lit0, PairWithPosition.make(Boolean.TRUE, LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/trace.scm", 57371)}, 1);
         Lit3 = new SyntaxRules(objArr, syntaxRuleArr, 1);
         Object[] objArr3 = new Object[]{Lit0};
         SyntaxRule[] syntaxRuleArr2 = new SyntaxRule[1];
-        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\b", new Object[0], 2), "\u0001\u0001", "\u0011\u0018\u0004\t\u0003\b\u0011\u0018\f\u0011\u0018\u0014\u0011\u0018\u001c\t\u0003\b\u000b", new Object[]{(SimpleSymbol) new SimpleSymbol("set!").readResolve(), (SimpleSymbol) new SimpleSymbol("invoke-static").readResolve(), (SimpleSymbol) new SimpleSymbol("<kawa.standard.TracedProcedure>").readResolve(), PairWithPosition.make((SimpleSymbol) new SimpleSymbol(LispLanguage.quote_sym).readResolve(), PairWithPosition.make((SimpleSymbol) new SimpleSymbol("doTrace").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/trace.scm", 32806), "/Users/ewpatton/Programming/mit/ai2-kawa/kawa/lib/trace.scm", 32806)}, 0);
+        syntaxRuleArr2[0] = new SyntaxRule(new SyntaxPattern("\f\u0018\f\u0007\f\u000f\b", new Object[0], 2), "\u0001\u0001", "\u0011\u0018\u0004\t\u0003\b\u0011\u0018\f\u0011\u0018\u0014\u0011\u0018\u001c\t\u0003\b\u000b", new Object[]{(SimpleSymbol) new SimpleSymbol("set!").readResolve(), (SimpleSymbol) new SimpleSymbol("invoke-static").readResolve(), (SimpleSymbol) new SimpleSymbol("<kawa.standard.TracedProcedure>").readResolve(), PairWithPosition.make((SimpleSymbol) new SimpleSymbol(LispLanguage.quote_sym).readResolve(), PairWithPosition.make((SimpleSymbol) new SimpleSymbol("doTrace").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/kawa/lib/trace.scm", 32806), "/u2/home/jis/ai2-kawa/kawa/lib/trace.scm", 32806)}, 0);
         Lit1 = new SyntaxRules(objArr3, syntaxRuleArr2, 2);
         $instance.run();
     }

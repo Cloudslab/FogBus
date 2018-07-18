@@ -8,8 +8,8 @@ import java.io.FilenameFilter;
 final class CrashReportFinder {
     private final Context context;
 
-    class C03831 implements FilenameFilter {
-        C03831() {
+    class C03881 implements FilenameFilter {
+        C03881() {
         }
 
         public boolean accept(File dir, String name) {
@@ -32,7 +32,7 @@ final class CrashReportFinder {
             return new String[0];
         }
         Log.d(ACRA.LOG_TAG, "Looking for error files in " + dir.getAbsolutePath());
-        String[] result = dir.list(new C03831());
+        String[] result = dir.list(new C03881());
         return result == null ? new String[0] : result;
     }
 }

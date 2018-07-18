@@ -3,8 +3,6 @@ apkFileName: HealthKeeper_v3.apk
 compressionType: false
 doNotCompress:
 - arsc
-- assets/external_comps/edu.mit.appinventor.ble/classes.jar
-- assets/external_comps/edu.mit.appinventor.ble/extension.properties
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'

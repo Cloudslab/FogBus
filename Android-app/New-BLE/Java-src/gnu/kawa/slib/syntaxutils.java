@@ -54,10 +54,10 @@ public class syntaxutils extends ModuleBody {
     public static final Macro $Prvt$typecase$Pc = Macro.make(Lit13, Lit14, $instance);
     public static final syntaxutils $instance = new syntaxutils();
     static final Keyword Lit0 = Keyword.make("env");
-    static final PairWithPosition Lit1 = PairWithPosition.make(Lit21, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 278557);
-    static final PairWithPosition Lit10 = PairWithPosition.make(Lit19, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 552972);
-    static final PairWithPosition Lit11 = PairWithPosition.make(Lit25, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 626704);
-    static final PairWithPosition Lit12 = PairWithPosition.make((SimpleSymbol) new SimpleSymbol(":").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 634896);
+    static final PairWithPosition Lit1 = PairWithPosition.make(Lit21, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 278557);
+    static final PairWithPosition Lit10 = PairWithPosition.make(Lit19, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 552972);
+    static final PairWithPosition Lit11 = PairWithPosition.make(Lit25, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 626704);
+    static final PairWithPosition Lit12 = PairWithPosition.make((SimpleSymbol) new SimpleSymbol(":").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 634896);
     static final SimpleSymbol Lit13;
     static final SyntaxRules Lit14;
     static final SimpleSymbol Lit15;
@@ -73,13 +73,13 @@ public class syntaxutils extends ModuleBody {
     static final SimpleSymbol Lit24 = ((SimpleSymbol) new SimpleSymbol("else").readResolve());
     static final SimpleSymbol Lit25 = ((SimpleSymbol) new SimpleSymbol("as").readResolve());
     static final SimpleSymbol Lit26 = ((SimpleSymbol) new SimpleSymbol("lambda").readResolve());
-    static final PairWithPosition Lit3 = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("set").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 368647);
-    static final PairWithPosition Lit4 = PairWithPosition.make(Lit26, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 376839);
-    static final PairWithPosition Lit5 = PairWithPosition.make(Lit21, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 409627);
-    static final PairWithPosition Lit6 = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("if").readResolve(), LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 417799);
+    static final PairWithPosition Lit3 = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("set").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 368647);
+    static final PairWithPosition Lit4 = PairWithPosition.make(Lit26, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 376839);
+    static final PairWithPosition Lit5 = PairWithPosition.make(Lit21, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 409627);
+    static final PairWithPosition Lit6 = PairWithPosition.make((SimpleSymbol) new SimpleSymbol("if").readResolve(), LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 417799);
     static final IntNum Lit7 = IntNum.make(0);
     static final IntNum Lit8 = IntNum.make(1);
-    static final PairWithPosition Lit9 = PairWithPosition.make(Lit23, LList.Empty, "/Users/ewpatton/Programming/mit/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 479236);
+    static final PairWithPosition Lit9 = PairWithPosition.make(Lit23, LList.Empty, "/u2/home/jis/ai2-kawa/gnu/kawa/slib/syntaxutils.scm", 479236);
     public static final ModuleMethod expand = new ModuleMethod($instance, 1, Lit17, -4095);
 
     /* compiled from: syntaxutils.scm */

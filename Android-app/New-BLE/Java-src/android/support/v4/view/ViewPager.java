@@ -215,13 +215,13 @@ public class ViewPager extends ViewGroup {
     }
 
     public static class SavedState extends BaseSavedState {
-        public static final Creator<SavedState> CREATOR = ParcelableCompat.newCreator(new C04071());
+        public static final Creator<SavedState> CREATOR = ParcelableCompat.newCreator(new C04121());
         Parcelable adapterState;
         ClassLoader loader;
         int position;
 
-        static class C04071 implements ParcelableCompatCreatorCallbacks<SavedState> {
-            C04071() {
+        static class C04121 implements ParcelableCompatCreatorCallbacks<SavedState> {
+            C04121() {
             }
 
             public SavedState createFromParcel(Parcel in, ClassLoader loader) {
@@ -1203,6 +1203,7 @@ public class ViewPager extends ViewGroup {
 
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int i;
+        LayoutParams lp;
         setMeasuredDimension(getDefaultSize(0, widthMeasureSpec), getDefaultSize(0, heightMeasureSpec));
         int measuredWidth = getMeasuredWidth();
         this.mGutterSize = Math.min(measuredWidth / 10, this.mDefaultGutterSize);
@@ -1210,7 +1211,6 @@ public class ViewPager extends ViewGroup {
         int childHeightSize = (getMeasuredHeight() - getPaddingTop()) - getPaddingBottom();
         int size = getChildCount();
         for (i = 0; i < size; i++) {
-            LayoutParams lp;
             View child = getChildAt(i);
             if (child.getVisibility() != 8) {
                 lp = (LayoutParams) child.getLayoutParams();
@@ -1293,6 +1293,7 @@ public class ViewPager extends ViewGroup {
 
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         int i;
+        LayoutParams lp;
         int childLeft;
         int childTop;
         int count = getChildCount();
@@ -1305,7 +1306,6 @@ public class ViewPager extends ViewGroup {
         int scrollX = getScrollX();
         int decorCount = 0;
         for (i = 0; i < count; i++) {
-            LayoutParams lp;
             View child = getChildAt(i);
             if (child.getVisibility() != 8) {
                 lp = (LayoutParams) child.getLayoutParams();

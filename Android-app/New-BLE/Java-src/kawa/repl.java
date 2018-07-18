@@ -170,11 +170,11 @@ public class repl extends Procedure0or1 {
     }
 
     public static int processArgs(String[] args, int iArg, int maxArg) {
-        Throwable ex;
         boolean something_done = false;
         while (iArg < maxArg) {
             String arg = args[iArg];
             SourceMessages messages;
+            Throwable ex;
             if (arg.equals("-c") || arg.equals("-e")) {
                 iArg++;
                 if (iArg == maxArg) {

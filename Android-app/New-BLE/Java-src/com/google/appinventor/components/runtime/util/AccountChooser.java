@@ -31,8 +31,8 @@ public class AccountChooser {
         private String[] accountNames;
         private SynchronousQueue<String> queue;
 
-        class C03151 implements Runnable {
-            C03151() {
+        class C03161 implements Runnable {
+            C03161() {
             }
 
             public void run() {
@@ -50,7 +50,7 @@ public class AccountChooser {
         }
 
         public void run() {
-            AccountChooser.this.activity.runOnUiThread(new C03151());
+            AccountChooser.this.activity.runOnUiThread(new C03161());
         }
 
         public void onClick(DialogInterface dialog, int button) {

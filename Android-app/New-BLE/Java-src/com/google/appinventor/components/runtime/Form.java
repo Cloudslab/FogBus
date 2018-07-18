@@ -51,9 +51,14 @@ import com.google.appinventor.components.runtime.util.PaintUtil;
 import com.google.appinventor.components.runtime.util.ScreenDensityUtil;
 import com.google.appinventor.components.runtime.util.SdkLevel;
 import com.google.appinventor.components.runtime.util.ViewUtil;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -68,6 +73,7 @@ import org.json.JSONException;
 public class Form extends AppInventorCompatActivity implements Component, ComponentContainer, HandlesEventDispatching, OnGlobalLayoutListener {
     public static final String APPINVENTOR_URL_SCHEME = "appinventor";
     private static final String ARGUMENT_NAME = "APP_INVENTOR_START";
+    public static final String ASSETS_PREFIX = "file:///android_asset/";
     private static final int DEFAULT_ACCENT_COLOR = PaintUtil.hexStringToInt(ComponentConstants.DEFAULT_ACCENT_COLOR);
     private static final int DEFAULT_PRIMARY_COLOR_DARK = PaintUtil.hexStringToInt(ComponentConstants.DEFAULT_PRIMARY_DARK_COLOR);
     private static final String LOG_TAG = "Form";
@@ -1495,5 +1501,17 @@ public class Form extends AppInventorCompatActivity implements Component, Compon
 
     public boolean isDarkTheme() {
         return this.usesDarkTheme;
+    }
+
+    public String getAssetPathForExtension(Component component, String asset) throws FileNotFoundException {
+        return ASSETS_PREFIX + component.getClass().getPackage().getName() + "/" + asset;
+    }
+
+    public InputStream openAssetForExtension(Component component, String asset) throws IOException {
+        String path = getAssetPathForExtension(component, asset);
+        if (path.startsWith(ASSETS_PREFIX)) {
+            return getAssets().open(path.substring(ASSETS_PREFIX.length()));
+        }
+        return new FileInputStream(new File(URI.create(path)));
     }
 }
