@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get update
 apt-get upgrade -y
-apt-get install oracle-java8-jdk -y
+apt-get install oracle-java8-jdk dos2unix -y
 apt-get install ant git vim -y
 apt-get install apache2 -y
 echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
@@ -15,6 +15,7 @@ sudo mkdir /var/www/html/HealthKeeper/
 sudo chmod -R 777 /var/www/html/HealthKeeper/
 sudo cp -a ./FogBus/Browser-src/RPi/Worker/* /var/www/html/HealthKeeper/
 sudo chmod -R -f 777 /var/www/html/HeathKeeper/*
+dos2unix ./FogBus/Run/*
 chmod 777 ./FogBus/Run/*
 cd /var/www/html/HealthKeeper/
 sudo chmod -R -f 777 ./*
