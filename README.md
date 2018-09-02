@@ -15,3 +15,16 @@ infrastructure.
 
 ## Keywords
 Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockchain.
+
+## License
+GPL v2.0
+
+## Contribution
+To contribute please raise a merge request.
+
+## Developers
+Shreshth Tuli <br/>
+Redowan Mahmud <br/>
+Shikhar Tuli <br/>
+Rajkumar Buyya <br/>
+at CLOUDS Lab, University of Melbourne, Victoria, Australia.
