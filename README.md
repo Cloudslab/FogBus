@@ -13,7 +13,7 @@ demonstrate the efficacy, we also designed a prototype for Sleep Apnea analysis 
 results of this case study show that different FogBus settings can improve latency, energy, network and CPU usage of the computing
 infrastructure.
 
-## Introduction
+## About the work
 The major contributions of this work are listed as:
  * A lightweight and simplified framework named FogBus
 that integrates IoT enabled systems, Fog and Cloud infrastructure
@@ -31,6 +31,12 @@ integrated IoT-Fog-Cloud environment.
 integrity while transferring confidential data.
  * Performance evaluation of FogBus in terms of latency, energy,
 network and CPU usage.
+
+## Installation
+For installing FogBus please refer to the User Manual : [a link](https://github.com/CloudsLab/FogBus/Manuals/End-User-Manual/fogbus-end-user.pdf).
+
+## Development
+For developing custom policies or protocols please refer to the Developer Manual : [a link](https://github.com/CloudsLab/FogBus/Manuals/Developer-Tutorial/raspi-fog-developer.pdf)
 
 ## Keywords
 Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockchain.
