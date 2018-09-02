@@ -33,10 +33,10 @@ integrity while transferring confidential data.
 network and CPU usage.
 
 ## Installation
-For installing FogBus please refer to the [User Manual](https://github.com/CloudsLab/FogBus/Manuals/End-User-Manual/fogbus-end-user.pdf).
+For installing FogBus please refer to the [User Manual](https://github.com/Cloudslab/FogBus/blob/master/Manuals/End-user-tutorial/fogbus-end-user.pdf).
 
 ## Development
-For developing custom policies or protocols please refer to the [Developer Manual](https://github.com/CloudsLab/FogBus/Manuals/Developer-Tutorial/raspi-fog-developer.pdf).
+For developing custom policies or protocols please refer to the [Developer Manual](https://github.com/Cloudslab/FogBus/blob/master/Manuals/Developer-tutorial/raspi-fog-developer.pdf).
 
 ## Keywords
 Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockchain.
