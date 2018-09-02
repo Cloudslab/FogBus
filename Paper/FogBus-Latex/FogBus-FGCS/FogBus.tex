@@ -57,7 +57,7 @@
 \author{Rajkumar Buyya\fnref{two}}
 
 \begin{abstract}
-The intention of facilitating simultaneous execution for both latency sensitive and computing intensive Internet of Things (IoT) applications is consistently boosting the necessity of integrating Edge, Fog and Cloud infrastructure. There exists a notable number of real-world frameworks for attaining such integration. However, the limitations of existing frameworks in terms of platform independence, security, resource management and multi-application assistance resist the potentiality of integrated environment. Therefore, in this paper, we developed a simplified but effective framework, named \textit{FogBus} for implementing end-to-end IoT-Fog(Edge)-Cloud integration. FogBus offers a platform independent interface to IoT applications and computing instances for execution and interaction. It not only assists developers in building up applications but also supports users in running multiple applications at a time and service providers to manage their resources. In addition, FogBus applies Blockchain, authentication and encryption techniques to secure operations on sensitive data. Besides, it is easy to deploy, scalable, energy and cost efficient. To demonstrate the efficacy, we also designed a prototype for Sleep Apnea analysis through FogBus framework. The experimental results of this case study show that different FogBus settings can improve latency, energy, network and CPU usage of the computing infrastructure.  
+The intention of facilitating simultaneous execution for both latency sensitive and computing intensive Internet of Things (IoT) applications is consistently boosting the necessity of integrating Edge, Fog and Cloud infrastructure. There exists a notable number of real-world frameworks for attaining such integration. However, the limitations of existing frameworks in terms of platform independence, security, resource management and multi-application assistance resist the potentiality of integrated environment. Therefore, in this paper, we developed a simplified but effective framework, named \textit{FogBus} for implementing end-to-end IoT-Fog(Edge)-Cloud integration. FogBus offers a platform independent interface to IoT applications and computing instances for execution and interaction. It not only assists developers in building applications but also supports users in running multiple applications at a time and service providers to manage their resources. In addition, FogBus applies Blockchain, authentication and encryption techniques to secure operations on sensitive data. Besides, it is easy to deploy, scalable, energy and cost efficient. To demonstrate the efficacy, we also designed a prototype for Sleep Apnea analysis through FogBus framework. The experimental results of this case study show that different FogBus settings can improve latency, energy, network and CPU usage of the computing infrastructure.  
 \end{abstract}
 
 \begin{keyword}
@@ -69,7 +69,7 @@ Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockch
 %\linenumbers
 
 \section{Introduction}
-In recent years the concept of Internet of Things (IoT) has been expanded across numerous domains. It enables different sensors, digital machines and objects to perceive the external environment and connects them to the global Internet for exchanging data. It also supports integration and analysis of generated data through application software so that events of interest can be identified and necessary physical actions can be triggered through actuators. Thus, it paves the way for building smart systems with limited human intervention \cite{IoT}. Based on the current trends, it is expected that by 2025 such systems will incorporate over 1 trillion IoT devices with 50\% increased demand of latency sensitive applications\cite{mcKinsey}. So far, Cloud is considered as the fundamental computing paradigm to deal with these large number of geographically distributed IoT devices and host corresponding IoT applications. However, Cloud datacenters reside at a multi-hop distance from IoT devices that increase communication delay in both transferring the data and receiving the application service \cite{speed}. For latency-sensitive applications such as respiratory monitoring and Sleep Apnea analysis, this inconvenient interaction between IoT devices and Cloud datacenters is unacceptable and can degrade the service quality drastically. In addition, IoT devices can generate a huge amount of data within a minimal time. When large number of IoT devices simultaneously initiate transferring the data to Cloud datacenters through global internet, severe network congestion occurs. In such circumstances, to overcome the limitations of Cloud-centric IoT model, Fog and Edge computing paradigms emerged \cite{FogInit}. Both of them prefer to utilize edge resources provided by local computing instances for executing real-time IoT applications. IoT devices with computing processors, raspberry pi circuits, personal computers, mobile phones, network switches, gateway routers, proxy servers, micro-datacenters, IOx devices, etc. can offer potential edge resources. Based on the capabilities of edge resources, many consider Fog and Edge computing similar and use them interchangeably. Conversely, others treat Edge computing as a subset of Fog computing which is in accordance with the perspective of this work \cite{me}.                 
+In recent years the concept of Internet of Things (IoT) has been expanded across numerous domains. It enables different sensors, digital machines and objects to perceive the external environment and connects them to the global Internet for exchanging data. It also supports integration and analysis of generated data through application software so that events of interest can be identified and necessary physical actions can be triggered through actuators. Thus, it paves the way for building smart systems with limited human intervention \cite{IoT}. Based on the current trends, it is expected that by 2025 such systems will incorporate over 1 trillion IoT devices with 50\% increased demand of latency sensitive applications \cite{mcKinsey}. So far, Cloud is considered as the fundamental computing paradigm to deal with these large number of geographically distributed IoT devices and host corresponding IoT applications. However, Cloud datacenters reside at a multi-hop distance from IoT devices that increase communication delay in both transferring the data and receiving the application service \cite{speed}. For latency-sensitive applications such as respiratory monitoring and Sleep Apnea analysis, this inconvenient interaction between IoT devices and Cloud datacenters is unacceptable and can degrade the service quality drastically. In addition, IoT devices can generate a huge amount of data within a minimal time. When large number of IoT devices simultaneously initiate transferring the data to Cloud datacenters through global Internet, severe network congestion occurs. In such circumstances, to overcome the limitations of Cloud-centric IoT model, Fog and Edge computing paradigms emerged \cite{FogInit}. Both of them prefer to utilize edge resources provided by local computing instances for executing real-time IoT applications. IoT devices with computing processors, raspberry pi circuits, personal computers, mobile phones, network switches, gateway routers, micro-datacenters, IOx devices, etc. can offer potential edge resources. Based on the capabilities of edge resources, many consider Fog and Edge computing similar and use them interchangeably. Conversely, others treat Edge computing as a subset of Fog computing which is in accordance with the perspective of this work \cite{me}.                 
 %
 \par Fog computing manages an intermediate layer between IoT-enabled systems and Cloud computing. The computing instances of Fog computing are commonly known as Fog nodes and deployed across the edge network in distributed manner. Through these nodes, Fog provides Cloud-like services such as infrastructure, platform and software closer to the IoT data sources and supports application execution. Consequently, it reduces service delivery time, network congestion and improves Quality of Service (QoS) and user experience \cite{QoE}. However, unlike Cloud datacenters, Fog nodes are resource constrained and heterogeneous. With limited resources, it is not possible to accommodate every compute intensive IoT application at the Fog layer. Therefore, seamless integration of IoT-enabled systems with Fog and Cloud infrastructure is required so that both edge and remote resources can be harnessed according to dynamics and requirements of the application \cite{interoperability}. In such integration, Cloud-based top-down approach for managing Fog-based resources becomes infeasible when IoT-data is being received at a higher frequency for processing. On such occurrence, rather than relying on centralized resource management policies, it is effective to take decisions locally and provision resources following distributed bottom-up approach. Moreover, while placing and executing applications on this environment, both internal and external operations get obstructed by the heterogeneity of computing instances and resources. In such circumstances, generalized techniques can overcome the impediments of node to node communication and application runtime environment. Nevertheless, the implementation of such integrated environment going beyond the infrastructure and platform-level diversity with decentralized resource management policies is a challenging task. It further intensifies due to coexistence of multiple decision making entities and their coordination, multi-dimensional scaling, unaware topology and security issues \cite{ifogsim-Gupta}.   
 %
@@ -120,7 +120,7 @@ FogBus [this work] & \checkmark & \checkmark & \checkmark & \checkmark & \checkm
 %
 Table \ref{Tab:summary} provides a brief summary of existing frameworks that integrate different IoT-enabled systems with Fog and Cloud infrastructure. The frameworks are roughly classified into two types. The first one focuses on application specific prototypes while the other offers generalized PaaS model.      
 % 
-\par While developing a prototype-based framework for IoT-enabled health-care system, Amir et al. in \cite{amir} highlight the architecture of a smart gateway for facilitating local storage and data processing. In the framework, Cloud acts as a back-end system for data analysis and decision making. To secure the framework, operating system level techniques are applied. Another prototype framework for smart health-care is developed by Dubey et al. in \cite{dubey}. Intel Edison and Raspberry Pi circuits are used in the framework as Fog nodes. Through role-based authentication, the framework ensures privacy of the data. In the framework Cloud is partially adopted for storing the data. Azimi et al. in \cite{azimi} also discuss a prototype framework for health-care solutions. It is hierarchical and the health analytics are divided into two parts for placing separately in Cloud and Fog infrastructure. The framework follows IBM introduced MAPE-K model to conduct the computational tasks. The MAPE-K model inherently supports execution of diverse applications. For security purposes encryption techniques are extended in this model.
+\par While developing a prototype-based framework for IoT-enabled health-care system, Amir et al. in \cite{amir} highlight the architecture of a smart gateway for facilitating local storage and data processing. In the framework, Cloud acts as a back-end system for data analysis and decision making. To secure the framework, operating system level techniques are applied. Another prototype framework for smart health-care is developed by Dubey et al. in \cite{dubey}. Intel Edison and Raspberry Pi circuits are used in the framework as Fog nodes. Through role-based authentication, the framework ensures privacy of the data. In the framework Cloud is partially adopted for storing the data. Azimi et al. in \cite{azimi} also discuss a prototype framework for health-care solutions. It is hierarchical and the health analytics are divided into two parts for placing separately in Cloud and Fog infrastructure. The framework follows IBM proposed MAPE-K model to conduct the computational tasks. The MAPE-K model inherently supports execution of diverse applications. For security purposes encryption techniques are extended in this model.
 %
 \par Moreover, Gia et al. in \cite{Gia} present a low-cost remote health monitoring framework that facilitates autonomic analysis of IoT data and notification generation. The IoT devices are designed with computational capabilities so that they can pre-process raw data and forward to the Fog nodes for further processing consuming less energy. In Fog layer distributed database is managed for data categorization and security. Orestis et al. in \cite{Orestis} developed a prototype framework that allows users to share health data and notify during emergency. Each operation within the framework is managed by a Spark IoT Platform Core residing at the Cloud. The framework uses encryption and authentication techniques for security. 
 %
@@ -135,22 +135,23 @@ Table \ref{Tab:summary} provides a brief summary of existing frameworks that int
 %      
 \par In comparison to the present work, aforementioned frameworks have worked at security issues from a limited perspective. Furthermore, the computing capabilities of both edge and remote resources have not been fully leveraged. In some cases, pushing computation towards IoT devices or resource enriched Fog nodes increases overall deployment cost and energy consumption. In addition, most of the frameworks overlook the heterogeneity within the computing infrastructures. They often fail to support multi-applications on contemporary basis and do not to offer flexible working arrangement for application developers and service consumers simultaneously. However, our proposed FogBus combines the concept of prototype and platform-based frame-work so that it can uphold the interests of both the parties. It facilitates data integrity through block chain and assist user authentication and data encryption side by side. FogBus expands the execution platform of different IoT applications from resource constrained Fog nodes to Cloud datacenters going beyond their diversity.  
 %    
-\section{FogBus framework} \label{mainPart}
-The FogBus framework incorporates diverse hardware and software elements to offer structured communication and platform independent execution interface within integrated IoT-Fog-Cloud environment. Detailed description of each element of FogBus is given in following sections.    
-%
 \begin{figure*}[t]
 \centering 
 %\captionsetup{justification=centering,margin=2cm}
 \includegraphics[width=175mm, height= 55mm]{FogBus.png}
 \caption{High level view of integrating IoT-Fog and Cloud through FogBus framework}
 \label{Fig:fogbus}
-\end{figure*}      
+\end{figure*} 
+%
+\section{FogBus framework} \label{mainPart}
+The FogBus framework incorporates diverse hardware and software elements to offer structured communication and platform independent execution interface within integrated IoT-Fog-Cloud environment. Detailed description of each element of FogBus is given in following sections.    
+%   
 
 \subsection{Hardware Instruments}
 
 %
 High level view of integrating various hardware instruments through FogBus is represented in Fig.\ref{Fig:fogbus}. In FogBus, the nature of interaction varies according to the type of hardware. The hardware instruments of FogBus include:
-\par \textbf{\textit{IoT Devices}}: IoT devices both, sensors that perceive the external environment, and actuators that convert any given command to physical action. Usually, IoT devices are energy and resource constrained and act as mere data producer or consumer. In some case, IoT devices are equipped with limited computation capabilities to preprocess generated raw data. FogBus allows IoT devices to connect with proximate gateway machines via wireless or wired communication protocols such as Zigbee, Bluetooth, NFC and 6LoWPAN. The sensing frequency of IoT devices can be tuned according to context of the system and the format of sensed IoT-data varies from device to device.     
+\par \textbf{\textit{IoT Devices}}: IoT devices both, sensors that perceive the external environment, and actuators that convert any given command to physical action. Usually, IoT devices are energy and resource constrained and act as mere data producer or consumer. In some cases, IoT devices are equipped with limited computation capabilities to preprocess generated raw data. FogBus allows IoT devices to connect with proximate gateways via wireless or wired communication protocols such as Zigbee, Bluetooth, NFC and 6LoWPAN. The sensing frequency of IoT devices can be tuned according to context of the system and the format of sensed IoT-data varies from device to device.     
 %  
 \par \textbf{\textit{Fog Gateway Nodes (FGN)}}: In FogBus framework, Fog Gateway Nodes (FGN) are the entry points of distributed computing infrastructure. FGNs assist IoT devices to get configured with integrated environment for placing and executing corresponding applications. Through FGNs, the FogBus framework offers user interface of applications so that the users can set authentication credentials, access the backend program, convey service expectations, receive service outcome, manage IoT-devices and request resources from computing infrastructure according to their affordability. In addition, FGNs operate data filtration and organize them in a general format. FGNs also aggregate the data received from different sources of a particular IoT-enabled system. For large scale processing of the data, FGNs forward them to other computing instances of integrated environment. In attaining this purpose, FGNs maintain rapid and dynamic communication with accessible Fog nodes by the use of either Constrained Application Protocol (CoAP) or Simple Network Management Protocol (SNMP) \cite{protocols}.   
 %    
@@ -215,7 +216,7 @@ The software components of FogBus share numerous data and information among them
 % 
 \par \textbf{\textit{Topology}}: The master-worker topology is applied in designing the network structure for FogBus framework. Here broker nodes are the masters while other FCNs function as the workers. Being master, a broker node receives the data stream and user information from the FGNs and discovers workers for processing and storing them. During application runtime it manages functionalities of the workers and delivers the service result to FGNs derived from the application execution. In addition, it connects the Fog infrastructure of a FogBus enabled system with the Cloud infrastructure. To foster data sharing and reduce overhead from the masters, worker nodes also communicate among themselves under the explicit supervision of the masters. The masters, workers and FGNs of a FogBus-enabled system are connected with a common wireless local area network (WLAN) that is managed by one or multiple routers. 
 %
-\par \textbf{\textit{Scalability}}: FogBus framework allows service providers to scale-up the number of active Fog nodes according to context of the system. An FCN connected with the same WLAN can simply become a worker by making itself accessible to the corresponding master. Later, the master configures required software components on that FCN to conduct desired operations. The FogBus supports coexistence of multiple masters in a WLAN so that FGNs can get diverse options to dispatch the data streams for processing. The masters also share workers among themselves. In this case, the data integrity and privacy are not affected since each master maintains own chain of blocks and separate database on the workers. In addition, the software components running at the masters facilitate Fog infrastructure to integrate with multiple Cloud infrastructures simultaneously.
+\par \textbf{\textit{Scalability}}: FogBus framework allows service providers to scale-up the number of active Fog nodes according to context of the system. An FCN connected with the same WLAN can simply become a worker by making itself accessible to the corresponding master. Later, the master configures required software components on that FCN to conduct desired operations. The FogBus supports coexistence of multiple masters in a WLAN so that FGNs can get diverse options to dispatch the data streams for processing. The masters also share workers among themselves. In this case, the data integrity and privacy are not affected since each master maintains own chain of blocks and separate database on the workers. In addition, the software components running at the masters facilitate Fog infrastructure to integrate with multiple Cloud datacenters simultaneously.
 %
 \par \textbf{\textit{Reliability}}: The facility of running multiple masters implicitly eradicates the inherent single point dependency limitation of master-worker model within FogBus framework. Besides, the framework allows each master to replicate their image over one of its worker nodes. It is done so that during uncertain failure of that master, corresponding worker gets the master privileges and defends the collapse of communication network as shown in Fig. \ref{Fig:reliability}. Here, the platform independent characteristic of FogBus software components play a key role. In addition, the masters periodically check status of its workers and store their intermediate data and configurations including deployed applications at different places. When a worker fails, the masters share that worker's information with other workers so that residual data processing can start immediately. If all the workers of a master are overloaded, workers of other masters are mobilized. In this case, all the masters maintain an internal communication among themselves. Thus, the computation facility remains always available within the FogBus framework.
 %
@@ -280,6 +281,15 @@ The system model for FogBus-enabled Sleep Apnea analysis prototype is represente
 E6550 @ 2.33GHz 2GB DDR2 RAM}, 32-bit, Windows 7, Apache HTTP Server 2.4.34, Java SE Runtime Environment (JRE) 1.6, MySQL 5.6, .net 3.5, Aneka 3.1.   
 \par \textbf{\textit{Worker Node}}: Raspberry Pi 3 B+, \textit{ARM Cortex-A53 quad-core SoC CPU @ 1.4GHz 1GB LPDDR2 SDRAM}, IEEE 802.11, 64-bit, Raspbian Stretch, Apache HTTP Server 2.4.34, Java SE Runtime Environment (JRE) 1.6, MySQL 5.6. 
 \par \textbf{\textit{Public Cloud}}: Microsoft Azure B1s Machine, 1vCPU, 1GB RAM, 2GB SSD, Windows Server 2016, .NET 3.5, Aneka 3.1. 
+\par Fig. \ref{Fig.real} depicts the real implementation of this system model.
+%
+\begin{figure}[!t]
+\centering 
+%\captionsetup{justification=centering,margin=2cm}
+\includegraphics[width=90mm, height=50mm]{ProSystem.jpg}
+\caption{Real-world implementation of FogBus-based Sleep Apnea analysis}
+\label{Fig.real}
+\end{figure}
 %
 \subsection{Installed Package}
 The developed prototype for Sleep Apnea analysis is mostly Fog infrastructure centric. However, if Fog infrastructure is unable to process the data, using built-in Aneka-based Cloud Plugin of FogBus, the data is sent to Azure VM. The application package for Sleep Apnea analysis installed in the prototype consists of an android interface and a data analytic. Description of the installed package is given below.     
@@ -306,7 +316,7 @@ The data analytic for Sleep Apnea analysis encapsulates two open source programs
 \begin{figure}[!t]
 \centering 
 %\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=88mm, height=68mm]{Communication.png}
+\includegraphics[width=90mm]{Communication.png}
 \caption{Sequence of communication during Sleep Apnea analysis}
 \label{Fig:pro_com}
 \end{figure}
@@ -348,30 +358,28 @@ During the experiments, data parameters are recorded using Microsoft Performance
 %
 \subsection{Result Analysis}
 \subsubsection{Number of Tasks}
-Fig. \ref{fig:task} depicts the number of tasks generated in FogBus on different experiment settings. It is observed that the number of tasks is higher in the Fog Only setting compared to the Cloud one. It happens because outcome of the previous task is received quickly from the Fog infrastructure. During Without Interval setting, this value rises significantly than the With Interval setting since tasks are generated continuously by the master. It is also noticed that, if Blockchain feature of FogBus is turned off, comparatively higher number of tasks are generated. In this case, as lower amount of additional data is shared and processed over the infrastructure, it improves the speed of receiving outcome for the previous task. Based on these observations, it is understood that if there exists higher amount of tasks to be handled, FogBus can be set to Fog Only setting with Blockchain feature disabled. However, in such state the management and processing overhead of the infrastructures will increase in proportion to the number of tasks and the size of data chunk for individual task. It can be managed by tuning the interval between subsequent tasks creation.            
-
+Fig. \ref{fig:task} depicts the number of tasks generated in different experiment settings. It is observed that the number of tasks is higher in the Fog Only setting compared to the Cloud one. This is because the outcome of the previous task is received quickly from the Fog infrastructure. During Without Interval setting, this value rises significantly than the With Interval setting since tasks are generated continuously by the master. It is also noticed that, if Blockchain feature of FogBus is disabled, comparatively higher number of tasks are generated. Here, as lower amount of additional data is shared and processed over the infrastructure, it improves the speed of receiving outcome for the previous task. Based on these observations, it is understood that if there exists higher amount of tasks to be handled, FogBus can be set to Fog Only setting with Blockchain feature disabled. However, in such state the management and processing overhead of the infrastructures will increase in proportion to the number of tasks and the size of data of each task. This can be managed by tuning the interval between subsequent task creations.
 %
 \begin{figure}[h]
 	\begin{center}
 	\centering
-		\includegraphics[width=35mm, height=40mm]{Tasks1}
-		\hspace{20pt}
-		\includegraphics[width=35mm, height=40mm]{Tasks2}\\
+		\includegraphics[width=42mm, height=48mm]{Tasks1}
+		\hspace{5pt}
+		\includegraphics[width=42mm, height=48mm]{Tasks2}\\
         \footnotesize{(a)\hspace{120pt}(b)}\\		 
    	\caption{Number of tasks (a) with and (b) without blockchain} \label{fig:task}
 	\end{center}
 \end{figure}
 %
 \subsubsection{Latency}
-Fig. \ref{fig:latency} represents the impact of different settings of FogBus on service delivery latency. Here service delivery latency is modelled as the summation of network propagation delay and task completion or application execution time. It is known that computational capability of Fog infrastructure is not enriched but it resides closer to the data source. As a consequence, network propagation delay reduced in Fog infrastructure. Besides, if the size of data chunk for a particular task is not huge, its completion time will not differ significantly whether the application is executed in Fog or Cloud. Since, in this experiment, size of data chunk for a task is not big, thus service delivery latency essentially depends on the network propagation delay. As a result in Fog Only setting of the FogBus service delivery latency is minimal compared to Cloud Only case. This latency becomes much lower on disabled state of Block chain feature since its management add some more time to complete the tasks. Moreover, the With Interval setting reduces overhead from the infrastructure and network in this case; that contributes to improve the service delivery latency. Therefore, it can be realized that these settings assist FogBus to deal with the tasks having stringent service delivery deadline.       
- 
+Fig. \ref{fig:latency} represents the impact of different settings of FogBus on service delivery latency. Here service delivery latency is the summation of network propagation delay and task completion or application execution time. It is known that computational capability of Fog infrastructure is not enriched but it resides closer to the data source. As a consequence, network propagation delay is lesser in Fog infrastructure. Besides, if the size of data chunk for a particular task is not huge, its completion time will not differ significantly whether the application is executed in Fog or Cloud. Since, in this experiment, size of data chunk for a task is not big, service delivery latency essentially depends on the network propagation delay. Thus, in Fog Only setting of the FogBus, service delivery latency is lesser than Cloud Only case. This latency becomes much lower on disabled state of Blockchain feature since its management add some more time to complete the tasks. Moreover, the With Interval setting reduces overhead from the infrastructure and network in this case; that contributes to improve the service delivery latency. Therefore, it can be realized that these settings assist FogBus to deal with the tasks having stringent service delivery deadline.
 %
 \begin{figure}[h]
 	\begin{center}
 	\centering
-		\includegraphics[width=35mm, height=40mm]{Latency1}
-		\hspace{20pt}
-		\includegraphics[width=35mm, height=40mm]{Latency2}\\
+		\includegraphics[width=42mm, height=48mm]{Latency1}
+		\hspace{5pt}
+		\includegraphics[width=42mm, height=48mm]{Latency2}\\
         \footnotesize{(a)\hspace{120pt}(b)}\\		 
    	\caption{Latency (a) with and (b) without blockchain} \label{fig:latency}
 	\end{center}
@@ -384,32 +392,36 @@ Network usage in different settings of FogBus are represented in Fig. \ref{fig:n
 \begin{figure}[h]
 	\begin{center}
 	\centering
-		\includegraphics[width=35mm, height=40mm]{NetUsage1}
-		\hspace{20pt}
-		\includegraphics[width=35mm, height=40mm]{NetUsage2}\\
+		\includegraphics[width=42mm, height=48mm]{NetUsage1}
+		\hspace{5pt}
+		\includegraphics[width=42mm, height=48mm]{NetUsage2}\\
         \footnotesize{(a)\hspace{120pt}(b)}\\		 
    	\caption{Network Usage per task (a) with and (b) without blockchain} \label{fig:netuse}
+	\end{center}
+\end{figure}
+%
+%
+\begin{figure}[h]
+	\begin{center}
+	\centering
+		\includegraphics[width=42mm, height=48mm]{Energy1}
+		\hspace{5pt}
+		\includegraphics[width=42mm, height=48mm]{Energy2}\\
+        \footnotesize{(a)\hspace{120pt}(b)}\\		 
+   	\caption{Energy consumption (a) with and (b) without blockchain} \label{fig:energy}
 	\end{center}
 \end{figure}
 %
 \subsubsection{Energy}
 %
 Fig. \ref{fig:energy} represents how different settings of FogBus influence energy consumption of the infrastructure. In Cloud Only setting the Fog nodes are used for networking and Cloud VMs conduct the computation whereas in Fog Only setting both the networking and computation are handled by Fog nodes. Since, Cloud VMs consume much more energy compared to the Fog nodes, in Fog Only setting less energy is required to conduct the operations. Besides, to manage the Blockchain feature of the FogBus, additional energy is devoured. In this case, disabled Blockchain feature saves some energy for FogBus. In addition, energy consumption of an infrastructure during busy time is higher compared to its idle time. Therefore, interval between subsequent task creation assists to improve the energy usage of the infrastructure. However, it leads FogBus to process less number of tasks which can be overcome by efficient tuning of the interval time. Nevertheless, these configurations help FogBus to execute applications under the energy constraints.
-
+%
+\subsubsection{CPU, RAM, Cache Usage of Master}
+%
+The Fig. \ref{fig:crc} shows the CPU, RAM and Cache usage of mater for various FogBus settings such as Fog Only-Without Blockchain, Cloud Only-Without Blockchain, Fog Only-With Blockchain and Cloud Only-With Blockchain. The parameter values for Fog Only setting are much lower compared to Cloud Only case since it reduces the overhead of running Cloud Plugins and storing the Cloud communication attributes. Even Without Blockchain, these parameter values also decrease as hash and proof-of-work creation for each data block are eliminated. Moreover, on any resource constrained master, these settings can ensure acceptable performance of the FogBus framework. However, since the software components of FogBus do not release their allocated resources after operations by themselves, the RAM and the cache usage for master in all settings remain almost same. In this case, the interval in subsequent task generation does not improve the state of resources. It is left to be resolved in the next version of FogBus.        
+%
 %
 \begin{figure}[h]
-	\begin{center}
-	\centering
-		\includegraphics[width=35mm, height=40mm]{Energy1}
-		\hspace{20pt}
-		\includegraphics[width=35mm, height=40mm]{Energy2}\\
-        \footnotesize{(a)\hspace{120pt}(b)}\\		 
-   	\caption{Energy consumption (a) with and (b) without blockchain} \label{fig:energy}
-	\end{center}
-\end{figure}
-%
-%
-\begin{figure}[!b]
 	\begin{center}
 		\includegraphics[width=28mm, height=40mm]{CPU}
 		\hspace{1pt}
@@ -421,11 +433,6 @@ Fig. \ref{fig:energy} represents how different settings of FogBus influence ener
 	\end{center}
 \end{figure}
 %
-%
-\subsubsection{CPU, RAM, Cache Usage of Master}
-%
-The Fig. \ref{fig:crc} shows the CPU, RAM and Cache usage of mater for various FogBus settings such as Fog Only-Without Blockchain, Cloud Only-Without Blockchain, Fog Only-With Blockchain and Cloud Only-With Blockchain. The parameter values for Fog Only setting are much lower compared to Cloud Only case since it reduces the overhead of running Cloud Plugins and storing the Cloud communication attributes. Even Without Blockchain, these parameter values also decrease as hash and proof-of-work creation for each data block are eliminated. Moreover, on any resource constrained master, these settings can ensure acceptable performance of the FogBus framework. However, since the software components of FogBus do not release their allocated resources after operations by themselves, the RAM and the cache usage for master in all settings remain almost same. In this case, the interval in subsequent task generation does not improve the state of resources. It is left to be resolved in the next version of FogBus.        
-%
 
 \section{Conclusion and Future Works} \label{future}
 In this work, we implement the FogBus framework that can integrate different IoT enabled systems to both Fog and Cloud infrastructures simultaneously. The framework is lightweight and can harness both edge and remote resources for deployment, monitoring and management of IoT applications. FogBus is developed using cross platform programming languages that help it to overcome the heterogeneity of the infrastructure during application execution and end-to-end interaction. Besides, the FogBus framework functions as a Platform-as-a-Service (PaaS) model for integrated Fog Cloud environment that not only assists application developers to build different types of IoT applications but also supports users to tune their service expectations, and service providers to manage the resources according to the context of the system. Since, some IoT-enabled systems such as health monitoring and utility service metering deal with sensitive data, FogBus applies authentication for data privacy and Blockchain for data integrity. To secure data transfer across unreliable networks, encryption techniques are applied in FogBus. Based on the principles of FogBus a cost efficient prototype for Sleep Apnea analysis is also developed as part of this work. Applying different FogBus settings on the prototype, it is demonstrated that FogBus performs well when large number of tasks are required to be processed, execution of tasks are latency sensitive, network resources are not abundant, energy usage is restricted and computing instances are not resource enriched. However, it is the very first version of FogBus and provides a larger scope for further improvement in the following aspects: 
@@ -433,7 +440,8 @@ In this work, we implement the FogBus framework that can integrate different IoT
 \par \textbf{\textit{Artificial Intelligence:}} Currently FogBus does not support any artificial intelligence techniques for controlling the operations in different infrastructure and improving the resilience of the system. Inclusion of Artificial Intelligence techniques can be a significant contribution towards FogBus. 
 \par \textbf{\textit{Application placement techniques:}} FogBus inherently supports distributed application execution. While placing applications in distributed manner service latency, user expectations and deployment cost become predominant. In this case, different efficient application placement techniques can be added to the software stack of FogBus. 
 \par \textbf{\textit{Runtime application migration:}} Migration of applications during runtime is very crucial if any anomaly is predicted. Different runtime application migration strategies for FogBus can be developed to handle such uncertain events.         
-\par \textbf{\textit{Lightweight security features:}} Existing security features of FogBus require comparatively higher computational assistance. This consequently affects the service delivery latency, energy and network usage. Therefore, lightweight but effective security features can be helpful for further uplift of FogBus.    
+\par \textbf{\textit{Lightweight security features:}} Existing security features of FogBus require comparatively higher computational assistance. This consequently affects the service delivery latency, energy and network usage. Therefore, lightweight but effective security features can be helpful for further uplift of FogBus.\\ \\
+The Source Code of FogBus software is available on \url{https://github.com/Cloudslab/FogBus} 
  
 \bibliographystyle{elsarticle-num}
 
