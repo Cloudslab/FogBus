@@ -13,6 +13,25 @@ demonstrate the efficacy, we also designed a prototype for Sleep Apnea analysis 
 results of this case study show that different FogBus settings can improve latency, energy, network and CPU usage of the computing
 infrastructure.
 
+## Introduction
+The major contributions of this work are listed as:
+ * A lightweight and simplified framework named FogBus
+that integrates IoT enabled systems, Fog and Cloud infrastructure
+and harness both edge and remote resources
+according to application requirements.
+ * Exploration of platform independent application execution
+and node-to-node interaction overcoming heterogeneity
+within the integrated environment.
+ * Design of a Platform-as-a-Service (PaaS) model that assists
+application developers, users and service providers to
+pursue individual interests.
+ * Development of a prototype for Sleep Apnea analysis in
+integrated IoT-Fog-Cloud environment.
+ * Implementation of block chain technique to ensure data
+integrity while transferring confidential data.
+ * Performance evaluation of FogBus in terms of latency, energy,
+network and CPU usage.
+
 ## Keywords
 Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockchain.
 
@@ -20,11 +39,12 @@ Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockch
 GPL v2.0
 
 ## Contribution
-To contribute please raise a merge request.
+To contribute please raise a pull request. If you find any bugs in the code please raise an issue.
 
 ## Developers
-Shreshth Tuli <br/>
-Redowan Mahmud <br/>
-Shikhar Tuli <br/>
-Rajkumar Buyya <br/>
-at CLOUDS Lab, University of Melbourne, Victoria, Australia.
+FogBus has been developed by: <br/>
+ * Shreshth Tuli <br/>
+ * Redowan Mahmud <br/>
+ * Shikhar Tuli <br/>
+ * Rajkumar Buyya <br/>
+in [the Cloud Computing and Distributed Systems (CLOUDS) Laboratory](http://cloudbus.org/), at [the Computer Science and Software Engineering Department](http://www.csse.unimelb.edu.au/) of [the University of Melbourne]
