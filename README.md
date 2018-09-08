@@ -45,7 +45,7 @@ Fog Computing, Edge Computing, Cloud Computing, Internet of Things(IoT), Blockch
 GPL v2.0
 
 ## Contribution
-To contribute please raise a pull request. If you find any bugs in the code please raise an issue.
+To contribute please raise a merge request. If you find any bugs in the code please raise an issue.
 
 ## Developers
 FogBus has been developed by: <br/>
