@@ -1,0 +1,436 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage{xcolor}
+\usepackage{listings}
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!15},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{capt-of}
+\usepackage{fontspec,fontawesome}
+\graphicspath{ {images/} }
+
+\title{FogBus : End User Tutorial}
+
+\author{Shreshth Tuli$^{1}$}
+\date{June 2018}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This tutorial or step-by-step guide shows you how to setup your own Fog-Computing Environment using Raspberry Pi's or similar edge node devices used for IoT applications. This specific tutorial is to setup a "Sleep Apnea Analyzer" which provides a user with Sleep Apnea disease severity and other parameters for in depth analysis.\\ \\
+Using Apache server and HTTP REST APIs you will be able to setup communication between Fog devices having a Master/Slave architecture. A "Master" is the Fog node that distributes work between the "Slave" or "Worker" nodes. A Master can itself also act as a Worker. 
+
+\section{Material Required}
+For the Fog-Computing setup the following would be required:
+\begin{enumerate}
+\item 2 or more Raspberry Pi's : \href{https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92/ref=sr_1_3?s=pc&ie=UTF8&qid=1528948400&sr=1-3&keywords=raspberry+pi+3}{Amazon Link}
+\item HDMI cable : \href{https://www.amazon.com/AmazonBasics-High-Speed-HDMI-Cable-1-Pack/dp/B014I8SSD0/ref=sr_1_1_acs_sk_pb_1_sl_1?ie=UTF8&qid=1528948612&sr=8-1-acs&keywords=HDMI+Cable}{Amazon Link}
+\item Keyboard-Mouse : \href{https://www.amazon.com/AmazonBasics-Wired-Keyboard-Mouse-Bundle/dp/B00B7GV802/ref=sr_1_1_sspa?s=electronics&ie=UTF8&qid=1528948656&sr=1-1-spons&keywords=keyboard+mouse&psc=1}{Amazon Link}
+\item Micro SD cards (Atleast 8 GB) : \href{https://www.amazon.com/dp/B073JYVKNX/ref=sxts_k2p-hero-vn_bs_1?pf_rd_m=ATVPDKIKX0DER&pf_rd_p=3338417525430323799&pd_rd_wg=uUtqX&pf_rd_r=J02KSGBGGGV7S9B4CYZW&pf_rd_s=desktop-sx-top-slot&pf_rd_t=301&pd_rd_i=B073JYVKNX&pd_rd_w=4K3bM&pf_rd_i=micro+sd+card&pd_rd_r=8057615f-9cb8-4c23-ace6-39218b385876&ie=UTF8&qid=1528948722&sr=1}{Amazon Link}
+\item Micro SD to SD adapter : \href{https://www.amazon.com/SanDisk-microSD-Memory-Adapter-MICROSD-ADAPTER/dp/B0047WZOOO/ref=sr_1_3?s=electronics&ie=UTF8&qid=1528949416&sr=1-3&keywords=micro+sd+to+sd+adapter}{Amazon Link}
+\item Monitor with HDMI input
+\item USB Pendrive (Atleast 1 GB)
+\item 5V - 2.5A power supplies with Micro USB output (Either of the two options) 
+\begin{itemize}
+\item Power Adapter : \href{https://www.amazon.com/CanaKit-Raspberry-Supply-Adapter-Listed/dp/B00MARDJZ4}{Amazon Link}
+\item Power Bank : \href{https://www.amazon.com/KMASHI-15000mAh-External-Portable-Powerful/dp/B00JP8MZGK/ref=sr_1_3?s=electronics&ie=UTF8&qid=1528949090&sr=1-3&keywords=5v+2a+power+bank}{Amazon Link}
+\end{itemize}
+\item A PC with SD Card, USB slots and WiFi
+\end{enumerate}
+
+\section{Circuit}
+Connect the devices as per following steps:
+\begin{enumerate}
+\item Connect the Raspberry-Pi with keyboard and mouse.
+\item Connect the Monitor to the Pi using HDMI Cable.
+\item Power on the Monitor
+\item Provide power to the Pi through adapter or power bank. 
+\end{enumerate}
+The final circuit is shown below. 
+\begin{figure}[h]
+\centering % Center table
+\includegraphics[width=13cm]{raspi-fog-circuit}
+\captionof{figure}{Circuit Diagram}
+\end{figure}
+
+\newpage
+
+\section{Install OS}
+We will flash the Raspberry Pi operating systems on the SD Cards. Make sure that the SD Cards are formatted and partitioned. On PC follow the following steps:
+\begin{enumerate}
+\item Download the Raspberry Pi OS image : "Raspbian Stretch Desktop" from this \href{https://downloads.raspberrypi.org/raspbian_latest}{link}
+\item Download and Install Disk Image flashing software like "Etcher" from \href{https://etcher.io/}{here}.
+\item Insert the Micro SD card inside the Micro SD to SD adapter and then insert the adapter to the SD Card slot in the PC
+\item Run "Etcher" Software. Select the downloaded Raspbian image file, the SD Card drive and click on "Flash".
+\item When flashing and validation is over, eject the SD card adapter. 
+\item Repeat steps 3 to 5 for other Micro SD cards
+\item Remove power cable from Raspberry Pi and insert the Micro SD Card. Re-insert the power cable into the Pi.
+\end{enumerate}
+
+The Raspberry Pi would now boot up and is ready to install the required softwares for the Fog-Computing environment.
+
+\newpage
+
+\section{Installing FogBus : Worker}
+
+\subsection{Raspberry Pi or other Linux machines}
+Connect Raspberry Pi to Wi-Fi by right clicking the Wi-Fi Buton on top right of the screen. Open Terminal by pressing simultaneously : Ctrl-Alt-T and type in the following commands: 
+
+\begin{lstlisting}[style=BashInputStyle]
+    sudo apt-get install git dos2unix -y
+    sudo git clone https://github.com/Cloudslab/FogBus.git
+    dos2unix ./FogBus/Install-scripts/* && sudo chmod +x ./FogBus/Install-scripts/*
+    sudo ./FogBus/Install-scripts/fogbus-install-worker.sh
+\end{lstlisting}
+
+\subsection{Windows Machines}
+Download XAMPP from the following \href{https://www.apachefriends.org/xampp-files/7.2.6/xampp-win32-7.2.6-0-VC15-installer.exe}{link} and Install XAMPP. Run XAMPP and start Apache and MySQL service.\\ \\
+Go to \textit{C:/xampp/htdocs/} and create folder named "HealthKeeper". Download "HealthKeeper" data from this \href{https://drive.google.com/open?id=1DZWaJHHNMrJFnsCfxoWSIpfDhK7n-qHH}{link} and transfer files in the \textit{FogBus/Browser-src/RPi/Worker/} folder to the HealthKeeper folder.\\ \\
+Go to the folder \textit{C:/xampp/htdocs/HealthKeeper/} and open terminal. Run the following commands to run analyzer:
+\begin{lstlisting}[style=BashInputStyle]
+    java -jar WorkerInterface.jar
+\end{lstlisting}
+Press \faWindows \ + R, type "cmd" and then press "Enter". On the command prompt type "ipconfig" and note the IPv4 address for future use.
+
+\section{Installing FogBus : Master}
+
+Connect all nodes to the same network and follow the further steps. For Linux machines follow the steps as for worker but instead of the last terminal command run:
+\begin{lstlisting}[style=BashInputStyle]
+    sudo ./FogBus/Install-scripts/fogbus-install-master.sh
+\end{lstlisting}
+
+For Windows Machines follow the steps for Worker Installation, but instead of copying the Worker folder files, copy both RPi and Aneka folders in \textit{FogBus/Broswer-src/} into the Healthkeeper folder.\\Go to the folder \textit{C:/xampp/htdocs/HealthKeeper/RPi/Master/} and open terminal. Run the following commands to run analyzer:
+\begin{lstlisting}[style=BashInputStyle]
+    java -jar MasterInterface.jar
+\end{lstlisting}
+Press \faWindows \ + R, type "cmd" and then press "Enter". On the command prompt type "ipconfig" and note the IPv4 address for future use as the Master IP Address.
+
+\section{Configuring FogBus}
+
+On the master server, open browser and go to:
+\begin{lstlisting}[style=BashInputStyle]
+    http://localhost/phpmyadmin/
+\end{lstlisting}
+Follow the following steps to configure database:
+\begin{enumerate}
+\item Create new database by clicking "New" in the left column. Enter name = "users" and click "create".
+\item Add a table in this database named "registrations" having 3 columns.
+\item Type the column names as "ID", "username" and "password". Keep "ID" column as primary key (option in the Index column) and of type INT. Keep others as VARCHAR. Click on "Save" to create table.
+\item On the top tab, click on "Insert" to insert an entry. Type in 1 in ID, and "admin" in username and password.
+\item To add other users, follow step 4 with username and password as required.
+\end{enumerate}
+
+\subsection{Configuring Worker}
+Open browser and go to:
+\begin{lstlisting}[style=BashInputStyle]
+    http://localhost/HealthKeeper/manager.php
+\end{lstlisting}
+Enter Master IP address as noted earlier. Once a worker node is configured, all connections other than power can be removed.
+
+\subsection{Configuring Master}
+Open browser and go to:
+\begin{lstlisting}[style=BashInputStyle]
+    http://localhost/HealthKeeper/RPi/Master/manager.php
+\end{lstlisting}
+Add the IP addresses of the worker nodes noted earlier. To again get IP address of worker run "\textit{hostname -I}" on terminal. Choose the "Enable Master as Worker" as per requirement. Edit the conf.xml file in HealthKeeper/Aneka/ folder as per Aneka Container parameters.
+\\Then go to:
+\begin{lstlisting}[style=BashInputStyle]
+    http://localhost/HealthKeeper/RPi/Master/
+\end{lstlisting}
+Login with username : "admin" and password : "admin". Enter data for analysis and press "Enter". Then click "Analyze" to get results. \\ \\ 
+Android devices can also be synchronized with Master using the steps shown in next section, by which data need not be entered manually but by connecting the android device to a Bluetooth Oximeter.
+
+\newpage
+
+\section{Configuring Aneka Cloud}
+
+Configure Microsoft Azure VM network using the following steps:
+\begin{enumerate}
+\item Create a Virtual Network
+\begin{itemize}
+\item Named - VNET-01
+\item Address Space - 10.10.0.0/16
+\item Subnet - 10.10.10.0/24
+\end{itemize}
+\item Create a GatewaySubnet within the Virtual Network
+\begin{itemize}
+\item GatewaySubnet - 10.10.1.0/24
+\end{itemize}
+\item Create a Virtual Network Gateway
+\begin{itemize}
+\item Associate to Virtual Network VNET-01
+\item This takes Azure 45 minutes to complete
+\end{itemize}
+\item Create a VM within the Virtual Network VNET-01, Windows Server 2016 Data center
+\item Create the Root VPN Certificate
+\begin{itemize}
+\item Download Windows SDK if neccessary from this \href{https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk}{link}. 
+\item Go to Directory - $C:\backslash Program Files (x86)\backslash Windows Kits\backslash 10\backslash bin\ x86$
+\item Run Command - makecert -sky exchange -r -n "CN=AzureVpnRootCert" -pe -a sha1 -len 2048 -ss My "AzureVpnRootCert.cer"
+\item Find Cert in $Personal\backslash Certificates$ and Export to BASE64 without Password
+\item Open Base64 Cert in Text Editor, put in one line and paste into Azure Root Cert Settings
+\end{itemize}
+\item Create the Client Certificate
+\begin{itemize}
+\item Command - makecert.exe -n "CN=AzureVpnClientCert" -pe -sky exchange -m 96 -ss My -in "AzureVpnRootCert" -is my -a sha1
+\item Run CertMgr to Convert to PFX file - certmgr.msc
+\item Find Cert in $Personal\backslash Certificates$ and Export to BASE64 with Password
+\item This pfx file must be installed and distributed to users with VPN Software
+\end{itemize}
+\item Get up Gateway Point to Site Setting
+\begin{itemize}
+\item Address Space - 172.20.20.0/24
+\item Set up Root Certificate
+\begin{itemize}
+\item Name - AzureVPN
+\item Cert as the key in the certificate's base64 file
+\end{itemize}
+\end{itemize}
+\item Download VPN Software and install it
+\item Install Client and Root Certs
+\item Connect VPN via Network Connections
+\end{enumerate}
+
+Now we need to Install Aneka in the Azure Virtual Machine for which follow the steps:
+\begin{enumerate}
+\item Install .NET framework
+\begin{enumerate}
+\item Open Server Manager
+\item Click on "Add Roles and Features"
+\item Install .NET 3.5
+\item Restart VM
+\end{enumerate}
+\item Disable firewall and antivirus 
+\begin{enumerate}
+\item Open Settings
+\item Go to Security and Update settings
+\item Turn off real time scanning in Windows Defender
+\item Search for Windows Firewall Settings
+\item Click on "Turn Firewall On or Off"
+\item Turn off firewall for both public and private networks
+\item Restart VM
+\end{enumerate}
+\item Install Aneka
+\begin{enumerate}
+\item Open Web browser - Internet Explorer
+\item Go to Settings > Internet Settings > Security
+\item Click on "Custom Settings"
+\item Enable Downloads
+\item Click Apply and close window
+\item Go to Manjrasoft website and download Aneka Installer
+\item Install and configure Aneka
+\end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\section{Running FogBus}
+
+FogBus starts automatically after installation. If the node is rebooted or disconnected from network, you can run the FogBus software using the following instructions:
+
+\subsection{Linux Machines}
+
+To run FogBus in Linux Machines open terminal and run the following commands to start worker:
+
+\begin{lstlisting}[style=BashInputStyle]
+    cd ~
+    sudo ./FogBus/Run/FogBus-Worker.sh
+\end{lstlisting}
+
+\subsection{Windows Machine}
+
+To run FogBus on Windows machines as Master go to: \\ \textit{http://localhost/HealthKeeper/RPi/Master/}.\\
+In web browser and open terminal at \textit{C:/xampp/htdocs/HealthKeeper/RPi/Master/} and run the following command:
+\begin{lstlisting}[style=BashInputStyle]
+    java -jar MasterInterface.jar
+\end{lstlisting}
+
+Configure Aneka container in the Master node and Aneka Worker container in the Azure Virtual Machine. Make sure that the Master node is connected to the Azure virtual network through VPN. Start Aneka software by running:
+\begin{lstlisting}[style=BashInputStyle]
+    FogBus/AnekaHealthKeeper/AnekaHealthKeeper/bin/Debug/AnekaHealthKeeper.exe
+\end{lstlisting}
+
+
+\newpage
+
+\section{Configuring Android Device}
+
+To configure an android device to send data collected through a Bluetooth Oximeter, download the android app from this \href{https://drive.google.com/open?id=1Nh6qBr_IfAy8te00TimrC3SWVt_SmIMz}{link}. Install the app in android device and follow the following steps:
+\begin{enumerate}
+\item Turn on device's Bluetooth and then open the HealthKeeper app
+\item You would be greeted by a welcome screen. Click on the "Pair Sensor" button and choose the oximeter device from the list.
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{welcome}
+\captionof{figure}{Welcome screen}
+\end{figure}
+\item Enter the IP address of the master node and click on "Connect".
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{login}
+\includegraphics[width=6cm]{home}
+\captionof{figure}{Login Page and Home Page}
+\end{figure}
+\item A login page would be visible, enter username and password and click on submit
+\item On the Home Page, click on "Go To Manager Page" to setup worker nodes and enable/disable master as worker.
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{manager}
+\captionof{figure}{Manager page}
+\end{figure}
+\newpage
+\item Go back to Home Page and click on "Go to Session Page" to enter session.
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{session}
+\includegraphics[width=6cm]{results}
+\captionof{figure}{Session Page}
+\end{figure}
+\item Click "Start Recording" to start collecting data from Oximeter
+\item Click "Stop Recording" to submit data to master node.
+\item Click on "Analyze" button to submit data for analysis and view results on the current session.
+\item Repeat steps 7 to 9 for analyzing more data.
+\end{enumerate}
+
+\newpage
+
+\section{Further Information}
+
+For further information and queries please contact:
+\\ \\
+\textbf{Shreshth Tuli}\\  
+Undergraduate Student \\
+Department of Computer Science Engineering \\
+Indian Institute of Technology, Delhi \\
+Email : shreshthtuli@gmail.com \\
+\\ \\
+\textbf{Md. Redowan Mahmud} \\
+Researcher\\
+CLOUDS Lab, Computing and Information Systems\\
+University of Melbourne\\
+Australia\\
+Email : mahmudm@student.unimelb.edu.au \\
+\\ \\
+\textbf{Dr. Rajkumar Buyya}\\
+Redmond Barry Distinguished Professor \\
+Director, Cloud Computing and Distributed Systems (CLOUDS) Lab\\
+School of Computing and Information Systems\\
+The University of Melbourne\\
+Room 7.22, Doug McDonell Building, Parkville Campus\\
+Melbourne, VIC 3010, Australia\\
+Phone: +61-3-8344 1344 (office)\\
+Email: rbuyya@unimelb.edu.au \\
+URL: \url{http://www.buyya.com} | \url{http://www.cloudbus.org/~raj}
+
+\newpage
+
+\section*{Appendix}
+
+\subsection*{Installation script : Worker}
+
+\subsubsection*{Install Java}
+\begin{lstlisting}[style=BashInputStyle]
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install oracle-java8-jdk -y
+    sudo apt-get install ant git vim -y
+\end{lstlisting}
+\subsubsection*{Install Apache, PHP and MySQL}
+\begin{lstlisting}[style=BashInputStyle]
+    sudo apt-get install apache2 -y
+    sudo vim /etc/apache2/apache2.conf
+\end{lstlisting}
+Now on the bottom of the file type "i" to append document and add the following line:
+\begin{lstlisting}[style=BashInputStyle]
+    ServerName 127.0.0.1
+\end{lstlisting}
+To test Apache, run:
+\begin{lstlisting}[style=BashInputStyle]
+    sudo apache2ctl configtest
+\end{lstlisting}
+The output of this command should be : "Syntax OK". If yes, then Apache is installed and configured properly. \\Now install PHP and MySQL using:
+\begin{lstlisting}[style=BashInputStyle]
+    sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
+    sudo service apache2 restart
+    sudo apt-get install mysql-server -y
+    sudo mysql_secure_installation
+\end{lstlisting}
+When asked for password, enter "raspberry". For all other questions except the last question answer "n", and for last "y".\\
+Now, configure MySQL and add database named "data" using:
+\begin{lstlisting}[style=BashInputStyle]
+    sudo mysql -u root -p
+    CREATE DATABASE data;
+    show databases;
+    GRANT ALL PRIVILEGES ON data.* TO 'root'@'localhost' IDENTIFIED BY 'raspberry';
+    FLUSH PRIVILEGES;
+    exit;
+\end{lstlisting}
+Install PHPMyAdmin using:
+\begin{lstlisting}[style=BashInputStyle]
+    sudo apt-get install phpmyadmin -y
+\end{lstlisting}
+When prompted to choose server : select "Apache2". In the Configure PHPMyAdmin, select "No".\\ Now add PHPMyAdmin configuration to Apache2 using:
+\begin{lstlisting}[style=BashInputStyle]
+    sudo vim /etc/apache2/apache2.conf
+\end{lstlisting}
+In the end of file, select "i" to insert and add the following line:
+\begin{lstlisting}[style=BashInputStyle]
+    Include /etc/phpmyadmin/apache.conf
+\end{lstlisting}
+Restart apache service using:
+\begin{lstlisting}[style=BashInputStyle]
+    sudo service apache2 restart
+\end{lstlisting}
+Now, go to the html folder and add "HealthKeeper" scripts using following commands:
+\begin{lstlisting}[style=BashInputStyle]
+    cd /var/www/html/
+    sudo mkdir HealthKeeper/
+    sudo chmod -R 777 HealthKeeper/
+\end{lstlisting}
+Download "HealthKeeper" data from this \href{https://drive.google.com/open?id=1DZWaJHHNMrJFnsCfxoWSIpfDhK7n-qHH}{link} and transfer files in the "Worker" folder to the, just created, HealthKeeper folder. in the \textit{/var/www/html/} path.\\
+On terminal run the following commands to run the Analyzer:
+\begin{lstlisting}[style=BashInputStyle]
+    cd /var/www/html/HealthKeeper
+    sudo chmod 777 *
+    javac ./analyzer.java
+    java analyzer
+\end{lstlisting}
+In another tab of terminal run:
+\begin{lstlisting}[style=BashInputStyle]
+    hostname -I
+\end{lstlisting}
+It will show the IPv4 address of the machine. Note it for future use.
+
+
+
+
+
+\end{document}
