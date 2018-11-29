@@ -122,10 +122,10 @@ if(isset($_GET['analyze'])){
 		if($dataFromExternalServer != FALSE){
 			$dataFromExternalServer = preg_replace('/\s+/', '', $dataFromExternalServer);	
 			$my_var = 0.0 + $dataFromExternalServer;
-			echo "<br/>Woker load with IP ".$ip.": ".$my_var;
+			echo "<br/>Worker load with IP ".$ip.": ".$my_var;
 		} else{
 			$my_var = 100;
-			echo "<br/>Woker with IP ".$ip.": compromised - Error \"Could not connect to fog node\"";
+			echo "<br/>Worker with IP ".$ip.": compromised - Error \"Could not connect to fog node\"";
 		}
 		array_push($loads, $my_var);	
 		// If any load < 80% then toMaser and toAneka = false
@@ -139,7 +139,7 @@ if(isset($_GET['analyze'])){
 	
 	if($toMaster && $toAneka){
 		if(rand(0, 1)==0){
-			$toMaster = false;		
+			//$toMaster = false;		
 		}	
 	}
 	
