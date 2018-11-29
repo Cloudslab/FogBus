@@ -1,0 +1,1244 @@
+HealthKeeper - Testing Page
+Testing on Max Load
+
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.1
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+CanvasJS.com
+Latency = 4.2658898830414
+Time = 5.2661418914795
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.08
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8324589729309
+Time = 10.09959602356
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.07
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8579359054565
+Time = 14.95817399025
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.06
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8995530605316
+Time = 19.858819961548
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.04
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8565599918365
+Time = 24.715700864792
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.06
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.865513086319
+Time = 29.581721067429
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.08
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8924570083618
+Time = 34.474617958069
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.03
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9455029964447
+Time = 39.420561075211
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.08
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8174729347229
+Time = 44.23828291893
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.14
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8474731445312
+Time = 49.086421012878
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.06
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8474960327148
+Time = 53.934478998184
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.12
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.7920188903809
+Time = 58.727052927017
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.12
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.813444852829
+Time = 63.540684938431
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.08
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9516320228577
+Time = 68.492973089218
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.09
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8221230506897
+Time = 73.315202951431
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.13
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8646790981293
+Time = 78.180881977081
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.11
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8544149398804
+Time = 83.035609006882
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.26
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8666131496429
+Time = 87.90282201767
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.19
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8014678955078
+Time = 92.704712867737
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.18
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8253829479218
+Time = 97.530822038651
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.18
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.7816791534424
+Time = 102.3131210804
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.12
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8283121585846
+Time = 107.14197301865
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.16
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8296310901642
+Time = 111.97239208221
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.09
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8134989738464
+Time = 116.78633499146
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.11
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9527988433838
+Time = 121.73975992203
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.07
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8695800304413
+Time = 126.61029005051
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.1
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9189610481262
+Time = 131.52965092659
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.17
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.7975580692291
+Time = 136.32809305191
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.07
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.7702929973602
+Time = 141.09901189804
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.13
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8518509864807
+Time = 145.95184993744
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.04
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8347840309143
+Time = 150.78675508499
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.1
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8140158653259
+Time = 155.60110187531
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.04
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.761078119278
+Time = 160.36225605011
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.03
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8840439319611
+Time = 165.24648785591
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.13
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8794660568237
+Time = 170.1268260479
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.07
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8524749279022
+Time = 174.97978186607
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.09
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8042640686035
+Time = 179.78464102745
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.1
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9644641876221
+Time = 184.7499730587
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.06
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.7625830173492
+Time = 189.512789011
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.1
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 4.268571138382
+Time = 194.78215408325
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.09
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8546411991119
+Time = 199.63702607155
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.1
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8288049697876
+Time = 204.46625685692
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.04
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9024019241333
+Time = 209.36897492409
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.06
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9253530502319
+Time = 214.29475498199
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.1
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8334460258484
+Time = 219.12867188454
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.04
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8082900047302
+Time = 223.93759298325
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.11
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 4.3343908786774
+Time = 229.27283287048
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.02
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.7952079772949
+Time = 234.0683760643
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.06
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8227908611298
+Time = 238.89214587212
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.07
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9630889892578
+Time = 243.85556292534
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.11
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.7799549102783
+Time = 248.63620495796
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.2
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.822714805603
+Time = 253.45912289619
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.08
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8513000011444
+Time = 258.31080508232
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.05
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8652651309967
+Time = 263.17678999901
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.08
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9246089458466
+Time = 268.10212802887
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.02
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.9194099903107
+Time = 273.02182507515
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.11
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8581531047821
+Time = 277.88041901588
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.17
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8449659347534
+Time = 282.72617602348
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.05
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8337860107422
+Time = 287.56004405022
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.04
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8349931240082
+Time = 292.39532399178
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.16
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.817510843277
+Time = 297.21393990517
+HealthKeeper - Session Page
+Hello
+Enter Data for analysis:
+
+ 
+Data1 Values Stored : 78,89,90,89,78,90,89,78,67,79,98,78,67,78,89 Data2 Values Stored : 67,69,78,89,78,89,78,67,67,78,89,90,89,78,89 
+Worker load with IP 192.168.1.10: 0.13
+
+Work sent to Worker 1 with IP address : 192.168.1.10
+
+For 1 hour of Sleep Apnea Data : 
+AHI (Apnea-hypopnea index) = 4 
+Minimum Oxygen Level = 67 
+Disease Severity : None 
+Minimum Heart Rate : 67 
+Maximum Heart Rate : 90 
+Average Heart Rate : 79 
+Diagnosis : Normal ECG
+Latency = 3.8367440700531
+Time = 302.0512509346
