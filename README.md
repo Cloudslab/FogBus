@@ -54,3 +54,6 @@ FogBus has been developed by: <br/>
  * Shikhar Tuli <br/>
  * Rajkumar Buyya <br/>
 in [the Cloud Computing and Distributed Systems (CLOUDS) Laboratory](http://cloudbus.org/), at [the Computer Science and Software Engineering Department](http://www.csse.unimelb.edu.au/) of [the University of Melbourne]
+
+## References
+Tuli, Shreshth, et al. [FogBus: A Blockchain-based Lightweight Framework for Edge and Fog Computing](https://arxiv.org/abs/1811.11978) arXiv preprint arXiv:1811.11978 (2018).
