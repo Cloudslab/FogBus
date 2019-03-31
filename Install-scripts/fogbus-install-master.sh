@@ -16,7 +16,7 @@ sudo chmod -R 777 /var/www/html/HealthKeeper/
 sudo chmod -R 777 /var/www/html/HealthKeeper/RPi/
 sudo cp -a ./FogBus/Browser-src/* /var/www/html/HealthKeeper/
 sudo chmod 777 /var/www/html/HealthKeeper/RPi/
-sudo chmod 777 /var/www/html/HeathKeeper/RPi/Master/*
+sudo chmod 777 /var/www/html/HealthKeeper/RPi/Master/*
 sudo chmod 777 /var/www/html/HealthKeeper/RPi/Worker/*
 echo ".................................."
 echo "Successfully Installed Raspi-Fog"
