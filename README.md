@@ -57,3 +57,4 @@ in [the Cloud Computing and Distributed Systems (CLOUDS) Laboratory](http://clou
 
 ## References
 Tuli, Shreshth, et al. [FogBus: A Blockchain-based Lightweight Framework for Edge and Fog Computing](https://arxiv.org/abs/1811.11978) arXiv preprint arXiv:1811.11978 (2018).
+(paper accepted in Journal of Systems and Software on April 10, 2019)
