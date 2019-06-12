@@ -32,6 +32,11 @@ integrity while transferring confidential data.
  * Performance evaluation of FogBus in terms of latency, energy,
 network and CPU usage.
 
+## Application Examples
+FogBus has been deployed and tested with applicaitons like:
+* [EdgeLens](https://github.com/Cloudslab/EdgeLens) - Distributed Deep Learning for Object detection harness edge and cloud resources.
+* [HealthFog](https://github.com/Cloudslab/HealthFog) - An ensemble deep learning based smart healthcare system for automatic diagnosis of heart diseases in integrated IoT and Fog computing environments
+
 ## Installation
 For installing FogBus please refer to the [User Manual](https://github.com/Cloudslab/FogBus/blob/master/Manuals/End-user-tutorial/fogbus-end-user.pdf).
 
