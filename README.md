@@ -63,7 +63,7 @@ in [the Cloud Computing and Distributed Systems (CLOUDS) Laboratory](http://clou
 ## Cite this work
 ```
 @article{tuli2019fogbus,
-title = "FogBus: A Blockchain-based Lightweight Framework for Edge and Fog Computing",
+title = {{FogBus: A Blockchain-based Lightweight Framework for Edge and Fog Computing}},
 journal = "Journal of Systems and Software",
 volume = "154",
 pages = "22--36",
