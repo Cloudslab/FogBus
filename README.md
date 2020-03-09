@@ -60,6 +60,20 @@ FogBus has been developed by: <br/>
  * Rajkumar Buyya <br/>
 in [the Cloud Computing and Distributed Systems (CLOUDS) Laboratory](http://cloudbus.org/), at [the Computer Science and Software Engineering Department](http://www.csse.unimelb.edu.au/) of [the University of Melbourne]
 
+## Cite this work
+```
+@article{tuli2019fogbus,
+title = "FogBus: A Blockchain-based Lightweight Framework for Edge and Fog Computing",
+journal = "Journal of Systems and Software",
+volume = "154",
+pages = "22--36",
+year = "2019",
+issn = "0164-1212",
+doi = "https://doi.org/10.1016/j.jss.2019.04.050",
+publisher={Elsevier},
+url = "http://www.sciencedirect.com/science/article/pii/S0164121219300822"}
+```
+
 ## References
 * **Shreshth Tuli, Redowan Mahmud, Shikhar Tuli, and Rajkumar Buyya, [FogBus: A Blockchain-based Lightweight Framework for Edge and Fog Computing.](http://buyya.com/papers/FogBus-JSS.pdf) Journal of Systems and Software (JSS), Volume 154, Pages: 22-36, ISSN: 0164-1212, Elsevier Press, Amsterdam, The Netherlands, August 2019.**
 * Shreshth Tuli, Nipam Basumatary, Sukhpal Singh Gill, Mohsen Kahani, Rajesh Chand Arya, Gurpreet Singh Wander, and Rajkumar Buyya, [HealthFog: An Ensemble Deep Learning based Smart Healthcare System for Automatic Diagnosis of Heart Diseases in Integrated IoT and Fog Computing Environments](http://buyya.com/papers/HealthFog.pdf), Future Generation Computer Systems (FGCS), Volume 104, Pages: 187-200, ISSN: 0167-739X, Elsevier Press, Amsterdam, The Netherlands, March 2020.
