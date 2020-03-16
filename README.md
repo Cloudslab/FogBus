@@ -64,6 +64,7 @@ in [the Cloud Computing and Distributed Systems (CLOUDS) Laboratory](http://clou
 ```
 @article{tuli2019fogbus,
 title = {{FogBus: A Blockchain-based Lightweight Framework for Edge and Fog Computing}},
+author={Tuli, Shreshth and Mahmud, Redowan and Tuli, Shikhar and Buyya, Rajkumar},
 journal = "Journal of Systems and Software",
 volume = "154",
 pages = "22--36",
