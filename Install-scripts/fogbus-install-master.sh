@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get update
 apt-get upgrade -y
-apt-get install oracle-java8-jdk -y
+apt-get install default-jdk -y
 apt-get install ant git vim -y
 apt-get install apache2 -y
 echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
@@ -19,7 +19,7 @@ sudo chmod 777 /var/www/html/HealthKeeper/RPi/
 sudo chmod 777 /var/www/html/HealthKeeper/RPi/Master/*
 sudo chmod 777 /var/www/html/HealthKeeper/RPi/Worker/*
 echo ".................................."
-echo "Successfully Installed Raspi-Fog"
+echo "Successfully Installed FogBus"
 echo "Note the Master IP address :"
 hostname -I
 echo "Configure Database as described in End-User Tutorial then press Enter to run"
