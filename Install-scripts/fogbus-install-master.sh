@@ -8,7 +8,7 @@ echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
 apache2ctl configtest
 apt-get install php libapache2-mod-php php-mcrypt php-mysql -y
 service apache2 restart
-apt-get install mysql-server -y
+apt-get install mariadb-server -y
 mysql -u root -praspberry -e "CREATE DATABASE data;GRANT ALL PRIVILEGES ON data.* TO 'root'@'localhost' IDENTIFIED BY 'raspberry';FLUSH PRIVILEGES;"
 service apache2 restart
 sudo mkdir /var/www/html/HealthKeeper/
